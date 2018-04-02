@@ -1,6 +1,8 @@
 package com.azarenko.model;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 public class Users extends AbstractNamedEntity {
@@ -12,7 +14,7 @@ public class Users extends AbstractNamedEntity {
 
     private String role;
 
-    private Integer subscription;
+    private String subscription;
 
     private Date registered = new Date();
 
@@ -23,10 +25,11 @@ public class Users extends AbstractNamedEntity {
         this.password = password;
         this.registered = new Date();
         this.role = role;
+        subscription = "";
     }
 
     public Users(Integer id, String name, String email, String password, boolean enabled, String role,
-                 Integer subscription, Date registered) {
+                 String subscription, Date registered) {
         super(id, name);
         this.email = email;
         this.password = password;
@@ -68,11 +71,11 @@ public class Users extends AbstractNamedEntity {
         this.role = role;
     }
 
-    public Integer getSubscription() {
+    public String getSubscription() {
         return subscription;
     }
 
-    public void setSubscription(Integer subscription) {
+    public void setSubscription(String subscription) {
         this.subscription = subscription;
     }
 
@@ -82,5 +85,19 @@ public class Users extends AbstractNamedEntity {
 
     public void setRegistered(Date registered) {
         this.registered = registered;
+    }
+
+    @Override
+    public String toString() {
+        return "Users{" +
+                "email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", enabled=" + enabled +
+                ", role='" + role + '\'' +
+                ", subscription='" + subscription + '\'' +
+                ", registered=" + registered +
+                ", name='" + name + '\'' +
+                ", id=" + id +
+                '}';
     }
 }

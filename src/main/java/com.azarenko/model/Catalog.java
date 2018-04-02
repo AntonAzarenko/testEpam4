@@ -8,13 +8,13 @@ public class Catalog extends AbstractBaseEntity {
 
     private String description;
 
-    private BigDecimal price;
+    private  BigDecimal price;
 
-    public Catalog(int id, String title, String description, int price) {
+    public Catalog(int id, String title, String description, BigDecimal price) {
         super(id);
         this.title = title;
         this.description = description;
-        this.price = BigDecimal.valueOf(price/100);
+        this.price = price;
     }
 
     public String getTitle() {
@@ -50,4 +50,21 @@ public class Catalog extends AbstractBaseEntity {
                 ", id=" + id +
                 '}';
     }
+
+    /**
+     *
+     * @param price
+     * @return
+     */
+    private BigDecimal getBigDecimal(int price){
+        double temp = price;
+        temp = temp/100;
+        BigDecimal bigDecimal = new BigDecimal(temp);
+
+        return bigDecimal;
+    }
+
+
+
+
 }

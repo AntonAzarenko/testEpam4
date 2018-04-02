@@ -3,6 +3,7 @@ package com.azarenko.dao;
 import com.azarenko.model.Catalog;
 import com.azarenko.util.DBUtil;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -28,7 +29,7 @@ public class CatalogDaoImpl implements CatalogDao {
                 int id = rs.getInt("idpublications");
                 String title = rs.getString("title");
                 String discription = rs.getString("discription");
-                int price = rs.getInt("price");
+                BigDecimal price =rs.getBigDecimal("price");
                 Catalog catalog = new Catalog(id, title, discription, price);
                 temp.add(catalog);
             }

@@ -2,6 +2,6 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-<a href="/pages/catalog.jsp">показать список каталогов</a>
+<a href="/pages/start.jsp">Система переодических изданий</a>
 </body>
 </html>

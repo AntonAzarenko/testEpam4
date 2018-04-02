@@ -1,6 +1,6 @@
 package com.azarenko.model;
 
-public class AbstractNamedEntity extends AbstractBaseEntity {
+public abstract class AbstractNamedEntity extends AbstractBaseEntity {
 
     protected String name;
 

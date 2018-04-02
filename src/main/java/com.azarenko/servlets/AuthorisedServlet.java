@@ -35,11 +35,8 @@ public class AuthorisedServlet extends HttpServlet {
                     req.getRequestDispatcher("/pages").forward(req,resp);
                     break;
                   default:
-                      req.setAttribute("error",role);
                       req.getRequestDispatcher("/pages/erorsMessage.jsp").forward(req,resp);
             }
-
-
         req.getRequestDispatcher("/pages/erorsMessage.jsp").forward(req,resp);
     }
 }

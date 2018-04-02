@@ -6,6 +6,7 @@
 <head>
     <title>Title</title>
     <h1>Бибилиотека переодических изданий</h1>
+    <a href="">Корзина</a>
     <div>
         <table border="1" cellpadding="8" cellspacing="0">
             <tr>
@@ -14,7 +15,6 @@
                 <th>Discription</th>
                 <th>price</th>
             </tr>
-
             <c:forEach items="${requestScope.catalogs}" var="catalog">
                 <jsp:useBean id="catalog" scope="page" type="com.azarenko.model.Catalog"/>
                 <tr>
@@ -22,6 +22,7 @@
                     <th>${catalog.title}</th>
                     <th>${catalog.description}</th>
                     <th>${catalog.price}</th>
+                    <th><a href="/addcasket" methods="post">Добавить в корзину</a> </th>
                 </tr>
             </c:forEach>
             <th></th>

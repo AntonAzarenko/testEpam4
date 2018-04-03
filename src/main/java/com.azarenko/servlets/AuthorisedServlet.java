@@ -30,9 +30,10 @@ public class AuthorisedServlet extends HttpServlet {
         String role = authorized.authorizeUser(login,password);
             switch (role){
                 case  "ADMIN" :
+                    req.getRequestDispatcher("/admin").forward(req,resp);
                     break;
                 case "USER" :
-                    req.getRequestDispatcher("/pages").forward(req,resp);
+                    req.getRequestDispatcher("/user").forward(req,resp);
                     break;
                   default:
                       req.getRequestDispatcher("/pages/erorsMessage.jsp").forward(req,resp);

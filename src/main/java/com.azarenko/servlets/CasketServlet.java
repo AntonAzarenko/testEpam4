@@ -1,4 +1,4 @@
-package com.azarenko.util;
+package com.azarenko.servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

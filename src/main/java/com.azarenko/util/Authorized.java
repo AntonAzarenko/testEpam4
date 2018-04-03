@@ -25,10 +25,13 @@ public class Authorized {
                     return role;
                 }else {
                     System.out.println("Введенный пароль не совпадает");
-                    return "Введенный пароль не совпадает";}
+                    continue;
+                }
+
             }else {
                 System.out.println("Такого пользователя не существует");
-                return "Такого пользователя не существует";
+                continue;
+
             }
         }
         return role;

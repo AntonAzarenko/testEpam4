@@ -1,19 +1,19 @@
 package com.azarenko;
 
-import com.azarenko.dao.CatalogDao;
-import com.azarenko.dao.CatalogDaoImpl;
+import com.azarenko.dao.PublicationDao;
+import com.azarenko.dao.PublicationDaoImpl;
 import com.azarenko.dao.UserDao;
 import com.azarenko.dao.UserDaoImpl;
-import com.azarenko.model.Catalog;
+import com.azarenko.model.Publication;
 import com.azarenko.model.Users;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        CatalogDao catalogDao = new CatalogDaoImpl();
-        List<Catalog> catalogList= catalogDao.getCatalog();
-        for(Catalog pair: catalogList){
+        PublicationDao publicationDao = new PublicationDaoImpl();
+        List<Publication> publicationList = publicationDao.getCatalog();
+        for(Publication pair: publicationList){
             System.out.println(pair.toString());
         }
         UserDao userDao = new UserDaoImpl();

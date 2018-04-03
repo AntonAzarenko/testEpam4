@@ -6,7 +6,7 @@
 -- insert  users
 -- ----------------------
 
--- insert catalog
+-- insert publication
 -- ----------------------
 use mydb;
 INSERT INTO catalogpublications (title, discription, price) VALUES

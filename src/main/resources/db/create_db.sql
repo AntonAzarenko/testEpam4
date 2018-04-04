@@ -1,13 +1,11 @@
-use mydb;
+DROP DATABASE IF EXISTS `mydb`;
 
-DROP TABLE IF EXISTS users_subscription;
+CREATE DATABASE `mydb` DEFAULT CHARACTER SET utf8;
 
-CREATE TABLE users_subscription
-(
-  id               INTEGER PRIMARY KEY AUTO_INCREMENT,
-  title             VARCHAR(45) NOT NULL ,
-  price             DECIMAL(10,2)
-);
+GRANT SELECT,INSERT,UPDATE,DELETE
+ON `mydb`.*
+TO app@'%'
+IDENTIFIED BY 'app_pw';
 
 
 

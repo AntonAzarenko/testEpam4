@@ -6,7 +6,7 @@ import java.util.Date;
  * Класс хранит информацию о пользователе: ID, имя, почту(используеться как LOGIN), пароль, enabled(авторизован
  * ли пользователь если осуществляет переход по страницам), дату регистрации.
  */
-public class Users extends AbstractBaseEntity {
+public class User extends AbstractBaseEntity {
 
     private String name;
 
@@ -18,36 +18,31 @@ public class Users extends AbstractBaseEntity {
 
     private String role;
 
-    private String subscription;
 
     private Date registered = new Date();
-
-    public Users(Integer id, String name, String email, String password, String role) {
+    //The constructor for registration new user
+    public User(Integer id, String name, String email, String password, String role) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
         this.registered = new Date();
         this.role = role;
-        subscription = "";
     }
 
-    public String getName() {
-        return name;
+    public User() {
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public Users(Integer id, String name, String email, String password, boolean enabled, String role,
-                 String subscription, Date registered) {
+
+    //The constructor gets the user from the database
+    public User(Integer id, String name, String email, String password, boolean enabled, String role,
+                Date registered) {
         super(id);
         this.email = email;
         this.password = password;
         this.enabled = enabled;
         this.role = role;
-        this.subscription = subscription;
         this.registered = registered;
     }
 
@@ -83,14 +78,6 @@ public class Users extends AbstractBaseEntity {
         this.role = role;
     }
 
-    public String getSubscription() {
-        return subscription;
-    }
-
-    public void setSubscription(String subscription) {
-        this.subscription = subscription;
-    }
-
     public Date getRegistered() {
         return registered;
     }
@@ -99,14 +86,21 @@ public class Users extends AbstractBaseEntity {
         this.registered = registered;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
-        return "Users{" +
+        return "User{" +
                 "email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +
                 ", role='" + role + '\'' +
-                ", subscription='" + subscription + '\'' +
                 ", registered=" + registered +
                 ", name='" + name + '\'' +
                 ", id=" + id +

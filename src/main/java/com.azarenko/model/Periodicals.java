@@ -2,7 +2,10 @@ package com.azarenko.model;
 
 import java.math.BigDecimal;
 
-public class Publication extends AbstractBaseEntity {
+/**
+ * Класс хранит информацию о перодических изданиях
+ */
+public class Periodicals extends AbstractBaseEntity {
 
     private String title;
 
@@ -10,14 +13,14 @@ public class Publication extends AbstractBaseEntity {
 
     private  BigDecimal price;
 
-    public Publication(int id, String title, String description, BigDecimal price) {
+    public Periodicals(int id, String title, String description, BigDecimal price) {
         super(id);
         this.title = title;
         this.description = description;
         this.price = price;
     }
 
-    public Publication() {
+    public Periodicals() {
     }
 
     public String getTitle() {
@@ -46,7 +49,7 @@ public class Publication extends AbstractBaseEntity {
 
     @Override
     public String toString() {
-        return "Publication{" +
+        return "Periodicals{" +
                 "title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", price=" + price +

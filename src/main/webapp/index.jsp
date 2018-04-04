@@ -2,6 +2,7 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-<a href="/pages/start.jsp">Система переодических изданий</a>
+<jsp:forward page="/pages?action=catalog"/>
+
 </body>
 </html>

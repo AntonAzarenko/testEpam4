@@ -1,6 +1,6 @@
 package com.azarenko.servlets;
 
-import com.azarenko.Services.AutorisationService;
+import com.azarenko.services.AutorisationService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -28,6 +28,9 @@ public class AuthorizationServlet extends HttpServlet {
         String login = req.getParameter("username");
         String password = req.getParameter("password");
         String role = authorized.authorizeUser(login,password);
+        if(role == null){
+            req.getRequestDispatcher("/pages/erors_message.jsp").forward(req, resp);
+        }
             switch (role){
                 case  "ADMIN" :
                     doGet(req,resp);
@@ -36,8 +39,7 @@ public class AuthorizationServlet extends HttpServlet {
                     req.getRequestDispatcher("/user").forward(req,resp);
                     break;
                   default:
-                      req.getRequestDispatcher("/pages/erorsMessage.jsp").forward(req,resp);
+                      req.getRequestDispatcher("/pages/erors_message.jsp").forward(req,resp);
             }
-        req.getRequestDispatcher("/pages/erorsMessage.jsp").forward(req,resp);
     }
 }

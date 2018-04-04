@@ -1,4 +1,4 @@
-<%@ page import="com.azarenko.model.Publication" %>
+<%@ page import="com.azarenko.model.Periodicals" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -15,13 +15,13 @@
                 <th>Discription</th>
                 <th>price</th>
             </tr>
-            <c:forEach items="${requestScope.catalogs}" var="publication">
-                <jsp:useBean id="publication" scope="page" type="com.azarenko.model.Publication"/>
+            <c:forEach items="${requestScope.catalogs}" var="periodicals">
+                <jsp:useBean id="periodicals" scope="page" type="com.azarenko.model.Periodicals"/>
                 <tr>
-                    <th>${publication.id}</th>
-                    <th>${publication.title}</th>
-                    <th>${publication.description}</th>
-                    <th>${publication.price}</th>
+                    <th>${periodicals.id}</th>
+                    <th>${periodicals.title}</th>
+                    <th>${periodicals.description}</th>
+                    <th>${periodicals.price}</th>
                     <th><a href="/addcasket" methods="post">Добавить в корзину</a> </th>
                 </tr>
             </c:forEach>

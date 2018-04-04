@@ -1,24 +1,24 @@
 package com.azarenko;
 
-import com.azarenko.Services.PublicationService;
-import com.azarenko.Services.PublicationServiceImpl;
-import com.azarenko.Services.UserService;
-import com.azarenko.Services.UserServiceImpl;
-import com.azarenko.model.Publication;
-import com.azarenko.model.Users;
+import com.azarenko.model.User;
+import com.azarenko.services.PeriodicalsService;
+import com.azarenko.services.PeriodicalsServiceImpl;
+import com.azarenko.services.UserService;
+import com.azarenko.services.UserServiceImpl;
+import com.azarenko.model.Periodicals;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        PublicationService publicationService = new PublicationServiceImpl();
-        List<Publication> publicationList = publicationService.getCatalog();
-        for(Publication pair: publicationList){
+        PeriodicalsService periodicalsService = new PeriodicalsServiceImpl();
+        List<Periodicals> periodicalsList = periodicalsService.getCatalog();
+        for(Periodicals pair: periodicalsList){
             System.out.println(pair.toString());
         }
         UserService userService = new UserServiceImpl();
-        List<Users> usersList= userService.getUserList();
-        for(Users pair: usersList){
+        List<User> userList = userService.getUserList();
+        for(User pair: userList){
             System.out.println(pair.toString());
         }
 

@@ -1,7 +1,7 @@
 package com.azarenko.servlets;
 
-import com.azarenko.Services.PublicationService;
-import com.azarenko.Services.PublicationServiceImpl;
+import com.azarenko.services.PeriodicalsService;
+import com.azarenko.services.PeriodicalsServiceImpl;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,10 +11,10 @@ import java.io.IOException;
 
 @WebServlet(name = "MyServlet", urlPatterns = "/user")
 public class UsersServlet extends HttpServlet {
-    private PublicationService publicationService;
+    private PeriodicalsService periodicalsService;
 
     public UsersServlet() {
-        publicationService = new PublicationServiceImpl();
+        periodicalsService = new PeriodicalsServiceImpl();
     }
 
     @Override
@@ -23,7 +23,7 @@ public class UsersServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("catalogs", publicationService.getCatalog());
+        req.setAttribute("catalogs", periodicalsService.getCatalog());
         req.getRequestDispatcher("/pages/user_catalog.jsp").forward(req, resp);
     }
 }

@@ -9,7 +9,7 @@
     <form method="post" action='admin' name="insert">
         <p>
             ID : <input type="text" readonly="readonly" name="catalogId"
-        value="<c:out value="${publication.id}"/>"/>
+        value="<c:out value="${periodicals.id}"/>"/>
 
         <p>
             Название : <input type="text"  name="title"/>

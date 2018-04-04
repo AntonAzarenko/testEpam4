@@ -1,6 +1,6 @@
-package com.azarenko.Services;
+package com.azarenko.services;
 
-import com.azarenko.model.Publication;
+import com.azarenko.model.Periodicals;
 import com.azarenko.util.DBUtil;
 
 import java.math.BigDecimal;
@@ -8,27 +8,27 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PublicationServiceImpl implements PublicationService {
+public class PeriodicalsServiceImpl implements PeriodicalsService {
 
     private Connection connection;
 
-    public PublicationServiceImpl() {
+    public PeriodicalsServiceImpl() {
         connection = DBUtil.getConnection();
     }
 
-    public List<Publication> getCatalog() {
-        List<Publication> temp = new ArrayList<Publication>();
+    public List<Periodicals> getCatalog() {
+        List<Periodicals> temp = new ArrayList<Periodicals>();
         try {
 
             Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalogpublications");
+            ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalog_periodicals");
             while (rs.next()) {
                 int id = rs.getInt("idpublications");
                 String title = rs.getString("title");
                 String discription = rs.getString("discription");
                 BigDecimal price = rs.getBigDecimal("price");
-                Publication publication = new Publication(id, title, discription, price);
-                temp.add(publication);
+                Periodicals periodicals = new Periodicals(id, title, discription, price);
+                temp.add(periodicals);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -37,13 +37,13 @@ public class PublicationServiceImpl implements PublicationService {
     }
 
     @Override
-    public void add(Publication publication) {
+    public void add(Periodicals periodicals) {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement
-                    ("INSERT INTO  catalogpublications(title,discription, price) VALUES (?,?,?)");
-            preparedStatement.setString(1, publication.getTitle());
-            preparedStatement.setString(2, publication.getDescription());
-            preparedStatement.setBigDecimal(3, publication.getPrice());
+                    ("INSERT INTO catalog_periodicals (title,discription, price) VALUES (?,?,?)");
+            preparedStatement.setString(1, periodicals.getTitle());
+            preparedStatement.setString(2, periodicals.getDescription());
+            preparedStatement.setBigDecimal(3, periodicals.getPrice());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -56,12 +56,12 @@ public class PublicationServiceImpl implements PublicationService {
     }
 
     @Override
-    public void update(Publication publication) {
+    public void update(Periodicals periodicals) {
 
     }
 
     @Override
-    public Publication getPublication(int id) {
+    public Periodicals getPublication(int id) {
         return null;
     }
 }

@@ -8,7 +8,7 @@
 </head>
 <h1>Вход в систему "Переодические издания"</h1>
 <body>
-<form action="authorize" method=post>
+<form action="/authorize" method=post>
     <p><strong>Введите ваш EMAIL: </strong>
         <input type="text" name="username" size="25">
     <p>

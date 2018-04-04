@@ -2,7 +2,7 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-<jsp:forward page="/pages?action=catalog"/>
+<jsp:forward page="/pages/start.jsp"/>
 
 </body>
 </html>

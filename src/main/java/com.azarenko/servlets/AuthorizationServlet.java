@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "authorize", urlPatterns = "/pages/authorize")
+@WebServlet(name = "authorize", urlPatterns = "/authorize")
 public class AuthorizationServlet extends HttpServlet {
 
     private AutorisationService authorized;
@@ -20,7 +20,7 @@ public class AuthorizationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/admin").forward(req,resp);
+
     }
 
     @Override
@@ -33,7 +33,7 @@ public class AuthorizationServlet extends HttpServlet {
         }
             switch (role){
                 case  "ADMIN" :
-                    doGet(req,resp);
+                    req.getRequestDispatcher("pages/admin_start_page.jsp").forward(req,resp);
                     break;
                 case "USER" :
                     req.getRequestDispatcher("/user").forward(req,resp);

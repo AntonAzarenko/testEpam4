@@ -16,6 +16,6 @@ public class AutorisationService {
         if (user.getPassword().equals(password)){
             return role  = user.getRole();
         }
-        return null;
+        return role="";
     }
 }

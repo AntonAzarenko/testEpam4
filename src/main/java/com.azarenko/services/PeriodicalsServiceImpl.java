@@ -23,7 +23,7 @@ public class PeriodicalsServiceImpl implements PeriodicalsService {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalog_periodicals");
             while (rs.next()) {
-                int id = rs.getInt("idpublications");
+                int id = rs.getInt("id");
                 String title = rs.getString("title");
                 String discription = rs.getString("discription");
                 BigDecimal price = rs.getBigDecimal("price");

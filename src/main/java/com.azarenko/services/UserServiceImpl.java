@@ -46,6 +46,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUserByEmail(String email) {
+
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");
@@ -53,8 +54,19 @@ public class UserServiceImpl implements UserService {
                 String temp = rs.getString("email");
                 if (email.equalsIgnoreCase(temp)) {
                     int id = rs.getInt("id");
-                    User user = getUserByID(id);
+                    String name = rs.getString("name");
+                    String password = rs.getString("password");
+                    String role = rs.getString("role");
+                    boolean enabled = false;
+                    int en = rs.getInt("enabled");
+                    Date date = rs.getDate("registration");
+                    if(en == 1){
+                        enabled = true;
+                    }
+
+                    User user = new User(id,name,email,password,enabled,role,date);
                     return user;
+
                 }
             }
         } catch (SQLException e) {
@@ -67,8 +79,7 @@ public class UserServiceImpl implements UserService {
     public User getUserByID(int id) {
         User user = new User();
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users" +
-                    " WHERE id(?)");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * from mydb.users WHERE id(?)");
             preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             if (rs.next()) {

@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 public class AdminServlet extends HttpServlet {
     private PeriodicalsService periodicalsService;
     private static String INSERT_OR_EDIT = "/pages/admin_add_edit_publications.jsp";
-    private static String CATALOG_LIST = "/pages/admin_start_page.jsp";
+    private static String CATALOG_LIST = "/pages/admin_catalog_page.jsp";
 
     public AdminServlet() {
         periodicalsService = new PeriodicalsServiceImpl();
@@ -27,10 +27,10 @@ public class AdminServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String action = req.getParameter("action");
-        if (action == null) {
-            action = "catalog";
-        }
         String forward = "";
+       /* if(action== null){
+            action ="catalog";
+        }*/
 
         if (action.equalsIgnoreCase("delete")) {
             forward = CATALOG_LIST;
@@ -45,7 +45,7 @@ public class AdminServlet extends HttpServlet {
         } else if (action.equalsIgnoreCase("catalog")) {
             forward = CATALOG_LIST;
             req.setAttribute("catalogs", periodicalsService.getCatalog());
-        } else
+        } else if(action.equalsIgnoreCase("insert"))
             forward = INSERT_OR_EDIT;
 
 

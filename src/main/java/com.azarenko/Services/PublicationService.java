@@ -1,10 +1,10 @@
-package com.azarenko.dao;
+package com.azarenko.Services;
 
 import com.azarenko.model.Publication;
 
 import java.util.List;
 
-public interface PublicationDao {
+public interface PublicationService {
 
     List<Publication> getCatalog();
 

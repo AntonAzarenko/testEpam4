@@ -2,7 +2,14 @@ package com.azarenko.model;
 
 import java.util.Date;
 
-public class Users extends AbstractNamedEntity {
+/**
+ * Класс хранит информацию о пользователе: ID, имя, почту(используеться как LOGIN), пароль, enabled(авторизован
+ * ли пользователь если осуществляет переход по страницам), дату регистрации.
+ */
+public class Users extends AbstractBaseEntity {
+
+    private String name;
+
     private String email;
 
     private String password;
@@ -25,9 +32,17 @@ public class Users extends AbstractNamedEntity {
         subscription = "";
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public Users(Integer id, String name, String email, String password, boolean enabled, String role,
                  String subscription, Date registered) {
-        super(id, name);
+        super(id);
         this.email = email;
         this.password = password;
         this.enabled = enabled;

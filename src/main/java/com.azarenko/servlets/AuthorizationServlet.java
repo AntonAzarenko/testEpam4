@@ -1,6 +1,6 @@
 package com.azarenko.servlets;
 
-import com.azarenko.util.Authorized;
+import com.azarenko.Services.AutorisationService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,17 +10,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "authorize", urlPatterns = "/pages/authorize")
-public class AuthorisedServlet extends HttpServlet {
+public class AuthorizationServlet extends HttpServlet {
 
-    private Authorized authorized;
+    private AutorisationService authorized;
 
-    public AuthorisedServlet() {
-        authorized = new Authorized();
+    public AuthorizationServlet() {
+        authorized = new AutorisationService();
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        req.getRequestDispatcher("/admin").forward(req,resp);
     }
 
     @Override
@@ -30,7 +30,7 @@ public class AuthorisedServlet extends HttpServlet {
         String role = authorized.authorizeUser(login,password);
             switch (role){
                 case  "ADMIN" :
-                    req.getRequestDispatcher("/admin").forward(req,resp);
+                    doGet(req,resp);
                     break;
                 case "USER" :
                     req.getRequestDispatcher("/user").forward(req,resp);

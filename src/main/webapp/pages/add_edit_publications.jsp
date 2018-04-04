@@ -18,7 +18,7 @@
         <p>
             Цена : <input type="text" name="price"/>
         <p>
-            <input type="submit" value="Submit"/>
+            <input  type="submit" value="Submit" name="action=add">
     </form>
 </head>
 <body>

@@ -1,23 +1,22 @@
-package com.azarenko.util;
+package com.azarenko.Services;
 
-import com.azarenko.dao.UserDao;
-import com.azarenko.dao.UserDaoImpl;
+import com.azarenko.Services.UserService;
+import com.azarenko.Services.UserServiceImpl;
 import com.azarenko.model.Users;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Authorized {
+public class AutorisationService {
 
-    private UserDao userDao;
+    private UserService userService;
     private String role;
 
-    public Authorized() {
-        userDao = new UserDaoImpl();
+    public AutorisationService() {
+        userService = new UserServiceImpl();
     }
 
     public String authorizeUser(String login, String password){
-        List<Users> usersList = userDao.getUserList();
+        List<Users> usersList = userService.getUserList();
         for(Users us : usersList){
             if(us.getEmail().equals(login)){
                 if(us.getPassword().equals(password)){

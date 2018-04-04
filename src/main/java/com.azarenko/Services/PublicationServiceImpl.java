@@ -1,4 +1,4 @@
-package com.azarenko.dao;
+package com.azarenko.Services;
 
 import com.azarenko.model.Publication;
 import com.azarenko.util.DBUtil;
@@ -8,12 +8,12 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PublicationDaoImpl implements PublicationDao {
+public class PublicationServiceImpl implements PublicationService {
 
     private Connection connection;
 
-    public PublicationDaoImpl() {
-       connection = DBUtil.getConnection();
+    public PublicationServiceImpl() {
+        connection = DBUtil.getConnection();
     }
 
     public List<Publication> getCatalog() {
@@ -26,7 +26,7 @@ public class PublicationDaoImpl implements PublicationDao {
                 int id = rs.getInt("idpublications");
                 String title = rs.getString("title");
                 String discription = rs.getString("discription");
-                BigDecimal price =rs.getBigDecimal("price");
+                BigDecimal price = rs.getBigDecimal("price");
                 Publication publication = new Publication(id, title, discription, price);
                 temp.add(publication);
             }
@@ -40,7 +40,7 @@ public class PublicationDaoImpl implements PublicationDao {
     public void add(Publication publication) {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement
-                    ("INSERT INTO  catalogpublications(title,discription, price) values (?,?,?)");
+                    ("INSERT INTO  catalogpublications(title,discription, price) VALUES (?,?,?)");
             preparedStatement.setString(1, publication.getTitle());
             preparedStatement.setString(2, publication.getDescription());
             preparedStatement.setBigDecimal(3, publication.getPrice());

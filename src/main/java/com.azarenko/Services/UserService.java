@@ -1,10 +1,10 @@
-package com.azarenko.dao;
+package com.azarenko.Services;
 
 import com.azarenko.model.Users;
 
 import java.util.List;
 
-public interface UserDao {
+public interface UserService {
 
     List<Users> getUserList();
 }

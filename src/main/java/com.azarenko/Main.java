@@ -1,9 +1,9 @@
 package com.azarenko;
 
-import com.azarenko.dao.PublicationDao;
-import com.azarenko.dao.PublicationDaoImpl;
-import com.azarenko.dao.UserDao;
-import com.azarenko.dao.UserDaoImpl;
+import com.azarenko.Services.PublicationService;
+import com.azarenko.Services.PublicationServiceImpl;
+import com.azarenko.Services.UserService;
+import com.azarenko.Services.UserServiceImpl;
 import com.azarenko.model.Publication;
 import com.azarenko.model.Users;
 
@@ -11,13 +11,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        PublicationDao publicationDao = new PublicationDaoImpl();
-        List<Publication> publicationList = publicationDao.getCatalog();
+        PublicationService publicationService = new PublicationServiceImpl();
+        List<Publication> publicationList = publicationService.getCatalog();
         for(Publication pair: publicationList){
             System.out.println(pair.toString());
         }
-        UserDao userDao = new UserDaoImpl();
-        List<Users> usersList= userDao.getUserList();
+        UserService userService = new UserServiceImpl();
+        List<Users> usersList= userService.getUserList();
         for(Users pair: usersList){
             System.out.println(pair.toString());
         }

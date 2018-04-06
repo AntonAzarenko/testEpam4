@@ -4,6 +4,7 @@ import com.azarenko.services.PeriodicalsService;
 import com.azarenko.services.PeriodicalsServiceImpl;
 import com.azarenko.model.Periodicals;
 import org.apache.log4j.Logger;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -55,8 +56,6 @@ public class AdminServlet extends HttpServlet {
 
         RequestDispatcher view = req.getRequestDispatcher(forward);
         view.forward(req, resp);
-
-
     }
 
     @Override
@@ -71,9 +70,9 @@ public class AdminServlet extends HttpServlet {
             periodicals.setPrice(BigDecimal.valueOf(Double.parseDouble(req.getParameter("price"))));
             publicationId = req.getParameter("catalogId");
         } catch (NumberFormatException e) {
-            e.printStackTrace();
+            log.error("NumberFormatException");
         } catch (NullPointerException e) {
-            e.printStackTrace();
+            log.error("getParameter null");
         }
 
         if (publicationId == null || publicationId.isEmpty()) {

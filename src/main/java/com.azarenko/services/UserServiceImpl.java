@@ -35,7 +35,14 @@ public class UserServiceImpl implements UserService {
                 }
                 String role = rs.getString("role");
                 String subscription = rs.getString("subscriptions");
-                User user = new User(id, name, email, password, enabled, role, date);
+                User.UserBulder userBulder = new User.UserBulder(id);
+                userBulder.email(email);
+                userBulder.name(name);
+                userBulder.enabled(enabled);
+                userBulder.password(password);
+                userBulder.registered(date);
+                userBulder.role(role);
+                User user = userBulder.build();
                 userList.add(user);
             }
         } catch (SQLException e) {
@@ -60,11 +67,18 @@ public class UserServiceImpl implements UserService {
                     boolean enabled = false;
                     int en = rs.getInt("enabled");
                     Date date = rs.getDate("registration");
-                    if(en == 1){
+                    if (en == 1) {
                         enabled = true;
                     }
-
-                    User user = new User(id,name,email,password,enabled,role,date);
+                //создаем  User'а используя патрн BULDER
+                    User.UserBulder userBulder = new User.UserBulder(id);
+                    userBulder.email(email);
+                    userBulder.name(name);
+                    userBulder.enabled(enabled);
+                    userBulder.password(password);
+                    userBulder.registered(date);
+                    userBulder.role(role);
+                    User user = userBulder.build();
                     return user;
 
                 }
@@ -77,24 +91,25 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUserByID(int id) {
-        User user = new User();
+        User user = null;
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * from mydb.users WHERE id(?)");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)");
             preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             if (rs.next()) {
-                user.setId(rs.getInt("id"));
-                user.setName(rs.getString("name"));
-                user.setEmail(rs.getString("email"));
-                user.setPassword(rs.getString("password"));
-                user.setRole(rs.getString("role"));
-                user.setRegistered(rs.getDate("registration"));
+                User.UserBulder userBulder = new User.UserBulder(rs.getInt("id"));
+                userBulder.name(rs.getString("name"));
+                userBulder.email(rs.getString("email"));
+                userBulder.password(rs.getString("password"));
+                userBulder.role(rs.getString("role"));
+                userBulder.registered(rs.getDate("registration"));
                 boolean enabled = false;
                 int en = rs.getInt("enabled");
-                if(en == 1){
+                if (en == 1) {
                     enabled = true;
                 }
-                user.setEnabled(enabled);
+                userBulder.enabled(enabled);
+                user = userBulder.build();
             }
         } catch (SQLException e1) {
             e1.printStackTrace();

@@ -7,7 +7,7 @@ CREATE TABLE catalog_periodicals (
   PRIMARY KEY (id)
 )
   ENGINE = InnoDB
-  DEFAULT CHARSET utf8;
+  DEFAULT CHARACTER SET utf8;
 
 USE mydb;
 CREATE TABLE users (
@@ -52,7 +52,7 @@ CREATE TABLE subscriptions (
   DEFAULT CHARSET utf8;
 
 USE mydb;
-CREATE TABLE subscriptions (
+CREATE TABLE history_price (
   id               INTEGER      NOT NULL AUTO_INCREMENT,
   id_periodicals   INTEGER(11)  NOT NULL,
   name_periodicals VARCHAR(100) NOT NULL,

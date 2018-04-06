@@ -10,7 +10,7 @@ import java.util.Properties;
 public class DBUtil {
     private static Connection connection;
 
-    public static Connection getConnection(){
+    public static Connection getConnection()  {
         if(connection != null){
             return connection;
         }
@@ -30,6 +30,7 @@ public class DBUtil {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+
         return connection;
     }
 }

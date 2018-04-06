@@ -1,0 +1,66 @@
+2018-04-06 16:03:25 DEBUG AdminServlet:78 -  redirect add new periodical
+2018-04-06 16:03:29 DEBUG AdminServlet:42 - redirect to edit
+2018-04-06 16:03:31 DEBUG AdminServlet:81 - redirect edit periodical
+2018-04-06 16:03:36 DEBUG AdminServlet:42 - redirect to edit
+2018-04-06 16:03:41 DEBUG AdminServlet:81 - redirect edit periodical
+2018-04-06 16:04:13 DEBUG AdminServlet:51 - redirect to insert
+2018-04-06 16:05:56 INFO  AdminServlet:48 - rediret to catalog
+2018-04-06 16:08:57 INFO  AdminServlet:48 - rediret to catalog
+2018-04-06 16:08:57 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:08:57 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:08:57 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:08:57 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:08:57 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:08:57 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:08:57 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:08:57 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:10:42 INFO  AdminServlet:48 - rediret to catalog
+2018-04-06 16:11:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:11:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:11:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:11:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:11:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:11:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:11:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:11:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:23 INFO  AdminServlet:48 - rediret to catalog
+2018-04-06 16:12:23 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:23 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:23 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:23 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:23 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:23 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:23 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:23 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:25 DEBUG AdminServlet:43 - redirect to edit
+2018-04-06 16:12:29 DEBUG AdminServlet:83 - redirect edit periodical
+2018-04-06 16:12:29 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:29 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:29 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:29 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:29 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:29 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:29 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:29 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:33 DEBUG AdminServlet:52 - redirect to insert
+2018-04-06 16:12:39 DEBUG AdminServlet:80 -  redirect add new periodical
+2018-04-06 16:12:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:39 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:47 DEBUG AdminServlet:43 - redirect to edit
+2018-04-06 16:12:50 DEBUG AdminServlet:83 - redirect edit periodical
+2018-04-06 16:12:50 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:50 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:50 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:50 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:50 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:50 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:50 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:50 INFO  PeriodicalsServiceImpl:34 - return catalog
+2018-04-06 16:12:50 INFO  PeriodicalsServiceImpl:34 - return catalog

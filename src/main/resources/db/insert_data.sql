@@ -12,7 +12,7 @@ insert INTO users(name, email, password,enabled,role) VALUES
 -- insert publication
 -- ----------------------
 use mydb;
-INSERT INTO catalogpublications (title, discription, price) VALUES
+INSERT INTO catalog_periodicals (title, discription, price) VALUES
   ('Вяселка','Развлекательный журнал','1.35'),
   ('СпидИнфо','Еженедельная газета','3.25'),
   ('Вечерний Витебск','ежедневный обозреватель','7.47'),

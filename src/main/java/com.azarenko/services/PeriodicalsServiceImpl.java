@@ -31,11 +31,11 @@ public class PeriodicalsServiceImpl implements PeriodicalsService {
                 BigDecimal price = rs.getBigDecimal("price");
                 Periodicals periodicals = new Periodicals(id, title, discription, price);
                 temp.add(periodicals);
-                log.info("return catalog");
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        log.info("return catalog");
         return temp;
     }
 
@@ -57,10 +57,10 @@ public class PeriodicalsServiceImpl implements PeriodicalsService {
 
     @Override
     public void remove(int id) {
-        try( PreparedStatement preparedStatement = connection.prepareStatement
-                ("DELETE FROM mydb.catalog_periodicals WHERE id=?")){
-                    preparedStatement.setInt(1,id);
-                    preparedStatement.executeUpdate();
+        try (PreparedStatement preparedStatement = connection.prepareStatement
+                ("DELETE FROM mydb.catalog_periodicals WHERE id=?")) {
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -86,12 +86,12 @@ public class PeriodicalsServiceImpl implements PeriodicalsService {
         AbstractBaseEntity periodicals;
         try (Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalog_periodicals")) {
-            while (rs.next()){
-                if(rs.getInt("id") == id){
+            while (rs.next()) {
+                if (rs.getInt("id") == id) {
                     String title = rs.getString("title");
                     String discription = rs.getString("discription");
                     BigDecimal price = rs.getBigDecimal("price");
-                    periodicals = new Periodicals(id, title,discription,price);
+                    periodicals = new Periodicals(id, title, discription, price);
                     return (Periodicals) periodicals;
                 }
             }

@@ -16,8 +16,8 @@
         <input type="password" size="15" name="password">
     <p>
     <p>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <input type="submit" value="Принять">
+        <input type="reset" value="Сбросить">
 </form>
 
 <a href="/pages/registration.jsp">Зарегистрироваться</a>

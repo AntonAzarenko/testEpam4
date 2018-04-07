@@ -9,6 +9,8 @@
 </head>
 <body>
 <a href="/admin?action=insert">Добавить издание</a>
+<p/>
+<a href="pages/start.jsp">Воити под другим логином</a>
 <div>
     <table border="1" cellpadding="10"  cellspacing="2">
         <tr>

@@ -38,7 +38,7 @@ public class AdminServlet extends HttpServlet {
             forward = CATALOG_LIST;
             int catalogId = Integer.parseInt(req.getParameter("catalogId"));
             periodicalsService.remove(catalogId);
-            req.setAttribute("catalog", periodicalsService.getCatalog());
+            req.setAttribute("catalogs", periodicalsService.getCatalog());
         } else if (action.equalsIgnoreCase("edit")) {
             forward = INSERT_OR_EDIT;
             log.debug("redirect to edit");
@@ -54,8 +54,8 @@ public class AdminServlet extends HttpServlet {
             forward = INSERT_OR_EDIT;
         }
 
-        RequestDispatcher view = req.getRequestDispatcher(forward);
-        view.forward(req, resp);
+        req.getRequestDispatcher(forward).forward(req, resp);
+
     }
 
     @Override

@@ -8,19 +8,17 @@
 <html>
 <head>
     <title>Редактор</title>
-
-
 </head>
 <body>
 
-
+<h1>Редактировать\Добавить</h1>
 <form method="post" action='admin' name="insert">
     <p>
         ID : <input type="text" readonly="readonly" name="catalogId"
                     value="<c:out value="${periodicals.id}"/>"/>
 
     <p>
-        Название : <input type="text"  name="title"
+        Название : <input type="text" name="title"
                           value="<c:out value="${periodicals.title}"/>"/>
     <p>
         Описание : <input type="text" name="discription"
@@ -29,7 +27,7 @@
         Цена : <input type="text" name="price"
                       value="<c:out value="${periodicals.price}"/>"/>
     <p>
-        <input  type="submit" value="Принять" name="action=add">
+        <input type="submit" value="Принять" name="action=add">
 </form>
 </body>
 </html>

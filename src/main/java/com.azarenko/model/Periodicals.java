@@ -56,21 +56,4 @@ public class Periodicals extends AbstractBaseEntity {
                 ", id=" + id +
                 '}';
     }
-
-    /**
-     *
-     * @param price
-     * @return
-     */
-    private BigDecimal getBigDecimal(int price){
-        double temp = price;
-        temp = temp/100;
-        BigDecimal bigDecimal = new BigDecimal(temp);
-
-        return bigDecimal;
-    }
-
-
-
-
 }

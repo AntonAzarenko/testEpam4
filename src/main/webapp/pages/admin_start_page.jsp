@@ -10,8 +10,10 @@
 <div>
 
     <a href="/admin?action=catalog">каталог</a>
-    <a href="">платежи</a>
-    <a href="">подписки</a>
+    <p>
+        <a href="">платежи</a>
+    <p>
+        <a href="">подписки</a>
 </div>
 </body>
 </html>

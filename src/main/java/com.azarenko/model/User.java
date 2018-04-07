@@ -7,7 +7,7 @@ import java.util.Date;
  * ли пользователь если осуществляет переход по страницам), дату регистрации.
  * @author Anton Azarenko
  */
-public class User extends AbstractBaseEntity {
+public final class User extends AbstractBaseEntity {
 
     private final String name;
 
@@ -30,50 +30,21 @@ public class User extends AbstractBaseEntity {
         this.registered = userBulder.registered;
     }
 
-    //The constructor for registration new user
-  /*  public User(Integer id, String name, String email, String password, String role) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.registered = new Date();
-        this.role = role;
-    }
-
-    public User() {
-    }
-
-
-    //The constructor gets the user from the database
-    public User(Integer id, String name, String email, String password, boolean enabled, String role,
-                Date registered) {
-        super(id);
-        this.email = email;
-        this.password = password;
-        this.enabled = enabled;
-        this.role = role;
-        this.registered = registered;
-    }*/
-
     public String getEmail() {
         return email;
     }
-
 
     public String getPassword() {
         return password;
     }
 
-
     public boolean isEnabled() {
         return enabled;
     }
 
-
     public String getRole() {
         return role;
     }
-
 
     public Date getRegistered() {
         return registered;

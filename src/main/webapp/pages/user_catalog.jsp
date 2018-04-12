@@ -11,13 +11,15 @@
     <a href="">Корзина</a>
     <p/>
     <a href="pages/start.jsp">Войти под другим логином</a>
+    <a href="">Профиль</a>
     <div>
+        <p>Пиветствуем тебя User<c:out value="${users.name}"/> </p>
         <table border="1" cellpadding="8" cellspacing="0">
             <tr>
-                <th>Id Publications</th>
-                <th>Title</th>
-                <th>Discription</th>
-                <th>price</th>
+                <th>Id Издания</th>
+                <th>Название</th>
+                <th>Описание</th>
+                <th>Цена</th>
             </tr>
             <c:forEach items="${requestScope.catalogs}" var="periodicals">
                 <jsp:useBean id="periodicals" scope="page" type="com.azarenko.model.Periodicals"/>

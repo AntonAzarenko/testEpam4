@@ -24,7 +24,7 @@ public class CharecterEncodingFilter implements Filter {
         encoding = filterConfig.getInitParameter(ENCODING_INIT_PARAM_NAME);
         if (encoding == null)
             encoding = ENCODING_DEFAULT;
-        log.debug("чето сделалось");
+        log.debug("Init");
     }
 
     @Override
@@ -34,7 +34,7 @@ public class CharecterEncodingFilter implements Filter {
             servletRequest.setCharacterEncoding(encoding);
         servletResponse.setCharacterEncoding(encoding);
         filterChain.doFilter(servletRequest, servletResponse);
-        log.debug("чето сделалось");
+        log.debug("Do filter");
     }
 
     @Override

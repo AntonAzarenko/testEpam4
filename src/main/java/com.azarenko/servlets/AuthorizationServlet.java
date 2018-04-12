@@ -1,6 +1,8 @@
 package com.azarenko.servlets;
 
 import com.azarenko.services.AutorisationService;
+import com.azarenko.services.UserService;
+import com.azarenko.services.UserServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,9 +15,11 @@ import java.io.IOException;
 public class AuthorizationServlet extends HttpServlet {
 
     private AutorisationService authorized;
+    private UserService userService;
 
     public AuthorizationServlet() {
         authorized = new AutorisationService();
+        userService = new UserServiceImpl();
     }
 
     @Override
@@ -36,6 +40,7 @@ public class AuthorizationServlet extends HttpServlet {
                     req.getRequestDispatcher("pages/admin_start_page.jsp").forward(req,resp);
                     break;
                 case "USER" :
+                    req.setAttribute("user",login);
                     req.getRequestDispatcher("/user").forward(req,resp);
                     break;
                   default:

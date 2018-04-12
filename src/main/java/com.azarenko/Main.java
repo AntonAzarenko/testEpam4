@@ -11,17 +11,5 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        PeriodicalsService periodicalsService = new PeriodicalsServiceImpl();
-        List<Periodicals> periodicalsList = periodicalsService.getCatalog();
-        for(Periodicals pair: periodicalsList){
-            System.out.println(pair.toString());
-        }
-        UserService userService = new UserServiceImpl();
-        List<User> userList = userService.getUserList();
-        for(User pair: userList){
-            System.out.println(pair.toString());
-        }
-
-
     }
 }

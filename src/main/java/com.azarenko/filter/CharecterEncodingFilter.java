@@ -24,7 +24,7 @@ public class CharecterEncodingFilter implements Filter {
         encoding = filterConfig.getInitParameter(ENCODING_INIT_PARAM_NAME);
         if (encoding == null)
             encoding = ENCODING_DEFAULT;
-        log.debug("Init");
+        log.debug("Set encoding " + ENCODING_DEFAULT);
     }
 
     @Override

@@ -1,9 +1,9 @@
 package com.azarenko.servlets;
 
-import com.azarenko.services.PeriodicalsService;
-import com.azarenko.services.PeriodicalsServiceImpl;
-import com.azarenko.services.UserService;
-import com.azarenko.services.UserServiceImpl;
+import com.azarenko.dao.PeriodicalsDao;
+import com.azarenko.dao.PeriodicalsDaoImpl;
+import com.azarenko.dao.UserDao;
+import com.azarenko.dao.UserDaoImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,12 +14,12 @@ import java.io.IOException;
 
 @WebServlet(name = "MyServlet", urlPatterns = "/user")
 public class UsersServlet extends HttpServlet {
-    private PeriodicalsService periodicalsService;
-    private UserService userService;
+    private PeriodicalsDao periodicalsDao;
+    private UserDao userDao;
 
     public UsersServlet() {
-        periodicalsService = new PeriodicalsServiceImpl();
-        userService = new UserServiceImpl();
+        periodicalsDao = new PeriodicalsDaoImpl();
+        userDao = new UserDaoImpl();
     }
 
     @Override
@@ -28,9 +28,9 @@ public class UsersServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String login = req.getParameter("user");
+
         
-        req.setAttribute("catalogs", periodicalsService.getCatalog());
+        req.setAttribute("catalogs", periodicalsDao.getCatalog());
         req.getRequestDispatcher("/pages/user_catalog.jsp").forward(req, resp);
     }
 }

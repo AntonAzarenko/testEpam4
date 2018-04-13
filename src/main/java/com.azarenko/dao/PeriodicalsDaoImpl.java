@@ -1,4 +1,4 @@
-package com.azarenko.services;
+package com.azarenko.dao;
 
 import com.azarenko.model.AbstractBaseEntity;
 import com.azarenko.model.Periodicals;
@@ -10,13 +10,13 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PeriodicalsServiceImpl implements PeriodicalsService {
+public class PeriodicalsDaoImpl implements PeriodicalsDao {
 
-    private final static Logger log = Logger.getLogger(PeriodicalsServiceImpl.class);
+    private final static Logger log = Logger.getLogger(PeriodicalsDaoImpl.class);
 
     private Connection connection;
 
-    public PeriodicalsServiceImpl() {
+    public PeriodicalsDaoImpl() {
         connection = DBUtil.getConnection();
     }
 

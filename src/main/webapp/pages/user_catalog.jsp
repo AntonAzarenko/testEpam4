@@ -13,7 +13,7 @@
     <a href="pages/start.jsp">Войти под другим логином</a>
     <a href="">Профиль</a>
     <div>
-        <p>Пиветствуем тебя User<c:out value="${users.name}"/> </p>
+        <p>Пиветствуем тебя User ${login} </p>
         <table border="1" cellpadding="8" cellspacing="0">
             <tr>
                 <th>Id Издания</th>

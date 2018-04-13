@@ -1,11 +1,12 @@
 package com.azarenko.servlets;
 
-import com.azarenko.services.PeriodicalsService;
-import com.azarenko.services.PeriodicalsServiceImpl;
+import com.azarenko.dao.PeriodicalsDao;
+import com.azarenko.dao.PeriodicalsDaoImpl;
 import com.azarenko.model.Periodicals;
+import com.azarenko.services.PeriodicalService;
+import com.azarenko.services.PeriodicalServiceImpl;
 import org.apache.log4j.Logger;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,10 +23,10 @@ public class AdminServlet extends HttpServlet {
     private static String INSERT_OR_EDIT = "/pages/admin_add_edit_publications.jsp";
     private static String CATALOG_LIST = "/pages/admin_catalog_page.jsp";
 
-    private PeriodicalsService periodicalsService;
+    private PeriodicalService periodicalService;
 
     public AdminServlet() {
-        periodicalsService = new PeriodicalsServiceImpl();
+       periodicalService = new PeriodicalServiceImpl();
     }
 
     @Override
@@ -37,18 +38,18 @@ public class AdminServlet extends HttpServlet {
             log.debug("redirect to delete");
             forward = CATALOG_LIST;
             int catalogId = Integer.parseInt(req.getParameter("catalogId"));
-            periodicalsService.remove(catalogId);
-            req.setAttribute("catalogs", periodicalsService.getCatalog());
+            periodicalService.remove(catalogId);
+            req.setAttribute("catalogs", periodicalService.getCatalog());
         } else if (action.equalsIgnoreCase("edit")) {
             forward = INSERT_OR_EDIT;
             log.debug("redirect to edit");
             int catalogId = Integer.parseInt(req.getParameter("catalogId"));
-            Periodicals periodicals = periodicalsService.getPublication(catalogId);
+            Periodicals periodicals = periodicalService.getPublication(catalogId);
             req.setAttribute("periodicals", periodicals);
         } else if (action.equalsIgnoreCase("catalog")) {
             log.info("rediret to catalog");
             forward = CATALOG_LIST;
-            req.setAttribute("catalogs", periodicalsService.getCatalog());
+            req.setAttribute("catalogs", periodicalService.getCatalog());
         } else if (action.equalsIgnoreCase("insert")) {
             log.debug("redirect to insert");
             forward = INSERT_OR_EDIT;
@@ -77,14 +78,14 @@ public class AdminServlet extends HttpServlet {
 
         if (publicationId == null || publicationId.isEmpty()) {
             log.debug(" redirect add new periodical");
-            periodicalsService.add(periodicals);
+            periodicalService.add(periodicals);
         } else {
             log.debug("redirect edit periodical");
             periodicals.setId(Integer.parseInt(publicationId));
-            periodicalsService.update(periodicals);
+            periodicalService.update(periodicals);
         }
 
-        req.setAttribute("catalogs", periodicalsService.getCatalog());
+        req.setAttribute("catalogs", periodicalService.getCatalog());
         req.getRequestDispatcher(CATALOG_LIST).forward(req, resp);
     }
 }

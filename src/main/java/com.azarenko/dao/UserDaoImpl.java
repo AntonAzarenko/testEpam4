@@ -1,4 +1,4 @@
-package com.azarenko.services;
+package com.azarenko.dao;
 
 import com.azarenko.model.User;
 import com.azarenko.util.DBUtil;
@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class UserServiceImpl implements UserService {
+public class UserDaoImpl implements UserDao {
 
     private Connection connection;
 
-    public UserServiceImpl() {
+    public UserDaoImpl() {
         this.connection = DBUtil.getConnection();
     }
 
@@ -115,6 +115,11 @@ public class UserServiceImpl implements UserService {
             e1.printStackTrace();
         }
         return user;
+    }
+
+    @Override
+    public int getUserIdByEmail(String login) {
+        return 0;
     }
 
 }

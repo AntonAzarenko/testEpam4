@@ -1,18 +1,20 @@
 package com.azarenko.services;
 
+import com.azarenko.dao.UserDao;
+import com.azarenko.dao.UserDaoImpl;
 import com.azarenko.model.User;
 
 public class AutorisationService {
 
-    private UserService userService;
+    private UserDao userDao;
     private String role;
 
     public AutorisationService() {
-        userService = new UserServiceImpl();
+        userDao = new UserDaoImpl();
     }
 
     public String authorizeUser(String login, String password) {
-        User user = userService.getUserByEmail(login);
+        User user = userDao.getUserByEmail(login);
         if (user.getPassword().equals(password)){
             return role  = user.getRole();
         }

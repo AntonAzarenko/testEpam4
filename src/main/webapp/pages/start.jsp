@@ -10,7 +10,7 @@
 <body>
 <form action="/authorize" method=post>
     <p><strong>Введите ваш EMAIL: </strong>
-        <input type="text" name="username" size="25">
+        <input type="text" name="login" size="25">
     <p>
     <p><strong>Введите ваш пароль: </strong>
         <input type="password" size="15" name="password">

@@ -57,16 +57,19 @@ public class Subscribe extends HttpServlet {
         shoppingCart.setStart(dateStart);
         shoppingCart.setEnd(dateEnd);
         cartService.add(shoppingCart);
+        req.getRequestDispatcher("/user").forward(req, resp);
     }
 
     private Date getDateToString(String text) {
+        log.info(text);
         SimpleDateFormat format = new SimpleDateFormat();
-        format.applyPattern("dd-MM-yyyy");
+        format.applyPattern("yyyy-MM-dd");
         Date date = new Date();
         try {
             date = format.parse(text);
+            log.info(date);
         } catch (ParseException e) {
-            e.printStackTrace();
+            log.error(e);
         }
         return date;
     }

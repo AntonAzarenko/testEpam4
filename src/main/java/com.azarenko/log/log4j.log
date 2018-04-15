@@ -405,3 +405,422 @@
 2018-04-13 10:00:48 INFO  Subscribe:52 - 0
 2018-04-13 10:00:48 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
 2018-04-13 10:00:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 08:59:55 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 08:59:55 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 08:59:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 08:59:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 08:59:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:00:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:00:00 INFO  AuthFilter:32 - usernull is authorized
+2018-04-15 09:00:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:00:01 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 09:00:01 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:00:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:00:01 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:00:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:00:05 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:00:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:00:16 ERROR ShoppingCartDaoImpl:33 - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`mydb`.`shopping_cart`, CONSTRAINT `shopping_cart_ibfk_2` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+2018-04-15 09:00:16 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:00:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:01:57 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:01:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:02:01 INFO  AuthFilter:32 - useradmin@gmail.com is authorized
+2018-04-15 09:02:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:02:02 INFO  AdminServlet:50 - rediret to catalog
+2018-04-15 09:02:02 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 09:02:02 INFO  AuthFilter:32 - useradmin@gmail.com is authorized
+2018-04-15 09:02:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:02:06 INFO  AuthFilter:32 - useradmin@gmail.com is authorized
+2018-04-15 09:02:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:02:09 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 09:02:09 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:02:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:02:13 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:02:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:02:14 ERROR ShoppingCartDaoImpl:33 - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`mydb`.`shopping_cart`, CONSTRAINT `shopping_cart_ibfk_2` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+2018-04-15 09:02:14 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:02:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:13:35 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 09:13:35 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 09:13:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:13:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:13:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:13:59 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 09:13:59 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:13:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:14:01 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:14:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 09:14:10 ERROR ShoppingCartDaoImpl:33 - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`mydb`.`shopping_cart`, CONSTRAINT `shopping_cart_ibfk_2` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+2018-04-15 09:14:10 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 09:14:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:10:19 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:10:19 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:10:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:10:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:10:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:10:22 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 11:10:22 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 11:10:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:10:24 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 11:10:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:10:28 INFO  ShoppingCartDaoImpl:24 - 0
+2018-04-15 11:10:28 ERROR ShoppingCartDaoImpl:34 - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`mydb`.`shopping_cart`, CONSTRAINT `shopping_cart_ibfk_2` FOREIGN KEY (`userId`) REFERENCES `users` (`id`))
+2018-04-15 11:10:28 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 11:10:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:13:16 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:13:16 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:13:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:13:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:13:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:13:29 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 11:13:29 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 11:13:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:13:31 INFO  AuthFilter:32 - useruser@yandex.ru is authorized
+2018-04-15 11:13:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:19:14 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:19:14 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:19:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:19:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:19:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:19:17 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 11:19:17 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:19:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:19:18 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:19:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:19:28 INFO  UserDaoImpl:122 - user@yandex.ru
+2018-04-15 11:20:37 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:20:37 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:20:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:20:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:20:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:21:33 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 11:21:33 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:21:33 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:21:35 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:21:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:27:01 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:27:01 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:27:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:27:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:27:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:27:50 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 11:27:50 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:27:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:27:51 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:27:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:27:57 INFO  UserDaoImpl:124 - 1
+2018-04-15 11:27:57 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 11:27:57 INFO  ShoppingCartDaoImpl:32 - write to table
+2018-04-15 11:27:57 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:27:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:19 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:31:19 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 11:31:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:22 INFO  AuthFilter:32 - user null is authorized
+2018-04-15 11:31:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:28 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 11:31:28 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:31:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:28 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:31:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:30 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:31:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:35 INFO  UserDaoImpl:124 - 1
+2018-04-15 11:31:35 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 11:31:35 INFO  ShoppingCartDaoImpl:27 - Sat Oct 09 00:00:00 MSK 17
+2018-04-15 11:31:35 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 11:31:35 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 11:31:35 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:31:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:39 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:31:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:31:45 INFO  UserDaoImpl:124 - 1
+2018-04-15 11:31:45 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 11:31:45 INFO  ShoppingCartDaoImpl:27 - Tue Oct 09 00:00:00 MSK 25
+2018-04-15 11:31:46 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 11:31:46 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 11:31:46 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:31:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:37:27 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:37:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 11:53:28 ERROR Subscribe:70 - java.text.ParseException: Unparseable date: ""
+2018-04-15 11:53:28 INFO  UserDaoImpl:124 - 1
+2018-04-15 11:53:28 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 11:53:28 INFO  ShoppingCartDaoImpl:27 - Thu Oct 08 00:00:00 MSK 16
+2018-04-15 11:53:28 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 11:53:28 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 11:53:28 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 11:53:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:00:21 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:00:21 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:00:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:00:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:00:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:00:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:00:24 INFO  AuthFilter:32 - user null is authorized
+2018-04-15 12:00:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:00:35 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:00:35 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:00:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:00:35 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:00:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:00:36 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:00:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:00:41 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:00:41 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:00:41 INFO  ShoppingCartDaoImpl:27 - Tue Oct 08 00:00:00 MSK 20
+2018-04-15 12:00:42 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:00:42 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:00:42 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:00:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:06:42 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:06:42 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:06:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:06:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:06:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:06:48 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:06:48 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:06:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:06:50 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:06:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:07:00 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:07:00 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Tue Oct 08 00:00:00 MSK 20"
+2018-04-15 12:07:00 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Tue Nov 08 00:00:00 MSK 29"
+2018-04-15 12:07:00 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:07:00 INFO  ShoppingCartDaoImpl:27 - Tue Oct 08 00:00:00 MSK 20
+2018-04-15 12:07:00 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:07:00 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:07:00 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:07:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:09:09 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:09:09 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:09:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:09:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:09:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:09:12 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:09:13 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:09:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:09:14 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:09:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:09:21 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:09:21 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Sat Oct 09 00:00:00 MSK 17"
+2018-04-15 12:09:21 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Sun Oct 08 00:00:00 MSK 24"
+2018-04-15 12:09:21 INFO  ShoppingCartServiceImpl:32 - Sun Oct 08 00:00:00 MSK 24
+2018-04-15 12:09:21 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:09:21 INFO  ShoppingCartDaoImpl:27 - Sat Oct 09 00:00:00 MSK 17
+2018-04-15 12:09:21 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:09:21 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:09:21 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:09:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:10:51 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:10:51 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:10:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:10:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:10:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:10:55 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:10:55 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:10:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:10:57 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:10:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:11:02 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:11:02 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Sat Oct 09 00:00:00 MSK 17"
+2018-04-15 12:11:02 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Wed Oct 08 00:00:00 MSK 32"
+2018-04-15 12:11:02 INFO  ShoppingCartServiceImpl:32 - Sun Apr 15 12:11:02 MSK 2018
+2018-04-15 12:11:02 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:11:02 INFO  ShoppingCartDaoImpl:27 - Sun Apr 15 12:11:02 MSK 2018
+2018-04-15 12:11:02 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:11:02 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:11:02 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:11:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:11:44 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:11:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:11:51 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:11:51 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Tue Oct 09 00:00:00 MSK 31"
+2018-04-15 12:11:51 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Tue Oct 09 00:00:00 MSK 31"
+2018-04-15 12:11:51 INFO  ShoppingCartServiceImpl:32 - Sun Apr 15 12:11:51 MSK 2018
+2018-04-15 12:11:51 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:11:51 INFO  ShoppingCartDaoImpl:27 - Sun Apr 15 12:11:51 MSK 2018
+2018-04-15 12:11:51 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:11:51 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:11:51 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:11:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:12:08 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:12:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:12:17 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:12:17 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Sat Oct 09 00:00:00 MSK 23"
+2018-04-15 12:12:17 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Sun Dec 08 00:00:00 MSK 20"
+2018-04-15 12:12:17 INFO  ShoppingCartServiceImpl:32 - Sun Apr 15 12:12:17 MSK 2018
+2018-04-15 12:12:17 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:12:17 INFO  ShoppingCartDaoImpl:27 - Sun Apr 15 12:12:17 MSK 2018
+2018-04-15 12:12:17 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:12:17 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:12:17 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:12:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:14:27 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:14:27 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:14:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:14:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:14:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:14:35 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:14:35 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:14:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:14:36 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:14:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:14:48 INFO  Subscribe:64 - 2018-04-15
+2018-04-15 12:14:48 INFO  Subscribe:70 - Tue Oct 08 00:00:00 MSK 20
+2018-04-15 12:14:48 INFO  Subscribe:64 - 2018-04-27
+2018-04-15 12:14:48 INFO  Subscribe:70 - Wed Oct 08 00:00:00 MSK 32
+2018-04-15 12:14:48 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:14:48 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Tue Oct 08 00:00:00 MSK 20"
+2018-04-15 12:14:48 ERROR DateTimeUtil:20 - java.text.ParseException: Unparseable date: "Wed Oct 08 00:00:00 MSK 32"
+2018-04-15 12:14:48 INFO  ShoppingCartServiceImpl:32 - Sun Apr 15 12:14:48 MSK 2018
+2018-04-15 12:14:48 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:14:48 INFO  ShoppingCartDaoImpl:27 - Sun Apr 15 12:14:48 MSK 2018
+2018-04-15 12:14:48 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:14:48 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:14:48 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:14:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:16:50 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:16:50 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:16:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:16:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:16:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:16:56 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:16:56 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:16:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:16:58 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:16:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:17:04 INFO  Subscribe:64 - 2018-04-15
+2018-04-15 12:17:04 INFO  Subscribe:70 - Sun Apr 15 00:00:00 MSK 2018
+2018-04-15 12:17:04 INFO  Subscribe:64 - 2018-07-20
+2018-04-15 12:17:04 INFO  Subscribe:70 - Fri Jul 20 00:00:00 MSK 2018
+2018-04-15 12:17:04 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:17:04 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:17:04 INFO  ShoppingCartDaoImpl:27 - Sun Apr 15 00:00:00 MSK 2018
+2018-04-15 12:17:04 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:17:04 INFO  PeriodicalsDaoImpl:38 - return catalog
+2018-04-15 12:17:04 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:17:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:49:50 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:49:50 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:49:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:49:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:49:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:49:54 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 12:49:54 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:49:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:49:55 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:49:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:50:05 INFO  Subscribe:64 - 2018-04-15
+2018-04-15 12:50:05 INFO  Subscribe:70 - Sun Apr 15 00:00:00 MSK 2018
+2018-04-15 12:50:05 INFO  Subscribe:64 - 2018-04-28
+2018-04-15 12:50:05 INFO  Subscribe:70 - Sat Apr 28 00:00:00 MSK 2018
+2018-04-15 12:50:05 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:50:05 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:50:05 INFO  ShoppingCartDaoImpl:27 - Sun Apr 15 00:00:00 MSK 2018
+2018-04-15 12:50:05 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:50:05 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 12:50:05 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:50:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:10 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:51:10 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:51:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:13 INFO  AuthFilter:32 - user null is authorized
+2018-04-15 12:51:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:14 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 12:51:15 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:51:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:15 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:51:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:16 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:51:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:21 INFO  Subscribe:64 - 2018-04-15
+2018-04-15 12:51:21 INFO  Subscribe:70 - Sun Apr 15 00:00:00 MSK 2018
+2018-04-15 12:51:21 INFO  Subscribe:64 - 2018-04-28
+2018-04-15 12:51:21 INFO  Subscribe:70 - Sat Apr 28 00:00:00 MSK 2018
+2018-04-15 12:51:21 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:51:21 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:51:21 INFO  ShoppingCartDaoImpl:27 - Sun Apr 15 00:00:00 MSK 2018
+2018-04-15 12:51:21 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:51:21 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 12:51:21 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:51:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:23 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:51:23 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:51:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:39 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:51:39 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:51:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:51:46 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:51:46 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:51:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:01 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:52:01 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:52:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:05 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 12:52:05 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:52:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:08 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:52:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:13 INFO  Subscribe:64 - 2018-04-13
+2018-04-15 12:52:13 INFO  Subscribe:70 - Fri Apr 13 00:00:00 MSK 2018
+2018-04-15 12:52:13 INFO  Subscribe:64 - 2018-04-27
+2018-04-15 12:52:13 INFO  Subscribe:70 - Fri Apr 27 00:00:00 MSK 2018
+2018-04-15 12:52:13 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:52:13 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:52:13 INFO  ShoppingCartDaoImpl:27 - Fri Apr 13 00:00:00 MSK 2018
+2018-04-15 12:52:13 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:52:13 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 12:52:13 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:52:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:14 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:52:14 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:52:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:36 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:52:36 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:52:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:37 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:52:37 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:52:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:39 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:52:39 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:52:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:43 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:52:43 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:52:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:52:46 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:52:46 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:52:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:53:01 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:53:01 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 12:53:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:53:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:53:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:53:05 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 12:53:05 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:53:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:53:06 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:53:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:53:11 INFO  Subscribe:64 - 2018-04-15
+2018-04-15 12:53:11 INFO  Subscribe:70 - Sun Apr 15 00:00:00 MSK 2018
+2018-04-15 12:53:11 INFO  Subscribe:64 - 2018-04-28
+2018-04-15 12:53:11 INFO  Subscribe:70 - Sat Apr 28 00:00:00 MSK 2018
+2018-04-15 12:53:11 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:53:11 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 12:53:11 INFO  ShoppingCartDaoImpl:27 - Sun Apr 15 00:00:00 MSK 2018
+2018-04-15 12:53:11 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 12:53:11 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 12:53:11 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:53:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 12:53:12 INFO  UserDaoImpl:124 - 1
+2018-04-15 12:53:13 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 12:53:13 DEBUG CharecterEncodingFilter:37 - Do filter

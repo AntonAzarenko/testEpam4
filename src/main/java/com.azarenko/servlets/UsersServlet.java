@@ -28,8 +28,6 @@ public class UsersServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        
         req.setAttribute("catalogs", periodicalsDao.getCatalog());
         req.getRequestDispatcher("/pages/user_catalog.jsp").forward(req, resp);
     }

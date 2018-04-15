@@ -27,9 +27,10 @@ public class PeriodicalsDaoImpl implements PeriodicalsDao {
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String title = rs.getString("title");
+                int outputFrequency = rs.getInt("output_frequency");
                 String discription = rs.getString("discription");
                 BigDecimal price = rs.getBigDecimal("price");
-                Periodicals periodicals = new Periodicals(id, title, discription, price);
+                Periodicals periodicals = new Periodicals(id, title, discription, outputFrequency, price);
                 temp.add(periodicals);
             }
         } catch (SQLException e) {
@@ -51,7 +52,7 @@ public class PeriodicalsDaoImpl implements PeriodicalsDao {
             preparedStatement.executeUpdate();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.error(e);
         }
     }
 
@@ -89,9 +90,10 @@ public class PeriodicalsDaoImpl implements PeriodicalsDao {
             while (rs.next()) {
                 if (rs.getInt("id") == id) {
                     String title = rs.getString("title");
+                    int oF = rs.getInt("output_frequency");
                     String discription = rs.getString("discription");
                     BigDecimal price = rs.getBigDecimal("price");
-                    periodicals = new Periodicals(id, title, discription, price);
+                    periodicals = new Periodicals(id, title, discription, oF, price);
                     return (Periodicals) periodicals;
                 }
             }

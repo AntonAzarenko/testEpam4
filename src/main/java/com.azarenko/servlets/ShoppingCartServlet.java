@@ -28,7 +28,12 @@ public class ShoppingCartServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/cart").forward(req,resp);
+        HttpSession session = req.getSession();
+        String login  = String.valueOf(session.getAttribute("login"));
+        int userId = userService.getUserIdByEmail(login);
+
+        req.setAttribute("cartList", cartService.getShoppingCartUser(userId));
+        req.getRequestDispatcher("/pages/shopping_cart.jsp").forward(req,resp);
     }
 
     @Override

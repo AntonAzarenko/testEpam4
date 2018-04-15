@@ -29,7 +29,7 @@ public class AuthFilter implements Filter {
 
         if(loggedIn ||loginRequest){
             filterChain.doFilter(request, response);
-            log.info("user" + session.getAttribute("login")+ " is authorized");
+            log.info("user " + session.getAttribute("login")+ " is authorized");
         } else {
             response.sendRedirect(loginURI);
         }

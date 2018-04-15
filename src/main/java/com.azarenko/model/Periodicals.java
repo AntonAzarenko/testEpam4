@@ -8,14 +8,24 @@ import java.math.BigDecimal;
 public class Periodicals extends AbstractBaseEntity {
 
     private String title;
+    private int outputFrequency;
+
+    public int getOutputFrequency() {
+        return outputFrequency;
+    }
+
+    public void setOutputFrequency(int outputFrequency) {
+        this.outputFrequency = outputFrequency;
+    }
 
     private String description;
 
     private  BigDecimal price;
 
-    public Periodicals(int id, String title, String description, BigDecimal price) {
+    public Periodicals(int id, String title, String description, int outputFrequency, BigDecimal price) {
         super(id);
         this.title = title;
+        this.outputFrequency = outputFrequency;
         this.description = description;
         this.price = price;
     }
@@ -51,6 +61,7 @@ public class Periodicals extends AbstractBaseEntity {
     public String toString() {
         return "Periodicals{" +
                 "title='" + title + '\'' +
+                ", outputFrequency=" + outputFrequency +
                 ", description='" + description + '\'' +
                 ", price=" + price +
                 ", id=" + id +

@@ -21,8 +21,10 @@ public class ShoppingCartDaoImpl implements ShoppingCartDao {
     public void add(ShoppingCart shoppingCart) {
         try (PreparedStatement preparedStatement = connection.prepareStatement
                 ("INSERT INTO shopping_cart(userId, id_periodicals, date_start, date_end )VALUES (?,?,?,?)")) {
+            log.info(shoppingCart.getUserID());
             preparedStatement.setInt(1, shoppingCart.getUserID());
             preparedStatement.setInt(2, shoppingCart.getPeriodicalId());
+            log.info(shoppingCart.getStart());
             java.util.Date dateStart = shoppingCart.getStart();
             java.util.Date dateend = shoppingCart.getEnd();
             preparedStatement.setDate(3, new Date(dateStart.getTime()));

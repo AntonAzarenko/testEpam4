@@ -1,9 +1,12 @@
 USE mydb;
 CREATE TABLE catalog_periodicals (
-  id          INTEGER        NOT NULL AUTO_INCREMENT,
-  title       VARCHAR(50)    NOT NULL,
-  discription VARCHAR(100)   NOT NULL,
-  price       DECIMAL(10, 2) NOT NULL,
+  id               INTEGER        NOT NULL AUTO_INCREMENT,
+  title            VARCHAR(50)    NOT NULL,
+  type             VARCHAR(50)    NOT NULL,
+  output_frequency INTEGER(10)       NOT NULL,
+  discription      VARCHAR(100)   NOT NULL,
+  price            DECIMAL(10, 2) NOT NULL,
+
   PRIMARY KEY (id)
 )
   ENGINE = InnoDB
@@ -25,10 +28,10 @@ CREATE TABLE users (
 
 USE mydb;
 CREATE TABLE payment (
-  id      INTEGER              NOT NULL AUTO_INCREMENT,
-  date    DATE               NOT NULL,
-  user_id INTEGER              NOT NULL,
-  price   DECIMAL(10, 2)       NOT NULL,
+  id      INTEGER        NOT NULL AUTO_INCREMENT,
+  date    DATE           NOT NULL,
+  user_id INTEGER        NOT NULL,
+  price   DECIMAL(10, 2) NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (user_id) REFERENCES users (id)
 )
@@ -37,28 +40,28 @@ CREATE TABLE payment (
 
 USE mydb;
 CREATE TABLE subscriptions (
-  id               INTEGER     NOT NULL AUTO_INCREMENT,
-  id_periodicals   INTEGER(11) NOT NULL,
+  id               INTEGER      NOT NULL AUTO_INCREMENT,
+  id_periodicals   INTEGER(11)  NOT NULL,
   name_periodicals VARCHAR(100) NOT NULL,
-  date_start       DATE NOT NULL,
-  date_end         DATE  NOT NULL,
+  date_start       DATE         NOT NULL,
+  date_end         DATE         NOT NULL,
   user_id          INTEGER(11)  NOT NULL,
 
   PRIMARY KEY (id),
   FOREIGN KEY (id_periodicals) REFERENCES catalog_periodicals (id),
-  FOREIGN KEY (user_id) REFERENCES  users (id)
+  FOREIGN KEY (user_id) REFERENCES users (id)
 )
   ENGINE = InnoDB
   DEFAULT CHARSET utf8;
 
 USE mydb;
 CREATE TABLE history_price (
-  id               INTEGER      NOT NULL AUTO_INCREMENT,
-  id_periodicals   INTEGER(11)  NOT NULL,
-  name_periodicals VARCHAR(100) NOT NULL,
-  date_start       DATE         NOT NULL,
-  date_end         DATE         NOT NULL,
-  price          DECIMAL(10,2)  NOT NULL,
+  id               INTEGER        NOT NULL AUTO_INCREMENT,
+  id_periodicals   INTEGER(11)    NOT NULL,
+  name_periodicals VARCHAR(100)   NOT NULL,
+  date_start       DATE           NOT NULL,
+  date_end         DATE           NOT NULL,
+  price            DECIMAL(10, 2) NOT NULL,
 
   PRIMARY KEY (id),
   FOREIGN KEY (id_periodicals) REFERENCES catalog_periodicals (id)
@@ -71,14 +74,14 @@ CREATE TABLE history_price (
 
 USE mydb;
 CREATE TABLE shopping_cart (
-  id  INTEGER NOT NULL AUTO_INCREMENT,
-  userId INTEGER NOT NULL,
+  id             INTEGER NOT NULL AUTO_INCREMENT,
+  userId         INTEGER NOT NULL,
   id_periodicals INTEGER,
-  date_start  DATE  NOT NULL ,
-  date_end DATE NOT NULL ,
+  date_start     DATE    NOT NULL,
+  date_end       DATE    NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (id_periodicals) REFERENCES catalog_periodicals (id),
-  FOREIGN KEY (userId) REFERENCES  users (id)
+  FOREIGN KEY (userId) REFERENCES users (id)
 )
   ENGINE = InnoDB
   DEFAULT CHARSET utf8;

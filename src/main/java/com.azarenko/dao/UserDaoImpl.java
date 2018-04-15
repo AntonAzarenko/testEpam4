@@ -2,6 +2,7 @@ package com.azarenko.dao;
 
 import com.azarenko.model.User;
 import com.azarenko.util.DBUtil;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 public class UserDaoImpl implements UserDao {
-
+    private static final Logger log = Logger.getLogger(UserDaoImpl.class);
     private Connection connection;
 
     public UserDaoImpl() {
@@ -118,7 +119,10 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public int getUserIdByEmail(String login) {
-        return 0;
+        User user = getUserByEmail(login);
+        int id = user.getId();
+        log.info(id);
+        return user.getId();
     }
 
 }

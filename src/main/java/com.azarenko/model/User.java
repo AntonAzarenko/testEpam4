@@ -22,6 +22,7 @@ public final class User extends AbstractBaseEntity {
     private  Date registered = new Date();
 
     private User(UserBulder userBulder) {
+        this.id = userBulder.id;
         this.name = userBulder.name;
         this.email = userBulder.email;
         this.password = userBulder.password;

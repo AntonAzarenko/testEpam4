@@ -71,9 +71,9 @@ public class AdminServlet extends HttpServlet {
             periodicals.setPrice(BigDecimal.valueOf(Double.parseDouble(req.getParameter("price"))));
             publicationId = req.getParameter("catalogId");
         } catch (NumberFormatException e) {
-            log.error("NumberFormatException");
+            log.error(e);
         } catch (NullPointerException e) {
-            log.error("getParameter null");
+            log.error(e);
         }
 
         if (publicationId == null || publicationId.isEmpty()) {

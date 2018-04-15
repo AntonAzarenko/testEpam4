@@ -2,10 +2,9 @@ package com.azarenko.servlets;
 
 import com.azarenko.dao.PeriodicalsDao;
 import com.azarenko.dao.PeriodicalsDaoImpl;
-import com.azarenko.services.PeriodicalService;
-import com.azarenko.services.PeriodicalServiceImpl;
-import com.azarenko.services.UserService;
-import com.azarenko.services.UsserServiceImpl;
+import com.azarenko.model.ShoppingCart;
+import com.azarenko.model.Subscription;
+import com.azarenko.services.*;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -15,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -25,10 +25,12 @@ public class Subscribe extends HttpServlet {
 
     private PeriodicalService periodicalService;
     private UserService userService;
+    private ShoppingCartService cartService;
 
     public Subscribe() {
         periodicalService = new PeriodicalServiceImpl();
         userService = new UsserServiceImpl();
+        cartService = new ShoppingCartServiceImpl();
     }
 
     @Override
@@ -45,11 +47,16 @@ public class Subscribe extends HttpServlet {
         HttpSession session = req.getSession();
 
         int idPeriodical = Integer.parseInt(req.getParameter("id"));
-        String namePeriodical = req.getParameter("title");
         Date dateStart = getDateToString(req.getParameter("dateStart"));
         Date dateEnd = getDateToString(req.getParameter("dateEnd"));
-        int userId = userService.getUserIdByEmail((String) session.getAttribute("login"));
-        log.info(userId);
+        String login = String.valueOf(session.getAttribute("login"));
+        int userId = userService.getUserIdByEmail(login);
+        ShoppingCart shoppingCart = new ShoppingCart();
+        shoppingCart.setPeriodicalId(idPeriodical);
+        shoppingCart.setUserID(userId);
+        shoppingCart.setStart(dateStart);
+        shoppingCart.setEnd(dateEnd);
+        cartService.add(shoppingCart);
     }
 
     private Date getDateToString(String text) {

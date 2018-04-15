@@ -36,6 +36,6 @@ public class PeriodicalServiceImpl implements PeriodicalService {
 
     @Override
     public Periodicals getPublication(int id) {
-        return periodicalsDao.getPublication(id);
+        return periodicalsDao.getPeriodicalById(id);
     }
 }

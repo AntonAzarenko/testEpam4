@@ -15,6 +15,6 @@ public interface PeriodicalsDao {
 
     void update(Periodicals periodicals);
 
-    Periodicals getPublication(int id);
+    Periodicals getPeriodicalById(int id);
 
 }

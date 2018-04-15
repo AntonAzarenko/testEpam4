@@ -23,7 +23,7 @@ public class PeriodicalsDaoImpl implements PeriodicalsDao {
     public List<Periodicals> getCatalog() {
         List<Periodicals> temp = new ArrayList<Periodicals>();
         try (Statement statement = connection.createStatement();
-             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalog_periodicals");) {
+             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalog_periodicals")) {
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String title = rs.getString("title");
@@ -82,7 +82,7 @@ public class PeriodicalsDaoImpl implements PeriodicalsDao {
     }
 
     @Override
-    public Periodicals getPublication(int id) {
+    public Periodicals getPeriodicalById(int id) {
         AbstractBaseEntity periodicals;
         try (Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalog_periodicals")) {

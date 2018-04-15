@@ -92,8 +92,7 @@ public class UserDaoImpl implements UserDao {
     @Override
     public User getUserByID(int id) {
         User user = null;
-        try {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)");
+        try(PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)");) {
             preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             if (rs.next()) {

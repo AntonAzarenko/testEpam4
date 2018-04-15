@@ -47,7 +47,7 @@ public final class Subscription extends AbstractBaseEntity {
     }
 
     public static class SubscriptionBuild {
-        private final int id;
+        private  int id;
 
         private String title;
 
@@ -60,6 +60,9 @@ public final class Subscription extends AbstractBaseEntity {
         private Date dateEndSubscription;
 
         private BigDecimal price;
+
+        public SubscriptionBuild() {
+        }
 
         private SubscriptionBuild(int id) {
             this.id = id;
@@ -94,6 +97,9 @@ public final class Subscription extends AbstractBaseEntity {
         public SubscriptionBuild price(BigDecimal price) {
             this.price = price;
             return this;
+        }
+        public Subscription build(){
+            return new Subscription(this);
         }
     }
 }

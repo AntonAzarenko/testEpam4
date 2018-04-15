@@ -63,5 +63,23 @@ CREATE TABLE history_price (
   PRIMARY KEY (id),
   FOREIGN KEY (id_periodicals) REFERENCES catalog_periodicals (id)
 
-);
+
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET utf8;
+
+
+USE mydb;
+CREATE TABLE shopping_cart (
+  id  INTEGER NOT NULL AUTO_INCREMENT,
+  userId INTEGER NOT NULL,
+  id_periodicals INTEGER,
+  date_start  DATE  NOT NULL ,
+  date_end DATE NOT NULL ,
+  PRIMARY KEY (id),
+  FOREIGN KEY (id_periodicals) REFERENCES catalog_periodicals (id),
+  FOREIGN KEY (userId) REFERENCES  users (id)
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET utf8;
 

@@ -1,15 +1,15 @@
 package com.azarenko.dao;
 
+import com.azarenko.model.AbstractBaseEntity;
 import com.azarenko.model.User;
 
 import java.util.List;
 
-public interface UserDao {
-    /**
-     * Get all User list
-      * @return
-     */
-    List<User> getUserList();
+/**
+ * @author Anton Azarenko
+ */
+public interface UserDao  extends DaoBase{
+
 
     /**
      * Get user by Email
@@ -18,12 +18,15 @@ public interface UserDao {
      */
     User getUserByEmail(String email);
 
-    /**
-     * Get user by Id
-     * @param id
-     * @return
-     */
-    User getUserByID(int id);
 
     int getUserIdByEmail(String login);
+
+    @Override
+    AbstractBaseEntity getEntityById(int id);
+
+    @Override
+    void add(AbstractBaseEntity entity);
+
+    @Override
+    List getListEntity();
 }

@@ -44,7 +44,7 @@ public class AuthorizationServlet extends HttpServlet {
                     break;
                 case "USER" :
                     session.setAttribute("login", login);
-                    req.getRequestDispatcher("/user").forward(req,resp);
+                    req.getRequestDispatcher("/user?action=catalog").forward(req,resp);
                     break;
                   default:
                       req.getRequestDispatcher("/pages/erors_message.jsp").forward(req,resp);

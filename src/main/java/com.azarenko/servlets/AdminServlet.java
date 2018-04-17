@@ -26,7 +26,7 @@ public class AdminServlet extends HttpServlet {
     private PeriodicalService periodicalService;
 
     public AdminServlet() {
-       periodicalService = new PeriodicalServiceImpl();
+        periodicalService = new PeriodicalServiceImpl();
     }
 
     @Override
@@ -35,23 +35,19 @@ public class AdminServlet extends HttpServlet {
         String action = req.getParameter("action");
         String forward = "";
         if (action.equalsIgnoreCase("delete")) {
-            log.debug("redirect to delete");
             forward = CATALOG_LIST;
             int catalogId = Integer.parseInt(req.getParameter("catalogId"));
             periodicalService.remove(catalogId);
             req.setAttribute("catalogs", periodicalService.getCatalog());
         } else if (action.equalsIgnoreCase("edit")) {
             forward = INSERT_OR_EDIT;
-            log.debug("redirect to edit");
             int catalogId = Integer.parseInt(req.getParameter("catalogId"));
-            Periodicals periodicals = periodicalService.getPublication(catalogId);
+            Periodicals periodicals = periodicalService.getPeriodical(catalogId);
             req.setAttribute("periodicals", periodicals);
         } else if (action.equalsIgnoreCase("catalog")) {
-            log.info("rediret to catalog");
             forward = CATALOG_LIST;
             req.setAttribute("catalogs", periodicalService.getCatalog());
         } else if (action.equalsIgnoreCase("insert")) {
-            log.debug("redirect to insert");
             forward = INSERT_OR_EDIT;
         }
 
@@ -68,6 +64,7 @@ public class AdminServlet extends HttpServlet {
             periodicals = new Periodicals();
             periodicals.setTitle(req.getParameter("title"));
             periodicals.setDescription(req.getParameter("discription"));
+            periodicals.setOutputFrequency(Integer.parseInt(req.getParameter("outfrequency")));
             periodicals.setPrice(BigDecimal.valueOf(Double.parseDouble(req.getParameter("price"))));
             publicationId = req.getParameter("catalogId");
         } catch (NumberFormatException e) {

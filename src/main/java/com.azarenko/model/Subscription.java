@@ -11,15 +11,26 @@ public final class Subscription extends AbstractBaseEntity {
 
     private final int userId;
 
+    private final String namePeriodical;
+
     private final Date dateStartSubcription;
 
     private final Date dateEndSubscription;
 
     private final BigDecimal price;
 
+    public int getUserId() {
+        return userId;
+    }
+
+    public String getNamePeriodical() {
+        return namePeriodical;
+    }
+
     private Subscription(SubscriptionBuild subscriptionBuild) {
         this.title = subscriptionBuild.title;
-        this.idPeriodical = subscriptionBuild.idSubscription;
+        this.idPeriodical = subscriptionBuild.idPeriodical;
+        this.namePeriodical = subscriptionBuild.namePeriodical;
         this.dateStartSubcription = subscriptionBuild.dateStartSubcription;
         this.dateEndSubscription = subscriptionBuild.dateEndSubscription;
         this.price = subscriptionBuild.price;
@@ -53,7 +64,8 @@ public final class Subscription extends AbstractBaseEntity {
 
         private int userId;
 
-        private int idSubscription;
+        private int idPeriodical;
+        private String namePeriodical;
 
         private Date dateStartSubcription;
 
@@ -64,9 +76,11 @@ public final class Subscription extends AbstractBaseEntity {
         public SubscriptionBuild() {
         }
 
-        private SubscriptionBuild(int id) {
+       public SubscriptionBuild id(int id){
             this.id = id;
-        }
+            return this;
+       }
+
 
         public SubscriptionBuild title(String title) {
             this.title = title;
@@ -78,9 +92,13 @@ public final class Subscription extends AbstractBaseEntity {
             return this;
         }
 
+        public SubscriptionBuild namePeriodical(String name){
+            this.namePeriodical = name;
+            return this;
+        }
 
-        public SubscriptionBuild idSubscription(int id) {
-            this.idSubscription = id;
+        public SubscriptionBuild idPeriodical(int id) {
+            this.idPeriodical = id;
             return this;
         }
 

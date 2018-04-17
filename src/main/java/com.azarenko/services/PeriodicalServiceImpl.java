@@ -1,5 +1,6 @@
 package com.azarenko.services;
 
+import com.azarenko.dao.DaoBase;
 import com.azarenko.dao.PeriodicalsDao;
 import com.azarenko.dao.PeriodicalsDaoImpl;
 import com.azarenko.model.Periodicals;
@@ -8,34 +9,36 @@ import java.util.List;
 
 public class PeriodicalServiceImpl implements PeriodicalService {
 
-    private PeriodicalsDao periodicalsDao;
+
+    DaoBase<Periodicals>daoBase;
 
     public PeriodicalServiceImpl() {
-        periodicalsDao = new PeriodicalsDaoImpl();
+        daoBase = new PeriodicalsDaoImpl();
+
     }
 
     @Override
     public List<Periodicals> getCatalog() {
-        return periodicalsDao.getCatalog();
+        return daoBase.getListEntity();
     }
 
     @Override
     public void add(Periodicals periodicals) {
-        periodicalsDao.add(periodicals);
+        daoBase.add(periodicals);
     }
 
     @Override
     public void remove(int id) {
-        periodicalsDao.remove(id);
+        daoBase.remove(id);
     }
 
     @Override
     public void update(Periodicals periodicals) {
-        periodicalsDao.update(periodicals);
+        daoBase.update(periodicals);
     }
 
     @Override
-    public Periodicals getPublication(int id) {
-        return periodicalsDao.getPeriodicalById(id);
+    public Periodicals getPeriodical(int id) {
+        return daoBase.getEntityById(id);
     }
 }

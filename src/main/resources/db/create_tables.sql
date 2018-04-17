@@ -3,7 +3,7 @@ CREATE TABLE catalog_periodicals (
   id               INTEGER        NOT NULL AUTO_INCREMENT,
   title            VARCHAR(50)    NOT NULL,
   type             VARCHAR(50)    NOT NULL,
-  output_frequency INTEGER(10)       NOT NULL,
+  output_frequency INTEGER(10)    NOT NULL,
   discription      VARCHAR(100)   NOT NULL,
   price            DECIMAL(10, 2) NOT NULL,
 
@@ -74,11 +74,12 @@ CREATE TABLE history_price (
 
 USE mydb;
 CREATE TABLE shopping_cart (
-  id             INTEGER NOT NULL AUTO_INCREMENT,
-  userId         INTEGER NOT NULL,
+  id             INTEGER        NOT NULL AUTO_INCREMENT,
+  userId         INTEGER        NOT NULL,
   id_periodicals INTEGER,
-  date_start     DATE    NOT NULL,
-  date_end       DATE    NOT NULL,
+  date_start     DATE           NOT NULL,
+  date_end       DATE           NOT NULL,
+  price          DECIMAL(10, 2) NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (id_periodicals) REFERENCES catalog_periodicals (id),
   FOREIGN KEY (userId) REFERENCES users (id)

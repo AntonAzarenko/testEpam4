@@ -1,5 +1,6 @@
 package com.azarenko.dao;
 
+import com.azarenko.model.AbstractBaseEntity;
 import com.azarenko.model.User;
 import com.azarenko.util.DBUtil;
 import org.apache.log4j.Logger;
@@ -17,40 +18,6 @@ public class UserDaoImpl implements UserDao {
         this.connection = DBUtil.getConnection();
     }
 
-    @Override
-    public List<User> getUserList() {
-        List<User> userList = new ArrayList<>();
-        try {
-            Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");
-            while (rs.next()) {
-                int id = rs.getInt("id");
-                String name = rs.getString("name");
-                String email = rs.getString("email");
-                String password = rs.getString("password");
-                Date date = rs.getDate("registered");
-                int en = rs.getInt("enabled");
-                boolean enabled = false;
-                if (en == 1) {
-                    enabled = true;
-                }
-                String role = rs.getString("role");
-                String subscription = rs.getString("subscriptions");
-                User.UserBulder userBulder = new User.UserBulder(id);
-                userBulder.email(email);
-                userBulder.name(name);
-                userBulder.enabled(enabled);
-                userBulder.password(password);
-                userBulder.registered(date);
-                userBulder.role(role);
-                User user = userBulder.build();
-                userList.add(user);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return userList;
-    }
 
     @Override
     public User getUserByEmail(String email) {
@@ -85,13 +52,22 @@ public class UserDaoImpl implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.error(e);
         }
         return null;
     }
 
+
+
     @Override
-    public User getUserByID(int id) {
+    public int getUserIdByEmail(String login) {
+        User user = getUserByEmail(login);
+        int id = user.getId();
+        return user.getId();
+    }
+
+    @Override
+    public AbstractBaseEntity getEntityById(int id) {
         User user = null;
         try(PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)");) {
             preparedStatement.setInt(1, id);
@@ -118,11 +94,53 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public int getUserIdByEmail(String login) {
-        User user = getUserByEmail(login);
-        int id = user.getId();
-        log.info(id);
-        return user.getId();
+    public void add(AbstractBaseEntity entity) {
+
+    }
+
+    @Override
+    public void remove(int id) {
+
+    }
+
+    @Override
+    public void update(AbstractBaseEntity entity) {
+
+    }
+
+    @Override
+    public List getListEntity() {
+        List<User> userList = new ArrayList<>();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                String password = rs.getString("password");
+                Date date = rs.getDate("registered");
+                int en = rs.getInt("enabled");
+                boolean enabled = false;
+                if (en == 1) {
+                    enabled = true;
+                }
+                String role = rs.getString("role");
+                String subscription = rs.getString("subscriptions");
+                User.UserBulder userBulder = new User.UserBulder(id);
+                userBulder.email(email);
+                userBulder.name(name);
+                userBulder.enabled(enabled);
+                userBulder.password(password);
+                userBulder.registered(date);
+                userBulder.role(role);
+                User user = userBulder.build();
+                userList.add(user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return userList;
     }
 
 }

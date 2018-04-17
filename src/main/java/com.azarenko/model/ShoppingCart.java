@@ -1,5 +1,6 @@
 package com.azarenko.model;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class ShoppingCart extends AbstractBaseEntity {
@@ -13,7 +14,15 @@ public class ShoppingCart extends AbstractBaseEntity {
 
     private Date end;
 
+    private BigDecimal price;
 
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -54,12 +63,13 @@ public class ShoppingCart extends AbstractBaseEntity {
         this.end = end;
     }
 
-    public ShoppingCart(int id, int userID, int periodicalId, Date start, Date end) {
+    public ShoppingCart(int id, int userID, int periodicalId, Date start, Date end, BigDecimal price) {
 
         super(id);
         this.userID = userID;
         this.periodicalId = periodicalId;
         this.start = start;
         this.end = end;
+        this.price = price;
     }
 }

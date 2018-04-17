@@ -1,9 +1,6 @@
 package com.azarenko.servlets;
 
-import com.azarenko.dao.PeriodicalsDao;
-import com.azarenko.dao.PeriodicalsDaoImpl;
 import com.azarenko.model.ShoppingCart;
-import com.azarenko.model.Subscription;
 import com.azarenko.services.*;
 import org.apache.log4j.Logger;
 
@@ -14,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -29,7 +25,7 @@ public class Subscribe extends HttpServlet {
 
     public Subscribe() {
         periodicalService = new PeriodicalServiceImpl();
-        userService = new UsserServiceImpl();
+        userService = new UserServiceImpl();
         cartService = new ShoppingCartServiceImpl();
     }
 
@@ -37,7 +33,7 @@ public class Subscribe extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         int id = Integer.parseInt(req.getParameter("periodicalid"));
-        req.setAttribute("periodicals", periodicalService.getPublication(id));
+        req.setAttribute("periodicals", periodicalService.getPeriodical(id));
         req.getRequestDispatcher("pages/do_subscribe.jsp").forward(req, resp);
     }
 
@@ -56,8 +52,10 @@ public class Subscribe extends HttpServlet {
         shoppingCart.setUserID(userId);
         shoppingCart.setStart(dateStart);
         shoppingCart.setEnd(dateEnd);
+        shoppingCart.setPrice(cartService.getPriceForSubcription(idPeriodical,dateStart,dateEnd));
+        log.info(shoppingCart.getPrice());
         cartService.add(shoppingCart);
-        req.getRequestDispatcher("/user").forward(req, resp);
+        req.getRequestDispatcher("/user?action=catalog").forward(req, resp);
     }
 
     private Date getDateToString(String text) {

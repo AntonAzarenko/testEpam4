@@ -1,20 +1,24 @@
 package com.azarenko.dao;
 
 
+import com.azarenko.model.AbstractBaseEntity;
 import com.azarenko.model.Periodicals;
 
 import java.util.List;
 
-public interface PeriodicalsDao {
+public interface PeriodicalsDao extends DaoBase {
+    @Override
+    AbstractBaseEntity getEntityById(int id);
 
-    List<Periodicals> getCatalog();
+    @Override
+    void add(AbstractBaseEntity entity);
 
-    void add(Periodicals periodicals);
-
+    @Override
     void remove(int id);
 
-    void update(Periodicals periodicals);
+    @Override
+    void update(AbstractBaseEntity entity);
 
-    Periodicals getPeriodicalById(int id);
-
+    @Override
+    List getListEntity();
 }

@@ -13,6 +13,6 @@ public interface PeriodicalService {
 
     void update(Periodicals periodicals);
 
-    Periodicals getPublication(int id);
+    Periodicals getPeriodical(int id);
 
 }

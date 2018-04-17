@@ -32,8 +32,6 @@
                 <th><a href="/admin?action=delete&catalogId=<c:out value="${periodicals.id}"/>">Удалить</a></th>
             </tr>
         </c:forEach>
-        <th></th>
-
     </table>
 </div>
 </body>

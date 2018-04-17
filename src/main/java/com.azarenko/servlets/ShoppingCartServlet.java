@@ -3,7 +3,7 @@ package com.azarenko.servlets;
 import com.azarenko.services.ShoppingCartService;
 import com.azarenko.services.ShoppingCartServiceImpl;
 import com.azarenko.services.UserService;
-import com.azarenko.services.UsserServiceImpl;
+import com.azarenko.services.UserServiceImpl;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.math.BigDecimal;
 
 @WebServlet(name = "cart", urlPatterns = "/cart")
 public class ShoppingCartServlet extends HttpServlet {
@@ -23,7 +24,7 @@ public class ShoppingCartServlet extends HttpServlet {
 
     public ShoppingCartServlet() {
         cartService = new ShoppingCartServiceImpl();
-        userService = new UsserServiceImpl();
+        userService = new UserServiceImpl();
     }
 
     @Override
@@ -31,7 +32,8 @@ public class ShoppingCartServlet extends HttpServlet {
         HttpSession session = req.getSession();
         String login  = String.valueOf(session.getAttribute("login"));
         int userId = userService.getUserIdByEmail(login);
-
+        BigDecimal fullPrice = cartService.getFullPriceForPayment(userId);
+        req.setAttribute("FP", fullPrice);
         req.setAttribute("cartList", cartService.getShoppingCartUser(userId));
         req.getRequestDispatcher("/pages/shopping_cart.jsp").forward(req,resp);
     }
@@ -39,10 +41,8 @@ public class ShoppingCartServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
-        String login  = String.valueOf(session.getAttribute("login"));
-        int userId = userService.getUserIdByEmail(login);
-
-        req.setAttribute("cartList", cartService.getShoppingCartUser(userId));
-        req.getRequestDispatcher("/shoppingCart.jsp").forward(req,resp);
-        }
+        int userID = userService.getUserIdByEmail(String.valueOf(session.getAttribute("login")));
+        cartService.removeShoppingCartUser(userID);
+        req.getRequestDispatcher("/user?action=catalog").forward(req,resp);
+    }
 }

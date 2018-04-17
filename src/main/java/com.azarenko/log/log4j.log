@@ -824,3 +824,1696 @@
 2018-04-15 12:53:12 INFO  UserDaoImpl:124 - 1
 2018-04-15 12:53:13 INFO  AuthFilter:32 - user user@yandex.ru is authorized
 2018-04-15 12:53:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 19:05:05 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 19:05:05 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 19:05:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 19:05:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 19:05:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 19:05:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 19:05:11 INFO  AuthFilter:32 - user null is authorized
+2018-04-15 19:05:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 19:05:13 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 19:05:13 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 19:05:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 19:05:13 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 19:05:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 19:05:14 INFO  UserDaoImpl:124 - 1
+2018-04-15 19:05:15 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 19:05:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:32:29 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 20:32:29 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 20:32:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:32:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:32:32 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:32:32 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:32:32 INFO  AuthFilter:32 - user null is authorized
+2018-04-15 20:32:32 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:32:33 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 20:32:34 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:32:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:32:34 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:32:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:32:44 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:32:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:32:55 INFO  Subscribe:64 - 2018-04-19
+2018-04-15 20:32:55 INFO  Subscribe:70 - Thu Apr 19 00:00:00 MSK 2018
+2018-04-15 20:32:55 INFO  Subscribe:64 - 2018-09-20
+2018-04-15 20:32:55 INFO  Subscribe:70 - Thu Sep 20 00:00:00 MSK 2018
+2018-04-15 20:32:56 INFO  UserDaoImpl:124 - 1
+2018-04-15 20:32:56 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 20:32:56 INFO  ShoppingCartDaoImpl:27 - Thu Apr 19 00:00:00 MSK 2018
+2018-04-15 20:32:56 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 20:32:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 20:32:56 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:32:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:32:57 INFO  UserDaoImpl:124 - 1
+2018-04-15 20:32:57 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:32:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:33:04 INFO  UserDaoImpl:124 - 1
+2018-04-15 20:33:04 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:33:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:33:08 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:33:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:33:14 INFO  Subscribe:64 - 2018-04-20
+2018-04-15 20:33:14 INFO  Subscribe:70 - Fri Apr 20 00:00:00 MSK 2018
+2018-04-15 20:33:14 INFO  Subscribe:64 - 2018-04-27
+2018-04-15 20:33:14 INFO  Subscribe:70 - Fri Apr 27 00:00:00 MSK 2018
+2018-04-15 20:33:14 INFO  UserDaoImpl:124 - 1
+2018-04-15 20:33:14 INFO  ShoppingCartDaoImpl:24 - 1
+2018-04-15 20:33:14 INFO  ShoppingCartDaoImpl:27 - Fri Apr 20 00:00:00 MSK 2018
+2018-04-15 20:33:14 INFO  ShoppingCartDaoImpl:33 - write to table
+2018-04-15 20:33:14 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 20:33:14 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:33:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:33:15 INFO  UserDaoImpl:124 - 1
+2018-04-15 20:33:15 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:33:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:35:00 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 20:35:00 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 20:35:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:35:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:35:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:35:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:35:03 INFO  AuthFilter:32 - user null is authorized
+2018-04-15 20:35:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:35:05 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 20:35:05 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:35:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:35:05 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:35:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:35:07 INFO  UserDaoImpl:124 - 1
+2018-04-15 20:35:07 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:35:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:04 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 20:36:04 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 20:36:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:07 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 20:36:07 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:36:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:08 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:36:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:09 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 20:36:09 INFO  AuthFilter:32 - user user@yandex.ru is authorized
+2018-04-15 20:36:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:50 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 20:36:50 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 20:36:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:36:53 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 20:36:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 20:37:01 INFO  UserDaoImpl:124 - 1
+2018-04-15 20:37:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:49 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 21:26:49 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 21:26:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:53 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 21:26:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:26:55 INFO  UserDaoImpl:124 - 1
+2018-04-15 21:26:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:14 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 21:33:14 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-15 21:33:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:18 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-15 21:33:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-15 21:33:24 INFO  UserDaoImpl:124 - 1
+2018-04-15 21:33:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:45 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 08:06:45 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 08:06:45 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:51 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 08:06:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:06:59 INFO  UserDaoImpl:124 - 1
+2018-04-16 08:06:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:12:17 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 08:12:17 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 08:12:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:12:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:12:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:12:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:12:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:12:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:12:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:12:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:13:50 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 08:13:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:13:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:13:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:16:41 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 08:16:41 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 08:16:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:16:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:16:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:16:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:16:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:16:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:16:44 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 08:16:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 08:16:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 08:16:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 08:16:46 INFO  ShoppingCartServiceImpl:63 - 2018-04-19
+2018-04-16 08:16:46 INFO  ShoppingCartServiceImpl:64 - 2018-09-20
+2018-04-16 08:16:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:22 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 09:40:23 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 09:40:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:33 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:40:33 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:33 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:40:38 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:40:38 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:40:38 INFO  ShoppingCartServiceImpl:69 - 154
+2018-04-16 09:40:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:43:25 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 09:43:25 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 09:43:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:43:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:43:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:43:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:43:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:43:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:43:28 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:43:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:43:29 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:43:29 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:43:29 INFO  ShoppingCartServiceImpl:69 - 7
+2018-04-16 09:43:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:50 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 09:53:50 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 09:53:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:54 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  ShoppingCartServiceImpl:73 - 14
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  ShoppingCartServiceImpl:73 - 154
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:53:56 INFO  ShoppingCartServiceImpl:73 - 7
+2018-04-16 09:53:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  ShoppingCartServiceImpl:73 - 14
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  ShoppingCartServiceImpl:73 - 154
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:46 INFO  ShoppingCartServiceImpl:73 - 7
+2018-04-16 09:55:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  ShoppingCartServiceImpl:73 - 14
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  ShoppingCartServiceImpl:73 - 154
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:55:47 INFO  ShoppingCartServiceImpl:73 - 7
+2018-04-16 09:55:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:55:59 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 09:55:59 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 09:56:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:56:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:56:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:56:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:56:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:56:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:56:02 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  ShoppingCartServiceImpl:73 - 14
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  ShoppingCartServiceImpl:73 - 154
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 09:56:04 INFO  ShoppingCartServiceImpl:73 - 7
+2018-04-16 09:56:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:36 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:03:36 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:03:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:54 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  ShoppingCartServiceImpl:73 - 14
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  ShoppingCartServiceImpl:73 - 154
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  PeriodicalsDaoImpl:39 - return catalog
+2018-04-16 10:03:56 INFO  ShoppingCartServiceImpl:73 - 7
+2018-04-16 10:03:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:02 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:06:02 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:06:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:13 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:06:13 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:06:13 INFO  ShoppingCartServiceImpl:73 - 14
+2018-04-16 10:06:13 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:06:13 INFO  ShoppingCartServiceImpl:73 - 154
+2018-04-16 10:06:13 INFO  ShoppingCartServiceImpl:73 - 7
+2018-04-16 10:06:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:42 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:06:42 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:06:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:06:52 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:06:52 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:06:52 INFO  ShoppingCartServiceImpl:73 - 14
+2018-04-16 10:06:52 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:06:52 INFO  ShoppingCartServiceImpl:73 - 154
+2018-04-16 10:06:52 INFO  ShoppingCartServiceImpl:73 - 7
+2018-04-16 10:06:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:12:01 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:12:01 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:12:01 INFO  ShoppingCartServiceImpl:73 - 14
+2018-04-16 10:12:01 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:12:01 INFO  ShoppingCartServiceImpl:73 - 154
+2018-04-16 10:12:01 INFO  ShoppingCartServiceImpl:73 - 7
+2018-04-16 10:12:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:12:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:12:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:12:07 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:12:07 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:12:07 INFO  ShoppingCartServiceImpl:73 - 14
+2018-04-16 10:12:07 INFO  ShoppingCartServiceImpl:73 - 13
+2018-04-16 10:12:07 INFO  ShoppingCartServiceImpl:73 - 154
+2018-04-16 10:12:07 INFO  ShoppingCartServiceImpl:73 - 7
+2018-04-16 10:12:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:19:56 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:19:56 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:19:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:19:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:19:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:19:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:19:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:19:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:20:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:20:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:11 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:29:11 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:29:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:29 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 10:29:30 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 10:29:30 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 10:29:30 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 10:29:30 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 10:29:30 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 10:29:30 ERROR ShoppingCartDaoImpl:37 - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'price' cannot be null
+2018-04-16 10:29:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:29:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:38:58 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:38:58 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:38:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:39:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:39:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:39:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:39:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:39:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:41:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:41:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:41:22 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 10:41:22 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 10:41:22 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 10:41:22 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 10:42:53 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:42:53 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 10:42:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:42:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:42:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:42:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:42:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:42:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:46:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:46:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:46:46 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 10:46:46 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 10:46:46 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 10:46:46 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 10:46:46 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 10:46:46 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 10:46:46 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 10:46:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 10:46:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:03:16 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:03:16 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:03:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:03:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:03:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:03:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:03:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:03:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:03:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:03:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:03:29 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 11:03:29 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:03:29 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 11:03:29 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 11:03:29 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:03:29 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:03:29 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:03:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:03:32 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:04:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:04:35 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 11:04:35 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:04:35 INFO  Subscribe:65 - 2018-06-22
+2018-04-16 11:04:35 INFO  Subscribe:71 - Fri Jun 22 00:00:00 MSK 2018
+2018-04-16 11:04:35 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:04:35 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:04:35 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:04:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:04:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:05:54 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:05:54 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:05:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:05:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:05:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:05:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:05:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:05:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:05:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:06:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:06:08 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 11:06:08 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:06:08 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 11:06:08 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 11:06:08 INFO  ShoppingCartServiceImpl:73 - 3
+2018-04-16 11:06:08 INFO  ShoppingCartServiceImpl:74 - 1.35
+2018-04-16 11:06:08 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:06:08 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:06:08 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:06:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:06:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:07:46 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:07:46 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:07:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:07:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:07:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:07:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:07:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:07:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:07:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:07:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:07:59 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 11:07:59 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:07:59 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 11:07:59 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 11:07:59 INFO  ShoppingCartServiceImpl:74 - 107
+2018-04-16 11:07:59 INFO  ShoppingCartServiceImpl:75 - 3.0
+2018-04-16 11:07:59 INFO  ShoppingCartServiceImpl:76 - 1.35
+2018-04-16 11:07:59 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:07:59 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:07:59 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:07:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:08:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:11:48 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:11:48 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:11:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:11:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:11:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:11:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:11:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:11:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:11:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:11:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:02 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 11:12:02 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:12:02 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 11:12:02 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 11:12:02 INFO  ShoppingCartServiceImpl:74 - 107
+2018-04-16 11:12:02 INFO  ShoppingCartServiceImpl:75 - 3
+2018-04-16 11:12:02 INFO  ShoppingCartServiceImpl:76 - 1.35
+2018-04-16 11:12:02 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:12:02 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:12:02 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:12:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:35 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:12:35 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:12:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:47 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 11:12:47 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:12:47 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 11:12:47 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 11:12:47 INFO  ShoppingCartServiceImpl:74 - 107
+2018-04-16 11:12:47 INFO  ShoppingCartServiceImpl:75 - 3.0
+2018-04-16 11:12:47 INFO  ShoppingCartServiceImpl:76 - 1.35
+2018-04-16 11:12:47 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:12:47 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:12:47 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:12:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:12:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:13:52 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:13:52 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:13:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:13:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:13:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:13:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:13:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:13:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:13:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:13:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:14:06 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 11:14:06 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:14:06 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 11:14:06 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 11:14:06 INFO  ShoppingCartServiceImpl:74 - 107
+2018-04-16 11:14:06 INFO  ShoppingCartServiceImpl:75 - 3.0
+2018-04-16 11:14:06 INFO  ShoppingCartServiceImpl:76 - 1.35
+2018-04-16 11:14:06 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:14:06 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:14:06 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:14:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:14:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:15:22 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:15:22 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:15:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:15:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:15:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:15:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:15:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:15:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:15:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:15:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:15:40 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 11:15:40 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:15:40 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 11:15:40 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 11:15:40 INFO  ShoppingCartServiceImpl:74 - 107
+2018-04-16 11:15:40 INFO  ShoppingCartServiceImpl:75 - 3.0
+2018-04-16 11:15:40 INFO  ShoppingCartServiceImpl:76 - 1.35
+2018-04-16 11:15:40 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:15:40 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:15:40 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:15:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:15:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:32 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:44:32 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:44:32 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:33 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:33 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:33 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:47 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 11:44:47 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:44:47 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 11:44:47 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 11:44:47 INFO  ShoppingCartServiceImpl:74 - 107
+2018-04-16 11:44:47 INFO  ShoppingCartServiceImpl:75 - 3.566666666666667
+2018-04-16 11:44:47 INFO  ShoppingCartServiceImpl:76 - 1.35
+2018-04-16 11:44:47 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:44:47 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:44:47 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:44:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:44:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:46:24 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:46:24 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:46:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:46:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:46:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:46:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:46:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:46:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:46:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:46:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:46:36 INFO  Subscribe:65 - 2018-04-16
+2018-04-16 11:46:36 INFO  Subscribe:71 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:46:36 INFO  Subscribe:65 - 2018-08-01
+2018-04-16 11:46:36 INFO  Subscribe:71 - Wed Aug 01 00:00:00 MSK 2018
+2018-04-16 11:46:36 INFO  ShoppingCartServiceImpl:74 - 107
+2018-04-16 11:46:36 INFO  ShoppingCartServiceImpl:75 - 3.566666666666667
+2018-04-16 11:46:36 INFO  ShoppingCartServiceImpl:76 - 1.35
+2018-04-16 11:46:36 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:46:36 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:46:36 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:46:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:46:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:47:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:47:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:48:26 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:48:26 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:48:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:48:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:48:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:48:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:48:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:48:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:48:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:48:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:50:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:51:14 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:51:14 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:51:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:51:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:51:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:51:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:51:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:51:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:51:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:51:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:23 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:52:23 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:52:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:52 INFO  Subscribe:66 - 2018-04-16
+2018-04-16 11:52:52 INFO  Subscribe:72 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:52:52 INFO  Subscribe:66 - 2018-04-30
+2018-04-16 11:52:52 INFO  Subscribe:72 - Mon Apr 30 00:00:00 MSK 2018
+2018-04-16 11:52:52 INFO  ShoppingCartServiceImpl:74 - 14
+2018-04-16 11:52:52 INFO  ShoppingCartServiceImpl:75 - 0.4666666666666667
+2018-04-16 11:52:52 INFO  ShoppingCartServiceImpl:76 - 7.47
+2018-04-16 11:52:52 INFO  Subscribe:60 - 3.4860000000000000552891066263327957130968570709228515625
+2018-04-16 11:52:52 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 11:52:52 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 11:52:52 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 11:52:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:52:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:54:54 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:54:54 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 11:54:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:54:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:54:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:54:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:54:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:54:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:55:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 11:55:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 16:59:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:21 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:01:21 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:01:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:01:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:03:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:06:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:07:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:16:16 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:16:16 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:16:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:16:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:16:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:16:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:16:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:16:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:16:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:16:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:17:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:17:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:17:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:17:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:17:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:17:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:17:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:20:52 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:20:52 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:20:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:20:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:20:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:20:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:20:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:20:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:20:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:20:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:21:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:21:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:22:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:22:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:22:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:22:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:23:34 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:23:34 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:23:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:23:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:23:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:23:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:23:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:23:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:23:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:28:40 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:28:40 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:28:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:28:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:28:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:28:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:28:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:28:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:28:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:28:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:30:17 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:30:17 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:30:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:30:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:30:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:30:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:30:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:30:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:31:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:31:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:31:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:31:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:31:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:31:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:31:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:31:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:31:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:32:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:34:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:34:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:34:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:34:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:34:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:34:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:34:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:34:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:34:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:34:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:38:57 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:38:57 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:38:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:38:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:38:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:38:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:38:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:38:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:39:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:39:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:39:48 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:39:48 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 17:39:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:39:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:39:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:39:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:39:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:39:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:44:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 17:44:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 19:44:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 19:44:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 19:44:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 19:44:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 19:44:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 19:44:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 19:44:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:43 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:00:43 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:00:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:45 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:45 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:45 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:00:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:01:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:01:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:01:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:01:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:01:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:01:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:01:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:01:38 INFO  Subscribe:66 - 2018-04-16
+2018-04-16 22:01:38 INFO  Subscribe:72 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 22:01:38 INFO  Subscribe:66 - 2018-04-28
+2018-04-16 22:01:38 INFO  Subscribe:72 - Sat Apr 28 00:00:00 MSK 2018
+2018-04-16 22:01:38 INFO  ShoppingCartServiceImpl:86 - 12
+2018-04-16 22:01:38 INFO  ShoppingCartServiceImpl:87 - 0.4
+2018-04-16 22:01:38 INFO  ShoppingCartServiceImpl:88 - 1.35
+2018-04-16 22:01:38 INFO  Subscribe:60 - 0.5400000000000000299760216648792265914380550384521484375
+2018-04-16 22:01:38 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 22:01:38 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 22:01:38 INFO  ShoppingCartDaoImpl:35 - write to table
+2018-04-16 22:01:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:01:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:01:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:28 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:17:28 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:17:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:17:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:18:42 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:18:42 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:18:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:18:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:18:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:18:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:18:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:18:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:18:45 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:18:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:18:48 INFO  PaymentServlet:41 - 
+2018-04-16 22:18:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:06 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:21:06 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:21:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:31 INFO  PaymentServlet:41 - 
+2018-04-16 22:21:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:55 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:21:55 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:21:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:21:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:22:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:22:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:22:05 INFO  PaymentServlet:41 - 8.85
+2018-04-16 22:22:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:40:46 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:40:46 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:40:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:40:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:40:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:40:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:40:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:40:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:40:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:40:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:40:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:40:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:28 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:42:28 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 22:42:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:33 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 22:42:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:13 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:02:13 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:02:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:02:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:03:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:03:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:03:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:03:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:03:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:03:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:03:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:03:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:03:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:03:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:03:13 INFO  PaymentDaoImpl:27 - Mon Apr 16 23:03:13 MSK 2018
+2018-04-16 23:05:39 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:05:39 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:05:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:05:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:05:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:05:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:05:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:05:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:05:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:05:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:05:46 INFO  PaymentDaoImpl:27 - Mon Apr 16 23:05:45 MSK 2018
+2018-04-16 23:05:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:05:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:06:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:00 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:18:00 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:18:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:27 INFO  Subscribe:62 - 2018-04-16
+2018-04-16 23:18:27 INFO  Subscribe:68 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 23:18:27 INFO  Subscribe:62 - 2018-11-01
+2018-04-16 23:18:27 INFO  Subscribe:68 - Thu Nov 01 00:00:00 MSK 2018
+2018-04-16 23:18:27 INFO  ShoppingCartServiceImpl:87 - 199
+2018-04-16 23:18:27 INFO  ShoppingCartServiceImpl:88 - 6.633333333333334
+2018-04-16 23:18:27 INFO  ShoppingCartServiceImpl:89 - 3.85
+2018-04-16 23:18:27 INFO  Subscribe:56 - 25.5383333333333349290938940612250007688999176025390625
+2018-04-16 23:18:27 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-16 23:18:27 INFO  ShoppingCartDaoImpl:28 - Mon Apr 16 00:00:00 MSK 2018
+2018-04-16 23:18:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:36 INFO  PaymentDaoImpl:27 - Mon Apr 16 23:18:36 MSK 2018
+2018-04-16 23:18:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:18:37 INFO  ShoppingCartDaoImpl:71 - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM mydb.shopping_cart WHERE userId=1' at line 1
+2018-04-16 23:18:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:16 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:20:16 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:20:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:21 INFO  PaymentDaoImpl:27 - Mon Apr 16 23:20:21 MSK 2018
+2018-04-16 23:20:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:20:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:22:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:43:33 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:43:33 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:43:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:43:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:43:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:43:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:43:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:43:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:43:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:43:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:43:38 INFO  UsersServlet:35 - catalog
+2018-04-16 23:43:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:43:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:52:27 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:52:27 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:52:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:52:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:52:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:52:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:52:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:52:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:52:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:12 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:53:12 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:53:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:53:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:27 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:54:27 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:54:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:32 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:32 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:54:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:08 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:56:08 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:56:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:56:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:08 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:57:08 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-16 23:57:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:16 INFO  UsersServlet:47 - profile
+2018-04-16 23:57:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:21 INFO  UsersServlet:47 - profile
+2018-04-16 23:57:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:22 INFO  UsersServlet:47 - profile
+2018-04-16 23:57:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:54 INFO  UsersServlet:47 - profile
+2018-04-16 23:57:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:57:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:58:00 INFO  UsersServlet:47 - profile
+2018-04-16 23:58:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:58:02 INFO  UsersServlet:47 - profile
+2018-04-16 23:58:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:58:04 INFO  UsersServlet:47 - profile
+2018-04-16 23:58:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:58:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:58:10 INFO  UsersServlet:47 - profile
+2018-04-16 23:58:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:58:11 INFO  UsersServlet:47 - profile
+2018-04-16 23:58:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-16 23:58:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:06 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 00:59:06 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 00:59:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 00:59:21 INFO  Subscribe:62 - 2018-04-17
+2018-04-17 00:59:21 INFO  Subscribe:68 - Tue Apr 17 00:00:00 MSK 2018
+2018-04-17 00:59:21 INFO  Subscribe:62 - 2018-09-01
+2018-04-17 00:59:21 INFO  Subscribe:68 - Sat Sep 01 00:00:00 MSK 2018
+2018-04-17 00:59:21 INFO  ShoppingCartServiceImpl:87 - 137
+2018-04-17 00:59:21 INFO  ShoppingCartServiceImpl:88 - 4.566666666666666
+2018-04-17 00:59:21 INFO  ShoppingCartServiceImpl:89 - 1.35
+2018-04-17 00:59:21 INFO  Subscribe:56 - 6.16499999999999968025576890795491635799407958984375
+2018-04-17 00:59:21 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-17 00:59:21 INFO  ShoppingCartDaoImpl:28 - Tue Apr 17 00:00:00 MSK 2018
+2018-04-17 01:01:39 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:01:39 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:01:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:01:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:01:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:01:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:01:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:01:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:01:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:01:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:01:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:01:59 INFO  Subscribe:62 - 2018-04-17
+2018-04-17 01:01:59 INFO  Subscribe:68 - Tue Apr 17 00:00:00 MSK 2018
+2018-04-17 01:01:59 INFO  Subscribe:62 - 2019-02-22
+2018-04-17 01:01:59 INFO  Subscribe:68 - Fri Feb 22 00:00:00 MSK 2019
+2018-04-17 01:01:59 INFO  ShoppingCartServiceImpl:87 - -54
+2018-04-17 01:01:59 INFO  ShoppingCartServiceImpl:88 - -1.8
+2018-04-17 01:01:59 INFO  ShoppingCartServiceImpl:89 - 1.47
+2018-04-17 01:01:59 INFO  Subscribe:56 - -2.646000000000000065281113847959204576909542083740234375
+2018-04-17 01:01:59 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-17 01:01:59 INFO  ShoppingCartDaoImpl:28 - Tue Apr 17 00:00:00 MSK 2018
+2018-04-17 01:01:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:02:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:02:03 INFO  PaymentDaoImpl:27 - Tue Apr 17 01:02:03 MSK 2018
+2018-04-17 01:02:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:02:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:02:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:39 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:15:39 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:15:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:45 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:15:58 INFO  Subscribe:62 - 2018-04-17
+2018-04-17 01:15:58 INFO  Subscribe:68 - Tue Apr 17 00:00:00 MSK 2018
+2018-04-17 01:15:58 INFO  Subscribe:62 - 2018-04-30
+2018-04-17 01:15:58 INFO  Subscribe:68 - Mon Apr 30 00:00:00 MSK 2018
+2018-04-17 01:15:58 INFO  ShoppingCartServiceImpl:87 - 13
+2018-04-17 01:15:58 INFO  ShoppingCartServiceImpl:88 - 0.43333333333333335
+2018-04-17 01:15:58 INFO  ShoppingCartServiceImpl:89 - 1.35
+2018-04-17 01:15:58 INFO  Subscribe:56 - 0.585000000000000019984014443252817727625370025634765625
+2018-04-17 01:15:58 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-17 01:15:58 INFO  ShoppingCartDaoImpl:28 - Tue Apr 17 00:00:00 MSK 2018
+2018-04-17 01:15:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:16:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:16:08 INFO  Subscribe:62 - 2018-04-27
+2018-04-17 01:16:08 INFO  Subscribe:68 - Fri Apr 27 00:00:00 MSK 2018
+2018-04-17 01:16:08 INFO  Subscribe:62 - 2018-07-13
+2018-04-17 01:16:08 INFO  Subscribe:68 - Fri Jul 13 00:00:00 MSK 2018
+2018-04-17 01:16:08 INFO  ShoppingCartServiceImpl:87 - 77
+2018-04-17 01:16:08 INFO  ShoppingCartServiceImpl:88 - 2.566666666666667
+2018-04-17 01:16:08 INFO  ShoppingCartServiceImpl:89 - 3.85
+2018-04-17 01:16:08 INFO  Subscribe:56 - 9.88166666666666746454694703061250038444995880126953125
+2018-04-17 01:16:08 INFO  ShoppingCartDaoImpl:25 - 1
+2018-04-17 01:16:08 INFO  ShoppingCartDaoImpl:28 - Fri Apr 27 00:00:00 MSK 2018
+2018-04-17 01:16:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:16:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:16:11 INFO  PaymentDaoImpl:27 - Tue Apr 17 01:16:11 MSK 2018
+2018-04-17 01:16:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:16:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:16:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:23:33 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:23:33 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:23:33 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:23:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:23:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:23:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:23:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:23:35 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:23:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:23:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:23:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:24:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:24:37 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:24:37 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:24:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:24:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:24:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:24:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:24:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:24:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:24:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:24:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:24:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:49 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:26:49 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:26:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:26:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:28:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:35:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:41:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:41:22 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:41:22 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:41:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:41:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:41:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:41:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:41:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:41:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:42:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:42:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:42:09 INFO  UsersServlet:64 - 1
+2018-04-17 01:42:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:08 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:43:08 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:43:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:43:16 INFO  UsersServlet:64 - 1
+2018-04-17 01:43:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:44:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:44:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:44:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:44:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:44:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:44:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:44:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:44:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:44:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:44:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:44:15 INFO  UsersServlet:64 - 1
+2018-04-17 01:44:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:24 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:48:24 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:48:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:48:31 INFO  UsersServlet:64 - 1
+2018-04-17 01:48:31 INFO  UsersServlet:67 - Вяселка
+2018-04-17 01:48:31 INFO  UsersServlet:67 - Аргументы и Факты
+2018-04-17 01:48:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:01 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:53:01 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:53:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:53:08 INFO  UsersServlet:64 - 1
+2018-04-17 01:53:08 INFO  UsersServlet:67 - Вяселка
+2018-04-17 01:53:08 INFO  UsersServlet:67 - Аргументы и Факты
+2018-04-17 01:53:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:09 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:55:09 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 01:55:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 01:55:17 INFO  UsersServlet:64 - 1
+2018-04-17 01:55:17 INFO  UsersServlet:67 - Вяселка
+2018-04-17 01:55:17 INFO  UsersServlet:67 - Аргументы и Факты
+2018-04-17 01:55:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:12 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 02:00:12 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 02:00:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:17 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:00:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:21 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 02:01:21 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 02:01:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:01:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:02:19 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:02:20 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:02:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:02:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:02 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 02:11:02 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 02:11:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:11:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:12:10 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 02:12:10 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 02:12:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:12:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:12:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:12:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:12:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:12:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:12:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:12:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:13:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 02:13:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 02:13:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:13:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:13:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:13:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:13:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:13:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:13:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:13:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 02:13:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:20 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:32:20 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:32:21 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:22 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:24 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:32:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:33:28 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:33:28 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:33:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:33:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:33:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:33:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:33:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:33:29 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:33:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:33:33 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:33:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:34:45 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:34:45 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:34:46 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:34:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:34:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:34:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:34:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:34:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:34:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:34:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:34:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:34:52 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:37:13 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:37:13 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:37:13 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:37:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:37:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:37:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:37:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:37:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:37:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:37:18 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:41:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:41:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:11 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:47 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:41:47 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:41:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:41:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:42:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:42:23 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:42:58 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:42:58 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 10:42:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:42:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:42:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:42:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:42:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:42:59 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:43:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:43:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 10:43:10 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:46 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 11:14:46 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 11:14:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:49 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:54 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:14:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:15:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:15:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:15:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:15:30 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:15:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 11:15:31 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:41 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 12:48:41 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 12:48:42 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:43 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:48:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:49:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 12:49:08 DEBUG AdminServlet:79 - redirect edit periodical
+2018-04-17 12:49:08 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:17:43 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 15:17:43 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 15:17:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:17:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:17:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:17:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:17:45 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:17:45 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:17:47 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:17:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:17:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:18:09 ERROR AdminServlet:70 - java.lang.NumberFormatException: For input string: "2,35"
+2018-04-17 15:18:09 DEBUG AdminServlet:76 -  redirect add new periodical
+2018-04-17 15:18:09 ERROR PeriodicalsDaoImpl:55 - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'price' cannot be null
+2018-04-17 15:18:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:18:26 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:18:34 DEBUG AdminServlet:76 -  redirect add new periodical
+2018-04-17 15:18:34 ERROR PeriodicalsDaoImpl:55 - java.sql.SQLException: Field 'output_frequency' doesn't have a default value
+2018-04-17 15:18:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:18:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:18:41 DEBUG AdminServlet:79 - redirect edit periodical
+2018-04-17 15:18:41 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:24:55 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 15:24:55 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 15:24:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:24:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:24:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:24:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:24:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:24:57 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:24:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:25:00 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:25:37 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 15:25:37 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 15:25:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:25:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:25:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:25:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:25:38 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:25:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:25:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:25:56 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:25:58 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:27:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:27:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:27:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:27:02 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:27:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:27:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:27:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:27:04 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:27:14 DEBUG AdminServlet:77 -  redirect add new periodical
+2018-04-17 15:27:14 ERROR PeriodicalsDaoImpl:56 - java.sql.SQLException: Column count doesn't match value count at row 1
+2018-04-17 15:27:14 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:27:25 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:36 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 15:51:36 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 15:51:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:37 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:39 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:40 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:44 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:48 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:51:57 INFO  Subscribe:62 - 2018-04-17
+2018-04-17 15:51:57 INFO  Subscribe:68 - Tue Apr 17 00:00:00 MSK 2018
+2018-04-17 15:51:57 INFO  Subscribe:62 - 2018-04-29
+2018-04-17 15:51:57 INFO  Subscribe:68 - Sun Apr 29 00:00:00 MSK 2018
+2018-04-17 15:51:57 INFO  ShoppingCartServiceImpl:84 - 12
+2018-04-17 15:51:57 INFO  ShoppingCartServiceImpl:85 - 0.4
+2018-04-17 15:51:57 INFO  ShoppingCartServiceImpl:86 - 1.35
+2018-04-17 15:51:57 INFO  Subscribe:56 - 0.5400000000000000299760216648792265914380550384521484375
+2018-04-17 15:53:26 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 15:53:26 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 15:53:27 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:53:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:53:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:53:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:53:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:53:28 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:53:34 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:53:36 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 15:53:40 INFO  Subscribe:62 - 2018-04-17
+2018-04-17 15:53:40 INFO  Subscribe:68 - Tue Apr 17 00:00:00 MSK 2018
+2018-04-17 15:53:40 INFO  Subscribe:62 - 2018-04-28
+2018-04-17 15:53:40 INFO  Subscribe:68 - Sat Apr 28 00:00:00 MSK 2018
+2018-04-17 16:00:49 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 16:00:49 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-17 16:00:50 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:00:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:00:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:00:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:00:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:00:51 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:00:53 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:00:55 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:01:01 INFO  Subscribe:62 - 2018-04-17
+2018-04-17 16:01:01 INFO  Subscribe:68 - Tue Apr 17 00:00:00 MSK 2018
+2018-04-17 16:01:01 INFO  Subscribe:62 - 2018-04-26
+2018-04-17 16:01:01 INFO  Subscribe:68 - Thu Apr 26 00:00:00 MSK 2018
+2018-04-17 16:01:01 INFO  ShoppingCartServiceImpl:84 - 9
+2018-04-17 16:01:01 INFO  ShoppingCartServiceImpl:85 - 0.3
+2018-04-17 16:01:01 INFO  ShoppingCartServiceImpl:86 - 1.35
+2018-04-17 16:01:01 INFO  Subscribe:56 - 0.40499999999999998501198916756038670428097248077392578125
+2018-04-17 16:01:01 INFO  ShoppingCartDaoImpl:27 - 1
+2018-04-17 16:01:01 INFO  ShoppingCartDaoImpl:30 - Tue Apr 17 00:00:00 MSK 2018
+2018-04-17 16:01:01 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:01:03 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:01:04 INFO  PaymentDaoImpl:29 - Tue Apr 17 16:01:04 MSK 2018
+2018-04-17 16:01:05 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:01:06 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:01:07 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:01:09 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:01:12 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:01:15 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:01:16 DEBUG CharecterEncodingFilter:37 - Do filter
+2018-04-17 16:01:20 DEBUG CharecterEncodingFilter:37 - Do filter

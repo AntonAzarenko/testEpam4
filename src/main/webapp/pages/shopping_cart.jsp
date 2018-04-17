@@ -19,8 +19,18 @@
         <th>${shoppingCart.periodicalId}</th>
         <th>${shoppingCart.start}</th>
         <th>${shoppingCart.end}</th>
+        <th>${shoppingCart.price}</th>
     </tr>
     </c:forEach>
-    <th></th>
+</table>
+    <div>
+        <form method="post" name="payment" action="/payment">
+            <h3 >К оплате   </h3>
+                <input type="text" readonly name="price"
+                value="<c:out value="${FP}"/>"/>
+            <input type="submit" value="Оплатить">
+        </form>
+
+    </div>
 </body>
 </html>

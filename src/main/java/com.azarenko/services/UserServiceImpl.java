@@ -23,4 +23,9 @@ public class UserServiceImpl implements UserService {
     public int getUserIdByEmail(String login) {
         return userDao.getUserIdByEmail(login);
     }
+
+    @Override
+    public void addUser(User user) {
+        daoBase.add(user);
+    }
 }

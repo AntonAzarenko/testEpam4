@@ -81,9 +81,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         int days = endC.get(Calendar.DAY_OF_YEAR) - startC.get(Calendar.DAY_OF_YEAR);
         double t = (double) days / 30;
         BigDecimal countOutput = new BigDecimal(t);
-        log.info(days);
-        log.info(t);
-        log.info(price);
         BigDecimal totalPrice = price.multiply(countOutput);
         return totalPrice;
     }

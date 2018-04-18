@@ -38,7 +38,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public List<Payment> getPaymentList() {
-        return null;
+        return daoBase.getListEntity();
     }
 
     @Override

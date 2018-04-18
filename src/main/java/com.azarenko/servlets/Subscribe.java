@@ -34,7 +34,7 @@ public class Subscribe extends HttpServlet {
 
         int id = Integer.parseInt(req.getParameter("periodicalid"));
         req.setAttribute("periodicals", periodicalService.getPeriodical(id));
-        req.getRequestDispatcher("pages/do_subscribe.jsp").forward(req, resp);
+        req.getRequestDispatcher("pages/user/do_subscribe.jsp").forward(req, resp);
     }
 
     @Override
@@ -65,7 +65,6 @@ public class Subscribe extends HttpServlet {
         Date date = new Date();
         try {
             date = format.parse(text);
-            log.info(date);
         } catch (ParseException e) {
             log.error(e);
         }

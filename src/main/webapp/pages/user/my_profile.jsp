@@ -23,7 +23,8 @@
             <th>${user.registered}</th>
             <th>${user.role}</th>
         </tr>
-
 </table>
+<p/>
+<a href="/user?action=catalog">К каталогу</a>
 </body>
 </html>

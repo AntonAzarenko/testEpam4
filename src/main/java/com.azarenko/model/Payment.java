@@ -3,7 +3,7 @@ package com.azarenko.model;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class Payment extends AbstractBaseEntity {
+public final class Payment extends AbstractBaseEntity {
     private final Date date;
 
     private final int userId;

@@ -7,13 +7,13 @@
     <title>Admin</title>
 </head>
 <body>
-<div>
+<div style="padding-left: 100px">
 
-    <a href="/admin?action=catalog">каталог</a>
+    <a  href="/admin?action=catalog">Каталог</a>
     <p>
-        <a href="">платежи</a>
+        <a href="/admin?action=payment">Платежи</a>
     <p>
-        <a href="">подписки</a>
+        <a href="/admin?action=subscription">Подписки</a>
 </div>
 </body>
 </html>

@@ -12,6 +12,5 @@
 <a href="/pages/start.jsp">Попробовать еще раз</a>
 <br/>
 <br/>
-<a href="/pages/registration.jsp">Зарегистрироваться</a>
 </body>
 </html>

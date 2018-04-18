@@ -2,9 +2,10 @@ package com.azarenko.servlets;
 
 import com.azarenko.dao.PeriodicalsDao;
 import com.azarenko.dao.PeriodicalsDaoImpl;
+import com.azarenko.model.Payment;
 import com.azarenko.model.Periodicals;
-import com.azarenko.services.PeriodicalService;
-import com.azarenko.services.PeriodicalServiceImpl;
+import com.azarenko.model.Subscription;
+import com.azarenko.services.*;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -20,13 +21,20 @@ public class AdminServlet extends HttpServlet {
 
     private final static Logger log = Logger.getLogger(AdminServlet.class);
 
-    private static String INSERT_OR_EDIT = "/pages/admin_add_edit_publications.jsp";
-    private static String CATALOG_LIST = "/pages/admin_catalog_page.jsp";
+    private static String INSERT_OR_EDIT = "/pages/admin/admin_add_edit_publications.jsp";
+    private static String CATALOG_LIST = "/pages/admin/admin_catalog_page.jsp";
+    private static String PAYMENT = "/pages/admin/payment.jsp";
+    private static String SUBSCRIPTION = "/pages/admin/subscription.jsp";
 
     private PeriodicalService periodicalService;
+    private PaymentService paymentService;
+    private SubscriptionService subscriptionService;
 
     public AdminServlet() {
+        paymentService = new PaymentServiceImpl();
         periodicalService = new PeriodicalServiceImpl();
+        subscriptionService = new SubscriptionServiceImpl();
+
     }
 
     @Override
@@ -47,12 +55,19 @@ public class AdminServlet extends HttpServlet {
         } else if (action.equalsIgnoreCase("catalog")) {
             forward = CATALOG_LIST;
             req.setAttribute("catalogs", periodicalService.getCatalog());
+
         } else if (action.equalsIgnoreCase("insert")) {
             forward = INSERT_OR_EDIT;
+        } else if (action.equalsIgnoreCase("payment")) {
+            forward = PAYMENT;
+            req.setAttribute("paymentList", paymentService.getPaymentList());
+            log.info(paymentService.getPaymentList().get(0).getPrice());
+
+        } else if(action.equalsIgnoreCase("subscription")){
+            forward = SUBSCRIPTION;
+            req.setAttribute("subscriptionList",subscriptionService.getAllSubscription());
         }
-
-        req.getRequestDispatcher(forward).forward(req, resp);
-
+        req.getRequestDispatcher(forward).forward(req,resp);
     }
 
     @Override

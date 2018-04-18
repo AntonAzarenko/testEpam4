@@ -6,4 +6,5 @@ public interface UserService {
 
     User getUserByEmail(String email);
     int getUserIdByEmail(String login);
+    void addUser(User user);
 }

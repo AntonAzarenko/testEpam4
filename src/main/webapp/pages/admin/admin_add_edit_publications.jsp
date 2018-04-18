@@ -1,11 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
-
-
-<%--
-<jsp:useBean id="periodicals" scope="page" type="com.azarenko.model.Periodicals"/>
---%>
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -14,7 +8,7 @@
 <body>
 
 <h1>Редактировать\Добавить</h1>
-<form method="post" action='admin' name="insert">
+<form method="post" action='' name="insert">
     <p>
         ID : <input type="text" readonly="readonly" name="catalogId"
                     value="<c:out value="${periodicals.id}"/>"/>

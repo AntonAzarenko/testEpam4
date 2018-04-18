@@ -74,7 +74,7 @@ public final class User extends AbstractBaseEntity {
     }
 
     public static class UserBulder {
-        private final int id;
+        private  int id;
         private String name;
         private String email;
         private String password;
@@ -84,6 +84,9 @@ public final class User extends AbstractBaseEntity {
 
         public UserBulder(int id) {
             this.id = id;
+        }
+
+        public UserBulder() {
         }
 
         public UserBulder name(String name) {

@@ -95,7 +95,18 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public void add(AbstractBaseEntity entity) {
-
+        User user = (User) entity;
+        try(PreparedStatement preparedStatement = connection.prepareStatement(
+                "INSERT  INTO mydb.users(name,email,password,enabled,role) VALUES (?,?,?,?,?)")){
+            preparedStatement.setString(1, user.getName());
+            preparedStatement.setString(2,user.getEmail());
+            preparedStatement.setString(3,user.getPassword());
+            preparedStatement.setInt(4,1);
+            preparedStatement.setString(5,"USER");
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            log.error(e);
+        }
     }
 
     @Override

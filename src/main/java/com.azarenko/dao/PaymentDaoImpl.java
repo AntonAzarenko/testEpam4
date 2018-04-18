@@ -6,10 +6,8 @@ import com.azarenko.util.DBUtil;
 import org.apache.log4j.Logger;
 
 import java.math.BigDecimal;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PaymentDaoImpl implements PaymentDao {
@@ -49,7 +47,26 @@ public class PaymentDaoImpl implements PaymentDao {
 
     @Override
     public List getListEntity() {
-        return null;
+        List<Payment> list = new ArrayList<>();
+        try (Statement statement = connection.createStatement();
+             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.payment")) {
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                Date date = rs.getDate("date");
+                int userId = rs.getInt("user_id");
+                BigDecimal price = rs.getBigDecimal("price");
+                Payment.PaymentBuilder paymentBuilder = new Payment.PaymentBuilder();
+                paymentBuilder.id(id);
+                paymentBuilder.date(date);
+                paymentBuilder.userId(userId);
+                paymentBuilder.price(price);
+                Payment payment = paymentBuilder.build();
+                list.add(payment);
+            }
+        } catch (SQLException e) {
+            log.error(e);
+        }
+        return list;
     }
 
 

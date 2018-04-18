@@ -35,7 +35,7 @@ public class ShoppingCartServlet extends HttpServlet {
         BigDecimal fullPrice = cartService.getFullPriceForPayment(userId);
         req.setAttribute("FP", fullPrice);
         req.setAttribute("cartList", cartService.getShoppingCartUser(userId));
-        req.getRequestDispatcher("/pages/shopping_cart.jsp").forward(req,resp);
+        req.getRequestDispatcher("/pages//user/shopping_cart.jsp").forward(req,resp);
     }
 
     @Override

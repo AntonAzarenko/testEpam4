@@ -22,10 +22,10 @@ import java.util.List;
 public class UsersServlet extends HttpServlet {
 
     private final static Logger log = Logger.getLogger(UsersServlet.class);
-    private final static String CATALOG_LIST = "/pages/user_catalog.jsp";
-    private final static String PROFILE = "/pages/profile.jsp";
-    private final static String MY_PERIODICALS = "/pages/my_periodicals.jsp";
-    private final static String MY_PROFILE = "/pages/my_profile.jsp";
+    private final static String CATALOG_LIST = "/pages/user/user_catalog.jsp";
+    private final static String PROFILE = "/pages/user/profile.jsp";
+    private final static String MY_PERIODICALS = "/pages/user/my_periodicals.jsp";
+    private final static String MY_PROFILE = "/pages/user/my_profile.jsp";
 
     private PeriodicalService periodicalService;
 

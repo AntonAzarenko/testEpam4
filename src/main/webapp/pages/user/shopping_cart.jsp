@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Корзина</title>
@@ -28,6 +29,10 @@
             <h3 >К оплате   </h3>
                 <input type="text" readonly name="price"
                 value="<c:out value="${FP}"/>"/>
+            <C:if test="${fp=0.0}">
+                <jsp:forward page="/user?action=catalog"/>
+
+            </C:if>
             <input type="submit" value="Оплатить">
         </form>
 

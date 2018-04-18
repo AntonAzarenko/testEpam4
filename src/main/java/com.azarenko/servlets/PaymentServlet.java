@@ -38,8 +38,9 @@ public class PaymentServlet extends HttpServlet {
         HttpSession session = req.getSession();
         int userId = userService.getUserIdByEmail((String) session.getAttribute("login"));
         BigDecimal price = BigDecimal.valueOf(Double.parseDouble(req.getParameter("price")));
+
         Payment payment = paymentService.createPayment(userId, price );
         paymentService.add(payment);
-        req.getRequestDispatcher("/pages/message.jsp").forward(req,resp);
+        req.getRequestDispatcher("/pages/info/message.jsp").forward(req,resp);
     }
 }

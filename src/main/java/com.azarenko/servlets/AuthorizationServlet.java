@@ -3,6 +3,7 @@ package com.azarenko.servlets;
 import com.azarenko.services.AutorisationService;
 import com.azarenko.dao.UserDao;
 import com.azarenko.dao.UserDaoImpl;
+import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +15,12 @@ import java.io.IOException;
 
 @WebServlet(name = "authorize", urlPatterns = "/authorize")
 public class AuthorizationServlet extends HttpServlet {
+    private final static Logger log = Logger.getLogger(AuthorizationServlet.class);
+    private final static String ERROR = "/pages/info/erors_message.jsp";
+    private final static String ADMIN = "pages/admin/admin_start_page.jsp";
+    private final static String USER = "user?action=catalog";
+    private final static String START = "/pages/start.jsp";
+    private final static String REGISTERED = "/pages/user/registration.jsp";
 
     private AutorisationService authorized;
     private UserDao userDao;
@@ -25,29 +32,45 @@ public class AuthorizationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/pages/start.jsp").forward(req,resp);
+       req.getRequestDispatcher(START).forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String login = req.getParameter("login");
+        String action = req.getParameter("action");
+        String forward = "";
+        log.info(action);
         HttpSession session = req.getSession();
-        String password = req.getParameter("password");
-        String role = authorized.authorizeUser(login,password);
-        if(role == null){
-            req.getRequestDispatcher("/pages/erors_message.jsp").forward(req, resp);
-        }
-            switch (role){
-                case  "ADMIN" :
-                    session.setAttribute("login", login);
-                    req.getRequestDispatcher("pages/admin_start_page.jsp").forward(req,resp);
-                    break;
-                case "USER" :
-                    session.setAttribute("login", login);
-                    req.getRequestDispatcher("/user?action=catalog").forward(req,resp);
-                    break;
-                  default:
-                      req.getRequestDispatcher("/pages/erors_message.jsp").forward(req,resp);
+        if (action.equalsIgnoreCase("authorize")) {
+            String login = req.getParameter("login");
+            String password = req.getParameter("password");
+            if (login == null || password == null) {
+                forward = ERROR;
+                req.getRequestDispatcher(forward).forward(req, resp);
             }
+            String role = authorized.authorizeUser(login, password);
+            if (role == null) {
+                req.getRequestDispatcher(ERROR).forward(req, resp);
+            }
+            switch (role) {
+                case "ADMIN":
+                    forward = ADMIN;
+                    session.setAttribute("login", login);
+                    req.getRequestDispatcher(forward).forward(req, resp);
+                    break;
+                case "USER":
+                    forward = USER;
+                    session.setAttribute("login", login);
+                    req.getRequestDispatcher(forward).forward(req, resp);
+                    break;
+                default:
+                    forward = ERROR;
+
+            }
+        } else if (action.equalsIgnoreCase("register")) {
+            forward = REGISTERED;
+            session.setAttribute("login","login");
+        }
+        req.getRequestDispatcher(forward).forward(req, resp);
     }
 }

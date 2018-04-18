@@ -11,8 +11,10 @@ import java.io.IOException;
 
 public class AuthFilter implements Filter {
 
-    private FilterConfig filterConfig;
     private static final Logger log = Logger.getLogger(AuthFilter.class);
+    private FilterConfig filterConfig;
+    private int countFreeEnter = 0;
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         this.filterConfig = filterConfig;
@@ -20,14 +22,23 @@ public class AuthFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         HttpSession session = request.getSession(false);
         String loginURI = request.getContextPath() + "/authorize";
         boolean loggedIn = session != null && session.getAttribute("login") != null;
         boolean loginRequest = request.getRequestURI().equals(loginURI);
+        if(loggedIn){
+            if(session.getAttribute("login").equals("login")){
+                countFreeEnter++;
+              if(countFreeEnter > 1){
+                  session.setAttribute("login", null);
+              }
+            }
+        }
+        if (loggedIn || loginRequest) {
 
-        if(loggedIn ||loginRequest){
             filterChain.doFilter(request, response);
         } else {
             response.sendRedirect(loginURI);

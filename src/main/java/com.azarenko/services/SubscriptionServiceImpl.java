@@ -40,7 +40,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 
     @Override
     public List<Subscription> getAllSubscription() {
-        return null;
+        return daoBase.getListEntity();
     }
 
     @Override

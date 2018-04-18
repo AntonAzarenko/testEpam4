@@ -20,9 +20,10 @@ public class SubscriptionDaoImpl implements SubscriptionDao {
     @Override
     public List<Subscription> getAllSubscriptionsUserByUserId(int id) {
         List<Subscription> subscriptionList = new ArrayList<>();
-        try (Statement statement = connection.createStatement();
-             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.subscriptions")) {
-            while (rs.next()) {
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.subscriptions WHERE user_id = ?")) {
+            preparedStatement.setInt(1,id);
+            ResultSet rs = preparedStatement.executeQuery();
+           while (rs.next()){
                 Subscription.SubscriptionBuild subscriptionBuild = new Subscription.SubscriptionBuild();
                 subscriptionBuild.id(rs.getInt("id"));
                 subscriptionBuild.idPeriodical(rs.getInt("id_periodicals"));
@@ -34,6 +35,7 @@ public class SubscriptionDaoImpl implements SubscriptionDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+
         }
         return subscriptionList;
     }
@@ -71,6 +73,22 @@ public class SubscriptionDaoImpl implements SubscriptionDao {
 
     @Override
     public List getListEntity() {
-        return null;
+        List<Subscription> subscriptionList = new ArrayList<>();
+        try (Statement statement = connection.createStatement();
+             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.subscriptions")) {
+            while (rs.next()) {
+                Subscription.SubscriptionBuild subscriptionBuild = new Subscription.SubscriptionBuild();
+                subscriptionBuild.id(rs.getInt("id"));
+                subscriptionBuild.idPeriodical(rs.getInt("id_periodicals"));
+                subscriptionBuild.dateStartSubcription(rs.getDate("date_start"));
+                subscriptionBuild.dateEndSubscription(rs.getDate("date_end"));
+                subscriptionBuild.namePeriodical(rs.getString("name_periodicals"));
+                Subscription subscription = subscriptionBuild.build();
+                subscriptionList.add(subscription);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return subscriptionList;
     }
 }

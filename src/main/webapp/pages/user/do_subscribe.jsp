@@ -6,7 +6,7 @@
     <title>Оформление подписки</title>
 </head>
 <body>
-<form method="post" action="/subscribe"name="add">
+<form method="post" action="/subscribe" name="add">
     <p/>
     ID : <input type="text" readonly="readonly" name="id"
                 value="<c:out value="${periodicals.id}"/>"/>

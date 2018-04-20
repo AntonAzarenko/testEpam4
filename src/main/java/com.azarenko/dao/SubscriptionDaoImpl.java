@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class SubscriptionDaoImpl implements SubscriptionDao {
     private final static Logger log = Logger.getLogger(SubscriptionDaoImpl.class);
@@ -30,6 +31,7 @@ public class SubscriptionDaoImpl implements SubscriptionDao {
                 subscriptionBuild.dateStartSubcription(rs.getDate("date_start"));
                 subscriptionBuild.dateEndSubscription(rs.getDate("date_end"));
                 subscriptionBuild.namePeriodical(rs.getString("name_periodicals"));
+                subscriptionBuild.userId(rs.getInt("user_id"));
                 Subscription subscription = subscriptionBuild.build();
                 subscriptionList.add(subscription);
             }
@@ -83,6 +85,7 @@ public class SubscriptionDaoImpl implements SubscriptionDao {
                 subscriptionBuild.dateStartSubcription(rs.getDate("date_start"));
                 subscriptionBuild.dateEndSubscription(rs.getDate("date_end"));
                 subscriptionBuild.namePeriodical(rs.getString("name_periodicals"));
+                subscriptionBuild.userId(rs.getInt("user_id"));
                 Subscription subscription = subscriptionBuild.build();
                 subscriptionList.add(subscription);
             }

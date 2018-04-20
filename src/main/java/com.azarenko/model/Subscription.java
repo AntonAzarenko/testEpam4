@@ -2,6 +2,7 @@ package com.azarenko.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public final class Subscription extends AbstractBaseEntity {
 
@@ -58,7 +59,7 @@ public final class Subscription extends AbstractBaseEntity {
     }
 
     public static class SubscriptionBuild {
-        private  int id;
+        private int id;
 
         private String title;
 

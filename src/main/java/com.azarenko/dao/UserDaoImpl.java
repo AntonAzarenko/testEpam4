@@ -38,7 +38,7 @@ public class UserDaoImpl implements UserDao {
                     if (en == 1) {
                         enabled = true;
                     }
-                //создаем  User'а используя патрн BULDER
+                //создаем  User'а используя патрн BUILDER
                     User.UserBulder userBulder = new User.UserBulder(id);
                     userBulder.email(email);
                     userBulder.name(name);

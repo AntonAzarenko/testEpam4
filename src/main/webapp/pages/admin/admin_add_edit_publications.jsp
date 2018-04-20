@@ -8,6 +8,9 @@
 <body>
 
 <h1>Редактировать\Добавить</h1>
+
+<p/>
+<a href="/admin?action=catalog">Назад</a>
 <form method="post" action='' name="insert">
     <p>
         ID : <input type="text" readonly="readonly" name="catalogId"
@@ -17,8 +20,8 @@
         Название : <input type="text" name="title"
                           value="<c:out value="${periodicals.title}"/>"/>
     <p>
-        Периодичность выхода : <input type="text"  name="outfrequency"
-                            value="<c:out value="${periodicals.outputFrequency}"/>"/>
+        Периодичность выхода : <input type="text" name="outfrequency"
+                                      value="<c:out value="${periodicals.outputFrequency}"/>"/>
     <p>
 
         Описание : <input type="text" name="discription"
@@ -27,7 +30,10 @@
         Цена : <input type="text" name="price"
                       value="<c:out value="${periodicals.price}"/>"/>
     <p>
-        <input type="submit" value="Принять" name="action=add">
+        <input type="submit" value="Принять">
+</form>
+
+
 </form>
 </body>
 </html>

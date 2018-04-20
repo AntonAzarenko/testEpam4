@@ -11,7 +11,7 @@
     <p/>
     <a href="/admin?action=subscription">Подписки</a>
     <p/>
-    <a href="pages/admin/start.jsp">Воити под другим логином</a>
+    <a href="pages/start.jsp">Воити под другим логином</a>
     <p/>
     <a href="/admin?action=insert">Добавить издание</a>
     <p/>

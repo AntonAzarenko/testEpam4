@@ -1,5 +1,7 @@
 package com.azarenko.model;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public abstract class AbstractBaseEntity {
 
     protected Integer id;
@@ -7,14 +9,12 @@ public abstract class AbstractBaseEntity {
     public AbstractBaseEntity() {
     }
 
-    public AbstractBaseEntity(Integer id) {
+    public AbstractBaseEntity(int id) {
 
         this.id = id;
     }
 
-    public boolean isNew() {
-        return this.id == null;
-    }
+
 
     public Integer getId() {
         return id;

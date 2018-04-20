@@ -29,10 +29,6 @@
             <h3 >К оплате   </h3>
                 <input type="text" readonly name="price"
                 value="<c:out value="${FP}"/>"/>
-            <C:if test="${fp=0.0}">
-                <jsp:forward page="/user?action=catalog"/>
-
-            </C:if>
             <input type="submit" value="Оплатить">
         </form>
 

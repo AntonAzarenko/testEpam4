@@ -5,7 +5,7 @@
 <head>
     <title>Вход</title>
 </head>
-<h1>Вход в систему "Переодические издания"</h1>
+<h1>Вход в систему "Периодические издания"</h1>
 <body>
 <form method=post action="/authorize?action=authorize">
     <p><strong>Введите ваш EMAIL: </strong>

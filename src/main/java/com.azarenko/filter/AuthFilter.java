@@ -29,16 +29,11 @@ public class AuthFilter implements Filter {
         String loginURI = request.getContextPath() + "/authorize";
         boolean loggedIn = session != null && session.getAttribute("login") != null;
         boolean loginRequest = request.getRequestURI().equals(loginURI);
-        if(loggedIn){
-            if(session.getAttribute("login").equals("login")){
-                countFreeEnter++;
-              if(countFreeEnter > 1){
-                  session.setAttribute("login", null);
-              }
-            }
+        String uri = request.getRequestURI();
+        if(uri.equals("/registration")){
+            response.sendRedirect(loginURI);
         }
         if (loggedIn || loginRequest) {
-
             filterChain.doFilter(request, response);
         } else {
             response.sendRedirect(loginURI);

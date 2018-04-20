@@ -5,10 +5,6 @@
 -- ----------------------
 -- insert  users
 -- ----------------------
-  USE mydb;
-insert INTO users(name, email, password,enabled,role) VALUES
-  ('User','user@yandex.ru','user','0','USER'),
-  ('Admin','admin@gmail.com','admin','0','ADMIN');
 -- insert publication
 -- ----------------------
 use mydb;

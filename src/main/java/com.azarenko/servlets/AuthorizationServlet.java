@@ -32,14 +32,13 @@ public class AuthorizationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       req.getRequestDispatcher(START).forward(req, resp);
+        req.getRequestDispatcher(START).forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");
         String forward = "";
-        log.info(action);
         HttpSession session = req.getSession();
         if (action.equalsIgnoreCase("authorize")) {
             String login = req.getParameter("login");
@@ -65,11 +64,10 @@ public class AuthorizationServlet extends HttpServlet {
                     break;
                 default:
                     forward = ERROR;
-
             }
         } else if (action.equalsIgnoreCase("register")) {
             forward = REGISTERED;
-            session.setAttribute("login","login");
+            session.setAttribute("login", "login");
         }
         req.getRequestDispatcher(forward).forward(req, resp);
     }

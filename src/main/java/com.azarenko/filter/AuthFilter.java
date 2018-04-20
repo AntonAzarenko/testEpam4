@@ -13,7 +13,6 @@ public class AuthFilter implements Filter {
 
     private static final Logger log = Logger.getLogger(AuthFilter.class);
     private FilterConfig filterConfig;
-    private int countFreeEnter = 0;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

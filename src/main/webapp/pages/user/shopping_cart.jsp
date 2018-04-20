@@ -31,7 +31,6 @@
                 value="<c:out value="${FP}"/>"/>
             <input type="submit" value="Оплатить">
         </form>
-
     </div>
 </body>
 </html>

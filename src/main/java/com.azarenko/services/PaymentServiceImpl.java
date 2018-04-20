@@ -20,7 +20,6 @@ public class PaymentServiceImpl implements PaymentService {
     private ShoppingCartService shoppingCartService;
     private SubscriptionService subscriptionService;
 
-
     public PaymentServiceImpl() {
         subscriptionService = new SubscriptionServiceImpl();
         shoppingCartService = new ShoppingCartServiceImpl();

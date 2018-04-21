@@ -5,7 +5,7 @@ import com.azarenko.model.ShoppingCart;
 
 import java.util.List;
 
-public interface ShoppingCartDao extends DaoBase{
+public interface ShoppingCartDao extends BaseDao {
     List<ShoppingCart> getShoppingCartByUserId(int id);
     void removeShoppingCartUser(int id);
 

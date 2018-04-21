@@ -2,11 +2,10 @@ package com.azarenko.dao;
 
 
 import com.azarenko.model.AbstractBaseEntity;
-import com.azarenko.model.Periodicals;
 
 import java.util.List;
 
-public interface PeriodicalsDao extends DaoBase {
+public interface PeriodicalsDao extends BaseDao {
     @Override
     AbstractBaseEntity getEntityById(int id);
 

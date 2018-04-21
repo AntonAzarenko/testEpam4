@@ -5,7 +5,7 @@ import com.azarenko.model.Subscription;
 
 import java.util.List;
 
-public interface SubscriptionDao  extends DaoBase{
+public interface SubscriptionDao  extends BaseDao {
 
     List<Subscription> getAllSubscriptionsUserByUserId(int id);
 

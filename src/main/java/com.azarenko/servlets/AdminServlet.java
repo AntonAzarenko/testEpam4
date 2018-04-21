@@ -1,10 +1,6 @@
 package com.azarenko.servlets;
 
-import com.azarenko.dao.PeriodicalsDao;
-import com.azarenko.dao.PeriodicalsDaoImpl;
-import com.azarenko.model.Payment;
 import com.azarenko.model.Periodicals;
-import com.azarenko.model.Subscription;
 import com.azarenko.services.*;
 import org.apache.log4j.Logger;
 

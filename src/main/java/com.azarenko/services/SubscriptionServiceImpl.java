@@ -1,8 +1,8 @@
 package com.azarenko.services;
 
-import com.azarenko.dao.DaoBase;
+import com.azarenko.dao.BaseDao;
 import com.azarenko.dao.SubscriptionDao;
-import com.azarenko.dao.SubscriptionDaoImpl;
+import com.azarenko.dao.SubscriptionImplDao;
 import com.azarenko.model.Periodicals;
 import com.azarenko.model.Subscription;
 
@@ -11,13 +11,13 @@ import java.util.List;
 
 public class SubscriptionServiceImpl implements SubscriptionService {
     private SubscriptionDao subscriptionDao;
-    private DaoBase daoBase;
+    private BaseDao baseDao;
     private PeriodicalService periodicalService;
 
     public SubscriptionServiceImpl() {
         periodicalService = new PeriodicalServiceImpl();
-        subscriptionDao = new SubscriptionDaoImpl();
-        daoBase = new SubscriptionDaoImpl();
+        subscriptionDao = new SubscriptionImplDao();
+        baseDao = new SubscriptionImplDao();
     }
 
     @Override
@@ -40,7 +40,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 
     @Override
     public List<Subscription> getAllSubscription() {
-        return daoBase.getListEntity();
+        return baseDao.getListEntity();
     }
 
     @Override

@@ -2,7 +2,6 @@ package com.azarenko.dao;
 
 import com.azarenko.model.AbstractBaseEntity;
 import com.azarenko.model.Periodicals;
-import com.azarenko.util.DBUtil;
 import org.apache.log4j.Logger;
 
 import java.math.BigDecimal;
@@ -10,14 +9,16 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PeriodicalsDaoImpl implements PeriodicalsDao {
+public class PeriodicalsImplDao implements PeriodicalsDao {
 
-    private final static Logger log = Logger.getLogger(PeriodicalsDaoImpl.class);
+    private final static Logger log = Logger.getLogger(PeriodicalsImplDao.class);
 
     private Connection connection;
+    String url = "jdbc:mysql://localhost:3306/jdbcdb";
 
-    public PeriodicalsDaoImpl() {
-        connection = DBUtil.getConnection();
+
+    public PeriodicalsImplDao() {
+
     }
 
     @Override

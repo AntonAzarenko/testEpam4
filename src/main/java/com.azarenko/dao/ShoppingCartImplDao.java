@@ -10,12 +10,12 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShoppingCartDaoImpl implements ShoppingCartDao {
-    private static final Logger log = Logger.getLogger(ShoppingCartDaoImpl.class);
+public class ShoppingCartImplDao implements ShoppingCartDao {
+    private static final Logger log = Logger.getLogger(ShoppingCartImplDao.class);
 
     private Connection connection;
 
-    public ShoppingCartDaoImpl() {
+    public ShoppingCartImplDao() {
         connection = DBUtil.getConnection();
     }
 

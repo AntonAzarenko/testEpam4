@@ -10,12 +10,12 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PaymentDaoImpl implements PaymentDao {
-    private final static Logger log = Logger.getLogger(PaymentDaoImpl.class);
+public class PaymentImplDao implements PaymentDao {
+    private final static Logger log = Logger.getLogger(PaymentImplDao.class);
 
     private Connection connection;
 
-    public PaymentDaoImpl() {
+    public PaymentImplDao() {
         connection = DBUtil.getConnection();
     }
 

@@ -1,8 +1,9 @@
 package com.azarenko.servlets;
 
-import com.azarenko.services.AutorisationService;
-import com.azarenko.dao.UserDao;
-import com.azarenko.dao.UserDaoImpl;
+import com.azarenko.services.AuthorisationService;
+import com.azarenko.services.UserService;
+import com.azarenko.services.UserServiceImpl;
+import com.azarenko.util.ConnectionPool;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -12,6 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 @WebServlet(name = "authorize", urlPatterns = "/authorize")
 public class AuthorizationServlet extends HttpServlet {
@@ -22,12 +25,24 @@ public class AuthorizationServlet extends HttpServlet {
     private final static String START = "/pages/start.jsp";
     private final static String REGISTERED = "/pages/user/registration.jsp";
 
-    private AutorisationService authorized;
-    private UserDao userDao;
+    private AuthorisationService authorized;
+    private UserService userService;
+    private ConnectionPool conPool;
+    private Connection connection;
 
     public AuthorizationServlet() {
-        authorized = new AutorisationService();
-        userDao = new UserDaoImpl();
+        authorized = new AuthorisationService();
+        userService = new UserServiceImpl();
+    }
+
+    @Override
+    public void init() throws ServletException {
+        super.init();
+        try {
+            conPool = ConnectionPool.getInstance(50,100,"jdbc:mysql://localhost:3306/mydb","root","root","com.mysql.jdbc.Driver")
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -37,6 +52,11 @@ public class AuthorizationServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try {
+            connection =conPool.getConnection();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         String action = req.getParameter("action");
         String forward = "";
         HttpSession session = req.getSession();
@@ -47,6 +67,7 @@ public class AuthorizationServlet extends HttpServlet {
                 forward = ERROR;
                 req.getRequestDispatcher(forward).forward(req, resp);
             }
+            authorized.setConnection(connection);
             String role = authorized.authorizeUser(login, password);
             if (role == null) {
                 req.getRequestDispatcher(ERROR).forward(req, resp);
@@ -54,11 +75,13 @@ public class AuthorizationServlet extends HttpServlet {
             switch (role) {
                 case "ADMIN":
                     forward = ADMIN;
+                    session.setAttribute("role",role);
                     session.setAttribute("login", login);
                     req.getRequestDispatcher(forward).forward(req, resp);
                     break;
                 case "USER":
                     forward = USER;
+                    session.setAttribute("role",role);
                     session.setAttribute("login", login);
                     req.getRequestDispatcher(forward).forward(req, resp);
                     break;

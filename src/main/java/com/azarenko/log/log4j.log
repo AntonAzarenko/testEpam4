@@ -1,0 +1,1268 @@
+2018-04-20 10:56:13 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-20 10:56:13 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 08:40:45 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 08:40:45 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 08:42:43 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 08:42:43 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:15:21 ERROR ConnectionPool:111 - Can't create a new connection for {}jdbc:mysql://localhost:3306/jdbcdb
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'jdbcdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1665)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1207)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.azarenko.util.ConnectionPool.createConnectionWrapper(ConnectionPool.java:97)
+	at com.azarenko.util.ConnectionPool.<init>(ConnectionPool.java:50)
+	at com.azarenko.util.CreateConPool.connectionPoolStart(CreateConPool.java:24)
+	at com.azarenko.Main.start(Main.java:27)
+	at com.azarenko.Main.main(Main.java:20)
+2018-04-21 10:15:43 ERROR ConnectionPool:111 - Can't create a new connection for {}jdbc:mysql://localhost:3306/jdbcdb
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'jdbcdb'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1665)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1207)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.azarenko.util.ConnectionPool.createConnectionWrapper(ConnectionPool.java:97)
+	at com.azarenko.util.ConnectionPool.<init>(ConnectionPool.java:50)
+	at com.azarenko.util.CreateConPool.connectionPoolStart(CreateConPool.java:24)
+	at com.azarenko.Main.start(Main.java:27)
+	at com.azarenko.Main.main(Main.java:20)
+2018-04-21 10:17:18 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:18 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:18 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:18 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:18 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:17:36 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:19:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:35:24 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:35:24 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:37:22 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:37:22 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:41:13 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:41:13 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:13 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:41:14 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:50 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:43:50 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:43:51 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:44:03 INFO  AuthorisationService:35 - com.azarenko.util.PooledConnection@567c3cc8
+2018-04-21 10:45:14 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:45:14 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:15 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:45:19 INFO  AuthorisationService:35 - com.azarenko.util.PooledConnection@14a0d160
+2018-04-21 10:47:43 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:47:43 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:47:44 INFO  UserDaoImpl:19 - 
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:47:44 INFO  UserDaoImpl:19 - 
+2018-04-21 10:47:44 INFO  UserDaoImpl:19 - 
+2018-04-21 10:47:48 INFO  AuthorisationService:35 - com.azarenko.util.PooledConnection@1781d3f7
+2018-04-21 10:48:26 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:48:26 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:27 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:48:29 INFO  AuthorisationService:35 - com.azarenko.util.PooledConnection@48f661ac
+2018-04-21 10:51:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:51:07 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:08 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:51:11 INFO  AuthorisationService:35 - com.azarenko.util.PooledConnection@3c8164b2
+2018-04-21 10:51:11 INFO  UserDaoImpl:27 - 
+2018-04-21 10:52:01 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:52:01 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 10:52:05 INFO  AuthorisationService:35 - com.azarenko.util.PooledConnection@48f661ac
+2018-04-21 10:52:05 INFO  AuthorisationService:40 - com.azarenko.util.PooledConnection@48f661ac
+2018-04-21 10:52:05 INFO  UserDaoImpl:27 - 
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:01:59 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:02 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:33 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 11:02:33 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 11:02:37 INFO  AuthorisationService:28 - 
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:37 INFO  UserDaoImpl:32 - com.azarenko.util.PooledConnection@6e417067
+2018-04-21 11:02:44 INFO  AuthorisationService:28 - 
+2018-04-21 11:02:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:44 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:02:44 ERROR ConnectionPool:111 - Can't create a new connection for {}jdbc:mysql://localhost:3306/mydb
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.azarenko.util.ConnectionPool.createConnectionWrapper(ConnectionPool.java:97)
+	at com.azarenko.util.ConnectionPool.<init>(ConnectionPool.java:50)
+	at com.azarenko.util.CreateConPool.connectionPoolStart(CreateConPool.java:24)
+	at com.azarenko.util.CreateConPool.getPool(CreateConPool.java:36)
+	at com.azarenko.dao.UserImplDao.getUserByEmail(UserDaoImpl.java:29)
+	at com.azarenko.services.AuthorisationService.authorizeUser(AuthorisationService.java:29)
+	at com.azarenko.servlets.AuthorizationServlet.doPost(AuthorizationServlet.java:50)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at com.azarenko.filter.AuthFilter.doFilter(AuthFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at com.azarenko.filter.CharecterEncodingFilter.doFilter(CharecterEncodingFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2549)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2538)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-21 11:03:33 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 11:03:33 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 11:03:40 INFO  AuthorisationService:28 - 
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:40 INFO  UserDaoImpl:32 - com.azarenko.util.PooledConnection@15985b2
+2018-04-21 11:03:47 INFO  AuthorisationService:28 - 
+2018-04-21 11:03:47 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:47 INFO  ConnectionPool:101 - Created a new connection
+2018-04-21 11:03:47 ERROR ConnectionPool:111 - Can't create a new connection for {}jdbc:mysql://localhost:3306/mydb
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.azarenko.util.ConnectionPool.createConnectionWrapper(ConnectionPool.java:97)
+	at com.azarenko.util.ConnectionPool.<init>(ConnectionPool.java:50)
+	at com.azarenko.util.CreateConPool.connectionPoolStart(CreateConPool.java:24)
+	at com.azarenko.util.CreateConPool.getPool(CreateConPool.java:36)
+	at com.azarenko.dao.UserImplDao.getUserByEmail(UserDaoImpl.java:29)
+	at com.azarenko.services.AuthorisationService.authorizeUser(AuthorisationService.java:29)
+	at com.azarenko.servlets.AuthorizationServlet.doPost(AuthorizationServlet.java:50)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at com.azarenko.filter.AuthFilter.doFilter(AuthFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at com.azarenko.filter.CharecterEncodingFilter.doFilter(CharecterEncodingFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2549)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2538)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-21 11:08:55 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 11:08:55 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 11:08:59 INFO  AuthorisationService:28 - 
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:08:59 INFO  UserDaoImpl:32 - com.azarenko.util.PooledConnection@51459398
+2018-04-21 11:09:05 INFO  AuthorisationService:28 - 
+2018-04-21 11:09:05 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:09:05 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:09:05 ERROR ConnectionPool:115 - Can't create a new connection for {}jdbc:mysql://localhost:3306/mydb
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data source rejected establishment of connection,  message from server: "Too many connections"
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1038)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44)
+	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.azarenko.util.ConnectionPool.createConnectionWrapper(ConnectionPool.java:101)
+	at com.azarenko.util.ConnectionPool.<init>(ConnectionPool.java:53)
+	at com.azarenko.util.CreateConPool.connectionPoolStart(CreateConPool.java:21)
+	at com.azarenko.util.CreateConPool.getPool(CreateConPool.java:26)
+	at com.azarenko.dao.UserImplDao.getUserByEmail(UserDaoImpl.java:29)
+	at com.azarenko.services.AuthorisationService.authorizeUser(AuthorisationService.java:29)
+	at com.azarenko.servlets.AuthorizationServlet.doPost(AuthorizationServlet.java:50)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at com.azarenko.filter.AuthFilter.doFilter(AuthFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at com.azarenko.filter.CharecterEncodingFilter.doFilter(CharecterEncodingFilter.java:36)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:506)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.doRun(AprEndpoint.java:2549)
+	at org.apache.tomcat.util.net.AprEndpoint$SocketProcessor.run(AprEndpoint.java:2538)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-04-21 11:10:29 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 11:10:29 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 11:10:45 INFO  AuthorisationService:28 - 
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:10:46 INFO  UserDaoImpl:32 - com.azarenko.util.PooledConnection@3237cea3
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:31 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:12:38 INFO  ConnectionPool:105 - Created a new connection
+2018-04-21 11:13:04 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 11:13:04 DEBUG CharecterEncodingFilter:27 - Set encoding UTF-8
+2018-04-21 11:13:08 INFO  AuthorisationService:28 - 

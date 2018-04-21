@@ -1,11 +1,9 @@
 package com.azarenko.services;
 
-import com.azarenko.dao.DaoBase;
-import com.azarenko.dao.PaymentDao;
-import com.azarenko.dao.PaymentDaoImpl;
+import com.azarenko.dao.BaseDao;
+import com.azarenko.dao.PaymentImplDao;
 import com.azarenko.model.Payment;
 import com.azarenko.model.ShoppingCart;
-import com.azarenko.model.Subscription;
 import org.apache.log4j.Logger;
 
 import java.math.BigDecimal;
@@ -16,19 +14,19 @@ public class PaymentServiceImpl implements PaymentService {
 
     private final static Logger log = Logger.getLogger(PaymentServiceImpl.class);
 
-    private DaoBase daoBase;
+    private BaseDao baseDao;
     private ShoppingCartService shoppingCartService;
     private SubscriptionService subscriptionService;
 
     public PaymentServiceImpl() {
         subscriptionService = new SubscriptionServiceImpl();
         shoppingCartService = new ShoppingCartServiceImpl();
-        daoBase = new PaymentDaoImpl();
+        baseDao = new PaymentImplDao();
     }
 
     @Override
     public void add(Payment payment) {
-        daoBase.add(payment);
+        baseDao.add(payment);
         List<ShoppingCart> shoppingCartList = shoppingCartService.getShoppingCartUser(payment.getUserId());
         for(ShoppingCart pair : shoppingCartList){
             subscriptionService.create(pair.getPeriodicalId(),pair.getUserID(),pair.getStart(),pair.getEnd());
@@ -37,7 +35,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public List<Payment> getPaymentList() {
-        return daoBase.getListEntity();
+        return baseDao.getListEntity();
     }
 
     @Override

@@ -2,7 +2,6 @@ package com.azarenko.dao;
 
 import com.azarenko.model.AbstractBaseEntity;
 import com.azarenko.model.User;
-import com.azarenko.util.DBUtil;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -10,19 +9,21 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class UserDaoImpl implements UserDao {
-    private static final Logger log = Logger.getLogger(UserDaoImpl.class);
+public class UserImplDao extends BaseDaoImpl implements UserDao {
+    private static final Logger log = Logger.getLogger(UserImplDao.class);
+
     private Connection connection;
 
-    public UserDaoImpl() {
-        this.connection = DBUtil.getConnection();
+    public UserImplDao() {
     }
-
 
     @Override
     public User getUserByEmail(String email) {
 
         try {
+            connection = getConnection();
+
+            log.info(connection);
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");
             while (rs.next()) {
@@ -38,7 +39,7 @@ public class UserDaoImpl implements UserDao {
                     if (en == 1) {
                         enabled = true;
                     }
-                //создаем  User'а используя патрн BUILDER
+                    //создаем  User'а используя патрн BUILDER
                     User.UserBulder userBulder = new User.UserBulder(id);
                     userBulder.email(email);
                     userBulder.name(name);
@@ -57,8 +58,6 @@ public class UserDaoImpl implements UserDao {
         return null;
     }
 
-
-
     @Override
     public int getUserIdByEmail(String login) {
         User user = getUserByEmail(login);
@@ -69,7 +68,7 @@ public class UserDaoImpl implements UserDao {
     @Override
     public AbstractBaseEntity getEntityById(int id) {
         User user = null;
-        try(PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)");) {
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)");) {
             preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             if (rs.next()) {
@@ -96,13 +95,13 @@ public class UserDaoImpl implements UserDao {
     @Override
     public void add(AbstractBaseEntity entity) {
         User user = (User) entity;
-        try(PreparedStatement preparedStatement = connection.prepareStatement(
-                "INSERT  INTO mydb.users(name,email,password,enabled,role) VALUES (?,?,?,?,?)")){
+        try (PreparedStatement preparedStatement = connection.prepareStatement(
+                "INSERT  INTO mydb.users(name,email,password,enabled,role) VALUES (?,?,?,?,?)")) {
             preparedStatement.setString(1, user.getName());
-            preparedStatement.setString(2,user.getEmail());
-            preparedStatement.setString(3,user.getPassword());
-            preparedStatement.setInt(4,1);
-            preparedStatement.setString(5,"USER");
+            preparedStatement.setString(2, user.getEmail());
+            preparedStatement.setString(3, user.getPassword());
+            preparedStatement.setInt(4, 1);
+            preparedStatement.setString(5, "USER");
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             log.error(e);

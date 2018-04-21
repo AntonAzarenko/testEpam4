@@ -1,10 +1,5 @@
 package com.azarenko.servlets;
 
-import com.azarenko.dao.PeriodicalsDao;
-import com.azarenko.dao.PeriodicalsDaoImpl;
-import com.azarenko.dao.UserDao;
-import com.azarenko.dao.UserDaoImpl;
-import com.azarenko.model.Subscription;
 import com.azarenko.model.User;
 import com.azarenko.services.*;
 import org.apache.log4j.Logger;
@@ -16,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.List;
 
 @WebServlet(name = "MyServlet", urlPatterns = "/user")
 public class UsersServlet extends HttpServlet {

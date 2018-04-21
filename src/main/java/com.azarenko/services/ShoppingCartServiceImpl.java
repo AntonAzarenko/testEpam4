@@ -16,11 +16,11 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     private final static Logger log = Logger.getLogger(ShoppingCartServiceImpl.class);
 
     private ShoppingCartDao shoppingCartDao;
-    private DaoBase daoBase;
+    private BaseDao baseDao;
 
     public ShoppingCartServiceImpl() {
-        daoBase = new PeriodicalsDaoImpl();
-        shoppingCartDao = new ShoppingCartDaoImpl();
+        baseDao = new PeriodicalsImplDao();
+        shoppingCartDao = new ShoppingCartImplDao();
     }
 
     @Override
@@ -42,7 +42,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     @Override
     public BigDecimal getPriceForSubcription(int id, Date start, Date end) {
-        List<Periodicals> periodicalsList = daoBase.getListEntity();
+        List<Periodicals> periodicalsList = baseDao.getListEntity();
         Date startD = new Date();
         Date endD = new Date();
         BigDecimal newPrice = null;
@@ -86,7 +86,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     private int getOutputFrequency(int id) {
-        List<Periodicals> periodicalsList = daoBase.getListEntity();
+        List<Periodicals> periodicalsList = baseDao.getListEntity();
         for (Periodicals pair : periodicalsList) {
             if (id == pair.getId()) {
                 return pair.getOutputFrequency();
@@ -96,7 +96,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     private BigDecimal getPrice(int id) {
-        List<Periodicals> periodicalsList = daoBase.getListEntity();
+        List<Periodicals> periodicalsList = baseDao.getListEntity();
         for (Periodicals pair : periodicalsList) {
             if (id == pair.getId()) {
                 return pair.getPrice();

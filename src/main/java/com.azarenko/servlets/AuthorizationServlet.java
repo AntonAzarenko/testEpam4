@@ -28,7 +28,7 @@ public class AuthorizationServlet extends HttpServlet {
     private AuthorisationService authorized;
     private UserService userService;
     private ConnectionPool conPool;
-    private Connection connection;
+
 
     public AuthorizationServlet() {
         authorized = new AuthorisationService();
@@ -39,7 +39,7 @@ public class AuthorizationServlet extends HttpServlet {
     public void init() throws ServletException {
         super.init();
         try {
-            conPool = ConnectionPool.getInstance(50,100,"jdbc:mysql://localhost:3306/mydb","root","root","com.mysql.jdbc.Driver");
+            conPool = ConnectionPool.getInstance(50, 100, "jdbc:mysql://localhost:3306/mydb", "root", "root", "com.mysql.jdbc.Driver");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -52,8 +52,9 @@ public class AuthorizationServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Connection connection = null;
         try {
-            connection =  conPool.getConnection();
+             connection = conPool.getConnection();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -75,13 +76,13 @@ public class AuthorizationServlet extends HttpServlet {
             switch (role) {
                 case "ADMIN":
                     forward = ADMIN;
-                    session.setAttribute("role",role);
+                    session.setAttribute("role", role);
                     session.setAttribute("login", login);
                     req.getRequestDispatcher(forward).forward(req, resp);
                     break;
                 case "USER":
                     forward = USER;
-                    session.setAttribute("role",role);
+                    session.setAttribute("role", role);
                     session.setAttribute("login", login);
                     req.getRequestDispatcher(forward).forward(req, resp);
                     break;

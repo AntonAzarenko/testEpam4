@@ -2,7 +2,7 @@ package com.azarenko.services;
 
 import com.azarenko.dao.BaseDao;
 import com.azarenko.dao.UserDao;
-import com.azarenko.dao.UserImplDao;
+import com.azarenko.dao.UserDaoImpl;
 import com.azarenko.model.User;
 
 public class UserServiceImpl implements UserService {
@@ -10,8 +10,8 @@ public class UserServiceImpl implements UserService {
     private BaseDao baseDao;
 
     public UserServiceImpl() {
-        userDao = new UserImplDao();
-        baseDao = new UserImplDao();
+        userDao = new UserDaoImpl();
+        baseDao = new UserDaoImpl();
     }
 
     @Override

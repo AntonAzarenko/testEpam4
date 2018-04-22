@@ -3,7 +3,7 @@ package com.azarenko.dao;
 
 import java.sql.Connection;
 
-public abstract class BaseDaoImpl  {
+public  class BaseDaoImpl  {
     private Connection connection;
 
     public Connection getConnection() {

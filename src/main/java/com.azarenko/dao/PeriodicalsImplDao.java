@@ -10,12 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PeriodicalsImplDao implements PeriodicalsDao {
-
     private final static Logger log = Logger.getLogger(PeriodicalsImplDao.class);
-
     private Connection connection;
-    String url = "jdbc:mysql://localhost:3306/jdbcdb";
-
 
     public PeriodicalsImplDao() {
 

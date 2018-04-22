@@ -9,12 +9,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class UserImplDao extends BaseDaoImpl implements UserDao {
-    private static final Logger log = Logger.getLogger(UserImplDao.class);
+public class UserDaoImpl extends BaseDaoImpl implements UserDao {
+    private static final Logger log = Logger.getLogger(UserDaoImpl.class);
 
     private Connection connection;
 
-    public UserImplDao() {
+    public UserDaoImpl() {
     }
 
     @Override
@@ -22,7 +22,6 @@ public class UserImplDao extends BaseDaoImpl implements UserDao {
 
         try {
             connection = getConnection();
-
             log.info(connection);
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");

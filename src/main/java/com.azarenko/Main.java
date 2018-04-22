@@ -8,7 +8,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class Main {
-    private CreateConPool createConPool;
+/*    private CreateConPool createConPool;
     private ConnectionPool pool;
 
     public Main() {
@@ -28,5 +28,5 @@ public class Main {
        while (true){
 
        }
-    }
+    }*/
 }

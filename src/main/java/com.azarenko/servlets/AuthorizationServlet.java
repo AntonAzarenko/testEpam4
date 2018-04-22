@@ -39,7 +39,7 @@ public class AuthorizationServlet extends HttpServlet {
     public void init() throws ServletException {
         super.init();
         try {
-            conPool = ConnectionPool.getInstance(50,100,"jdbc:mysql://localhost:3306/mydb","root","root","com.mysql.jdbc.Driver")
+            conPool = ConnectionPool.getInstance(50,100,"jdbc:mysql://localhost:3306/mydb","root","root","com.mysql.jdbc.Driver");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -53,7 +53,7 @@ public class AuthorizationServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            connection =conPool.getConnection();
+            connection =  conPool.getConnection();
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -67,7 +67,7 @@ public class AuthorizationServlet extends HttpServlet {
                 forward = ERROR;
                 req.getRequestDispatcher(forward).forward(req, resp);
             }
-            authorized.setConnection(connection);
+            authorized.setConnections(connection);
             String role = authorized.authorizeUser(login, password);
             if (role == null) {
                 req.getRequestDispatcher(ERROR).forward(req, resp);

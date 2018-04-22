@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class CreateConPool {
-/*    private String driver = "com.mysql.jdbc.Driver";
+  /*  private String driver = "com.mysql.jdbc.Driver";
     private String url = "jdbc:mysql://localhost:3306/mydb";
     private String password = "root";
     private String name = "root";
@@ -18,7 +18,7 @@ public class CreateConPool {
     public void   connectionPoolStart(){
 
         try {
-           // connectionPool = new ConnectionPool(50,100, url,name,password,driver);
+            connectionPool = new ConnectionPool(50,100, url,name,password,driver);
         } catch (SQLException e) {
         }
     }

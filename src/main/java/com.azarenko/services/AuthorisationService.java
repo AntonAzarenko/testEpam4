@@ -2,7 +2,7 @@ package com.azarenko.services;
 
 import com.azarenko.dao.BaseDaoImpl;
 import com.azarenko.dao.UserDao;
-import com.azarenko.dao.UserImplDao;
+import com.azarenko.dao.UserDaoImpl;
 import com.azarenko.model.User;
 import org.apache.log4j.Logger;
 
@@ -17,11 +17,11 @@ public class AuthorisationService extends BaseDaoImpl {
     private Connection connection;
 
     public AuthorisationService() {
-        userDao = new UserImplDao();
+        userDao = new UserDaoImpl();
         md5Hash = new Md5Hash();
     }
 
-    public void  setConnection(Connection connection) {
+    public void  setConnections(Connection connection) {
         this.connection = connection;
     }
 

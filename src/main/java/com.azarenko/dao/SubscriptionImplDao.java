@@ -9,16 +9,12 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SubscriptionImplDao implements SubscriptionDao {
+public class SubscriptionImplDao extends BaseDaoImpl implements SubscriptionDao {
     private final static Logger log = Logger.getLogger(SubscriptionImplDao.class);
-    private Connection connection;
-
-    public SubscriptionImplDao() {
-        connection = DBUtil.getConnection();
-    }
 
     @Override
-    public List<Subscription> getAllSubscriptionsUserByUserId(int id) {
+    public List<Subscription> getAllSubscriptionsUserByUserId(int id) throws DaoException {
+        Connection connection = getLocal().get();
         List<Subscription> subscriptionList = new ArrayList<>();
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.subscriptions WHERE user_id = ?")) {
             preparedStatement.setInt(1,id);
@@ -35,20 +31,21 @@ public class SubscriptionImplDao implements SubscriptionDao {
                 subscriptionList.add(subscription);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new DaoException(e);
 
         }
         return subscriptionList;
     }
 
     @Override
-    public AbstractBaseEntity getEntityById(int id) {
+    public Subscription getEntityById(int id) {
         return null;
     }
 
     @Override
-    public void add(AbstractBaseEntity entity) {
-        Subscription subscription = (Subscription) entity;
+    public void add(Subscription entity) throws DaoException {
+        Subscription subscription =  entity;
+        Connection connection = getLocal().get();
         try (PreparedStatement preparedStatement = connection.prepareStatement(
                 "INSERT INTO mydb.subscriptions ( id_periodicals, name_periodicals, date_start, date_end, user_id) VALUES (?,?,?,?,?)")) {
             preparedStatement.setInt(1, subscription.getPeriodicalId());
@@ -58,7 +55,7 @@ public class SubscriptionImplDao implements SubscriptionDao {
             preparedStatement.setInt(5, subscription.getUserId());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            log.error(e);
+            throw  new DaoException(e);
         }
     }
 
@@ -68,12 +65,13 @@ public class SubscriptionImplDao implements SubscriptionDao {
     }
 
     @Override
-    public void update(AbstractBaseEntity entity) {
+    public void update(Subscription entity) {
 
     }
 
     @Override
-    public List getListEntity() {
+    public List getListEntity() throws DaoException {
+        Connection connection = getLocal().get();
         List<Subscription> subscriptionList = new ArrayList<>();
         try (Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery("SELECT * FROM mydb.subscriptions")) {
@@ -89,7 +87,7 @@ public class SubscriptionImplDao implements SubscriptionDao {
                 subscriptionList.add(subscription);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+           throw  new DaoException(e);
         }
         return subscriptionList;
     }

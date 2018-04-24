@@ -131,7 +131,7 @@ public class ConnectionPool {
             Class.forName(driver);
             con = DriverManager.getConnection(url, user, pass);
 
-            // Add caching wrapper to connection.
+            // AddPeriodical caching wrapper to connection.
             pcon = new PooledConnection(this, con);
             log.info("Created a new connection");
 
@@ -163,7 +163,7 @@ public class ConnectionPool {
         used.remove(con);
         log.info(con + " Remove Used");
         free.add(con);
-        log.info(con + " Add Free");
+        log.info(con + " AddPeriodical Free");
 
     }
 

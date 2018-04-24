@@ -5,16 +5,10 @@ import com.azarenko.model.Subscription;
 
 import java.util.List;
 
-public interface SubscriptionDao  extends BaseDao {
+public interface SubscriptionDao  extends BaseDao<Subscription> {
 
-    List<Subscription> getAllSubscriptionsUserByUserId(int id);
-
-    @Override
-    AbstractBaseEntity getEntityById(int id);
+    List<Subscription> getAllSubscriptionsUserByUserId(int id) throws DaoException;
 
     @Override
-    void add(AbstractBaseEntity entity);
-
-    @Override
-    List getListEntity();
+    List getListEntity() throws DaoException;
 }

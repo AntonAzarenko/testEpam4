@@ -8,12 +8,12 @@ import java.util.List;
 public interface PeriodicalService {
     List<Periodicals> getCatalog() throws ServiceException, DaoException;
 
-    void add(Periodicals periodicals) throws DaoException;
+    void add(Periodicals periodicals) throws ServiceException, DaoException;
 
-    void remove(int id);
+    void remove(int id) throws ServiceException, DaoException;
 
-    void update(Periodicals periodicals);
+    void update(Periodicals periodicals) throws ServiceException, DaoException;
 
-    Periodicals getPeriodical(int id);
+    Periodicals getPeriodical(int id) throws ServiceException, DaoException;
 
 }

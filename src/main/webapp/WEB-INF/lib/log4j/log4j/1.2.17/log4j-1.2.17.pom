@@ -23,7 +23,7 @@ package on other platforms.  Build will execute gcc and windres on Windows and
 i586-mingw32msvc-gcc and i586-mingw32msvc-windres on other platforms.
 
 To build NTEventLogAppender.dll using Microsoft tools, run the appropriate vcvars for the
-target platform and specify -Dntdll_target=msbuild on the mvn command line.
+target platform and specify -Dntdll_target=msbuild on the mvn adminCommand line.
 
 -->        
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">

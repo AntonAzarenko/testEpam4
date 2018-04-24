@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int getUserIdByEmail(String login) {
+    public int getUserIdByEmail(String login) throws DaoException {
         return userDao.getUserIdByEmail(login);
     }
 

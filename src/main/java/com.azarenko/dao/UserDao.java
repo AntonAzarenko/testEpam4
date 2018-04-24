@@ -18,7 +18,7 @@ public interface UserDao  extends BaseDao<User> {
     User getUserByEmail(String email) throws DaoException;
 
 
-    int getUserIdByEmail(String login);
+    int getUserIdByEmail(String login) throws DaoException;
 
     @Override
     List getListEntity();

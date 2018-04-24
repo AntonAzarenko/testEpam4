@@ -11,7 +11,7 @@
 
 <p/>
 <a href="/admin?action=catalog">Назад</a>
-<form method="get" action="/admin?action=add">
+<form method="post" action="/admin?action=add">
     <p>
 
         ID : <input type="text" readonly="readonly" name="catalogId"
@@ -37,7 +37,7 @@
     <p>
     <p style="color: red">${error5}</p>
     <p style="color: red">${error6}</p>
-        <input type="submit"  value="add" name="action">
+        <input type="submit"  value="Принять" name="action">
 </form>
 </body>
 </html>

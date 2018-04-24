@@ -11,18 +11,11 @@ import java.util.Date;
 import java.util.List;
 
 public class SubscriptionServiceImpl implements SubscriptionService {
-    private SubscriptionDao subscriptionDao;
-    private BaseDao baseDao;
-    private PeriodicalService periodicalService;
-
-    public SubscriptionServiceImpl() {
-        periodicalService = new PeriodicalServiceImpl();
-        subscriptionDao = new SubscriptionImplDao();
-        baseDao = new SubscriptionImplDao();
-    }
 
     @Override
-    public void create(int idPeriodicals, int userId, Date start, Date end) {
+    public void create(int idPeriodicals, int userId, Date start, Date end) throws ServiceException, DaoException {
+        SubscriptionDao subscriptionDao = new SubscriptionImplDao();
+        PeriodicalService periodicalService = new PeriodicalServiceImpl();
         Subscription.SubscriptionBuild subscriptionBuild = new Subscription.SubscriptionBuild();
         subscriptionBuild.idPeriodical(idPeriodicals);
         Periodicals periodicals = periodicalService.getPeriodical(idPeriodicals);
@@ -41,12 +34,14 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 
     @Override
     public List<Subscription> getAllSubscription() throws DaoException {
+        BaseDao<Subscription> baseDao = new SubscriptionImplDao();
         return baseDao.getListEntity();
     }
 
     @Override
-    public List<Subscription> getAllSubscriptionsUserByUserId(int id) {
-       return subscriptionDao.getAllSubscriptionsUserByUserId(id);
+    public List<Subscription> getAllSubscriptionsUserByUserId(int id) throws DaoException {
+        SubscriptionDao subscriptionDao = new SubscriptionImplDao();
+        return subscriptionDao.getAllSubscriptionsUserByUserId(id);
 
     }
 }

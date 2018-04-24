@@ -12,17 +12,11 @@ import java.util.List;
 public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     private static final Logger log = Logger.getLogger(UserDaoImpl.class);
 
-    public UserDaoImpl() {
-
-    }
 
     @Override
-    public User getUserByEmail(String email) {
+    public User getUserByEmail(String email) throws DaoException {
         try {
-            Connection connection =null;
-            log.info(getLocal().get());
-            connection =  getLocal().get();
-            log.info(connection);
+            Connection connection = getLocal().get();
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");
             while (rs.next()) {
@@ -52,13 +46,13 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
                 }
             }
         } catch (SQLException e) {
-            log.error(e);
+            throw new DaoException(e);
         }
         return null;
     }
 
     @Override
-    public int getUserIdByEmail(String login) {
+    public int getUserIdByEmail(String login) throws DaoException {
         User user = getUserByEmail(login);
         int id = user.getId();
         return user.getId();

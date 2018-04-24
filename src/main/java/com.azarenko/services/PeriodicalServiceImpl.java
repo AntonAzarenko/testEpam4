@@ -9,35 +9,33 @@ import java.util.List;
 
 public class PeriodicalServiceImpl extends BaseService implements PeriodicalService {
 
-   private BaseDao<Periodicals> baseDao;
-
-    public PeriodicalServiceImpl() {
-        baseDao = new PeriodicalsDaoImpl();
-
-    }
-
     @Override
     public List<Periodicals> getCatalog() throws ServiceException, DaoException {
+        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
         return baseDao.getListEntity();
     }
 
     @Override
     public void add(Periodicals periodicals) throws DaoException {
+        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
         baseDao.add(periodicals);
     }
 
     @Override
-    public void remove(int id) {
+    public void remove(int id) throws DaoException {
+        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
         baseDao.remove(id);
     }
 
     @Override
-    public void update(Periodicals periodicals) {
+    public void update(Periodicals periodicals) throws DaoException {
+        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
         baseDao.update(periodicals);
     }
 
     @Override
-    public Periodicals getPeriodical(int id) {
+    public Periodicals getPeriodical(int id) throws DaoException {
+        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
         return baseDao.getEntityById(id);
     }
 }

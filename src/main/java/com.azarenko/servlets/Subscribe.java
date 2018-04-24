@@ -33,13 +33,13 @@ public class Subscribe extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         int id = Integer.parseInt(req.getParameter("periodicalid"));
-        req.setAttribute("periodicals", periodicalService.getPeriodical(id));
+      //  req.setAttribute("periodicals", periodicalService.getPeriodical(id));
         req.getRequestDispatcher("pages/user/do_subscribe.jsp").forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String action = "";
+      /*  String action = "";
         HttpSession session = req.getSession();
 
         int idPeriodical = Integer.parseInt(req.getParameter("id"));
@@ -55,7 +55,7 @@ public class Subscribe extends HttpServlet {
        // shoppingCart.setPrice(cartService.getPriceForSubcription(idPeriodical,dateStart,dateEnd));
         log.info(shoppingCart.getPrice());
         cartService.add(shoppingCart);
-        req.getRequestDispatcher("/user?action=catalog").forward(req, resp);
+        req.getRequestDispatcher("/user?action=catalog").forward(req, resp);*/
     }
 
     private Date getDateToString(String text) {

@@ -35,12 +35,12 @@ public class PaymentServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        int userId = userService.getUserIdByEmail((String) session.getAttribute("login"));
+/*        HttpSession session = req.getSession();
+        //int userId = userService.getUserIdByEmail((String) session.getAttribute("login"));
         BigDecimal price = BigDecimal.valueOf(Double.parseDouble(req.getParameter("price")));
 
         Payment payment = paymentService.createPayment(userId, price );
-       // paymentService.Add(payment);
-        req.getRequestDispatcher("/pages/info/message.jsp").forward(req,resp);
+       // paymentService.AddPeriodical(payment);
+        req.getRequestDispatcher("/pages/info/message.jsp").forward(req,resp);*/
     }
 }

@@ -5,6 +5,6 @@ import com.azarenko.model.User;
 
 public interface UserService  {
     User getUserByEmail(String email) throws DaoException;
-    int getUserIdByEmail(String login);
+    int getUserIdByEmail(String login) throws DaoException;
     void addUser(User user) throws DaoException;
 }

@@ -10,18 +10,18 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PaymentImplDao implements PaymentDao {
+public class PaymentImplDao extends BaseDaoImpl implements PaymentDao {
     private final static Logger log = Logger.getLogger(PaymentImplDao.class);
 
-    private Connection connection;
+
 
     public PaymentImplDao() {
-        connection = DBUtil.getConnection();
     }
 
     @Override
-    public void add(AbstractBaseEntity entity) {
+    public void add(Payment entity) throws DaoException {
         Payment payment = (Payment) entity;
+        Connection connection = getLocal().get();
         try(PreparedStatement preparedStatement = connection.prepareStatement(
                 "INSERT  INTO mydb.payment(date,user_id,price) VALUES (?,?,?)")){
             log.info(payment.getDate());
@@ -31,7 +31,7 @@ public class PaymentImplDao implements PaymentDao {
             preparedStatement.executeUpdate();
 
         } catch (SQLException e) {
-            log.error(e);
+            throw new DaoException(e);
         }
     }
 
@@ -41,13 +41,14 @@ public class PaymentImplDao implements PaymentDao {
     }
 
     @Override
-    public void update(AbstractBaseEntity entity) {
+    public void update(Payment entity) {
 
     }
 
     @Override
     public List getListEntity() {
         List<Payment> list = new ArrayList<>();
+        Connection connection = getLocal().get();
         try (Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery("SELECT * FROM mydb.payment")) {
             while (rs.next()) {
@@ -76,7 +77,7 @@ public class PaymentImplDao implements PaymentDao {
     }
 
     @Override
-    public AbstractBaseEntity getEntityById(int id) {
+    public Payment getEntityById(int id) {
         return null;
     }
 }

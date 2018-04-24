@@ -12,21 +12,13 @@ import java.util.Date;
 import java.util.List;
 
 public class PaymentServiceImpl implements PaymentService {
-
     private final static Logger log = Logger.getLogger(PaymentServiceImpl.class);
 
-    private BaseDao baseDao;
-    private ShoppingCartService shoppingCartService;
-    private SubscriptionService subscriptionService;
-
-    public PaymentServiceImpl() {
-        subscriptionService = new SubscriptionServiceImpl();
-        shoppingCartService = new ShoppingCartServiceImpl();
-        baseDao = new PaymentImplDao();
-    }
-
     @Override
-    public void add(Payment payment) throws DaoException {
+    public void add(Payment payment) throws DaoException, ServiceException {
+        BaseDao<Payment> baseDao = new PaymentImplDao();
+        SubscriptionService subscriptionService = new SubscriptionServiceImpl();
+        ShoppingCartService shoppingCartService = new ShoppingCartServiceImpl();
         baseDao.add(payment);
         List<ShoppingCart> shoppingCartList = shoppingCartService.getShoppingCartUser(payment.getUserId());
         for(ShoppingCart pair : shoppingCartList){
@@ -36,6 +28,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public List<Payment> getPaymentList() throws DaoException {
+        BaseDao<Payment> baseDao = new PaymentImplDao();
         return baseDao.getListEntity();
     }
 

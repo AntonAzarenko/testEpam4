@@ -2,13 +2,12 @@ package com.azarenko.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public final class Subscription extends AbstractBaseEntity {
 
     private final String title;
 
-    private final int idPeriodical;
+    private final int periodicalId;
 
     private final int userId;
 
@@ -30,7 +29,7 @@ public final class Subscription extends AbstractBaseEntity {
 
     private Subscription(SubscriptionBuild subscriptionBuild) {
         this.title = subscriptionBuild.title;
-        this.idPeriodical = subscriptionBuild.idPeriodical;
+        this.periodicalId = subscriptionBuild.idPeriodical;
         this.namePeriodical = subscriptionBuild.namePeriodical;
         this.dateStartSubcription = subscriptionBuild.dateStartSubcription;
         this.dateEndSubscription = subscriptionBuild.dateEndSubscription;
@@ -42,8 +41,8 @@ public final class Subscription extends AbstractBaseEntity {
         return title;
     }
 
-    public int getIdPeriodical() {
-        return idPeriodical;
+    public int getPeriodicalId() {
+        return periodicalId;
     }
 
     public BigDecimal getPrice() {

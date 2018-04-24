@@ -1,8 +1,12 @@
 package com.azarenko.servlets;
 
 import com.azarenko.services.AuthorisationService;
+import com.azarenko.services.ServiceException;
 import com.azarenko.services.UserService;
 import com.azarenko.services.UserServiceImpl;
+import com.azarenko.servlets.adminServletCommand.Command;
+import com.azarenko.servlets.adminServletCommand.CommandException;
+import com.azarenko.servlets.adminServletCommand.CommandImpl;
 import com.azarenko.util.ConnectionPool;
 import org.apache.log4j.Logger;
 
@@ -25,26 +29,6 @@ public class AuthorizationServlet extends HttpServlet {
     private final static String START = "/pages/start.jsp";
     private final static String REGISTERED = "/pages/user/registration.jsp";
 
-    private AuthorisationService authorized;
-    private UserService userService;
-    private ConnectionPool conPool;
-
-
-    public AuthorizationServlet() {
-        authorized = new AuthorisationService();
-        userService = new UserServiceImpl();
-    }
-
-    @Override
-    public void init() throws ServletException {
-        super.init();
-        try {
-            conPool = ConnectionPool.getInstance(50, 100, "jdbc:mysql://localhost:3306/mydb", "root", "root", "com.mysql.jdbc.Driver");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher(START).forward(req, resp);
@@ -52,13 +36,19 @@ public class AuthorizationServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Connection connection = null;
+        Command command = new CommandImpl();
+        String forward = null;
         try {
-             connection = conPool.getConnection();
-        } catch (SQLException e) {
-            e.printStackTrace();
+            forward = command.execute(req,resp);
+        } catch (CommandException e) {
+            log.error(e);
+        } catch (ServiceException e) {
+            log.error(e);
         }
-        String action = req.getParameter("action");
+  /*      Connection connection = null;
+        ConnectionPool pool = ConnectionPool.getInstance();
+        AuthorisationService authorized = new AuthorisationService();
+              String action = req.getParameter("action");
         String forward = "";
         HttpSession session = req.getSession();
         if (action.equalsIgnoreCase("authorize")) {
@@ -68,7 +58,7 @@ public class AuthorizationServlet extends HttpServlet {
                 forward = ERROR;
                 req.getRequestDispatcher(forward).forward(req, resp);
             }
-            authorized.setConnections(connection);
+
             String role = authorized.authorizeUser(login, password);
             if (role == null) {
                 req.getRequestDispatcher(ERROR).forward(req, resp);
@@ -92,7 +82,7 @@ public class AuthorizationServlet extends HttpServlet {
         } else if (action.equalsIgnoreCase("register")) {
             forward = REGISTERED;
             session.setAttribute("login", "login");
-        }
+        }*/
         req.getRequestDispatcher(forward).forward(req, resp);
     }
 }

@@ -1,6 +1,7 @@
 package com.azarenko.services;
 
 import com.azarenko.dao.BaseDao;
+import com.azarenko.dao.DaoException;
 import com.azarenko.dao.SubscriptionDao;
 import com.azarenko.dao.SubscriptionImplDao;
 import com.azarenko.model.Periodicals;
@@ -39,7 +40,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     }
 
     @Override
-    public List<Subscription> getAllSubscription() {
+    public List<Subscription> getAllSubscription() throws DaoException {
         return baseDao.getListEntity();
     }
 

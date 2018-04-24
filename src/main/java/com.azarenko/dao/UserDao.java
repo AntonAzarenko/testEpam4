@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author Anton Azarenko
  */
-public interface UserDao  extends BaseDao {
+public interface UserDao  extends BaseDao<User> {
 
 
     /**
@@ -15,7 +15,7 @@ public interface UserDao  extends BaseDao {
      * @param email
      * @return
      */
-    User getUserByEmail(String email);
+    User getUserByEmail(String email) throws DaoException;
 
 
     int getUserIdByEmail(String login);

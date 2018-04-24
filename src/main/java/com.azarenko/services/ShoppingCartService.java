@@ -1,5 +1,6 @@
 package com.azarenko.services;
 
+import com.azarenko.dao.DaoException;
 import com.azarenko.model.ShoppingCart;
 import com.azarenko.model.Subscription;
 
@@ -14,7 +15,7 @@ public interface ShoppingCartService {
 
     List<ShoppingCart> getShoppingCartUser(int id);
 
-    BigDecimal getPriceForSubcription(int id, Date start, Date end);
+    BigDecimal getPriceForSubcription(int id, Date start, Date end) throws DaoException;
 
     BigDecimal getFullPriceForPayment(int userId);
 

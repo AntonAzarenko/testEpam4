@@ -1,6 +1,7 @@
 package com.azarenko.services;
 
 import com.azarenko.dao.BaseDao;
+import com.azarenko.dao.DaoException;
 import com.azarenko.dao.PaymentImplDao;
 import com.azarenko.model.Payment;
 import com.azarenko.model.ShoppingCart;
@@ -25,7 +26,7 @@ public class PaymentServiceImpl implements PaymentService {
     }
 
     @Override
-    public void add(Payment payment) {
+    public void add(Payment payment) throws DaoException {
         baseDao.add(payment);
         List<ShoppingCart> shoppingCartList = shoppingCartService.getShoppingCartUser(payment.getUserId());
         for(ShoppingCart pair : shoppingCartList){
@@ -34,7 +35,7 @@ public class PaymentServiceImpl implements PaymentService {
     }
 
     @Override
-    public List<Payment> getPaymentList() {
+    public List<Payment> getPaymentList() throws DaoException {
         return baseDao.getListEntity();
     }
 

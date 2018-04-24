@@ -1,5 +1,6 @@
 package com.azarenko.servlets;
 
+import com.azarenko.dao.DaoException;
 import com.azarenko.model.User;
 import com.azarenko.services.Md5Hash;
 import com.azarenko.services.UserService;
@@ -45,8 +46,12 @@ public class RegistrationServlet extends HttpServlet {
         userBulder.password(password);
         userBulder.email(email);
         User user = userBulder.build();
-        userService.addUser(user);
-        user = userService.getUserByEmail(email);
+        //userService.addUser(user);
+        try {
+            user = userService.getUserByEmail(email);
+        } catch (DaoException e) {
+            e.printStackTrace();
+        }
         HttpSession session = req.getSession();
         session.setAttribute("login",email);
         req.setAttribute("user",user);

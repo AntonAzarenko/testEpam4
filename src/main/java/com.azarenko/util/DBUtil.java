@@ -19,15 +19,11 @@ public class DBUtil {
         }
         try {
             Properties prop = new Properties();
-            File file = new File("/java/database.properties");
-            InputStream inputStream = new FileInputStream(file);
-            String path = file.getPath();
-            System.out.println(path);
-
-         //   prop.load(inputStream);
+            InputStream inputStream = DBUtil.class.getClassLoader().getResourceAsStream("database.properties");
+            prop.load(inputStream);
             String driver = prop.getProperty("driver");
             String url = prop.getProperty("url");
-            String user = prop.getProperty("name");
+            String user = prop.getProperty("user");
             String password = prop.getProperty("password");
             Class.forName(driver);
             connection = DriverManager.getConnection(url, user ,password);
@@ -39,7 +35,7 @@ public class DBUtil {
             e.printStackTrace();
         }
 
-            return connection;
+        return connection;
 
     }
 }

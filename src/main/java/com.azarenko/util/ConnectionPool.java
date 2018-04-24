@@ -3,6 +3,8 @@ package com.azarenko.util;
 import org.apache.log4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -10,6 +12,7 @@ import java.sql.SQLWarning;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Properties;
 
 public class ConnectionPool {
 
@@ -40,10 +43,24 @@ public class ConnectionPool {
 
     private ConnectionPool() {
     }
-    public static synchronized ConnectionPool getInstance
-            (int minPool, int maxPool, String url, String username, String password, String driver) throws SQLException {
+    public static synchronized ConnectionPool getInstance(){
         if(pool == null){
-           pool = new ConnectionPool(minPool,maxPool,url,username,password,driver);
+            Properties prop = new Properties();
+            InputStream inputStream = DBUtil.class.getClassLoader().getResourceAsStream("database.properties");
+            try {
+                prop.load(inputStream);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            String driver = prop.getProperty("driver");
+            String url = prop.getProperty("url");
+            String user = prop.getProperty("user");
+            String password = prop.getProperty("password");
+            try {
+                pool = new ConnectionPool(10,50,url,user ,password,driver);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
         return pool;
     }
@@ -95,10 +112,15 @@ public class ConnectionPool {
         } else {
             throw new RuntimeException("Unable to create a connection");
         }
-
+        log.info("GetConnection " + cw);
         used.add(cw);
 
         return cw;
+    }
+
+    public synchronized void returnConnection(Connection connection){
+        PooledConnection pc = (PooledConnection) connection;
+        freeConnectionWrapper(pc);
     }
 
     protected PooledConnection createConnectionWrapper() throws SQLException {
@@ -139,7 +161,10 @@ public class ConnectionPool {
 
     protected void freeConnectionWrapper(PooledConnection con) {
         used.remove(con);
+        log.info(con + " Remove Used");
         free.add(con);
+        log.info(con + " Add Free");
+
     }
 
 }

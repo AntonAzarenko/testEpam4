@@ -9,17 +9,18 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PeriodicalsImplDao implements PeriodicalsDao {
-    private final static Logger log = Logger.getLogger(PeriodicalsImplDao.class);
-    private Connection connection;
+public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
+    private final static Logger log = Logger.getLogger(PeriodicalsDaoImpl.class);
 
-    public PeriodicalsImplDao() {
+    public PeriodicalsDaoImpl() {
 
     }
 
     @Override
-    public AbstractBaseEntity getEntityById(int id) {
+    public Periodicals getEntityById(int id) {
+        //todo
         AbstractBaseEntity periodicals;
+        Connection connection = getLocal().get();
         try (Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalog_periodicals")) {
             while (rs.next()) {
@@ -38,18 +39,20 @@ public class PeriodicalsImplDao implements PeriodicalsDao {
         return null;
     }
 
+
     @Override
-    public void add(AbstractBaseEntity entity) {
+    public void add(Periodicals entity) throws DaoException {
+        Connection connection = getLocal().get();
         Periodicals periodicals = (Periodicals) entity;
         try (PreparedStatement preparedStatement = connection.prepareStatement
                 ("INSERT INTO catalog_periodicals (title,output_frequency ,discription, price) VALUES (?,?,?,?)")) {
             preparedStatement.setString(1, periodicals.getTitle());
             preparedStatement.setInt(2,periodicals.getOutputFrequency());
-            preparedStatement.setString(2, periodicals.getDescription());
-            preparedStatement.setBigDecimal(3, periodicals.getPrice());
+            preparedStatement.setString(3, periodicals.getDescription());
+            preparedStatement.setBigDecimal(4, periodicals.getPrice());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            log.error(e);
+            throw new DaoException(e);
         }
     }
 
@@ -59,6 +62,7 @@ public class PeriodicalsImplDao implements PeriodicalsDao {
 
     @Override
     public void remove(int id) {
+        Connection connection = null;
         try (PreparedStatement preparedStatement = connection.prepareStatement
                 ("DELETE FROM mydb.catalog_periodicals WHERE id=?")) {
             preparedStatement.setInt(1, id);
@@ -69,8 +73,10 @@ public class PeriodicalsImplDao implements PeriodicalsDao {
 
     }
 
+
     @Override
-    public void update(AbstractBaseEntity entity) {
+    public void update(Periodicals entity) {
+        Connection connection = null;
         Periodicals periodicals = (Periodicals) entity;
         try (PreparedStatement preparedStatement = connection.prepareStatement
                 ("UPDATE mydb.catalog_periodicals SET title=?,discription=?,price=? WHERE id = ?")) {
@@ -85,7 +91,8 @@ public class PeriodicalsImplDao implements PeriodicalsDao {
     }
 
     @Override
-    public List getListEntity() {
+    public List getListEntity() throws DaoException {
+        Connection connection = getLocal().get();
         List<Periodicals> list = new ArrayList<Periodicals>();
         try (Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalog_periodicals")) {
@@ -99,7 +106,7 @@ public class PeriodicalsImplDao implements PeriodicalsDao {
                 list.add(periodicals);
             }
         } catch (SQLException e) {
-            log.error(e);
+            throw new DaoException(e);
         }
         return list;
     }

@@ -40,7 +40,7 @@ public class PaymentServlet extends HttpServlet {
         BigDecimal price = BigDecimal.valueOf(Double.parseDouble(req.getParameter("price")));
 
         Payment payment = paymentService.createPayment(userId, price );
-        paymentService.add(payment);
+       // paymentService.Add(payment);
         req.getRequestDispatcher("/pages/info/message.jsp").forward(req,resp);
     }
 }

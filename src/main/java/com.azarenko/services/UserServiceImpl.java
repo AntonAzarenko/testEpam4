@@ -1,6 +1,7 @@
 package com.azarenko.services;
 
 import com.azarenko.dao.BaseDao;
+import com.azarenko.dao.DaoException;
 import com.azarenko.dao.UserDao;
 import com.azarenko.dao.UserDaoImpl;
 import com.azarenko.model.User;
@@ -15,7 +16,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getUserByEmail(String email) {
+    public User getUserByEmail(String email) throws DaoException {
         return userDao.getUserByEmail(email);
     }
 
@@ -25,7 +26,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void addUser(User user) {
+    public void addUser(User user) throws DaoException {
         baseDao.add(user);
     }
 }

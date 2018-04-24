@@ -51,7 +51,7 @@ public class SubscriptionImplDao implements SubscriptionDao {
         Subscription subscription = (Subscription) entity;
         try (PreparedStatement preparedStatement = connection.prepareStatement(
                 "INSERT INTO mydb.subscriptions ( id_periodicals, name_periodicals, date_start, date_end, user_id) VALUES (?,?,?,?,?)")) {
-            preparedStatement.setInt(1, subscription.getIdPeriodical());
+            preparedStatement.setInt(1, subscription.getPeriodicalId());
             preparedStatement.setString(2, subscription.getNamePeriodical());
             preparedStatement.setDate(3, new Date(subscription.getDateStartSubcription().getTime()));
             preparedStatement.setDate(4, new Date(subscription.getDateEndSubscription().getTime()));

@@ -2,6 +2,9 @@ package com.azarenko.servlets;
 
 import com.azarenko.model.Periodicals;
 import com.azarenko.services.*;
+import com.azarenko.servlets.adminServletCommand.Command;
+import com.azarenko.servlets.adminServletCommand.CommandException;
+import com.azarenko.servlets.adminServletCommand.CommandImpl;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -11,8 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.List;
 
-@WebServlet(name = "admin", urlPatterns = "/admin")
+@WebServlet(name = "admin", urlPatterns = "/admin", loadOnStartup = 0)
 public class AdminServlet extends HttpServlet {
 
     private final static Logger log = Logger.getLogger(AdminServlet.class);
@@ -30,46 +34,57 @@ public class AdminServlet extends HttpServlet {
         paymentService = new PaymentServiceImpl();
         periodicalService = new PeriodicalServiceImpl();
         subscriptionService = new SubscriptionServiceImpl();
-
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        String action = req.getParameter("action");
+        req.setCharacterEncoding("UTF-8");
+        resp.setCharacterEncoding("UTF-8");
+        Command command = new CommandImpl();
+        log.info(req.getRequestURI());
+        log.info(req.getParameter("action"));
+        String forward = "";
+        try {
+            forward = command.execute(req, resp);
+        } catch (CommandException e) {
+            log.error(e);
+        } catch (ServiceException e) {
+            log.error(e);
+        }
+        /*String action = req.getParameter("action");
         String forward = "";
         if (action.equalsIgnoreCase("delete")) {
             forward = CATALOG_LIST;
             int catalogId = Integer.parseInt(req.getParameter("catalogId"));
             periodicalService.remove(catalogId);
-            req.setAttribute("catalogs", periodicalService.getCatalog());
+          //  req.setAttribute("catalogs", periodicalService.getCatalog());
         } else if (action.equalsIgnoreCase("edit")) {
             forward = INSERT_OR_EDIT;
             int catalogId = Integer.parseInt(req.getParameter("catalogId"));
             Periodicals periodicals = periodicalService.getPeriodical(catalogId);
             req.setAttribute("periodicals", periodicals);
         } else if (action.equalsIgnoreCase("catalog")) {
-            forward = CATALOG_LIST;
-            req.setAttribute("catalogs", periodicalService.getCatalog());
+           *//* forward = CATALOG_LIST;
+            req.setAttribute("catalogs", periodicalService.getCatalog());*//*
 
         } else if (action.equalsIgnoreCase("insert")) {
             forward = INSERT_OR_EDIT;
         } else if (action.equalsIgnoreCase("payment")) {
             forward = PAYMENT;
-            req.setAttribute("paymentList", paymentService.getPaymentList());
+           *//* req.setAttribute("paymentList", paymentService.getPaymentList());
             log.info(paymentService.getPaymentList().get(0).getPrice());
-
+*//*
         } else if(action.equalsIgnoreCase("subscription")){
             forward = SUBSCRIPTION;
-            req.setAttribute("subscriptionList",subscriptionService.getAllSubscription());
-        }
-        req.getRequestDispatcher(forward).forward(req,resp);
+         //   req.setAttribute("subscriptionList",subscriptionService.getAllSubscription());
+        }*/
+        req.getRequestDispatcher(forward).forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        Periodicals periodicals = null;
+      /*  Periodicals periodicals = null;
         String publicationId = null;
         try {
             periodicals = new Periodicals();
@@ -85,8 +100,8 @@ public class AdminServlet extends HttpServlet {
         }
 
         if (publicationId == null || publicationId.isEmpty()) {
-            log.debug(" redirect add new periodical");
-            periodicalService.add(periodicals);
+            log.debug(" redirect Add new periodical");
+            periodicalService.Add(periodicals);
         } else {
             log.debug("redirect edit periodical");
             periodicals.setId(Integer.parseInt(publicationId));
@@ -94,6 +109,6 @@ public class AdminServlet extends HttpServlet {
         }
 
         req.setAttribute("catalogs", periodicalService.getCatalog());
-        req.getRequestDispatcher(CATALOG_LIST).forward(req, resp);
+        req.getRequestDispatcher(CATALOG_LIST).forward(req, resp);*/
     }
 }

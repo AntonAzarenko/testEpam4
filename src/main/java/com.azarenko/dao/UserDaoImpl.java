@@ -12,16 +12,16 @@ import java.util.List;
 public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     private static final Logger log = Logger.getLogger(UserDaoImpl.class);
 
-    private Connection connection;
-
     public UserDaoImpl() {
+
     }
 
     @Override
     public User getUserByEmail(String email) {
-
         try {
-            connection = getConnection();
+            Connection connection =null;
+            log.info(getLocal().get());
+            connection =  getLocal().get();
             log.info(connection);
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");
@@ -65,8 +65,9 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     }
 
     @Override
-    public AbstractBaseEntity getEntityById(int id) {
+    public User getEntityById(int id) {
         User user = null;
+        Connection connection = null;
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)");) {
             preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
@@ -92,8 +93,9 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     }
 
     @Override
-    public void add(AbstractBaseEntity entity) {
+    public void add(User entity) {
         User user = (User) entity;
+        Connection connection = null;
         try (PreparedStatement preparedStatement = connection.prepareStatement(
                 "INSERT  INTO mydb.users(name,email,password,enabled,role) VALUES (?,?,?,?,?)")) {
             preparedStatement.setString(1, user.getName());
@@ -113,13 +115,14 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     }
 
     @Override
-    public void update(AbstractBaseEntity entity) {
+    public void update(User entity) {
 
     }
 
     @Override
     public List getListEntity() {
         List<User> userList = new ArrayList<>();
+        Connection connection = null;
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");

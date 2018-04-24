@@ -1,28 +1,28 @@
 package com.azarenko.services;
 
 import com.azarenko.dao.BaseDao;
-import com.azarenko.dao.PeriodicalsImplDao;
+import com.azarenko.dao.DaoException;
+import com.azarenko.dao.PeriodicalsDaoImpl;
 import com.azarenko.model.Periodicals;
 
 import java.util.List;
 
-public class PeriodicalServiceImpl implements PeriodicalService {
+public class PeriodicalServiceImpl extends BaseService implements PeriodicalService {
 
-
-    BaseDao<Periodicals> baseDao;
+   private BaseDao<Periodicals> baseDao;
 
     public PeriodicalServiceImpl() {
-        baseDao = new PeriodicalsImplDao();
+        baseDao = new PeriodicalsDaoImpl();
 
     }
 
     @Override
-    public List<Periodicals> getCatalog() {
+    public List<Periodicals> getCatalog() throws ServiceException, DaoException {
         return baseDao.getListEntity();
     }
 
     @Override
-    public void add(Periodicals periodicals) {
+    public void add(Periodicals periodicals) throws DaoException {
         baseDao.add(periodicals);
     }
 

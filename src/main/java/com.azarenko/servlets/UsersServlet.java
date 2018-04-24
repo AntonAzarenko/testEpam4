@@ -41,15 +41,15 @@ public class UsersServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String action = req.getParameter("action");
+      /*  String action = req.getParameter("action");
         String forward = "";
         if (action.equalsIgnoreCase("catalog")) {
-            req.setAttribute("catalogs", periodicalService.getCatalog());
+          //  req.setAttribute("catalogs", periodicalService.getCatalog());
             forward = CATALOG_LIST;
         } else if(action.equalsIgnoreCase("myprofile")){
             forward = MY_PROFILE;
             HttpSession session = req.getSession();
-            User user = userService.getUserByEmail(String.valueOf(session.getAttribute("login")));
+        //    User user = userService.getUserByEmail(String.valueOf(session.getAttribute("login")));
 
             req.setAttribute("user", user);
 
@@ -62,7 +62,7 @@ public class UsersServlet extends HttpServlet {
             forward = PROFILE;
         }
         req.getRequestDispatcher(forward).forward(req, resp);
-
+*/
 
     }
 }

@@ -41,25 +41,28 @@ public final class Payment extends AbstractBaseEntity {
 
         public PaymentBuilder() {
         }
-        public PaymentBuilder id(int id){
+
+        public PaymentBuilder id(int id) {
             this.id = id;
             return this;
         }
+
         public PaymentBuilder date(Date date) {
             this.date = date;
-           return this;
+            return this;
         }
-        public PaymentBuilder userId(int userId){
+
+        public PaymentBuilder userId(int userId) {
             this.userId = userId;
             return this;
         }
 
-        public  PaymentBuilder price(BigDecimal price){
+        public PaymentBuilder price(BigDecimal price) {
             this.price = price;
             return this;
         }
 
-        public Payment build(){
+        public Payment build() {
             return new Payment(this);
         }
     }

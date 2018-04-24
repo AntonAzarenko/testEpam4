@@ -19,7 +19,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     private BaseDao baseDao;
 
     public ShoppingCartServiceImpl() {
-        baseDao = new PeriodicalsImplDao();
+        baseDao = new PeriodicalsDaoImpl();
         shoppingCartDao = new ShoppingCartImplDao();
     }
 
@@ -41,7 +41,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
 
     @Override
-    public BigDecimal getPriceForSubcription(int id, Date start, Date end) {
+    public BigDecimal getPriceForSubcription(int id, Date start, Date end) throws DaoException {
         List<Periodicals> periodicalsList = baseDao.getListEntity();
         Date startD = new Date();
         Date endD = new Date();
@@ -85,7 +85,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         return totalPrice;
     }
 
-    private int getOutputFrequency(int id) {
+    private int getOutputFrequency(int id) throws DaoException {
         List<Periodicals> periodicalsList = baseDao.getListEntity();
         for (Periodicals pair : periodicalsList) {
             if (id == pair.getId()) {
@@ -95,7 +95,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         return 0;
     }
 
-    private BigDecimal getPrice(int id) {
+    private BigDecimal getPrice(int id) throws DaoException {
         List<Periodicals> periodicalsList = baseDao.getListEntity();
         for (Periodicals pair : periodicalsList) {
             if (id == pair.getId()) {

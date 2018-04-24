@@ -52,7 +52,7 @@ public class Subscribe extends HttpServlet {
         shoppingCart.setUserID(userId);
         shoppingCart.setStart(dateStart);
         shoppingCart.setEnd(dateEnd);
-        shoppingCart.setPrice(cartService.getPriceForSubcription(idPeriodical,dateStart,dateEnd));
+       // shoppingCart.setPrice(cartService.getPriceForSubcription(idPeriodical,dateStart,dateEnd));
         log.info(shoppingCart.getPrice());
         cartService.add(shoppingCart);
         req.getRequestDispatcher("/user?action=catalog").forward(req, resp);

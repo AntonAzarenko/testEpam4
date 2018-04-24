@@ -1,5 +1,6 @@
 package com.azarenko.services;
 
+import com.azarenko.dao.DaoException;
 import com.azarenko.model.Subscription;
 
 import java.util.Date;
@@ -10,7 +11,7 @@ public interface SubscriptionService {
 
     Subscription getSubscriptionByUserId(int id);
 
-    List<Subscription> getAllSubscription();
+    List<Subscription> getAllSubscription() throws DaoException;
 
     List<Subscription> getAllSubscriptionsUserByUserId(int id);
 

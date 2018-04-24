@@ -26,7 +26,7 @@
             <jsp:useBean id="list" scope="page" type="com.azarenko.model.Subscription"/>
             <tr>
                 <th>${list.id}</th>
-                <th>${list.idPeriodical}</th>
+                <th>${list.periodicalId}</th>
                 <th>${list.namePeriodical}</th>
                 <th>${list.dateStartSubcription}</th>
                 <th>${list.dateEndSubscription}</th>

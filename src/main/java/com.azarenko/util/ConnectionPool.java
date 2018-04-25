@@ -1,5 +1,6 @@
 package com.azarenko.util;
 
+import com.azarenko.services.ServiceException;
 import org.apache.log4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,8 +44,9 @@ public class ConnectionPool {
 
     private ConnectionPool() {
     }
-    public static synchronized ConnectionPool getInstance(){
-        if(pool == null){
+
+    public static synchronized ConnectionPool getInstance() throws ServiceException {
+        if (pool == null) {
             Properties prop = new Properties();
             InputStream inputStream = DBUtil.class.getClassLoader().getResourceAsStream("database.properties");
             try {
@@ -57,7 +59,7 @@ public class ConnectionPool {
             String user = prop.getProperty("user");
             String password = prop.getProperty("password");
             try {
-                pool = new ConnectionPool(10,50,url,user ,password,driver);
+                pool = new ConnectionPool(10, 50, url, user, password, driver);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -65,7 +67,7 @@ public class ConnectionPool {
         return pool;
     }
 
-    private   ConnectionPool(int minPool, int maxPool, String url, String username, String password, String driver) throws SQLException {
+    private ConnectionPool(int minPool, int maxPool, String url, String username, String password, String driver) throws SQLException {
         this.maxPool = maxPool;
         this.url = url;
         this.user = username;
@@ -118,7 +120,7 @@ public class ConnectionPool {
         return cw;
     }
 
-    public synchronized void returnConnection(Connection connection){
+    public synchronized void returnConnection(Connection connection) {
         PooledConnection pc = (PooledConnection) connection;
         freeConnectionWrapper(pc);
     }

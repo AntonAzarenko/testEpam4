@@ -12,7 +12,9 @@ import java.util.concurrent.ConcurrentHashMap;
 public class CommandUser implements Command {
     private static ConcurrentHashMap<String,Command> map = new ConcurrentHashMap<>();
     static {
-        map.put("catalog", new ShowCatalog(new ArrayOperationPeriodical()));
+
+            map.put("catalog", new ShowCatalog(new ArrayOperationPeriodical()));
+
     }
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException, UnsupportedEncodingException {

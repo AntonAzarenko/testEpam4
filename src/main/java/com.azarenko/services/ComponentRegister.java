@@ -8,6 +8,9 @@ public class ComponentRegister {
     static {
         map.put(PeriodicalService.class, new PeriodicalServiceImplImpl());
         map.put(UserService.class, new UserServiceImpl());
+        map.put(PaymentService.class, new PaymentServiceImpl());
+        map.put(SubscriptionService.class, new SubscriptionServiceImpl());
+        map.put(ShoppingCartService.class, new ShoppingCartServiceImpl());
     }
 
     public Object getImpl(Class<?> impl) {

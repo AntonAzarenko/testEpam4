@@ -2,6 +2,7 @@ package com.azarenko.dao;
 
 import com.azarenko.model.AbstractBaseEntity;
 import com.azarenko.model.User;
+import com.azarenko.util.ConnectionPool;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -11,7 +12,6 @@ import java.util.List;
 
 public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     private static final Logger log = Logger.getLogger(UserDaoImpl.class);
-
 
     @Override
     public User getUserByEmail(String email) throws DaoException {
@@ -61,7 +61,7 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     @Override
     public User getEntityById(int id) {
         User user = null;
-        Connection connection = null;
+        Connection connection = getLocal().get();
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)");) {
             preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
@@ -87,9 +87,9 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     }
 
     @Override
-    public void add(User entity) {
+    public void add(User entity) throws DaoException {
         User user = (User) entity;
-        Connection connection = null;
+        Connection connection = getLocal().get();
         try (PreparedStatement preparedStatement = connection.prepareStatement(
                 "INSERT  INTO mydb.users(name,email,password,enabled,role) VALUES (?,?,?,?,?)")) {
             preparedStatement.setString(1, user.getName());
@@ -99,7 +99,7 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
             preparedStatement.setString(5, "USER");
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            log.error(e);
+            throw new DaoException(e);
         }
     }
 
@@ -114,9 +114,9 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     }
 
     @Override
-    public List getListEntity() {
+    public List getListEntity() throws DaoException {
         List<User> userList = new ArrayList<>();
-        Connection connection = null;
+        Connection connection = getLocal().get();
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");
@@ -125,14 +125,13 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
                 String name = rs.getString("name");
                 String email = rs.getString("email");
                 String password = rs.getString("password");
-                Date date = rs.getDate("registered");
+                Date date = rs.getDate("registration");
                 int en = rs.getInt("enabled");
                 boolean enabled = false;
                 if (en == 1) {
                     enabled = true;
                 }
                 String role = rs.getString("role");
-                String subscription = rs.getString("subscriptions");
                 User.UserBulder userBulder = new User.UserBulder(id);
                 userBulder.email(email);
                 userBulder.name(name);
@@ -144,7 +143,7 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
                 userList.add(user);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new DaoException(e);
         }
         return userList;
     }

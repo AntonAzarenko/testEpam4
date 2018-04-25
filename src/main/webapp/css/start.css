@@ -31,7 +31,7 @@ a:hover {
     width: 500px;
     height: 450px;
     background-color: #182134;
-    margin: 220px auto 0 auto;
+    margin: 180px auto 0 auto;
     text-align: center;
     box-shadow: 0 -5px 0 #3adbfd;
     background-color: rgba(24, 33 ,52, 0.5);
@@ -75,4 +75,8 @@ input[type="text"], input[type="password"] {
     transition: 0.5s;
     background-color: #fff;
     color: #2c536c;
+}
+.error {
+    color: red;
+    font-size: 15px;
 }

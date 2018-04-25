@@ -30,6 +30,9 @@
         <form method="post" class="dws-input" action="/authorize?action=register">
             <input class="butt" type="submit" value="Зарегистрироваться">
         </form>
+        <div class="error">
+            <p>${error}</p>
+        </div>
     </div>
 </header>
 </body>

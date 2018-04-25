@@ -5,12 +5,7 @@
 <html>
 <head>
     <title>Приветствие</title>
-  <style>
-      .prof{
-          padding-left: 500px;
-
-      }
-  </style>
+    <link rel="stylesheet" href="../css/user_catalog.css">
 </head>
 <body>
 <h1>Бибилиотека периодических изданий</h1>
@@ -18,8 +13,7 @@
 <p/>
 <a href="/cart">Корзина</a>
 <p/>
-<a href="pages/start.jsp">Войти под другим логином</a>
-<a class="prof" href="/user?action=profile">Профиль</a>
+
 <div>
     <h2>Приветствуем тебя User ${login} </h2>
     <table border="1" cellpadding="8" cellspacing="0">
@@ -41,5 +35,7 @@
         </c:forEach>
     </table>
 </div>
+<a href="/user?action=exit">Выйти из системы</a>
+<a class="prof" href="/user?action=profile">Профиль</a>
 </body>
 </html>

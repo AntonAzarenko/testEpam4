@@ -5,6 +5,7 @@ import com.azarenko.model.Periodicals;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletCommands.CommandException;
 import com.azarenko.util.ConnectionPool;
+import com.sun.xml.internal.ws.api.Component;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
@@ -27,8 +28,12 @@ public class ArrayOperationPeriodical {
     private ConnectionPool connectionPool;
 
 
-    public ArrayOperationPeriodical() {
-        connectionPool = ConnectionPool.getInstance();
+    public ArrayOperationPeriodical()  {
+        try {
+            connectionPool = ConnectionPool.getInstance();
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -197,8 +202,7 @@ public class ArrayOperationPeriodical {
         periodical.setTitle(title);
         periodical.setDescription(discription);
         periodical.setPrice(price);
-                //ToDO
-        PeriodicalService service = new PeriodicalServiceImplImpl();
+
         /**
          * get connection from connection pool and start transaction
          */
@@ -214,6 +218,8 @@ public class ArrayOperationPeriodical {
         try {
             log.info("transaction start");
             transaction.start();
+            ComponentRegister register = new ComponentRegister();
+            PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             service.add(periodical);
             request.setAttribute("catalogs", service.getCatalog());
             transaction.commit();
@@ -255,8 +261,8 @@ public class ArrayOperationPeriodical {
         Transaction transaction = new TransactionImpl(local);
         try {
             transaction.start();
-            //ToDo
-            PeriodicalService service = new PeriodicalServiceImplImpl();
+            ComponentRegister register = new ComponentRegister();
+            PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             Periodicals periodical = service.getPeriodical(id);
             transaction.commit();
             connectionPool.returnConnection(connection);
@@ -293,8 +299,8 @@ public class ArrayOperationPeriodical {
         Transaction transaction = new TransactionImpl(local);
         try {
             transaction.start();
-            //ToDo
-            PeriodicalService service = new PeriodicalServiceImplImpl();
+            ComponentRegister register = new ComponentRegister();
+            PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             service.update((Periodicals) request.getAttribute("periodicals"));
             request.setAttribute("catalogs", service.getCatalog());
             transaction.commit();
@@ -340,8 +346,8 @@ public class ArrayOperationPeriodical {
         Transaction transaction = new TransactionImpl(local);
         try {
             transaction.start();
-            //ToDO
-            PeriodicalService service = new PeriodicalServiceImplImpl();
+            ComponentRegister register = new ComponentRegister();
+            PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             service.remove(catalodId);
             request.setAttribute("catalogs", service.getCatalog());
             transaction.commit();

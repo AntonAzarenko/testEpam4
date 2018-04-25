@@ -15,9 +15,23 @@ public class ArrayOperationSubscription {
     private ConnectionPool pool;
 
     public ArrayOperationSubscription() {
-        pool = ConnectionPool.getInstance();
+        try {
+            pool = ConnectionPool.getInstance();
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
     }
 
+    /**
+     * This method implements access to data base with help to some method. Then  get Arraylist with objects and install
+     * them to parameter "request".
+     *
+     * @param request
+     * @param resp
+     * @return
+     * @throws CommandException
+     * @throws TransactionException
+     */
     public String showSubscription(HttpServletRequest request, HttpServletResponse resp) throws CommandException, TransactionException {
         String forward = "";
         Connection connection = null;
@@ -31,7 +45,8 @@ public class ArrayOperationSubscription {
         Transaction transaction = new TransactionImpl(local);
         try {
             transaction.start();
-            SubscriptionService service = new SubscriptionServiceImpl();
+            ComponentRegister register = new ComponentRegister();
+            SubscriptionService service = (SubscriptionService) register.getImpl(SubscriptionService.class);
             request.setAttribute("subscriptionList", service.getAllSubscription());
             transaction.commit();
             pool.returnConnection(connection);
@@ -41,7 +56,6 @@ public class ArrayOperationSubscription {
         } catch (DaoException e) {
             transaction.rollback();
         }
-
         return forward;
     }
 }

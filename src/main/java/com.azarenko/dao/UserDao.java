@@ -9,17 +9,13 @@ import java.util.List;
  */
 public interface UserDao  extends BaseDao<User> {
 
-
-    /**
-     * Get user by Email
-     * @param email
-     * @return
-     */
     User getUserByEmail(String email) throws DaoException;
 
 
     int getUserIdByEmail(String login) throws DaoException;
 
     @Override
-    List getListEntity();
+    List getListEntity() throws DaoException;
+
+
 }

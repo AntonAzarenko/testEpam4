@@ -16,29 +16,22 @@
         <div class="dws-input">
         <input type="text" placeholder="Введите имя *" name="name"/>
         </div>
-        <div class ="error">
-            <p>${error1}</p>
-        </div>
         <div class="dws-input">
         <input type="text" placeholder="Введите Email *" name="email"/>
         </div>
-        <div class ="error">
-            <p>${error1}</p>
-        </div>
+
         <div class="dws-input">
         <input type="password" placeholder="Введите пароль *" name="password"/>
-        </div>
-        <div class ="error">
-            <p>${error1}</p>
         </div>
         <div class="dws-input">
         <input type="password" placeholder="Повторите пароль *" name="password_two">
         </div>
-        <div class ="error">
-            <p>${error1}</p>
-        </div>
+
         <input class="butt" type="submit" value="Зарегистрироваться">
     </form>
+    <div class ="error">
+        <p>${error}</p>
+    </div>
 </div>
 </body>
 </html>

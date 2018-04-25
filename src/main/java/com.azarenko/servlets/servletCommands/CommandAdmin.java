@@ -15,19 +15,20 @@ import java.util.concurrent.ConcurrentHashMap;
 
 
 public class CommandAdmin implements Command {
+    private final Logger log = Logger.getLogger(CommandAdmin.class);
     private static ConcurrentHashMap<String, Command> map = new ConcurrentHashMap<>();
 
     static {
-        map.put("catalog", new ShowCatalogPeriodicals(new ArrayOperationPeriodical()));
-        map.put("edit", new EditPeriodical(new ArrayOperationPeriodical()));
-        map.put("payment", new ShowPayment(new ArrayOperationPayment()));
-        map.put("delete", new DeletePeriodical(new ArrayOperationPeriodical()));
-        map.put("subscription", new ShowSubscription(new ArrayOperationSubscription()));
-        map.put("insert", new InsertPeriodical(new ArrayOperationPeriodical()));
-        map.put("add", new AddPeriodical(new ArrayOperationPeriodical()));
+
+            map.put("catalog", new ShowCatalogPeriodicals(new ArrayOperationPeriodical()));
+            map.put("edit", new EditPeriodical(new ArrayOperationPeriodical()));
+            map.put("payment", new ShowPayment(new ArrayOperationPayment()));
+            map.put("delete", new DeletePeriodical(new ArrayOperationPeriodical()));
+            map.put("subscription", new ShowSubscription(new ArrayOperationSubscription()));
+            map.put("insert", new InsertPeriodical(new ArrayOperationPeriodical()));
+            map.put("add", new AddPeriodical(new ArrayOperationPeriodical()));
     }
 
-    private final Logger log = Logger.getLogger(CommandAdmin.class);
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException {

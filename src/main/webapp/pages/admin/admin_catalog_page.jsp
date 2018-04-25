@@ -22,6 +22,7 @@
                 <th>Id Издания</th>
                 <th>Название</th>
                 <th>Описание</th>
+                <th>Периодичность выхода</th>
                 <th>Цена</th>
                 <th>Редактировать</th>
                 <th>Удалить</th>
@@ -32,6 +33,7 @@
                     <th>${periodicals.id}</th>
                     <th>${periodicals.title}</th>
                     <th>${periodicals.description}</th>
+                    <th>${periodicals.outputFrequency}</th>
                     <th>${periodicals.price}</th>
                     <th><a href="/admin?action=edit&catalogId=<c:out value="${periodicals.id}"/>" methods="post">Редактировать</a>
                     </th>

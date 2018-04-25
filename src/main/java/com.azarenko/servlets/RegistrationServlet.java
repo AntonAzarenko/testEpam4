@@ -3,8 +3,12 @@ package com.azarenko.servlets;
 import com.azarenko.dao.DaoException;
 import com.azarenko.model.User;
 import com.azarenko.services.Md5Hash;
+import com.azarenko.services.ServiceException;
 import com.azarenko.services.UserService;
 import com.azarenko.services.UserServiceImpl;
+import com.azarenko.servlets.servletCommands.Command;
+import com.azarenko.servlets.servletCommands.CommandException;
+import com.azarenko.servlets.servletCommands.CommandRegistration;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -22,12 +26,7 @@ public class RegistrationServlet extends HttpServlet {
     private static final String REGISTRATION = "/pages/user/registration.jsp";
     private static final String USERPROFILE = "/pages/user/my_profile.jsp";
 
-    private Md5Hash md5Hash;
-    private UserService userService;
-
     public RegistrationServlet() {
-        md5Hash = new Md5Hash();
-        userService = new UserServiceImpl();
     }
 
     @Override
@@ -37,7 +36,7 @@ public class RegistrationServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        log.info(req.getSession().getAttribute("login"));
+   /*     log.info(req.getSession().getAttribute("login"));
         User.UserBulder userBulder = new User.UserBulder();
         String name = req.getParameter("name");
         String password = md5Hash.getMd5Hash(req.getParameter("password"));
@@ -55,7 +54,7 @@ public class RegistrationServlet extends HttpServlet {
         HttpSession session = req.getSession();
         session.setAttribute("login",email);
         req.setAttribute("user",user);
-        req.getRequestDispatcher(USERPROFILE).forward(req,resp);
+       */
 
     }
 }

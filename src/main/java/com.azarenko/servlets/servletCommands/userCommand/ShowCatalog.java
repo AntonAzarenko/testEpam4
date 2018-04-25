@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
 
 public class ShowCatalog implements Command{
-    private final  String CATALOG_LIST = "/pages/user/user_catalog.jsp";
+    private final String CATALOG_LIST = "/pages/user/user_catalog.jsp";
     private ArrayOperationPeriodical arrayOperationPeriodical;
 
     public ShowCatalog(ArrayOperationPeriodical arrayOperationPeriodical) {

@@ -3,7 +3,8 @@ package com.azarenko.servlets;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletCommands.Command;
 import com.azarenko.servlets.servletCommands.CommandException;
-import com.azarenko.servlets.servletCommands.CommandImpl;
+import com.azarenko.servlets.servletCommands.CommandAdmin;
+import com.azarenko.servlets.servletCommands.CommandUser;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -42,7 +43,7 @@ public class UsersServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Command command = new CommandImpl();
+        Command command = new CommandUser();
         log.info(req.getRequestURI());
         log.info(req.getParameter("action"));
         String forward = "";

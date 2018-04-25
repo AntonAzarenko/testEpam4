@@ -1,10 +1,9 @@
-package com.azarenko.servlets.servletCommands.adminCommand;
+package com.azarenko.servlets.servletCommands.registerCommand;
 
 import com.azarenko.services.ServiceException;
 import com.azarenko.servlets.servletCommands.Command;
 import com.azarenko.servlets.servletCommands.CommandException;
-import com.azarenko.servlets.servletCommands.adminOperations.ArrayOperationPeriodical;
-import com.azarenko.servlets.servletCommands.adminOperations.ArrayOperationRegistration;
+import com.azarenko.servlets.servletCommands.registerOperation.ArrayOperationRegistration;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

@@ -15,7 +15,6 @@ public class ManagerCommand implements Command{
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException, UnsupportedEncodingException {
-       String f = command.execute(request,resp);
-       return f;
+        return command.execute(request,resp);
     }
 }

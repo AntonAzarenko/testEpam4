@@ -5,21 +5,32 @@
 <head>
     <title>Вход</title>
 </head>
-<h1>Вход в систему "Периодические издания"</h1>
 <body>
-<form method=post action="/authorize?action=authorize">
-    <p><strong>Введите ваш EMAIL: </strong>
-        <input type="text" name="login" size="25">
-    <p>
-    <p><strong>Введите ваш пароль: </strong>
-        <input type="password" size="15" name="password"/>
-    <p>
-    <p>
-        <input type="submit" value="Принять">
-        <input type="reset" value="Сбросить">
-</form>
-<form method="post" action="/authorize?action=register">
-    <input type="submit" value="Регистрация">
-</form>
+<link rel="stylesheet" type="text/css" href="/css/start.css" media="all">
+<style>
+    <%@include file="/css/start.css"%>
+</style>
+<header>
+    <h1>Вход в систему "Периодические издания"</h1>
+    <div class="container">
+        <img src="/image/3.png">
+        <form class="center" method=post action="/authorize?action=authorize">
+            <div class="dws-input">
+                <input type="text" placeholder="Введите логин" name="login">
+            </div>
+            <div class="dws-input">
+                <input type="password" placeholder="Введите пароль" name="password"/>
+            </div>
+            <input class="butt" type="submit" value="Войти">
+            <br/>
+
+            <a href="">Восстановить пароль</a>
+            <br/>
+        </form>
+        <form method="post" class="dws-input" action="/authorize?action=register">
+            <input class="butt" type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+</header>
 </body>
 </html>

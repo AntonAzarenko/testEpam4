@@ -3,7 +3,7 @@ package com.azarenko.servlets;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletCommands.Command;
 import com.azarenko.servlets.servletCommands.CommandException;
-import com.azarenko.servlets.servletCommands.CommandImpl;
+import com.azarenko.servlets.servletCommands.CommandAdmin;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -20,7 +20,7 @@ public class AdminServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Command command = new CommandImpl();
+        Command command = new CommandAdmin();
         log.info(req.getRequestURI());
         log.info(req.getParameter("action"));
         String forward = "";
@@ -38,7 +38,7 @@ public class AdminServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
-        Command command = new CommandImpl();
+        Command command = new CommandAdmin();
         log.info(req.getRequestURI());
         log.info(req.getParameter("action"));
         String forward = "";

@@ -1,8 +1,9 @@
-package com.azarenko.servlets.servletCommands.adminOperations;
+package com.azarenko.servlets.servletCommands.registerOperation;
 
 import com.azarenko.dao.DaoException;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletCommands.CommandException;
+import com.azarenko.servlets.servletCommands.adminOperations.ArrayOperationPeriodical;
 import com.azarenko.util.ConnectionPool;
 import org.apache.log4j.Logger;
 
@@ -16,7 +17,7 @@ public class ArrayOperationRegistration {
     private final String REGISTERED = "/pages/user/registration.jsp";
     private final String ERROR = "/pages/info/erors_message.jsp";
     private final String ADMIN = "pages/admin/admin_start_page.jsp";
-    private final String USER = "user?action=usercatalog";
+    private final String USER = "user?action=catalog";
     private final Logger log = Logger.getLogger(ArrayOperationPeriodical.class);
 
     private ConnectionPool connectionPool;
@@ -31,7 +32,7 @@ public class ArrayOperationRegistration {
      * @param resp
      * @return
      */
-    public String registration(HttpServletRequest request, HttpServletResponse resp) {
+    public String registrationRedirect(HttpServletRequest request, HttpServletResponse resp) {
         String forward = REGISTERED;
         return forward;
     }
@@ -42,9 +43,20 @@ public class ArrayOperationRegistration {
      * @param response
      * @return
      */
-    public String newRegistration(HttpServletRequest request, HttpServletResponse response){
+    public String registration(HttpServletRequest request, HttpServletResponse response){
+        String name = request.getParameter("name");
+        //Check data on valid
+        if(name.isEmpty()||name == null){
+            request.setAttribute("error1","Введите имя");
+            return REGISTERED;
+        }
+        String email = request.getParameter("email");
+        //Check data on valid
+        if(email.isEmpty()||email == null){
+            request.setAttribute("error2","Введите Email");
+            return REGISTERED;
+        }
         String forward ="";
-
         return forward;
     }
 

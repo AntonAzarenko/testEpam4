@@ -9,7 +9,6 @@ import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.sql.Connection;
@@ -63,7 +62,7 @@ public class ArrayOperationPeriodical {
         try {
             transaction.start();
 
-            CompareRegister register = new CompareRegister();
+            ComponentRegister register = new ComponentRegister();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             req.setAttribute("catalogs", service.getCatalog());
             /**

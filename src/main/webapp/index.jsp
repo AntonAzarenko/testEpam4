@@ -2,7 +2,6 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-<jsp:forward page="/catalog.html?action=catalog"/>
-
+<jsp:forward page="/authorize"/>
 </body>
 </html>

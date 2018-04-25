@@ -5,25 +5,39 @@
 <html>
 <head>
     <title>Регистрация</title>
+    <link rel="stylesheet" href="../css/registration.css">
 </head>
 
 <body>
-
 <h1 >Регистрация</h1>
-<div>
-    <form method="post"  action="/registration?action=reg" >
-        Имя* : <input type="text" name="name"/>
-        <br/>
-        <p/>
-        Email* : <input type="text" name="email"/>
-        <br/>
-        <p/>
-        Пароль* : <input type="password" name="password"/>
-        <p/>
-        Подтвердить пароль : <input type="password" name="password_two">
-        <p/>
-        <br/>
-        <input type="submit" value="Зарегистрироваться">
+<div class="container">
+    <<img src="../image/3.png" alt="">
+    <form class="header" method="post"  action="/authorize?action=reg" >
+        <div class="dws-input">
+        <input type="text" placeholder="Введите имя *" name="name"/>
+        </div>
+        <div class ="error">
+            <p>${error1}</p>
+        </div>
+        <div class="dws-input">
+        <input type="text" placeholder="Введите Email *" name="email"/>
+        </div>
+        <div class ="error">
+            <p>${error1}</p>
+        </div>
+        <div class="dws-input">
+        <input type="password" placeholder="Введите пароль *" name="password"/>
+        </div>
+        <div class ="error">
+            <p>${error1}</p>
+        </div>
+        <div class="dws-input">
+        <input type="password" placeholder="Повторите пароль *" name="password_two">
+        </div>
+        <div class ="error">
+            <p>${error1}</p>
+        </div>
+        <input class="butt" type="submit" value="Зарегистрироваться">
     </form>
 </div>
 </body>

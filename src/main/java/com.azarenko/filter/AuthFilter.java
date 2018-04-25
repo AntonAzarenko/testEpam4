@@ -30,8 +30,11 @@ public class AuthFilter implements Filter {
         boolean loginRequest = request.getRequestURI().equals(loginURI);
         String uri = request.getRequestURI();
         log.info(uri);
-        if(uri.equals("/registration") || uri.equals("/catalog.html?action=catalog")){
+        if(uri.equals("/registration")){
             response.sendRedirect(loginURI);
+        }
+        if(uri.equals("/css/start.css")){
+            filterChain.doFilter(request,response);
         }
         if (loggedIn || loginRequest) {
             filterChain.doFilter(request, response);

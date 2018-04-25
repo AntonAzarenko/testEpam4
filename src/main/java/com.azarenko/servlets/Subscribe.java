@@ -1,6 +1,5 @@
 package com.azarenko.servlets;
 
-import com.azarenko.model.ShoppingCart;
 import com.azarenko.services.*;
 import org.apache.log4j.Logger;
 
@@ -9,7 +8,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -24,7 +22,7 @@ public class Subscribe extends HttpServlet {
     private ShoppingCartService cartService;
 
     public Subscribe() {
-        periodicalService = new PeriodicalServiceImpl();
+        periodicalService = new PeriodicalServiceImplImpl();
         userService = new UserServiceImpl();
         cartService = new ShoppingCartServiceImpl();
     }

@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 
-public class TransactionImpl extends BaseService implements Transaction { private final static Logger log = Logger.getLogger(TransactionImpl.class);
+public class TransactionImpl extends BaseServiceImpl implements Transaction { private final static Logger log = Logger.getLogger(TransactionImpl.class);
    private ThreadLocal<Connection> local;
    private Connection connection;
 

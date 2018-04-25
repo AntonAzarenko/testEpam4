@@ -5,7 +5,7 @@ import com.azarenko.model.Periodicals;
 
 import java.util.List;
 
-public interface PeriodicalService {
+public interface PeriodicalService extends BaseService{
     List<Periodicals> getCatalog() throws ServiceException, DaoException;
 
     void add(Periodicals periodicals) throws ServiceException, DaoException;

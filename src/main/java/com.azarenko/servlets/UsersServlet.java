@@ -1,7 +1,9 @@
 package com.azarenko.servlets;
 
-import com.azarenko.model.User;
 import com.azarenko.services.*;
+import com.azarenko.servlets.servletCommands.Command;
+import com.azarenko.servlets.servletCommands.CommandException;
+import com.azarenko.servlets.servletCommands.CommandImpl;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -9,7 +11,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(name = "MyServlet", urlPatterns = "/user")
@@ -28,7 +29,7 @@ public class UsersServlet extends HttpServlet {
     private UserService userService;
 
     public UsersServlet() {
-        periodicalService = new PeriodicalServiceImpl();
+        periodicalService = new PeriodicalServiceImplImpl();
         userService = new UserServiceImpl();
         subscriptionService = new SubscriptionServiceImpl();
 
@@ -41,6 +42,19 @@ public class UsersServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Command command = new CommandImpl();
+        log.info(req.getRequestURI());
+        log.info(req.getParameter("action"));
+        String forward = "";
+        try {
+            forward = command.execute(req, resp);
+        } catch (CommandException e) {
+            log.error(e);
+        } catch (ServiceException e) {
+            log.error(e);
+        }
+        req.getRequestDispatcher(forward).forward(req, resp);
+
       /*  String action = req.getParameter("action");
         String forward = "";
         if (action.equalsIgnoreCase("catalog")) {

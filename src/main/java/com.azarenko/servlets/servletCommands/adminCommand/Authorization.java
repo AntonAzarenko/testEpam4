@@ -4,19 +4,20 @@ import com.azarenko.services.ServiceException;
 import com.azarenko.servlets.servletCommands.Command;
 import com.azarenko.servlets.servletCommands.CommandException;
 import com.azarenko.servlets.servletCommands.adminOperations.ArrayOperationPeriodical;
+import com.azarenko.servlets.servletCommands.adminOperations.ArrayOperationRegistration;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class Authorization implements Command {
-    private ArrayOperationPeriodical arrayOperationPeriodical;
+    private ArrayOperationRegistration arrayOperationRegistration;
 
-    public Authorization(ArrayOperationPeriodical arrayOperationPeriodical) {
-        this.arrayOperationPeriodical = arrayOperationPeriodical;
+    public Authorization(ArrayOperationRegistration arrayOperationRegistration) {
+        this.arrayOperationRegistration = arrayOperationRegistration;
     }
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException {
-        return this.arrayOperationPeriodical.authorization(request,resp);
+        return this.arrayOperationRegistration.authorization(request,resp);
     }
 }

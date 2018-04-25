@@ -19627,3 +19627,1412 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Data sourc
 2018-04-24 22:07:16 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@7b6f9e6e
 2018-04-24 22:07:16 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@7b6f9e6e Remove Used
 2018-04-24 22:07:16 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@7b6f9e6e Add Free
+2018-04-25 09:02:53 INFO  AuthFilter:32 - /
+2018-04-25 09:02:53 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:02:54 INFO  AuthFilter:32 - /
+2018-04-25 09:02:54 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:02:56 INFO  AuthFilter:32 - /
+2018-04-25 09:02:56 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:02:56 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:02:56 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:03:00 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:03:00 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:03:00 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:03:00 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:03:00 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:03:00 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:03:00 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:03:00 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:03:00 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:03:00 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:03:00 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:03:00 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 09:03:00 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@266740c3
+2018-04-25 09:03:00 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@266740c3
+2018-04-25 09:03:00 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@266740c3 Remove Used
+2018-04-25 09:03:00 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@266740c3 AddPeriodical Free
+2018-04-25 09:03:00 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:03:01 INFO  AuthFilter:32 - /admin
+2018-04-25 09:03:01 INFO  AdminServlet:26 - /admin
+2018-04-25 09:03:01 INFO  AdminServlet:27 - catalog
+2018-04-25 09:03:01 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@266740c3
+2018-04-25 09:03:01 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@266740c3
+2018-04-25 09:04:14 INFO  AuthFilter:32 - /
+2018-04-25 09:04:14 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:04:14 INFO  AuthFilter:32 - /
+2018-04-25 09:04:14 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:04:15 INFO  AuthFilter:32 - /
+2018-04-25 09:04:15 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:04:16 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:04:16 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:04:16 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:04:16 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:04:16 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:04:16 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:04:16 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:04:16 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:04:16 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:04:16 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:04:16 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:04:16 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 09:04:16 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@5d33d618
+2018-04-25 09:04:16 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@5d33d618
+2018-04-25 09:04:16 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@5d33d618 Remove Used
+2018-04-25 09:04:16 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@5d33d618 AddPeriodical Free
+2018-04-25 09:04:17 INFO  AuthFilter:32 - /admin
+2018-04-25 09:04:17 INFO  AdminServlet:26 - /admin
+2018-04-25 09:04:17 INFO  AdminServlet:27 - catalog
+2018-04-25 09:04:17 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@5d33d618
+2018-04-25 09:04:17 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@5d33d618
+2018-04-25 09:05:44 INFO  AuthFilter:32 - /
+2018-04-25 09:05:44 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:05:44 INFO  AuthFilter:32 - /
+2018-04-25 09:05:44 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:05:45 INFO  AuthFilter:32 - /
+2018-04-25 09:05:45 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:05:46 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:05:46 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:05:46 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:05:46 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:05:46 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:05:46 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:05:46 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:05:46 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:05:46 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:05:46 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:05:46 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:05:46 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 09:05:46 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@5c57befb
+2018-04-25 09:05:46 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@5c57befb
+2018-04-25 09:05:46 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@5c57befb Remove Used
+2018-04-25 09:05:46 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@5c57befb AddPeriodical Free
+2018-04-25 09:05:48 INFO  AuthFilter:32 - /admin
+2018-04-25 09:05:48 INFO  AdminServlet:26 - /admin
+2018-04-25 09:05:48 INFO  AdminServlet:27 - catalog
+2018-04-25 09:05:48 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@5c57befb
+2018-04-25 09:05:48 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@5c57befb
+2018-04-25 09:11:53 INFO  AuthFilter:32 - /
+2018-04-25 09:11:53 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:11:53 INFO  AuthFilter:32 - /
+2018-04-25 09:11:53 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:11:55 INFO  AuthFilter:32 - /
+2018-04-25 09:11:55 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:11:55 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:11:55 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:11:58 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:11:59 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:11:59 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:11:59 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:11:59 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:11:59 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:11:59 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:11:59 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:11:59 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:11:59 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:11:59 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:11:59 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 09:11:59 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:11:59 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:11:59 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3af7938 Remove Used
+2018-04-25 09:11:59 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3af7938 AddPeriodical Free
+2018-04-25 09:11:59 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:12:00 INFO  AuthFilter:32 - /admin
+2018-04-25 09:12:00 INFO  AdminServlet:26 - /admin
+2018-04-25 09:12:00 INFO  AdminServlet:27 - catalog
+2018-04-25 09:12:00 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:12:00 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:12:00 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3af7938 Remove Used
+2018-04-25 09:12:00 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3af7938 AddPeriodical Free
+2018-04-25 09:12:07 INFO  AuthFilter:32 - /admin
+2018-04-25 09:12:07 INFO  AdminServlet:26 - /admin
+2018-04-25 09:12:07 INFO  AdminServlet:27 - insert
+2018-04-25 09:15:26 INFO  AuthFilter:32 - /admin
+2018-04-25 09:15:26 INFO  AdminServlet:26 - /admin
+2018-04-25 09:15:26 INFO  AdminServlet:27 - subscription
+2018-04-25 09:15:26 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:15:26 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:15:26 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3af7938 Remove Used
+2018-04-25 09:15:26 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3af7938 AddPeriodical Free
+2018-04-25 09:15:46 INFO  AuthFilter:32 - /admin
+2018-04-25 09:15:46 INFO  AdminServlet:26 - /admin
+2018-04-25 09:15:46 INFO  AdminServlet:27 - payment
+2018-04-25 09:15:46 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:15:46 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:15:46 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3af7938 Remove Used
+2018-04-25 09:15:46 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3af7938 AddPeriodical Free
+2018-04-25 09:15:48 INFO  AuthFilter:32 - /admin
+2018-04-25 09:15:48 INFO  AdminServlet:26 - /admin
+2018-04-25 09:15:48 INFO  AdminServlet:27 - catalog
+2018-04-25 09:15:48 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:15:48 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:15:48 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3af7938 Remove Used
+2018-04-25 09:15:48 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3af7938 AddPeriodical Free
+2018-04-25 09:15:52 INFO  AuthFilter:32 - /admin
+2018-04-25 09:15:52 INFO  AdminServlet:26 - /admin
+2018-04-25 09:15:52 INFO  AdminServlet:27 - subscription
+2018-04-25 09:15:52 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:15:52 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:15:52 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3af7938 Remove Used
+2018-04-25 09:15:52 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3af7938 AddPeriodical Free
+2018-04-25 09:16:20 INFO  AuthFilter:32 - /admin
+2018-04-25 09:16:20 INFO  AdminServlet:26 - /admin
+2018-04-25 09:16:20 INFO  AdminServlet:27 - catalog
+2018-04-25 09:16:20 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:16:20 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:16:20 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3af7938 Remove Used
+2018-04-25 09:16:20 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3af7938 AddPeriodical Free
+2018-04-25 09:16:34 INFO  AuthFilter:32 - /admin
+2018-04-25 09:16:34 INFO  AdminServlet:26 - /admin
+2018-04-25 09:16:34 INFO  AdminServlet:27 - edit
+2018-04-25 09:16:34 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:16:34 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:16:34 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3af7938 Remove Used
+2018-04-25 09:16:34 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3af7938 AddPeriodical Free
+2018-04-25 09:16:55 INFO  AuthFilter:32 - /admin
+2018-04-25 09:16:55 INFO  AdminServlet:44 - /admin
+2018-04-25 09:16:55 INFO  AdminServlet:45 - add
+2018-04-25 09:16:55 INFO  ArrayOperationPeriodical:188 - Start adding
+2018-04-25 09:16:55 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:16:55 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:16:56 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3af7938 Remove Used
+2018-04-25 09:16:56 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3af7938 AddPeriodical Free
+2018-04-25 09:17:11 INFO  AuthFilter:32 - /pages/start.jsp
+2018-04-25 09:17:14 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:17:14 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 09:17:14 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:17:14 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3af7938
+2018-04-25 09:17:14 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3af7938 Remove Used
+2018-04-25 09:17:14 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3af7938 AddPeriodical Free
+2018-04-25 09:31:31 INFO  AuthFilter:32 - /
+2018-04-25 09:31:31 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:31:31 INFO  AuthFilter:32 - /
+2018-04-25 09:31:31 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:31:33 INFO  AuthFilter:32 - /
+2018-04-25 09:31:33 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:31:33 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:31:33 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:31:34 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:31:35 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:31:35 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:31:35 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:31:35 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:31:35 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:31:35 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:31:35 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:31:35 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:31:35 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:31:35 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:31:35 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 09:31:35 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3ede836e
+2018-04-25 09:31:35 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3ede836e
+2018-04-25 09:31:35 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3ede836e Remove Used
+2018-04-25 09:31:35 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3ede836e AddPeriodical Free
+2018-04-25 09:31:35 INFO  UsersServlet:46 - /user
+2018-04-25 09:31:35 INFO  UsersServlet:47 - usercatalog
+2018-04-25 09:31:35 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3ede836e
+2018-04-25 09:31:35 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3ede836e
+2018-04-25 09:31:35 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3ede836e Remove Used
+2018-04-25 09:31:35 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3ede836e AddPeriodical Free
+2018-04-25 09:31:35 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:51:26 INFO  AuthFilter:32 - /
+2018-04-25 09:51:26 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:51:27 INFO  AuthFilter:32 - /
+2018-04-25 09:51:27 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:51:27 INFO  AuthFilter:32 - /
+2018-04-25 09:51:27 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:51:54 INFO  AuthFilter:32 - /
+2018-04-25 09:51:54 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:51:55 INFO  AuthFilter:32 - /
+2018-04-25 09:51:55 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:51:56 INFO  AuthFilter:32 - /
+2018-04-25 09:51:56 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:51:56 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:51:56 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:52:01 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:52:01 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:52:01 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:52:01 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:52:01 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:52:01 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:52:01 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:52:01 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:52:01 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:52:01 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:52:01 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:52:01 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 09:52:01 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@3e411e86
+2018-04-25 09:52:01 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3e411e86
+2018-04-25 09:52:01 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@3e411e86 Remove Used
+2018-04-25 09:52:01 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3e411e86 AddPeriodical Free
+2018-04-25 09:52:02 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:52:03 INFO  AuthFilter:32 - /admin
+2018-04-25 09:53:06 INFO  AuthFilter:32 - /
+2018-04-25 09:53:06 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:53:06 INFO  AuthFilter:32 - /
+2018-04-25 09:53:06 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:53:08 INFO  AuthFilter:32 - /
+2018-04-25 09:53:08 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:53:08 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:53:08 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:53:12 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:53:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:53:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:53:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:53:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:53:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:53:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:53:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:53:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:53:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:53:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:53:12 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 09:53:12 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@19a18028
+2018-04-25 09:53:12 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@19a18028
+2018-04-25 09:53:12 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@19a18028 Remove Used
+2018-04-25 09:53:12 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@19a18028 AddPeriodical Free
+2018-04-25 09:53:12 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:53:13 INFO  AuthFilter:32 - /admin
+2018-04-25 09:53:52 INFO  AuthFilter:32 - /
+2018-04-25 09:53:52 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:53:53 INFO  AuthFilter:32 - /
+2018-04-25 09:53:53 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:53:54 INFO  AuthFilter:32 - /
+2018-04-25 09:53:54 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:53:54 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:53:54 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:54:26 INFO  AuthFilter:32 - /
+2018-04-25 09:54:26 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:54:26 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:54:26 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:54:51 INFO  AuthFilter:32 - /catalog.html
+2018-04-25 09:54:51 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:54:51 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:54:51 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:56:56 INFO  AuthFilter:32 - /
+2018-04-25 09:56:56 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:56:57 INFO  AuthFilter:32 - /
+2018-04-25 09:56:57 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:56:59 INFO  AuthFilter:32 - /
+2018-04-25 09:56:59 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:56:59 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:56:59 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:57:03 INFO  AuthFilter:32 - /authorize
+2018-04-25 09:57:03 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:57:03 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:57:03 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:57:03 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:57:03 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:57:03 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:57:03 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:57:03 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:57:03 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:57:03 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 09:57:03 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 09:57:03 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1a7ea63c
+2018-04-25 09:57:03 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1a7ea63c
+2018-04-25 09:57:03 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1a7ea63c Remove Used
+2018-04-25 09:57:03 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1a7ea63c AddPeriodical Free
+2018-04-25 09:57:03 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:03 INFO  UsersServlet:47 - usercatalog
+2018-04-25 09:57:03 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1a7ea63c
+2018-04-25 09:57:03 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1a7ea63c
+2018-04-25 09:57:03 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1a7ea63c Remove Used
+2018-04-25 09:57:03 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1a7ea63c AddPeriodical Free
+2018-04-25 09:57:04 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 09:57:11 INFO  AuthFilter:32 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:11 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:11 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 09:57:12 INFO  UsersServlet:46 - /user
+2018-04-25 09:57:12 INFO  UsersServlet:47 - profile
+2018-04-25 10:12:18 INFO  AuthFilter:32 - /
+2018-04-25 10:12:18 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:12:19 INFO  AuthFilter:32 - /
+2018-04-25 10:12:19 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:12:20 INFO  AuthFilter:32 - /
+2018-04-25 10:12:20 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:12:20 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 10:12:20 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:12:23 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:12:23 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:12:23 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:12:23 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:12:23 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:12:23 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:12:23 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:12:23 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:12:23 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:12:23 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:12:23 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:12:23 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 10:12:23 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:12:23 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:12:23 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1f6eae9e Remove Used
+2018-04-25 10:12:23 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1f6eae9e AddPeriodical Free
+2018-04-25 10:12:23 INFO  UsersServlet:46 - /user
+2018-04-25 10:12:23 INFO  UsersServlet:47 - usercatalog
+2018-04-25 10:12:23 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:12:23 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:12:23 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1f6eae9e Remove Used
+2018-04-25 10:12:23 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1f6eae9e AddPeriodical Free
+2018-04-25 10:12:23 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 10:12:28 INFO  AuthFilter:32 - /pages/start.jsp
+2018-04-25 10:12:50 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:12:50 INFO  AuthorizationServlet:32 - register
+2018-04-25 10:12:56 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:12:56 INFO  AuthorizationServlet:32 - authorize
+2018-04-25 10:12:56 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:12:56 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:12:56 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1f6eae9e Remove Used
+2018-04-25 10:12:56 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1f6eae9e AddPeriodical Free
+2018-04-25 10:13:16 INFO  AuthFilter:32 - /admin
+2018-04-25 10:13:16 INFO  AdminServlet:24 - /admin
+2018-04-25 10:13:16 INFO  AdminServlet:25 - catalog
+2018-04-25 10:13:16 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:13:16 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:13:16 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1f6eae9e Remove Used
+2018-04-25 10:13:16 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1f6eae9e AddPeriodical Free
+2018-04-25 10:13:53 INFO  AuthFilter:32 - /admin
+2018-04-25 10:13:53 INFO  AdminServlet:24 - /admin
+2018-04-25 10:13:53 INFO  AdminServlet:25 - delete
+2018-04-25 10:13:53 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:13:53 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:13:53 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1f6eae9e Remove Used
+2018-04-25 10:13:53 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1f6eae9e AddPeriodical Free
+2018-04-25 10:13:54 INFO  AuthFilter:32 - /admin
+2018-04-25 10:13:54 INFO  AdminServlet:24 - /admin
+2018-04-25 10:13:54 INFO  AdminServlet:25 - delete
+2018-04-25 10:13:54 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:13:54 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:13:54 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1f6eae9e Remove Used
+2018-04-25 10:13:54 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1f6eae9e AddPeriodical Free
+2018-04-25 10:13:56 INFO  AuthFilter:32 - /admin
+2018-04-25 10:13:56 INFO  AdminServlet:24 - /admin
+2018-04-25 10:13:56 INFO  AdminServlet:25 - delete
+2018-04-25 10:13:56 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:13:56 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:13:56 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1f6eae9e Remove Used
+2018-04-25 10:13:56 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1f6eae9e AddPeriodical Free
+2018-04-25 10:13:58 INFO  AuthFilter:32 - /admin
+2018-04-25 10:13:58 INFO  AdminServlet:24 - /admin
+2018-04-25 10:13:58 INFO  AdminServlet:25 - delete
+2018-04-25 10:13:58 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:13:58 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:13:58 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1f6eae9e Remove Used
+2018-04-25 10:13:58 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1f6eae9e AddPeriodical Free
+2018-04-25 10:14:00 INFO  AuthFilter:32 - /admin
+2018-04-25 10:14:00 INFO  AdminServlet:24 - /admin
+2018-04-25 10:14:00 INFO  AdminServlet:25 - delete
+2018-04-25 10:14:00 INFO  ConnectionPool:115 - GetConnection com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:14:00 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@1f6eae9e
+2018-04-25 10:14:01 INFO  ConnectionPool:164 - com.azarenko.util.PooledConnection@1f6eae9e Remove Used
+2018-04-25 10:14:01 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1f6eae9e AddPeriodical Free
+2018-04-25 10:17:08 INFO  AuthFilter:32 - /
+2018-04-25 10:17:08 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:17:08 INFO  AuthFilter:32 - /
+2018-04-25 10:17:08 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:17:10 INFO  AuthFilter:32 - /
+2018-04-25 10:17:10 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:17:10 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 10:17:10 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:17:12 INFO  AuthFilter:32 - /authorize
+2018-04-25 10:17:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:17:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:17:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:17:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:17:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:17:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:17:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:17:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:17:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:17:12 INFO  ConnectionPool:136 - Created a new connection
+2018-04-25 10:17:12 INFO  AuthorizationServlet:32 - register
+2018-04-25 10:17:12 INFO  AuthFilter:32 - /favicon.ico
+2018-04-25 10:17:12 INFO  AuthFilter:32 - /authorize

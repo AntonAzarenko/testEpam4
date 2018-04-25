@@ -14,9 +14,14 @@
     <form method="post"  action="/registration?action=reg" >
         Имя* : <input type="text" name="name"/>
         <br/>
+        <p/>
         Email* : <input type="text" name="email"/>
         <br/>
-        Пароль* : <input type="text" name="password"/>
+        <p/>
+        Пароль* : <input type="password" name="password"/>
+        <p/>
+        Подтвердить пароль : <input type="password" name="password_two">
+        <p/>
         <br/>
         <input type="submit" value="Зарегистрироваться">
     </form>

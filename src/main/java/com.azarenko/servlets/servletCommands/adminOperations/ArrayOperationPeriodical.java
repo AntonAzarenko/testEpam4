@@ -22,9 +22,6 @@ public class ArrayOperationPeriodical {
 
     private final String INSERT_OR_EDIT = "/pages/admin/admin_add_edit_publications.jsp";
     private final String CATALOG_LIST = "/pages/admin/admin_catalog_page.jsp";
-    private final String ERROR = "/pages/info/erors_message.jsp";
-    private final String ADMIN = "pages/admin/admin_start_page.jsp";
-    private final String USER = "user?action=catalog";
 
     private final Logger log = Logger.getLogger(ArrayOperationPeriodical.class);
 
@@ -65,7 +62,9 @@ public class ArrayOperationPeriodical {
         Transaction transaction = new TransactionImpl(local);
         try {
             transaction.start();
-            PeriodicalService service = new PeriodicalServiceImpl();
+
+            CompareRegister register = new CompareRegister();
+            PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             req.setAttribute("catalogs", service.getCatalog());
             /**
              * close transaction
@@ -83,76 +82,6 @@ public class ArrayOperationPeriodical {
             throw new ServiceException(e);
         }
         return CATALOG_LIST;
-    }
-
-    /**
-     * This method gets login and password from parameter "request" and forwards them to checking. If user  is in a
-     * database and password is confirmed, then this method gets parameter "role" and returns url depending of
-     * the parameter "role"
-     *
-     * @param request
-     * @param response
-     * @return
-     * @throws CommandException
-     * @throws ServiceException
-     * @Author Azarenko Anton
-     */
-    public String authorization(HttpServletRequest request, HttpServletResponse response) throws CommandException, ServiceException {
-        Connection connection = null;
-        String forward = "";
-        try {
-            /**
-             * Get connection from connection pool
-             */
-            connection = connectionPool.getConnection();
-        } catch (SQLException e) {
-            throw new CommandException(e);
-        }
-        /**
-         * install this connection to ThreadLocal and run Transaction
-         */
-        ThreadLocal<Connection> local = new ThreadLocal();
-        local.set(connection);
-        Transaction transaction = new TransactionImpl(local);
-        try {
-            transaction.start();
-            String login = request.getParameter("login");
-            String password = request.getParameter("password");
-            if (login == null || password == null) {
-                forward = ERROR;
-                return forward;
-            }
-            String role = "";
-            HttpSession session = request.getSession();
-            AuthorisationService as = new AuthorisationService();
-            role = as.authorizeUser(login, password);
-            if (role == null) {
-                return ERROR;
-            }
-            switch (role) {
-                case "ADMIN":
-                    forward = ADMIN;
-                    session.setAttribute("role", role);
-                    session.setAttribute("login", login);
-                    break;
-                case "USER":
-                    forward = USER;
-                    session.setAttribute("role", role);
-                    session.setAttribute("login", login);
-                    break;
-                default:
-                    forward = ERROR;
-            }
-            transaction.commit();
-            connectionPool.returnConnection(connection);
-        } catch (TransactionException e) {
-            throw new TransactionException(e);
-        } catch (ServiceException e) {
-            throw new ServiceException(e);
-        } catch (DaoException e) {
-            transaction.rollback();
-        }
-        return forward;
     }
 
     /**
@@ -247,6 +176,7 @@ public class ArrayOperationPeriodical {
         String id = request.getParameter("catalogId");
         if (id == null || id.isEmpty()) {
         } else {
+            //redirect to method "Update"
             int cid = 0;
             try {
                 cid = Integer.parseInt(id);
@@ -268,7 +198,8 @@ public class ArrayOperationPeriodical {
         periodical.setTitle(title);
         periodical.setDescription(discription);
         periodical.setPrice(price);
-        PeriodicalService service = new PeriodicalServiceImpl();
+                //ToDO
+        PeriodicalService service = new PeriodicalServiceImplImpl();
         /**
          * get connection from connection pool and start transaction
          */
@@ -292,6 +223,7 @@ public class ArrayOperationPeriodical {
             throw new TransactionException(e);
         } catch (DaoException e) {
             transaction.rollback();
+            log.error(e);
         } catch (ServiceException e) {
             new ServiceException(e);
         }
@@ -324,7 +256,8 @@ public class ArrayOperationPeriodical {
         Transaction transaction = new TransactionImpl(local);
         try {
             transaction.start();
-            PeriodicalService service = new PeriodicalServiceImpl();
+            //ToDo
+            PeriodicalService service = new PeriodicalServiceImplImpl();
             Periodicals periodical = service.getPeriodical(id);
             transaction.commit();
             connectionPool.returnConnection(connection);
@@ -361,7 +294,8 @@ public class ArrayOperationPeriodical {
         Transaction transaction = new TransactionImpl(local);
         try {
             transaction.start();
-            PeriodicalService service = new PeriodicalServiceImpl();
+            //ToDo
+            PeriodicalService service = new PeriodicalServiceImplImpl();
             service.update((Periodicals) request.getAttribute("periodicals"));
             request.setAttribute("catalogs", service.getCatalog());
             transaction.commit();
@@ -407,7 +341,8 @@ public class ArrayOperationPeriodical {
         Transaction transaction = new TransactionImpl(local);
         try {
             transaction.start();
-            PeriodicalService service = new PeriodicalServiceImpl();
+            //ToDO
+            PeriodicalService service = new PeriodicalServiceImplImpl();
             service.remove(catalodId);
             request.setAttribute("catalogs", service.getCatalog());
             transaction.commit();

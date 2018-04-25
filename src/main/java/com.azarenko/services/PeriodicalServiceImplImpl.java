@@ -7,7 +7,7 @@ import com.azarenko.model.Periodicals;
 
 import java.util.List;
 
-public class PeriodicalServiceImpl extends BaseService implements PeriodicalService {
+public class PeriodicalServiceImplImpl extends BaseServiceImpl implements PeriodicalService {
 
     @Override
     public List<Periodicals> getCatalog() throws ServiceException, DaoException {

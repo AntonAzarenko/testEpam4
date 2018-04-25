@@ -15,7 +15,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     @Override
     public void create(int idPeriodicals, int userId, Date start, Date end) throws ServiceException, DaoException {
         SubscriptionDao subscriptionDao = new SubscriptionImplDao();
-        PeriodicalService periodicalService = new PeriodicalServiceImpl();
+        PeriodicalService periodicalService = new PeriodicalServiceImplImpl();
         Subscription.SubscriptionBuild subscriptionBuild = new Subscription.SubscriptionBuild();
         subscriptionBuild.idPeriodical(idPeriodicals);
         Periodicals periodicals = periodicalService.getPeriodical(idPeriodicals);

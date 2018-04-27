@@ -17,7 +17,7 @@ import java.io.IOException;
 @WebServlet(name = "authorize", urlPatterns = "/authorize")
 public class AuthorizationServlet extends HttpServlet {
     private final Logger log = Logger.getLogger(AuthorizationServlet.class);
-    private final String START = "/pages/start.jsp";
+    private final String START = "/pages/authorize.jsp";
 
 
     @Override

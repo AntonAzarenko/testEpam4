@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sens-serif;
     background: url("/image/bg.png") no-repeat center top / cover;
     height: 500px;
     padding: 0;
@@ -35,6 +34,7 @@ h1 {
 h2 {
     padding-left: 50px;
     color: #2ca8c6;
+
 }
 
 .dws-menu {
@@ -55,6 +55,7 @@ li.dws-li {
 }
 
 li.dws-li a {
+    list-style: none;
     text-decoration: none;
     font-size: 18px;
     color: black;
@@ -72,20 +73,17 @@ li.dws-li a i {
     margin-top: 10px;
     margin-left: 50px;
     background-color: rgba(24, 33, 52, 0.5);
-
-
-
 }
 
 h3 {
-    color: white;
+    color: lightyellow;
     text-align: center;
     size: 500px;
 }
 
 .dws-li-two {
     color: white;
-    list-style:none;
+    list-style: none;
     padding: 10px;
 }
 
@@ -97,11 +95,49 @@ h3 {
     font-size: 18px;
     text-decoration: none;
     size: 500px;
-    list-style:none;
     text-align: center;
+
 }
+.dws-menu-two {
+    padding: 0;
+}
+
 a:hover {
     text-decoration: none;
 }
 
+.container_two {
+    margin-top: 10px;
+    float: right;
+
+    margin-right: 100px;
+
+    width: 650px;
+    height: 800px;
+    background-color: rgba(24, 33, 52, 0.5);
+}
+.container_two p {
+    color: white;
+
+}
+.end {
+    border-bottom: 4px solid #6ee9fd ;
+}
+.butt {
+
+    margin: 20px 100px  50px 210px;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #3fff;
+    background-color: #2ca8c6;
+    border: none;
+    border-bottom: 4px solid #6ee9fd;
+    cursor: pointer;
+
+}
+.butt:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    color: #2c536c;
+}
 

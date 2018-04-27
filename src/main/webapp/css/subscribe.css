@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sens-serif;
     background: url("/image/bg.png") no-repeat center top / cover;
     height: 500px;
     padding: 0;
@@ -35,6 +34,7 @@ h1 {
 h2 {
     padding-left: 50px;
     color: #2ca8c6;
+
 }
 
 .dws-menu {
@@ -55,6 +55,7 @@ li.dws-li {
 }
 
 li.dws-li a {
+    list-style: none;
     text-decoration: none;
     font-size: 18px;
     color: black;
@@ -72,20 +73,17 @@ li.dws-li a i {
     margin-top: 10px;
     margin-left: 50px;
     background-color: rgba(24, 33, 52, 0.5);
-
-
-
 }
 
 h3 {
-    color: white;
+    color: lightyellow;
     text-align: center;
     size: 500px;
 }
 
 .dws-li-two {
     color: white;
-    list-style:none;
+    list-style: none;
     padding: 10px;
 }
 
@@ -97,11 +95,10 @@ h3 {
     font-size: 18px;
     text-decoration: none;
     size: 500px;
-    list-style:none;
     text-align: center;
+
 }
+
 a:hover {
     text-decoration: none;
 }
-
-

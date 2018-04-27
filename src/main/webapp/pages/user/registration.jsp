@@ -26,8 +26,10 @@
         <div class="dws-input">
         <input type="password" placeholder="Повторите пароль *" name="password_two">
         </div>
-
         <input class="butt" type="submit" value="Зарегистрироваться">
+    </form>
+    <form action="/authorize">
+        <input class="butt" type="submit"  value="Войти">
     </form>
     <div class ="error">
         <p>${error}</p>

@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Непрвильно Введен логин или пароль</h1>
-<a href="/pages/start.jsp">Попробовать еще раз</a>
+<a href="/main/webapp/pages/authorize.jsp">Попробовать еще раз</a>
 <br/>
 <br/>
 </body>

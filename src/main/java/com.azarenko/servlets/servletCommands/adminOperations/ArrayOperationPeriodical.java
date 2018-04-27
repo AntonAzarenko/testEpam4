@@ -22,6 +22,7 @@ public class ArrayOperationPeriodical {
 
     private final String INSERT_OR_EDIT = "/pages/admin/admin_add_edit_publications.jsp";
     private final String CATALOG_LIST = "/pages/admin/admin_catalog_page.jsp";
+    private final String USER_CATALOG_CURRENT = "/pages/user/user_catalog_current.jsp";
 
     private final Logger log = Logger.getLogger(ArrayOperationPeriodical.class);
 
@@ -100,8 +101,8 @@ public class ArrayOperationPeriodical {
     }
 
     /**
-     * This method forwards to the page for Editing and Add periodical. After that it checks data on valid.
-     * If parameter  Id equals null, then method adds periodical to database with help of some services. If parameter Id
+     * This method forwards to the page for Editing and Add getPeriodical. After that it checks data on valid.
+     * If parameter  Id equals null, then method adds getPeriodical to database with help of some services. If parameter Id
      * has value, then method redirects to update method.
      *
      * @param request
@@ -360,5 +361,41 @@ public class ArrayOperationPeriodical {
             throw new ServiceException(e);
         }
         return CATALOG_LIST;
+    }
+
+    public String showCurrentPeriodical(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException {
+        try {
+            showCatalog(request,resp);
+        } catch (CommandException e) {
+           throw new CommandException(e);
+        } catch (ServiceException e) {
+           throw new ServiceException(e);
+        }
+        Connection connection = null;
+        try {
+            connection = connectionPool.getConnection();
+        } catch (SQLException e) {
+            new CommandException(e);
+        }
+        ThreadLocal<Connection> local = new ThreadLocal<>();
+        local.set(connection);
+        Transaction transaction = new TransactionImpl(local);
+        try {
+            transaction.start();
+            ComponentRegister register = new ComponentRegister();
+            PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
+            Periodicals periodical = service.getPeriodical(Integer.parseInt(request.getParameter("periodicalId")));
+            request.setAttribute("periodical",periodical);
+            transaction.commit();
+            connectionPool.returnConnection(connection);
+        } catch (TransactionException e) {
+            new TransactionException(e);
+        } catch (DaoException e) {
+            transaction.rollback();
+            log.error(e);
+        } catch (ServiceException e){
+            throw new ServiceException(e);
+        }
+        return USER_CATALOG_CURRENT;
     }
 }

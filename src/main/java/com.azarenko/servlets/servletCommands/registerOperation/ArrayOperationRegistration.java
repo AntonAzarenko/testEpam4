@@ -19,8 +19,8 @@ public class ArrayOperationRegistration {
     private final String REGISTERED = "/pages/user/registration.jsp";
     private final String ERROR = "/pages/info/erors_message.jsp";
     private final String ADMIN = "pages/admin/admin_start_page.jsp";
-    private final String USER = "user?action=catalog";
-    private final String START = "/pages/start.jsp";
+    private final String USER = "user?action=start";
+    private final String START = "/pages/authorize.jsp";
     private final String USERPROFILE = "/pages/user/my_profile.jsp";
 
     private final Logger log = Logger.getLogger(ArrayOperationPeriodical.class);

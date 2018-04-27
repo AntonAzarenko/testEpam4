@@ -11,7 +11,7 @@
     <%@include file="/css/start.css"%>
 </style>
 <header>
-    <h1>Вход в систему "Периодические издания"</h1>
+    <h1>Вход</h1>
     <div class="container">
         <img src="/image/3.png">
         <form class="center" method=post action="/authorize?action=authorize">

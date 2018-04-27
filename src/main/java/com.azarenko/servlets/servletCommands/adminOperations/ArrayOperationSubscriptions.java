@@ -10,11 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class ArrayOperationSubscription {
+public class ArrayOperationSubscriptions {
     private final String SUBSCRIPTION = "/pages/admin/subscription.jsp";
     private ConnectionPool pool;
 
-    public ArrayOperationSubscription() {
+    public ArrayOperationSubscriptions() {
         try {
             pool = ConnectionPool.getInstance();
         } catch (ServiceException e) {

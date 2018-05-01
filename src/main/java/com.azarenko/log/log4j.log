@@ -19582,3 +19582,112 @@
 2018-05-01 22:06:11 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
 2018-05-01 22:06:11 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
 2018-05-01 22:06:11 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:13:45 INFO  AuthorizationServlet:34 - authorize
+2018-05-01 22:13:45 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:13:45 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:13:45 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:13:45 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:13:45 INFO  UsersServlet:45 - /user
+2018-05-01 22:13:45 INFO  UsersServlet:46 - start
+2018-05-01 22:13:54 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:13:54 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:13:54 ERROR ArrayOperationPeriodical:101 - java.lang.NumberFormatException: null
+2018-05-01 22:13:54 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:13:54 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:13:55 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:13:55 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:13:55 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:13:55 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:14:55 INFO  AuthorizationServlet:34 - authorize
+2018-05-01 22:14:55 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:14:55 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:14:55 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:14:55 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:14:55 INFO  UsersServlet:45 - /user
+2018-05-01 22:14:55 INFO  UsersServlet:46 - start
+2018-05-01 22:14:58 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:14:58 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:14:58 ERROR ArrayOperationPeriodical:101 - java.lang.NumberFormatException: null
+2018-05-01 22:14:58 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:14:58 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:14:59 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:14:59 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:14:59 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:14:59 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:15:03 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:03 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:03 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:15:03 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:15:03 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:03 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:03 ERROR ArrayOperationPeriodical:101 - java.lang.NumberFormatException: null
+2018-05-01 22:15:03 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:15:03 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:15:11 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:11 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:11 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:15:11 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:15:14 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:14 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:14 ERROR ArrayOperationPeriodical:101 - java.lang.NumberFormatException: null
+2018-05-01 22:15:14 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:15:14 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:15:22 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:22 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:22 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:15:22 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:15:25 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:25 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:15:25 ERROR ArrayOperationPeriodical:101 - java.lang.NumberFormatException: null
+2018-05-01 22:15:25 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:15:25 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:16:32 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:16:32 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:16:32 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:16:32 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:16:40 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:16:40 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:16:40 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:16:40 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:18:54 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:18:54 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:18:54 ERROR ArrayOperationPeriodical:101 - java.lang.NumberFormatException: null
+2018-05-01 22:18:54 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:18:54 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:18:55 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:18:55 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@3c072a7
+2018-05-01 22:18:55 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@3c072a7 Remove Used
+2018-05-01 22:18:55 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@3c072a7 AddPeriodical Free
+2018-05-01 22:22:44 INFO  ConnectionPool:138 - Created a new connection
+2018-05-01 22:22:44 INFO  ConnectionPool:138 - Created a new connection
+2018-05-01 22:22:44 INFO  ConnectionPool:138 - Created a new connection
+2018-05-01 22:22:44 INFO  ConnectionPool:138 - Created a new connection
+2018-05-01 22:22:44 INFO  ConnectionPool:138 - Created a new connection
+2018-05-01 22:22:44 INFO  ConnectionPool:138 - Created a new connection
+2018-05-01 22:22:44 INFO  ConnectionPool:138 - Created a new connection
+2018-05-01 22:22:44 INFO  ConnectionPool:138 - Created a new connection
+2018-05-01 22:22:44 INFO  ConnectionPool:138 - Created a new connection
+2018-05-01 22:22:44 INFO  ConnectionPool:138 - Created a new connection
+2018-05-01 22:22:44 INFO  AuthorizationServlet:34 - authorize
+2018-05-01 22:22:44 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@683f2c54
+2018-05-01 22:22:44 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@683f2c54
+2018-05-01 22:22:44 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@683f2c54 Remove Used
+2018-05-01 22:22:44 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@683f2c54 AddPeriodical Free
+2018-05-01 22:22:44 INFO  UsersServlet:45 - /user
+2018-05-01 22:22:44 INFO  UsersServlet:46 - start
+2018-05-01 22:23:23 INFO  AuthorizationServlet:34 - authorize
+2018-05-01 22:23:23 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@683f2c54
+2018-05-01 22:23:23 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@683f2c54
+2018-05-01 22:23:23 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@683f2c54 Remove Used
+2018-05-01 22:23:23 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@683f2c54 AddPeriodical Free
+2018-05-01 22:23:23 INFO  UsersServlet:45 - /user
+2018-05-01 22:23:23 INFO  UsersServlet:46 - start
+2018-05-01 22:23:26 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@683f2c54
+2018-05-01 22:23:26 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@683f2c54
+2018-05-01 22:23:26 ERROR ArrayOperationPeriodical:101 - java.lang.NumberFormatException: null
+2018-05-01 22:23:26 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@683f2c54 Remove Used
+2018-05-01 22:23:26 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@683f2c54 AddPeriodical Free
+2018-05-01 22:23:27 INFO  ConnectionPool:117 - GetConnection com.azarenko.util.PooledConnection@683f2c54
+2018-05-01 22:23:27 INFO  TransactionImpl:20 - com.azarenko.util.PooledConnection@683f2c54
+2018-05-01 22:23:27 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@683f2c54 Remove Used
+2018-05-01 22:23:27 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@683f2c54 AddPeriodical Free

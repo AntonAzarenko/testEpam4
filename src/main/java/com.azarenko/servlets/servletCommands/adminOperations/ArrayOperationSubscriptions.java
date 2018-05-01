@@ -3,6 +3,7 @@ package com.azarenko.servlets.servletCommands.adminOperations;
 import com.azarenko.dao.DaoException;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletCommands.CommandException;
+import com.azarenko.util.ComponentRegister;
 import com.azarenko.util.ConnectionPool;
 
 import javax.servlet.http.HttpServletRequest;

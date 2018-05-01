@@ -25,6 +25,9 @@
             <li class="dws-li"><a href="/user?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a></li>
             <li class="dws-li"><a href="/user?action=news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li></ui>
     </div>
+    <div class="news">
+        <p>.... Новости пока отсутсвуют...</p>
+    </div>
 </header>
 </body>
 </html>

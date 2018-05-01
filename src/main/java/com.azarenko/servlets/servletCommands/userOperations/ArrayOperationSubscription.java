@@ -3,6 +3,7 @@ package com.azarenko.servlets.servletCommands.userOperations;
 import com.azarenko.dao.DaoException;
 import com.azarenko.model.Payment;
 import com.azarenko.services.*;
+import com.azarenko.util.ComponentRegister;
 import com.azarenko.util.ConnectionPool;
 import org.apache.log4j.Logger;
 

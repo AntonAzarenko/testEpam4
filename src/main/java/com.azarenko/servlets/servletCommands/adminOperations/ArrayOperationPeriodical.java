@@ -4,11 +4,11 @@ import com.azarenko.dao.DaoException;
 import com.azarenko.model.Periodicals;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletCommands.CommandException;
+import com.azarenko.util.ComponentRegister;
 import com.azarenko.util.ConnectionPool;
 import com.azarenko.util.PageListHolder;
 import org.apache.log4j.Logger;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;

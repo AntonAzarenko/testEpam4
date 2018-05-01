@@ -25,6 +25,7 @@ public class CommandUser implements Command {
         map.put("shopingcart", new ShowShoppingCart(new ArrayOperationShoppingCart()));
         map.put("addtocart", new AddToShoppingCart(new ArrayOperationShoppingCart()));
         map.put("redirectsubscribe", new RedirectToSubscribe(new ArrayOperationPeriodical()));
+        map.put("page", new ShowCatalog(new ArrayOperationPeriodical()));
     }
 
     @Override

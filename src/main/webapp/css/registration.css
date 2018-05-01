@@ -14,9 +14,10 @@ h1 {
 
 .container {
     width: 500px;
-    height: 550px;
+    height: 650px;
+
     background-color: #182134;
-    margin: 100px auto 0 auto;
+    margin: 50px auto 0 auto;
     text-align: center;
     box-shadow: 0 -5px 0 #3adbfd;
     background-color: rgba(24, 33, 52, 0.5);

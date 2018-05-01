@@ -11,7 +11,6 @@
     <title>Приветствие</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/user_catalog.css">
-    <meta charset="UTF-8">
 
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/font-awesome.css" type="text/css">

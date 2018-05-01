@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -23,22 +24,21 @@ public class UsersServlet extends HttpServlet {
     private final static String MY_PERIODICALS = "/pages/user/my_periodicals.jsp";
     private final static String MY_PROFILE = "/pages/user/my_profile.jsp";
 
-    private PeriodicalService periodicalService;
-
-    private SubscriptionService subscriptionService;
-
-    private UserService userService;
-
-    public UsersServlet() {
-        periodicalService = new PeriodicalServiceImplImpl();
-        userService = new UserServiceImpl();
-        subscriptionService = new SubscriptionServiceImpl();
-
-    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doPost(req,resp);
+        Command command = new CommandUser();
+        log.info(req.getRequestURI());
+        log.info(req.getParameter("action"));
+        String forward = "";
+        try {
+            forward = command.execute(req, resp);
+        } catch (CommandException e) {
+            log.error(e);
+        } catch (ServiceException e) {
+            log.error(e);
+        }
+        req.getRequestDispatcher(forward).forward(req, resp);
     }
 
     @Override
@@ -54,7 +54,8 @@ public class UsersServlet extends HttpServlet {
         } catch (ServiceException e) {
             log.error(e);
         }
-        req.getRequestDispatcher(forward).forward(req, resp);
+        resp.sendRedirect(forward);
+
 
       /*  String action = req.getParameter("action");
         String forward = "";

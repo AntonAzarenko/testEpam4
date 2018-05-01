@@ -35,19 +35,53 @@
         <h3>Название</h3>
         <ul class="dws-ui-two">
             <c:forEach items="${requestScope.catalogs}" var="periodicals">
-            <li class="dws-li-two"><a
-                    href="/user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a>
-            </li>
+            <li class="dws-li-two">
+                <a href="/user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a></li>
+            </c:forEach>
         </ul>
-        </c:forEach>
-        </ul>
-    </div>
 
+    </div>
+    <div id="pagination" class="pagin">
+        <c:url value="${currentsort}" var="prev">
+            <c:param name="page" value="${page-1}"/>
+        </c:url>
+        <c:if test="${page > 1}">
+            <a href="<c:out value="${prev}" />" class="pn prev">
+                <button class="btn btn-info">Назад</button>
+            </a>
+        </c:if>
+
+        <c:forEach begin="1" end="${maxPages}" step="1" varStatus="i">
+            <c:choose>
+                <c:when test="${page == i.index}">
+                    <span>${i.index}</span>
+                </c:when>
+                <c:otherwise>
+                    <c:url value="${currentsort}" var="url">
+                        <c:param name="page" value="${i.index}"/>
+                    </c:url>
+                    <a href='<c:out value="${url}" />'>
+                        <button class="btn btn-info">${i.index}</button>
+                    </a>
+                </c:otherwise>
+            </c:choose>
+        </c:forEach>
+        <c:url value="${currentsort}" var="next">
+            <c:param name="page" value="${page + 1}"/>
+        </c:url>
+
+        <c:if test="${page + 1 <= maxPages}">
+            <a  href='<c:out value="${next}" />' class="pn next">
+                <button class="btn btn-info">Вперед</button>
+            </a>
+        </c:if>
+
+    </div>
 </div>
 <div class="container_two">
 
-        <p>Название :</p>
-        <h2>${periodical.title}</h2>
+    <p>Название :</p>
+    <h2>${periodical.title}</h2>
 
     <p> Описание : </p>
     <h2>${periodical.description}</h2>
@@ -55,38 +89,16 @@
     <h2>${periodical.outputFrequency}</h2>
     <p>Цена за один экзкмпляр</p>
     <div class="end">
-    <h2 cass="end">${periodical.price}</h2>
+        <h2 cass="end">${periodical.price}</h2>
     </div>
-    <form method="post" class="dws-input" action="/user?action=redirectsubscribe&periodicalId=<c:out value="${periodical.id}"/>">
-        <input class="butt" type="submit" value="Подписаться">
-    </form>
+    <a href="/user?action=redirectsubscribe&periodicalId=<c:out value="${periodical.id}"/>">
+        <button class="butt">Подписаться</button>
+    </a>
+    <%--<form method="get" class="dws-input" action="/user?action=redirectsubscribe&periodicalId=<c:out value="${periodical.id}"/>">
+        <input class="butt" type="submit" value="Подписаться" />
+    </form>--%>
 
 </div>
 
-
-<%-- <h2>Приветствуем тебя User ${login} </h2>
- <table border="1" cellpadding="8" cellspacing="0">
-     <tr>
-         <th>Id Издания</th>
-         <th>Название</th>
-         <th>Описание</th>
-         <th>Цена</th>
-     </tr>
-     <c:forEach items="${requestScope.catalogs}" var="periodicals">
-         <jsp:useBean id="periodicals" scope="page" type="com.azarenko.model.Periodicals"/>
-         <tr>
-             <th>${periodicals.id}</th>
-             <th>${periodicals.title}</th>
-             <th>${periodicals.description}</th>
-             <th>${periodicals.price}</th>
-             <th><a href="/subscribe?action=subscribe&periodicalid=<c:out value="${periodicals.id}"/>"
-                    methods="post">Оформить подписку</a></th>
-         </tr>
-     </c:forEach>
- </table>
-</div>
-<a href="/user?action=exit">Выйти из системы</a>
-<a class="prof" href="/user?action=profile">Профиль</a>
-</body>--%>
 </body>
 </html>

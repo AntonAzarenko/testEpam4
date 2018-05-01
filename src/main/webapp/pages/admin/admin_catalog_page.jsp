@@ -11,7 +11,7 @@
     <p/>
     <a href="/admin?action=subscription">Подписки</a>
     <p/>
-    <a href="pages/start.jsp">Воити под другим логином</a>
+    <a href="pages/authorize.jsp">Воити под другим логином</a>
     <p/>
     <a href="/admin?action=insert">Добавить издание</a>
     <p/>
@@ -42,5 +42,41 @@
             </c:forEach>
         </table>
     </div>
+<div id="pagination" class="pagin">
+    <c:url value="${currentsort}" var="prev">
+        <c:param name="page" value="${page-1}"/>
+    </c:url>
+    <c:if test="${page > 1}">
+        <a href="<c:out value="${prev}" />" class="pn prev">
+            <button class="btn btn-info">Назад</button>
+        </a>
+    </c:if>
+
+    <c:forEach begin="1" end="${maxPages}" step="1" varStatus="i">
+        <c:choose>
+            <c:when test="${page == i.index}">
+                <span>${i.index}</span>
+            </c:when>
+            <c:otherwise>
+                <c:url value="${currentsort}" var="url">
+                    <c:param name="page" value="${i.index}"/>
+                </c:url>
+                <a href='<c:out value="${url}" />'>
+                    <button class="btn btn-info">${i.index}</button>
+                </a>
+            </c:otherwise>
+        </c:choose>
+    </c:forEach>
+    <c:url value="${currentsort}" var="next">
+        <c:param name="page" value="${page + 1}"/>
+    </c:url>
+
+    <c:if test="${page + 1 <= maxPages}">
+        <a  href='<c:out value="${next}" />' class="pn next">
+            <button class="btn btn-info">Вперед</button>
+        </a>
+    </c:if>
+
+</div>
 </body>
 </html>

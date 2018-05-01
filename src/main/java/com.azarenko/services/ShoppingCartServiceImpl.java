@@ -25,7 +25,16 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     @Override
     public void add(ShoppingCart shoppingCart) {
-        shoppingCartDao.add(shoppingCart);
+        shoppingCart.setStart(new Date());
+        shoppingCart.setEnd(getEndDate(shoppingCart.getCountPer(), shoppingCart.getStart()));
+    }
+
+    private Date getEndDate(int countPer, Date start) {
+        Calendar startC = Calendar.getInstance();
+        Calendar endC = Calendar.getInstance();
+        startC.setTime(start);
+        startC.get(Calendar.DAY_OF_YEAR);
+        return new Date();
     }
 
     @Override
@@ -38,7 +47,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         return shoppingCartDao.getShoppingCartByUserId(id);
 
     }
-
 
     @Override
     public BigDecimal getPriceForSubcription(int id, Date start, Date end) throws DaoException {

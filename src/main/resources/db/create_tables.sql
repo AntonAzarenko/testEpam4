@@ -79,6 +79,7 @@ CREATE TABLE shopping_cart (
   id_periodicals INTEGER,
   date_start     DATE           NOT NULL,
   date_end       DATE           NOT NULL,
+  countPer       INTEGER        NOT NULL,
   price          DECIMAL(10, 2) NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (id_periodicals) REFERENCES catalog_periodicals (id),

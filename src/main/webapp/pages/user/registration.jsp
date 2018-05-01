@@ -9,6 +9,9 @@
 </head>
 
 <body>
+<style>
+    <%@include file="/css/start.css"%>
+</style>
 <h1 >Регистрация</h1>
 <div class="container">
     <<img src="../image/3.png" alt="">

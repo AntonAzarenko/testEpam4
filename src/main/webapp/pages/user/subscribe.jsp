@@ -5,9 +5,9 @@
 <head>
     <title>Оформление подписки</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/user_catalog_current.css">
+    <link rel="stylesheet" href="../css/subscribe.css">
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/css/subscribe.css" type="text/css"/>
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/font-awesome.css" type="text/css">
 </head>
@@ -32,36 +32,71 @@
     <div class="dws-menu-two">
         <h3>Название</h3>
         <ul class="dws-ui-two">
-            <c:forEach items="${requestScope.catalogs}" var="periodicals">
-            <li class="dws-li-two"><a
-                    href="/user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a>
-            </li>
+            <c:forEach items="${catalogs}" var="periodicals">
+                <li class="dws-li-two"><a
+                        href="/user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a>
+                </li>
+            </c:forEach>
         </ul>
+    </div>
+    <div id="pagination" class="pagin">
+        <c:url value="${currentsort}" var="prev">
+            <c:param name="page" value="${page-1}"/>
+        </c:url>
+        <c:if test="${page > 1}">
+            <a href="<c:out value="${prev}" />" class="pn prev">
+                <button class="btn btn-info">Назад</button>
+            </a>
+        </c:if>
+
+        <c:forEach begin="1" end="${maxPages}" step="1" varStatus="i">
+            <c:choose>
+                <c:when test="${page == i.index}">
+                    <span>${i.index}</span>
+                </c:when>
+                <c:otherwise>
+                    <c:url value="${currentsort}" var="url">
+                        <c:param name="page" value="${i.index}"/>
+                    </c:url>
+                    <a href='<c:out value="${url}" />'>
+                        <button class="btn btn-info">${i.index}</button>
+                    </a>
+                </c:otherwise>
+            </c:choose>
         </c:forEach>
-        </ul>
+        <c:url value="${currentsort}" var="next">
+            <c:param name="page" value="${page + 1}"/>
+        </c:url>
+
+        <c:if test="${page + 1 <= maxPages}">
+            <a href='<c:out value="${next}" />' class="pn next">
+                <button class="btn btn-info">Вперед</button>
+            </a>
+        </c:if>
+
     </div>
 </div>
 
 <div class="container_two">
-    <form method="post" action="/user?action=subscribe" name="add">
-        <p/>
-        ID : <input type="text" readonly="readonly" name="id"
-                    value="<c:out value="${periodical.id}"/>"/>
-        <p/>
-        Описание : <input type="text" readonly="readonly" name="discription"
-                          value="<c:out value="${periodical.description}"/>"/>
-        <p>
-            Название : <input type="text" readonly="readonly" name="title"
-                              value="<c:out value="${periodical.title}"/>"/>
-        <p>
-            Цена за экземпляр : <input type="text" readonly="readonly" name="price"
-                                  value="<c:out value="${periodical.price}"/>"/>
-        <p/>
-        Начало подписки : <input type="date" name="dateStart"/>
-        <p/>
-        Окончание подписки : <input type="date" name="dateEnd">
-        <p/>
-        <input type="submit" value="Отправить в корзину">
+    <form method="post" action="/user?action=addtocart&periodicalId=<c:out value="${periodical.id}"/>">
+
+        <div class="dws-input">
+            <p>Описание :</p> <input type="text" readonly="readonly" name="discription"
+                                     value="<c:out value="${periodical.description}"/>"/>
+        </div>
+        <div class="dws-input">
+            <p>Название :</p> <input type="text" readonly="readonly" name="title"
+                                     value="<c:out value="${periodical.title}"/>"/>
+        </div>
+        <div class="dws-input">
+            <p>Цена за экземпляр :</p> <input type="text" readonly="readonly" name="price"
+                                              value="<c:out value="${periodical.price}"/>"/>
+        </div>
+        <div class="dws-input">
+            <p>Количество экземпляров :</p> <input type="text" placeholder="Введите количество выпусков" name="count" value="1"/>
+        </div>
+
+        <input class="butt" type="submit" value="Отправить в корзину">
 
     </form>
 

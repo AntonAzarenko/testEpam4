@@ -65,16 +65,11 @@ li.dws-li a i {
 }
 
 .container {
-    float: left;
-    display-model: 50%;
     width: 350px;
-    height: 1500px;
+    height: 550px;
     margin-top: 10px;
     margin-left: 50px;
     background-color: rgba(24, 33, 52, 0.5);
-
-
-
 }
 
 h3 {
@@ -102,6 +97,18 @@ h3 {
 }
 a:hover {
     text-decoration: none;
+}
+.pagin {
+    padding: 0;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color: red;
+}
+.btn-info {
+    background-color: rgba(24, 33, 52, 0.5);
+    color: white;
+    border: none;
+    border-radius: 20%;
 }
 
 

@@ -4,8 +4,6 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class ShoppingCart extends AbstractBaseEntity {
-
-
     private  int userID;
 
     private int periodicalId;
@@ -15,10 +13,21 @@ public class ShoppingCart extends AbstractBaseEntity {
     private Date end;
 
     private BigDecimal price;
+    private int countPer;
+
+    public int getCountPer() {
+        return countPer;
+    }
+
+    public void setCountPer(int countPer) {
+        this.countPer = countPer;
+    }
 
     public BigDecimal getPrice() {
         return price;
     }
+
+
 
     public void setPrice(BigDecimal price) {
         this.price = price;
@@ -63,9 +72,10 @@ public class ShoppingCart extends AbstractBaseEntity {
         this.end = end;
     }
 
-    public ShoppingCart(int id, int userID, int periodicalId, Date start, Date end, BigDecimal price) {
+    public ShoppingCart(int id, int userID, int countPer, int periodicalId, Date start, Date end, BigDecimal price) {
 
         super(id);
+        this.countPer = countPer;
         this.userID = userID;
         this.periodicalId = periodicalId;
         this.start = start;

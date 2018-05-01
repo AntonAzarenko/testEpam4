@@ -5,15 +5,17 @@ import com.azarenko.model.Periodicals;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletCommands.CommandException;
 import com.azarenko.util.ConnectionPool;
-import com.sun.xml.internal.ws.api.Component;
+import com.azarenko.util.PageListHolder;
 import org.apache.log4j.Logger;
 
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  *
@@ -67,10 +69,11 @@ public class ArrayOperationPeriodical {
         Transaction transaction = new TransactionImpl(local);
         try {
             transaction.start();
-
             ComponentRegister register = new ComponentRegister();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
-            req.setAttribute("catalogs", service.getCatalog());
+            List<Periodicals> per = service.getCatalog();
+            setPadding(req,per);
+            //req.setAttribute("catalogs", service.getCatalog());
             /**
              * close transaction
              */
@@ -87,6 +90,25 @@ public class ArrayOperationPeriodical {
             throw new ServiceException(e);
         }
         return CATALOG_LIST;
+    }
+    private void  setPadding(HttpServletRequest req,  List<Periodicals> list){
+        PageListHolder<Periodicals> listHolder = new PageListHolder<>(list);
+        listHolder.setPageSize(10);
+        Integer page = 0;
+        try {
+             page = Integer.parseInt(req.getParameter("page"));
+        } catch (NumberFormatException e) {
+            log.error(e);
+        }
+        req.setAttribute("maxPages", listHolder.getPageCount());
+        String URI = req.getRequestURI();
+        req.setAttribute("currentsort",URI+ "?action=page");
+        if (page == null || page < 1 || page > listHolder.getPageCount())
+            page = 1;
+
+        req.setAttribute("page",page);
+        listHolder.setPage(page-1);
+        req.setAttribute("catalogs", listHolder.getPageList());
     }
 
     /**
@@ -364,18 +386,12 @@ public class ArrayOperationPeriodical {
     }
 
     public String showCurrentPeriodical(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException {
-        try {
-            showCatalog(request,resp);
-        } catch (CommandException e) {
-           throw new CommandException(e);
-        } catch (ServiceException e) {
-           throw new ServiceException(e);
-        }
         Connection connection = null;
         try {
+            showCatalog(request,resp);
             connection = connectionPool.getConnection();
         } catch (SQLException e) {
-            new CommandException(e);
+            throw new CommandException(e);
         }
         ThreadLocal<Connection> local = new ThreadLocal<>();
         local.set(connection);
@@ -389,7 +405,7 @@ public class ArrayOperationPeriodical {
             transaction.commit();
             connectionPool.returnConnection(connection);
         } catch (TransactionException e) {
-            new TransactionException(e);
+           throw  new TransactionException(e);
         } catch (DaoException e) {
             transaction.rollback();
             log.error(e);

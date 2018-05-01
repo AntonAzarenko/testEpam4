@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
 
 public class AddToShoppingCart implements Command {
+
     private ArrayOperationShoppingCart operationShoppingCart;
 
     public AddToShoppingCart(ArrayOperationShoppingCart operationShoppingCart) {
@@ -18,6 +19,6 @@ public class AddToShoppingCart implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException, UnsupportedEncodingException {
-        return null;
+        return this.operationShoppingCart.add(request, resp);
     }
 }

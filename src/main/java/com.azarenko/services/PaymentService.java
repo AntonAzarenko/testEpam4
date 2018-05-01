@@ -9,6 +9,6 @@ import java.util.List;
 public interface PaymentService {
     void add(Payment payment) throws DaoException, ServiceException;
     List<Payment> getPaymentList() throws DaoException, ServiceException;
-    Payment getPaymentByUserId(int id);
-    Payment createPayment(int userId, BigDecimal price);
+    Payment getPaymentByUserId(int id)throws DaoException, ServiceException;
+
 }

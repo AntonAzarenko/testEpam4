@@ -24,7 +24,7 @@
     </filter>
     <filter-mapping>
         <filter-name>AuthFilter</filter-name>
-        <url-pattern>/start.jsp</url-pattern>
+        <url-pattern>/*jsp</url-pattern>
     </filter-mapping>
 
 </web-app>

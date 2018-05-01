@@ -20,14 +20,11 @@
     </div>
     <div class="dws-menu">
         <ui class="dws-ul">
-            <li class="dws-li"><a href="/user?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a>
-            </li>
-            <li class="dws-li"><a href="/user"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a></li>
-            <li class="dws-li"><a href="/user?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a>
-            </li>
-            <li class="dws-li"><a href="/user"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a></li>
-            <li class="dws-li"><a href="/user"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li>
-        </ui>
+            <li class="dws-li"><a href="/user?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
+            <li class="dws-li"><a href="/user?action=shoppingcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a></li>
+            <li class="dws-li"><a href="/user?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a></li>
+            <li class="dws-li"><a href="/user?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a></li>
+            <li class="dws-li"><a href="/user?action=news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li>  </ui>
     </div>
 </header>
 <div class="container">
@@ -95,7 +92,7 @@
              <th>${periodicals.title}</th>
              <th>${periodicals.description}</th>
              <th>${periodicals.price}</th>
-             <th><a href="/subscribe?action=subscribe&periodicalid=<c:out value="${periodicals.id}"/>"
+             <th><a href="/pay?action=pay&periodicalid=<c:out value="${periodicals.id}"/>"
                     methods="post">Оформить подписку</a></th>
          </tr>
      </c:forEach>

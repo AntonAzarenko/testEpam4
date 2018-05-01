@@ -5,13 +5,13 @@ import com.azarenko.model.ShoppingCart;
 
 import java.util.List;
 
-public interface ShoppingCartDao extends BaseDao {
-    List<ShoppingCart> getShoppingCartByUserId(int id);
-    void removeShoppingCartUser(int id);
+public interface ShoppingCartDao extends BaseDao<ShoppingCart> {
+    List<ShoppingCart> getShoppingCartByUserId(int id) throws DaoException;
+    void removeShoppingCartUser(int id) throws DaoException;
 
     @Override
-    AbstractBaseEntity getEntityById(int id);
+    ShoppingCart getEntityById(int id);
 
     @Override
-    void add(AbstractBaseEntity entity);
+    void add(ShoppingCart entity) throws DaoException;
 }

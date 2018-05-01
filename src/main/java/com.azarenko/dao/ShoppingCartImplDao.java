@@ -20,10 +20,10 @@ public class ShoppingCartImplDao implements ShoppingCartDao {
     }
 
     @Override
-    public void add(AbstractBaseEntity entity) {
+    public void add(ShoppingCart entity) throws DaoException {
         ShoppingCart shoppingCart = (ShoppingCart) entity;
         try (PreparedStatement preparedStatement = connection.prepareStatement
-                ("INSERT INTO shopping_cart(userId, id_periodicals, date_start, date_end, price )VALUES (?,?,?,?,?)")) {
+                ("INSERT INTO shopping_cart(userId, id_periodicals, date_start, date_end,countPer, price )VALUES (?,?,?,?,?,?)")) {
             log.info(shoppingCart.getUserID());
             preparedStatement.setInt(1, shoppingCart.getUserID());
             preparedStatement.setInt(2, shoppingCart.getPeriodicalId());
@@ -32,10 +32,11 @@ public class ShoppingCartImplDao implements ShoppingCartDao {
             java.util.Date dateEnd = shoppingCart.getEnd();
             preparedStatement.setDate(3, new Date(dateStart.getTime()));
             preparedStatement.setDate(4, new Date(dateEnd.getTime()));
-            preparedStatement.setBigDecimal(5, shoppingCart.getPrice());
+            preparedStatement.setInt(5,shoppingCart.getCountPer());
+            preparedStatement.setBigDecimal(6, shoppingCart.getPrice());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            log.error(e);
+            throw new DaoException(e);
         }
     }
 
@@ -45,7 +46,7 @@ public class ShoppingCartImplDao implements ShoppingCartDao {
     }
 
     @Override
-    public void update(AbstractBaseEntity entity) {
+    public void update(ShoppingCart entity) {
 
     }
 
@@ -55,7 +56,7 @@ public class ShoppingCartImplDao implements ShoppingCartDao {
     }
 
     @Override
-    public List<ShoppingCart> getShoppingCartByUserId(int id) {
+    public List<ShoppingCart> getShoppingCartByUserId(int id) throws DaoException {
         List<ShoppingCart> cartList = new ArrayList<>();
         try (Statement statement = connection.createStatement();
         ResultSet rs = statement.executeQuery("SELECT * FROM mydb.shopping_cart")) {
@@ -73,24 +74,24 @@ public class ShoppingCartImplDao implements ShoppingCartDao {
                 }
             }
         } catch (SQLException e) {
-            log.error(e);
+            throw  new DaoException(e);
         }
         return cartList;
     }
 
     @Override
-    public void removeShoppingCartUser(int id) {
+    public void removeShoppingCartUser(int id) throws DaoException {
         try(PreparedStatement preparedStatement = connection.prepareStatement
                 ("DELETE  FROM mydb.shopping_cart WHERE userId=?")){
             preparedStatement.setInt(1,id);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            log.info(e);
+           throw new DaoException(e);
         }
     }
 
     @Override
-    public AbstractBaseEntity getEntityById(int id) {
+    public ShoppingCart getEntityById(int id) {
         return null;
     }
 }

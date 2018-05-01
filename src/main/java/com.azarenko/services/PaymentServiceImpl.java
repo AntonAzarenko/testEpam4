@@ -37,14 +37,5 @@ public class PaymentServiceImpl implements PaymentService {
         return null;
     }
 
-    @Override
-    public Payment createPayment(int userId, BigDecimal price) {
-        Payment.PaymentBuilder paymentBuilder = new Payment.PaymentBuilder();
-        Date date = new Date();
-        paymentBuilder.date(date);
-        paymentBuilder.userId(userId);
-        paymentBuilder.price(price);
-        Payment payment = paymentBuilder.build();
-        return payment;
-    }
+
 }

@@ -15,26 +15,30 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     private final static Logger log = Logger.getLogger(ShoppingCartServiceImpl.class);
 
-    private ShoppingCartDao shoppingCartDao;
-    private BaseDao baseDao;
-
-    public ShoppingCartServiceImpl() {
-        baseDao = new PeriodicalsDaoImpl();
-        shoppingCartDao = new ShoppingCartImplDao();
-    }
-
     @Override
-    public void add(ShoppingCart shoppingCart) {
-        shoppingCart.setStart(new Date());
-        shoppingCart.setEnd(getEndDate(shoppingCart.getCountPer(), shoppingCart.getStart()));
+    public void add(ShoppingCart shoppingCart) throws DaoException {
+        int outputFrequency = getOutputFrequency(shoppingCart.getPeriodicalId());
+        int countDays = (30 / outputFrequency) * shoppingCart.getCountPer();
+        Date start = shoppingCart.getStart();
+        if (start == null) {
+            start = new Date();
+            shoppingCart.setStart(start
+            );
+        }
+        shoppingCart.setEnd(getEndDate(countDays, start));
+        BigDecimal price = getPriceForSubcription(shoppingCart.getPeriodicalId());
+        BigDecimal pr = price.multiply(new BigDecimal(shoppingCart.getCountPer()));
+        shoppingCart.setPrice(pr);
+        BaseDao<ShoppingCart> baseDao = new ShoppingCartImplDao();
+        baseDao.add(shoppingCart);
     }
 
-    private Date getEndDate(int countPer, Date start) {
+    private Date getEndDate(int countDays, Date start) {
         Calendar startC = Calendar.getInstance();
-        Calendar endC = Calendar.getInstance();
         startC.setTime(start);
-        startC.get(Calendar.DAY_OF_YEAR);
-        return new Date();
+        startC.add(Calendar.DATE, countDays);
+        start = startC.getTime();
+        return start;
     }
 
     @Override
@@ -43,31 +47,21 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     @Override
-    public List<ShoppingCart> getShoppingCartUser(int id) {
-        return shoppingCartDao.getShoppingCartByUserId(id);
+    public List<ShoppingCart> getShoppingCartUser(int id) throws DaoException {
+        ShoppingCartDao cartDao = new ShoppingCartImplDao();
+        return cartDao.getShoppingCartByUserId(id);
 
     }
 
     @Override
-    public BigDecimal getPriceForSubcription(int id, Date start, Date end) throws DaoException {
-        List<Periodicals> periodicalsList = baseDao.getListEntity();
-        Date startD = new Date();
-        Date endD = new Date();
-        BigDecimal newPrice = null;
-        for (Periodicals pair : periodicalsList) {
-            if (pair.getId() == id) {
-                startD = start;
-                endD = end;
-                int outputFrequncy = getOutputFrequency(id);
-                BigDecimal price = getPrice(id);
-                newPrice = calculatingPrice(price, start, end, outputFrequncy);
-            }
-        }
-        return newPrice;
+    public BigDecimal getPriceForSubcription(int periodicalId) throws DaoException {
+        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
+        Periodicals periodicals = baseDao.getEntityById(periodicalId);
+        return periodicals.getPrice();
     }
 
     @Override
-    public BigDecimal getFullPriceForPayment(int userId) {
+    public BigDecimal getFullPriceForPayment(int userId) throws DaoException {
         List<ShoppingCart> cartList = getShoppingCartUser(userId);
         BigDecimal fullPrice = new BigDecimal(0);
         for (ShoppingCart pair : cartList) {
@@ -77,23 +71,14 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     @Override
-    public void removeShoppingCartUser(int id) {
-        shoppingCartDao.removeShoppingCartUser(id);
+    public void removeShoppingCartUser(int id) throws DaoException {
+        ShoppingCartDao cartDao = new ShoppingCartImplDao();
+        cartDao.removeShoppingCartUser(id);
     }
 
-    private BigDecimal calculatingPrice(BigDecimal price, Date start, Date end, int outFreq) {
-        Calendar startC = Calendar.getInstance();
-        Calendar endC = Calendar.getInstance();
-        startC.setTime(start);
-        endC.setTime(end);
-        int days = endC.get(Calendar.DAY_OF_YEAR) - startC.get(Calendar.DAY_OF_YEAR);
-        double t = (double) days / 30;
-        BigDecimal countOutput = new BigDecimal(t);
-        BigDecimal totalPrice = price.multiply(countOutput);
-        return totalPrice;
-    }
 
     private int getOutputFrequency(int id) throws DaoException {
+        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
         List<Periodicals> periodicalsList = baseDao.getListEntity();
         for (Periodicals pair : periodicalsList) {
             if (id == pair.getId()) {
@@ -103,7 +88,9 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         return 0;
     }
 
+    // ToDo ???
     private BigDecimal getPrice(int id) throws DaoException {
+        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
         List<Periodicals> periodicalsList = baseDao.getListEntity();
         for (Periodicals pair : periodicalsList) {
             if (id == pair.getId()) {

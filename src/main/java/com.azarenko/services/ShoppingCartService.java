@@ -9,15 +9,15 @@ import java.util.Date;
 import java.util.List;
 
 public interface ShoppingCartService {
-    void add(ShoppingCart shoppingCart);
+    void add(ShoppingCart shoppingCart) throws DaoException;
 
     void goToPay();
 
-    List<ShoppingCart> getShoppingCartUser(int id);
+    List<ShoppingCart> getShoppingCartUser(int id) throws DaoException;
 
-    BigDecimal getPriceForSubcription(int id, Date start, Date end) throws DaoException;
+    BigDecimal getPriceForSubcription(int  periodicalId) throws DaoException;
 
-    BigDecimal getFullPriceForPayment(int userId);
+    BigDecimal getFullPriceForPayment(int userId) throws DaoException;
 
-    void removeShoppingCartUser(int id);
+    void removeShoppingCartUser(int id) throws DaoException;
 }

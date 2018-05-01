@@ -22,4 +22,8 @@ public class ArrayOperationUser {
     public String forwardStart(HttpServletRequest request, HttpServletResponse resp) {
         return START;
     }
+
+    public String profile(HttpServletRequest request, HttpServletResponse resp) {
+        return "/pages/user/profile.jsp";
+    }
 }

@@ -28,8 +28,6 @@ public class UsersServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Command command = new CommandUser();
-        log.info(req.getRequestURI());
-        log.info(req.getParameter("action"));
         String forward = "";
         try {
             forward = command.execute(req, resp);

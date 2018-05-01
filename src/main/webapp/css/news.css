@@ -1,4 +1,5 @@
 body {
+    font-family: Arial, sens-serif;
     background: url("/image/bg.png") no-repeat center top / cover;
     height: 500px;
     padding: 0;
@@ -34,7 +35,6 @@ h1 {
 h2 {
     padding-left: 50px;
     color: #2ca8c6;
-
 }
 
 .dws-menu {
@@ -55,7 +55,6 @@ li.dws-li {
 }
 
 li.dws-li a {
-    list-style: none;
     text-decoration: none;
     font-size: 18px;
     color: black;
@@ -64,4 +63,52 @@ li.dws-li a {
 li.dws-li a i {
     margin-right: 10px;
 }
+
+.container {
+    width: 350px;
+    height: 550px;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: rgba(24, 33, 52, 0.5);
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    size: 500px;
+}
+
+.dws-li-two {
+    color: white;
+    list-style:none;
+    padding: 10px;
+}
+
+.dws-li-two a {
+    width: 100%;
+    padding-left: 10px;
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    size: 500px;
+    list-style:none;
+    text-align: center;
+}
+a:hover {
+    text-decoration: none;
+}
+.pagin {
+    padding: 0;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color: red;
+}
+.btn-info {
+    background-color: rgba(24, 33, 52, 0.5);
+    color: white;
+    border: none;
+    border-radius: 20%;
+}
+
 

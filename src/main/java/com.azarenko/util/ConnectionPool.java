@@ -23,19 +23,11 @@ public class ConnectionPool {
 
     private int maxPool;
 
-    /**
-     * JDBC URL to use for connecting to the database server.
-     */
     private String url;
 
-    /**
-     * Username to use for connecting to the database server.
-     */
+
     private String user;
 
-    /**
-     * Password to use for connecting to the database server.
-     */
     private String pass;
 
     private String driver;
@@ -48,7 +40,7 @@ public class ConnectionPool {
     public static synchronized ConnectionPool getInstance() throws ServiceException {
         if (pool == null) {
             Properties prop = new Properties();
-            InputStream inputStream = DBUtil.class.getClassLoader().getResourceAsStream("database.properties");
+            InputStream inputStream = ConnectionPool.class.getClassLoader().getResourceAsStream("database.properties");
             try {
                 prop.load(inputStream);
             } catch (IOException e) {

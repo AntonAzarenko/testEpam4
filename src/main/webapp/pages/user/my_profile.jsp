@@ -21,7 +21,7 @@
             <th>${user.name}</th>
             <th>${user.email}</th>
             <th>${user.registered}</th>
-            <th>${user.role}</th>
+            <th>${user.application}</th>
         </tr>
 </table>
 <p/>

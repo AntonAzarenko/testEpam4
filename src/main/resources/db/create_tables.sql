@@ -19,7 +19,7 @@ CREATE TABLE users (
   email        VARCHAR(45)             NOT NULL,
   password     VARCHAR(20)             NOT NULL,
   enabled      TINYINT(0)              NOT NULL,
-  role         VARCHAR(5)              NOT NULL,
+  application         VARCHAR(5)              NOT NULL,
   registration TIMESTAMP DEFAULT now() NOT NULL,
   PRIMARY KEY (id)
 )

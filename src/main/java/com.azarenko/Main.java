@@ -1,24 +1,38 @@
 package com.azarenko;
 
-import com.azarenko.util.DBUtil;
+import com.azarenko.util.config.User;
+import com.azarenko.util.config.Admin;
+import com.azarenko.util.config.Application;
 
-import java.sql.Connection;
-import java.util.Calendar;
-import java.util.Date;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Calendar startC = Calendar.getInstance();
-        Calendar endC = Calendar.getInstance();
-        Date date = new Date();
-        startC.setTime(date);
+        try{
+            JAXBContext jc  = JAXBContext.newInstance(Application.class);
+            Unmarshaller u = jc.createUnmarshaller();
+            FileReader reader = new FileReader("src/main/resources/config.xml");
+            Application application = (Application) u.unmarshal(reader);
+            System.out.println(application.toString());
+           /* List<Admin> adminList = application.getAdminList();
+            List<User> userList = application.getUserList();*/
+           /* for(Admin pair : adminList){
+                System.out.println(adminList.size());
+            }
+            for(User pair : userList){
+                System.out.println(pair.getPage());
 
-        System.out.println(date);
-        startC.add(Calendar.DATE,150);
-        date = startC.getTime();
-        System.out.println(date);
+            }*/
 
-
-
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }

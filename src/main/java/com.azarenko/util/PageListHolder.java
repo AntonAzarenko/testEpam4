@@ -6,9 +6,7 @@ public class PageListHolder<T> {
     boolean newPageSet;
     private List<T> list;
     private Integer pageSize;
-    private List<T> pageList;
-    private Integer pageCount;
-    private int page;
+     private int page;
 
     public PageListHolder(List<T> list) {
         this.list = list;

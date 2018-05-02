@@ -54,7 +54,6 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     @Override
     public int getUserIdByEmail(String login) throws DaoException {
         User user = getUserByEmail(login);
-        int id = user.getId();
         return user.getId();
     }
 

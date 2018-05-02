@@ -12,7 +12,16 @@ body {
     margin-top: 50px;
 
 }
-
+.container {
+    width: 500px;
+    height: 650px;
+    background-color: #182134;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    box-shadow: 0 -5px 0 #3adbfd;
+    background-color: rgba(24, 33, 52, 0.5);
+    border-radius: 4px;
+}
 .logo img {
     width: 120px;
     height: 120px;
@@ -64,4 +73,27 @@ li.dws-li a {
 li.dws-li a i {
     margin-right: 10px;
 }
-
+.butt {
+    margin: 5px 0 20px 0;
+    padding: 13px 10px;
+    font-size: 15px;
+    color: #3fff;
+    background-color: #2ca8c6;
+    border: none;
+    border-bottom: 4px solid #6ee9fd ;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.butt:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    color: #2c536c;
+}
+input[type="text"], input[type="password"] {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding-left: 10px;
+}

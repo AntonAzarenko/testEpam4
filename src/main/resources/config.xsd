@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.azarenko.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="application" type="azar:applicationType" xmlns:azar="http://www.azarenko.com"/>
+  <xs:complexType name="applicationType">
+    <xs:sequence>
+      <xs:element type="azar:adminType" name="admin" maxOccurs="unbounded" xmlns:azar="http://www.azarenko.com"/>
+      <xs:element type="azar:userType" name="user" maxOccurs="unbounded" xmlns:azar="http://www.azarenko.com"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="adminType">
+    <xs:sequence>
+      <xs:element name="page" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="userType">
+    <xs:sequence>
+      <xs:element name="page" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

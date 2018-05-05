@@ -4,7 +4,7 @@
   <xs:complexType name="applicationType">
     <xs:sequence>
       <xs:element type="azar:adminType" name="admin" maxOccurs="unbounded" xmlns:azar="http://www.azarenko.com"/>
-      <xs:element type="azar:userType" name="user" maxOccurs="unbounded" xmlns:azar="http://www.azarenko.com"/>
+      <xs:element type="azar:userType" name="userPages" maxOccurs="unbounded" xmlns:azar="http://www.azarenko.com"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="adminType">

@@ -1,7 +1,5 @@
 package com.azarenko;
 
-import com.azarenko.util.config.User;
-import com.azarenko.util.config.Admin;
 import com.azarenko.util.config.Application;
 
 import javax.xml.bind.JAXBContext;
@@ -9,7 +7,6 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,12 +16,12 @@ public class Main {
             FileReader reader = new FileReader("src/main/resources/config.xml");
             Application application = (Application) u.unmarshal(reader);
             System.out.println(application.toString());
-           /* List<Admin> adminList = application.getAdminList();
-            List<User> userList = application.getUserList();*/
-           /* for(Admin pair : adminList){
+           /* List<AdminPages> adminList = application.getAdminList();
+            List<UserPages> userList = application.getUserList();*/
+           /* for(AdminPages pair : adminList){
                 System.out.println(adminList.size());
             }
-            for(User pair : userList){
+            for(UserPages pair : userList){
                 System.out.println(pair.getPage());
 
             }*/

@@ -19,22 +19,22 @@
     </div>
     <div class="dws-menu">
         <ui class="dws-ul">
-            <li class="dws-li"><a href="/user?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a>
+            <li class="dws-li"><a href="/userPages?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a>
             </li>
-            <li class="dws-li"><a href="/user?action=shoppingcart"><i class="fa fa-shopping-cart"
+            <li class="dws-li"><a href="/userPages?action=shoppingcart"><i class="fa fa-shopping-cart"
                                                                       aria-hidden="true"></i>Корзина</a></li>
-            <li class="dws-li"><a href="/user?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a>
+            <li class="dws-li"><a href="/userPages?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a>
             </li>
-            <li class="dws-li"><a href="/user?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a>
+            <li class="dws-li"><a href="/userPages?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a>
             </li>
-            <li class="dws-li"><a href="/user?action=news"><i class="fa fa-newspaper-o"
+            <li class="dws-li"><a href="/userPages?action=news"><i class="fa fa-newspaper-o"
                                                               aria-hidden="true"></i>Новости</a></li>
         </ui>
     </div>
 </header>
 <div class="container">
     <div>
-        <form action="/user?action=showcurrentsubscription" method="post">
+        <form action="/userPages?action=showcurrentsubscription" method="post">
             <select>
                 <c:forEach items="${requestScope.subList}" var="list">
                     <option value="periodicalId=<c:out value="list.id"/>">${list.namePeriodical}</option>
@@ -43,9 +43,9 @@
             <input type="submit" value="Показать">
         </form>
     </div>
-    <a href="/user?action=myperiodicals">Мои подписки</a>
+    <a href="/userPages?action=myperiodicals">Мои подписки</a>
     <br>
-    <a href="/user?action=myprofile">Личная информация</a>
+    <a href="/userPages?action=myprofile">Личная информация</a>
 </div>
 </body>
 </html>

@@ -63,7 +63,7 @@ public class UsersServlet extends HttpServlet {
         } else if(action.equalsIgnoreCase("myprofile")){
             forward = MY_PROFILE;
             HttpSession session = req.getSession();
-        //    User user = userService.getUserByEmail(String.valueOf(session.getAttribute("login")));
+        //    UserPages user = userService.getUserByEmail(String.valueOf(session.getAttribute("login")));
 
             req.setAttribute("user", user);
 

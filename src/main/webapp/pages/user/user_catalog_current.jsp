@@ -20,11 +20,11 @@
     </div>
     <div class="dws-menu">
         <ui class="dws-ul">
-            <li class="dws-li"><a href="/user?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
-            <li class="dws-li"><a href="/user?action=shoppingcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a></li>
-            <li class="dws-li"><a href="/user?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a></li>
-            <li class="dws-li"><a href="/user?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a></li>
-            <li class="dws-li"><a href="/user?action=news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li>  </ui>
+            <li class="dws-li"><a href="/userPages?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
+            <li class="dws-li"><a href="/userPages?action=shoppingcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a></li>
+            <li class="dws-li"><a href="/userPages?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a></li>
+            <li class="dws-li"><a href="/userPages?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a></li>
+            <li class="dws-li"><a href="/userPages?action=news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li>  </ui>
     </div>
 </header>
 <div class="container">
@@ -33,7 +33,7 @@
         <ul class="dws-ui-two">
             <c:forEach items="${requestScope.catalogs}" var="periodicals">
             <li class="dws-li-two">
-                <a href="/user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a></li>
+                <a href="/userPages?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a></li>
             </c:forEach>
         </ul>
 
@@ -88,10 +88,10 @@
     <div class="end">
         <h2 cass="end">${periodical.price}</h2>
     </div>
-    <a href="/user?action=redirectsubscribe&periodicalId=<c:out value="${periodical.id}"/>">
+    <a href="/userPages?action=redirectsubscribe&periodicalId=<c:out value="${periodical.id}"/>">
         <button class="butt">Подписаться</button>
     </a>
-    <%--<form method="get" class="dws-input" action="/user?action=redirectsubscribe&periodicalId=<c:out value="${periodical.id}"/>">
+    <%--<form method="get" class="dws-input" action="/userPages?action=redirectsubscribe&periodicalId=<c:out value="${periodical.id}"/>">
         <input class="butt" type="submit" value="Подписаться" />
     </form>--%>
 

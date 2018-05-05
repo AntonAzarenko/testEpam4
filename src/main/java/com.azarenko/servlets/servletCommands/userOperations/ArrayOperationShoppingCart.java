@@ -76,7 +76,7 @@ public class ArrayOperationShoppingCart {
      */
     public String add(HttpServletRequest request, HttpServletResponse resp) throws TransactionException {
         ShoppingCart shoppingCart = new ShoppingCart();
-        //get User Id from data base with help login
+        //get UserPages Id from data base with help login
         int userId = 0;
         HttpSession session = request.getSession();
         Connection connection = null;

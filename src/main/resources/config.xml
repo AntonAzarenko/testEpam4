@@ -2,13 +2,13 @@
 <application xmlns="http://www.azarenko.com"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="www.azarenko.com">
-    <admin>
+    <adminPages>
         <page>admin_add_edit_publication.jsp</page>
         <page>admin_catalog.jsp</page>
         <page>payment.jsp</page>
         <page>subscription.jsp</page>
-    </admin>
-    <user>
+    </adminPages>
+    <userPages>
         <page>my_periodical.jsp</page>
         <page>news.jsp</page>
         <page>my_profile.jsp</page>
@@ -18,5 +18,5 @@
         <page>subscribe.jsp</page>
         <page>user_catalog.jsp</page>
         <page>user_catalog_currrent.jsp</page>
-    </user>
+    </userPages>
 </application>

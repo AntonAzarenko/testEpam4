@@ -7,22 +7,22 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlRootElement(name = "user",namespace = "http://www.azarenko.com")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "user", propOrder = "page")
-public class User {
+public class UserPages {
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlElement(required = true)
     private String page;
 
-    public User() {
+    public UserPages() {
     }
 
     @Override
     public String toString() {
-        return "User{" +
+        return "UserPages{" +
                 "page='" + page + '\'' +
                 '}';
     }
 
-    public User(String page) {
+    public UserPages(String page) {
         this.page = page;
     }
 

@@ -19,11 +19,11 @@
     </div>
     <div class="dws-menu">
         <ui class="dws-ul">
-            <li class="dws-li"><a href="/user?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
-            <li class="dws-li"><a href="/user?action=shoppingcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a></li>
-            <li class="dws-li"><a href="/user?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a></li>
-            <li class="dws-li"><a href="/user?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a></li>
-            <li class="dws-li"><a href="/user?action=news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li></ui>
+            <li class="dws-li"><a href="/userPages?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
+            <li class="dws-li"><a href="/userPages?action=shoppingcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a></li>
+            <li class="dws-li"><a href="/userPages?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a></li>
+            <li class="dws-li"><a href="/userPages?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a></li>
+            <li class="dws-li"><a href="/userPages?action=news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li></ui>
     </div>
 </header>
 
@@ -33,7 +33,7 @@
         <ul class="dws-ui-two">
             <c:forEach items="${requestScope.cartList}" var="shoppingCart">
                 <li class="dws-li-two">
-                    <a href="/user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${shoppingCart.price}</a></li>
+                    <a href="/userPages?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${shoppingCart.price}</a></li>
             </c:forEach>
         </ul>
 
@@ -77,7 +77,7 @@
 </div>
 <div class="container_two">
 
-    <form class="center" method="post" name="payment" action="/user?action=pay">
+    <form class="center" method="post" name="payment" action="/userPages?action=pay">
         <h3 >К оплате   </h3>
         <div class="dws-input">
         <input  type="text" readonly name="price"

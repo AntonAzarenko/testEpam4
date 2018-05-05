@@ -17,14 +17,14 @@
     </tr>
 
         <tr>
-            <th>${user.id}</th>
-            <th>${user.name}</th>
-            <th>${user.email}</th>
-            <th>${user.registered}</th>
-            <th>${user.application}</th>
+            <th>${userPages.id}</th>
+            <th>${userPages.name}</th>
+            <th>${userPages.email}</th>
+            <th>${userPages.registered}</th>
+            <th>${userPages.application}</th>
         </tr>
 </table>
 <p/>
-<a href="/user?action=catalog">К каталогу</a>
+<a href="/userPages?action=catalog">К каталогу</a>
 </body>
 </html>

@@ -2,28 +2,27 @@ package com.azarenko.util.config;
 
 import javax.xml.bind.annotation.*;
 import javax.xml.bind.annotation.adapters.*;
-import javax.xml.bind.annotation.*;
 
 @XmlRootElement(namespace = "admin", name = "http://www.azarenko.com")
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Admin", propOrder = "page")
-public class Admin {
+@XmlType(name = "AdminPages", propOrder = "page")
+public class AdminPages {
     @XmlJavaTypeAdapter(CollapsedStringAdapter.class)
     @XmlElement(required = true)
     @XmlID
     private String page;
 
-    public Admin() {
+    public AdminPages() {
     }
 
     @Override
     public String toString() {
-        return "Admin{" +
+        return "AdminPages{" +
                 "page='" + page + '\'' +
                 '}';
     }
 
-    public Admin(String page) {
+    public AdminPages(String page) {
         this.page = page;
     }
 

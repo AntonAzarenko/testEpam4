@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "userPages", propOrder = "page")
+@XmlType(name = "user", propOrder = "page")
 public class UserPage {
     @XmlElement(required = true)
     private String page;

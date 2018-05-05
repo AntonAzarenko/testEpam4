@@ -3,12 +3,15 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="www.azarenko.com">
     <adminPages>
-        <page>admin_add_edit_publication.jsp</page>
-        <page>admin_catalog.jsp</page>
+        <page>
+            <url>admin_add_edit_publication.jsp</url>
+        </page>
+        <!--<page>admin_catalog.jsp</page>
         <page>payment.jsp</page>
-        <page>subscription.jsp</page>
+        <page>subscription.jsp</page>-->
+
     </adminPages>
-    <userPage>
+   <!-- <userPage>
         <page>my_periodical.jsp</page>
         <page>news.jsp</page>
         <page>my_profile.jsp</page>
@@ -18,5 +21,5 @@
         <page>subscribe.jsp</page>
         <page>user_catalog.jsp</page>
         <page>user_catalog_currrent.jsp</page>
-    </userPage>
+    </userPage>-->
 </application>

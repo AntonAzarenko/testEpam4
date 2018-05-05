@@ -5,10 +5,10 @@ import javax.xml.bind.annotation.adapters.*;
 
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "AdminPage", propOrder = "page")
+@XmlType(name = "page", propOrder = "page")
 public class AdminPage {
 
-    @XmlElement(required = true)
+    @XmlElement(name = "url", required = true)
     private String page;
 
     public AdminPage() {

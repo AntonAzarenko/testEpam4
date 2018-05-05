@@ -16,12 +16,12 @@ public class Main {
             FileReader reader = new FileReader("src/main/resources/config.xml");
             Application application = (Application) u.unmarshal(reader);
             System.out.println(application.toString());
-           /* List<AdminPages> adminList = application.getAdminList();
-            List<UserPages> userList = application.getUserList();*/
-           /* for(AdminPages pair : adminList){
+           /* List<AdminPage> adminList = application.getAdminList();
+            List<UserPage> userList = application.getUserList();*/
+           /* for(AdminPage pair : adminList){
                 System.out.println(adminList.size());
             }
-            for(UserPages pair : userList){
+            for(UserPage pair : userList){
                 System.out.println(pair.getPage());
 
             }*/

@@ -4,41 +4,19 @@
              xsi:schemaLocation="www.azarenko.com">
     <admin>
         <page>admin_add_edit_publication.jsp</page>
-    </admin>
-    <admin>
         <page>admin_catalog.jsp</page>
-    </admin>
-    <admin>
         <page>payment.jsp</page>
-    </admin>
-    <admin>
         <page>subscription.jsp</page>
     </admin>
     <user>
         <page>my_periodical.jsp</page>
-    </user>
-    <user>
-        <page>my_profile.jsp</page>
-    </user>
-    <user>
         <page>news.jsp</page>
-    </user>
-    <user>
+        <page>my_profile.jsp</page>
         <page>profile.jsp</page>
-    </user>
-    <user>
         <page>registration.jsp</page>
-    </user>
-    <user>
         <page>shopping_cart.jsp</page>
-    </user>
-    <user>
         <page>subscribe.jsp</page>
-    </user>
-    <user>
         <page>user_catalog.jsp</page>
-    </user>
-    <user>
         <page>user_catalog_currrent.jsp</page>
     </user>
 

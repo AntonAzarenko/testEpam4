@@ -38,14 +38,14 @@
   <inceptionYear>1999</inceptionYear>
   <mailingLists>
        <mailingList>
-               <name>log4j-userPages</name>
-               <subscribe>log4j-userPages-subscribe@logging.apache.org</subscribe>
-               <unsubscribe>log4j-userPages-unsubscribe@logging.apache.org</unsubscribe>
-               <post>log4j-userPages@logging.apache.org</post>
+               <name>log4j-userPage</name>
+               <subscribe>log4j-userPage-subscribe@logging.apache.org</subscribe>
+               <unsubscribe>log4j-userPage-unsubscribe@logging.apache.org</unsubscribe>
+               <post>log4j-userPage@logging.apache.org</post>
                <archive>http://mail-archives.apache.org/mod_mbox/logging-log4j-dev/</archive>
                <otherArchives>
-                       <otherArchive>http://marc.info/?l=log4j-userPages</otherArchive>
-                   <otherArchive>http://dir.gmane.org/gmane.comp.jakarta.log4j.userPages</otherArchive>
+                       <otherArchive>http://marc.info/?l=log4j-userPage</otherArchive>
+                   <otherArchive>http://dir.gmane.org/gmane.comp.jakarta.log4j.userPage</otherArchive>
                </otherArchives>
        </mailingList>
        <mailingList>
@@ -208,10 +208,10 @@
             <configuration>
                 <tasks>
 			  <ant dir="tests" target="runAll">
-				<property name="junit.jar" location="${userPages.home}/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar" />
-				<property name="jakarta.oro.jar" location="${userPages.home}/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar" />
-                <property name="javamail.jar" location="${userPages.home}/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar" />
-                <property name="activation.jar" location="${userPages.home}/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar" />
+				<property name="junit.jar" location="${userPage.home}/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar" />
+				<property name="jakarta.oro.jar" location="${userPage.home}/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar" />
+                <property name="javamail.jar" location="${userPage.home}/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar" />
+                <property name="activation.jar" location="${userPage.home}/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar" />
                 <property name="log4j.jar" location="target/classes" />
 				<property name="project.lib.home" location="target" />
                     </ant> 
@@ -472,7 +472,7 @@
     </repository>
     <site>
       <id>logging.site</id>
-      <url>scp://localhost/${userPages.dir}/target/site-deploy</url>
+      <url>scp://localhost/${userPage.dir}/target/site-deploy</url>
     </site>
   </distributionManagement> 
 </project>

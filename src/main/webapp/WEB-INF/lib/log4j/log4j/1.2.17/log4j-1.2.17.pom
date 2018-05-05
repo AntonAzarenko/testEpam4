@@ -46,14 +46,14 @@ target platform and specify -Dntdll_target=msbuild on the mvn adminCommand line.
   <inceptionYear>1999</inceptionYear>
   <mailingLists>
     <mailingList>
-      <name>log4j-userPages</name>
-      <subscribe>log4j-userPages-subscribe@logging.apache.org</subscribe>
-      <unsubscribe>log4j-userPages-unsubscribe@logging.apache.org</unsubscribe>
-      <post>log4j-userPages@logging.apache.org</post>
-      <archive>http://mail-archives.apache.org/mod_mbox/logging-log4j-userPages/</archive>
+      <name>log4j-userPage</name>
+      <subscribe>log4j-userPage-subscribe@logging.apache.org</subscribe>
+      <unsubscribe>log4j-userPage-unsubscribe@logging.apache.org</unsubscribe>
+      <post>log4j-userPage@logging.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/logging-log4j-userPage/</archive>
       <otherArchives>
-        <otherArchive>http://marc.info/?l=log4j-userPages</otherArchive>
-        <otherArchive>http://dir.gmane.org/gmane.comp.jakarta.log4j.userPages</otherArchive>
+        <otherArchive>http://marc.info/?l=log4j-userPage</otherArchive>
+        <otherArchive>http://dir.gmane.org/gmane.comp.jakarta.log4j.userPage</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -513,7 +513,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn adminCommand line.
       </activation>
       <properties>
         <tools.jar>${java.home}/../Classes/classes.jar</tools.jar>
-        <m2_repo>${userPages.home}/.m2/repository</m2_repo>
+        <m2_repo>${userPage.home}/.m2/repository</m2_repo>
         <ntdll_target>build</ntdll_target>
       </properties>
     </profile>
@@ -524,7 +524,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn adminCommand line.
       </activation>
       <properties>
         <tools.jar>${java.home}/../lib/tools.jar</tools.jar>
-        <m2_repo>${userPages.home}/.m2/repository</m2_repo>
+        <m2_repo>${userPage.home}/.m2/repository</m2_repo>
         <ntdll_target>build</ntdll_target>
       </properties>
     </profile>
@@ -585,7 +585,7 @@ target platform and specify -Dntdll_target=msbuild on the mvn adminCommand line.
     </repository>
     <site>
       <id>logging.site</id>
-      <url>scp://localhost/${userPages.dir}/target/site-deploy</url>
+      <url>scp://localhost/${userPage.dir}/target/site-deploy</url>
     </site>
   </distributionManagement>
 </project>

@@ -8,7 +8,7 @@
         <page>payment.jsp</page>
         <page>subscription.jsp</page>
     </adminPages>
-    <userPages>
+    <userPage>
         <page>my_periodical.jsp</page>
         <page>news.jsp</page>
         <page>my_profile.jsp</page>
@@ -18,5 +18,5 @@
         <page>subscribe.jsp</page>
         <page>user_catalog.jsp</page>
         <page>user_catalog_currrent.jsp</page>
-    </userPages>
+    </userPage>
 </application>

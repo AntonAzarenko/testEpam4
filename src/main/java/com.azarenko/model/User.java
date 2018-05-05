@@ -62,7 +62,7 @@ public final class User extends AbstractBaseEntity {
 
     @Override
     public String toString() {
-        return "UserPages{" +
+        return "UserPage{" +
                 "email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +

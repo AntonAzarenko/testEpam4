@@ -22,7 +22,7 @@
             <th>${list.dateEndSubscription}</th>
         </tr>
     </c:forEach>
-    <a href="/userPages?action=catalog">К каталогу</a>
+    <a href="/userPage?action=catalog">К каталогу</a>
 </table>
 
 </body>

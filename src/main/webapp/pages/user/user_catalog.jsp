@@ -20,11 +20,11 @@
     </div>
     <div class="dws-menu">
         <ui class="dws-ul">
-            <li class="dws-li"><a href="/userPages?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
-            <li class="dws-li"><a href="/userPages?action=shoppingcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a></li>
-            <li class="dws-li"><a href="/userPages?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a></li>
-            <li class="dws-li"><a href="/userPages?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a></li>
-            <li class="dws-li"><a href="/userPages?action=news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li>  </ui>
+            <li class="dws-li"><a href="/userPage?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
+            <li class="dws-li"><a href="/userPage?action=shoppingcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Корзина</a></li>
+            <li class="dws-li"><a href="/userPage?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a></li>
+            <li class="dws-li"><a href="/userPage?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a></li>
+            <li class="dws-li"><a href="/userPage?action=news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li>  </ui>
     </div>
 </header>
 <div class="container">
@@ -33,7 +33,7 @@
         <ul class="dws-ui-two">
             <c:forEach items="${requestScope.catalogs}" var="periodicals">
             <li class="dws-li-two"><a
-                    href="/userPages?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a>
+                    href="/userPage?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a>
             </li>
         </c:forEach>
         </ul>

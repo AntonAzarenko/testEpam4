@@ -32,7 +32,7 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
                     if (en == 1) {
                         enabled = true;
                     }
-                    //создаем  UserPages'а используя патрн BUILDER
+                    //создаем  UserPage'а используя патрн BUILDER
                     User.UserBulder userBulder = new User.UserBulder(id);
                     userBulder.email(email);
                     userBulder.name(name);

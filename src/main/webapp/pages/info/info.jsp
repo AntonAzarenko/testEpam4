@@ -12,7 +12,7 @@
 </head>
 <body>
     <p>${message}</p>
-<a href="/userPages?action=catalog">назад</a>
+<a href="/userPage?action=catalog">назад</a>
 
 </body>
 </html>

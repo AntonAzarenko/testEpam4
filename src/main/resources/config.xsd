@@ -15,11 +15,6 @@
     </userPage>]]></xs:documentation>
     </xs:annotation>
   </xs:element>
-  <xs:complexType name="pageType">
-    <xs:sequence>
-      <xs:element type="xs:string" name="url"/>
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="applicationType">
     <xs:sequence>
       <xs:element type="azar:adminPagesType" name="adminPages" xmlns:azar="http://www.azarenko.com">
@@ -33,7 +28,7 @@
   </xs:complexType>
   <xs:complexType name="adminPagesType">
     <xs:sequence>
-      <xs:element type="azar:pageType" name="page" xmlns:azar="http://www.azarenko.com"/>
+      <xs:element type="xs:string" name="page"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

@@ -8,7 +8,7 @@ import java.util.List;
 public class Application {
     @XmlElementWrapper(name = "adminPages")
     @XmlElement(name = "page",required = true)
-    private List<AdminPage> adminPageList = new ArrayList<>();
+    private List<String> adminPageList = new ArrayList<>();
     @XmlElement(name = "userPages",required = true)
     private List<UserPage> userPageList = new ArrayList<>();
 
@@ -26,14 +26,7 @@ public class Application {
         return userPageList.add(userPage);
     }
 
-    public Application(List<AdminPage> adminPageList, List<UserPage> userPageList) {
-        this.adminPageList = adminPageList;
-        this.userPageList = userPageList;
-    }
 
-    public void setAdminPageList(List<AdminPage> adminPageList) {
-        this.adminPageList = adminPageList;
-    }
 
     public void setUserPageList(List<UserPage> userPageList) {
         this.userPageList = userPageList;

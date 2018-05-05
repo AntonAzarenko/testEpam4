@@ -5,7 +5,6 @@ import javax.xml.bind.annotation.adapters.*;
 
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "page", propOrder = "page")
 public class AdminPage {
 
     @XmlElement(name = "url", required = true)

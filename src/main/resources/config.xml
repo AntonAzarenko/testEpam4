@@ -3,9 +3,7 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="www.azarenko.com">
     <adminPages>
-        <page>
-            <url>admin_add_edit_publication.jsp</url>
-        </page>
+        <page>admin_catalog.jsp</page>
         <!--<page>admin_catalog.jsp</page>
         <page>payment.jsp</page>
         <page>subscription.jsp</page>-->

@@ -23,6 +23,7 @@
             <li class="dws-li"><a href="/user?action=news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a></li>
         </ui>
     </div>
+    <h1>Приветствуем тебя ${login}</h1>
 </header>
 </body>
 </html>

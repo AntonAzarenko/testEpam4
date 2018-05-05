@@ -1,4 +1,4 @@
-<%@ page import="com.azarenko.model.User" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -47,7 +47,6 @@
                 <button class="btn btn-info">Назад</button>
             </a>
         </c:if>
-
         <c:forEach begin="1" end="${maxPages}" step="1" varStatus="i">
             <c:choose>
                 <c:when test="${page == i.index}">
@@ -66,7 +65,6 @@
         <c:url value="${currentsort}" var="next">
             <c:param name="page" value="${page + 1}"/>
         </c:url>
-
         <c:if test="${page + 1 <= maxPages}">
             <a  href='<c:out value="${next}" />' class="pn next">
                 <button class="btn btn-info">Вперед</button>
@@ -76,30 +74,5 @@
     </div>
 </div>
 
-
-<%-- <h2>Приветствуем тебя User ${login} </h2>
- <table border="1" cellpadding="8" cellspacing="0">
-     <tr>
-         <th>Id Издания</th>
-         <th>Название</th>
-         <th>Описание</th>
-         <th>Цена</th>
-     </tr>
-     <c:forEach items="${requestScope.catalogs}" var="periodicals">
-         <jsp:useBean id="periodicals" scope="page" type="com.azarenko.model.Periodicals"/>
-         <tr>
-             <th>${periodicals.id}</th>
-             <th>${periodicals.title}</th>
-             <th>${periodicals.description}</th>
-             <th>${periodicals.price}</th>
-             <th><a href="/pay?action=pay&periodicalid=<c:out value="${periodicals.id}"/>"
-                    methods="post">Оформить подписку</a></th>
-         </tr>
-     </c:forEach>
- </table>
-</div>
-<a href="/user?action=exit">Выйти из системы</a>
-<a class="prof" href="/user?action=profile">Профиль</a>
-</body>--%>
 </body>
 </html>

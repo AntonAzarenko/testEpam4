@@ -6,7 +6,8 @@ import java.util.List;
 
 @XmlRootElement(name = "application", namespace = "http://www.azarenko.com")
 public class Application {
-    @XmlElement(name = "adminPages",required = true)
+    @XmlElementWrapper(name = "adminPages")
+    @XmlElement(name = "page",required = true)
     private List<AdminPage> adminPageList = new ArrayList<>();
     @XmlElement(name = "userPages",required = true)
     private List<UserPage> userPageList = new ArrayList<>();

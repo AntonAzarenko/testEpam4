@@ -7,42 +7,42 @@ import java.util.List;
 @XmlRootElement(name = "application", namespace = "http://www.azarenko.com")
 public class Application {
     @XmlElement(name = "admin",required = true)
-    private List<Admin> adminList = new ArrayList<>();
+    private List<AdminPages> adminPagesList = new ArrayList<>();
     @XmlElement(name = "user",required = true)
-    private List<User> userList = new ArrayList<>();
+    private List<UserPages> userPagesList = new ArrayList<>();
 
-   /* public List<Admin> getAdminList() {
-        return this.adminList;
+   /* public List<AdminPages> getAdminList() {
+        return this.adminPagesList;
     }
 
-    public List<User> getUserList() {
-        return this.userList;
+    public List<UserPages> getUserList() {
+        return this.userPagesList;
     }*/
 
     public Application() {
     }
-    public boolean add(User user){
-        return userList.add(user);
+    public boolean add(UserPages userPages){
+        return userPagesList.add(userPages);
     }
 
-    public Application(List<Admin> adminList, List<User> userList) {
-        this.adminList = adminList;
-        this.userList = userList;
+    public Application(List<AdminPages> adminPagesList, List<UserPages> userPagesList) {
+        this.adminPagesList = adminPagesList;
+        this.userPagesList = userPagesList;
     }
 
-    public void setAdminList(List<Admin> adminList) {
-        this.adminList = adminList;
+    public void setAdminPagesList(List<AdminPages> adminPagesList) {
+        this.adminPagesList = adminPagesList;
     }
 
-    public void setUserList(List<User> userList) {
-        this.userList = userList;
+    public void setUserPagesList(List<UserPages> userPagesList) {
+        this.userPagesList = userPagesList;
     }
 
     @Override
     public String toString() {
         return "Application{" +
-                "adminList=" + adminList.size() +
-                ", userList=" + userList.size() +
+                "adminPagesList=" + adminPagesList.size() +
+                ", userPagesList=" + userPagesList.size() +
                 '}';
     }
 }

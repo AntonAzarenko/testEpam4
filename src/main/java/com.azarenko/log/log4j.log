@@ -18053,7 +18053,7 @@
 2018-05-01 18:54:30 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@6e212c68 Remove Used
 2018-05-01 18:54:30 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@6e212c68 AddPeriodical Free
 2018-05-01 18:54:30 DEBUG TransactionImpl:46 - com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can't call rollback when autocommit=true
-2018-05-01 18:54:30 ERROR ArrayOperationShoppingCart:105 - com.azarenko.services.TransactionException: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can't call rollback when autocommit=true
+2018-05-01 18:54:30 ERROR ArrayOperationShoppingCart:105 - com.azarenko.util.TransactionException: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can't call rollback when autocommit=true
 2018-05-01 18:54:30 INFO  UsersServlet:31 - /userPage
 2018-05-01 18:54:30 INFO  UsersServlet:32 - start
 2018-05-01 18:57:16 INFO  UsersServlet:31 - /userPage
@@ -18095,7 +18095,7 @@
 2018-05-01 18:57:21 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@6e212c68 Remove Used
 2018-05-01 18:57:21 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@6e212c68 AddPeriodical Free
 2018-05-01 18:57:21 DEBUG TransactionImpl:46 - com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can't call rollback when autocommit=true
-2018-05-01 18:57:21 ERROR ArrayOperationShoppingCart:105 - com.azarenko.services.TransactionException: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can't call rollback when autocommit=true
+2018-05-01 18:57:21 ERROR ArrayOperationShoppingCart:105 - com.azarenko.util.TransactionException: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can't call rollback when autocommit=true
 2018-05-01 18:57:21 INFO  UsersServlet:31 - /userPage
 2018-05-01 18:57:21 INFO  UsersServlet:32 - start
 2018-05-01 18:58:00 INFO  ConnectionPool:138 - Created a new connection
@@ -18153,7 +18153,7 @@
 2018-05-01 18:58:09 INFO  ConnectionPool:166 - com.azarenko.util.PooledConnection@1bca157 Remove Used
 2018-05-01 18:58:09 INFO  ConnectionPool:168 - com.azarenko.util.PooledConnection@1bca157 AddPeriodical Free
 2018-05-01 18:58:09 DEBUG TransactionImpl:46 - com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can't call rollback when autocommit=true
-2018-05-01 18:58:09 ERROR ArrayOperationShoppingCart:105 - com.azarenko.services.TransactionException: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can't call rollback when autocommit=true
+2018-05-01 18:58:09 ERROR ArrayOperationShoppingCart:105 - com.azarenko.util.TransactionException: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Can't call rollback when autocommit=true
 2018-05-01 18:58:09 INFO  UsersServlet:31 - /userPage
 2018-05-01 18:58:09 INFO  UsersServlet:32 - start
 2018-05-01 19:06:22 INFO  ConnectionPool:138 - Created a new connection

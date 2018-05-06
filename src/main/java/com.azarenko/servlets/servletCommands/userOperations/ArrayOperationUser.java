@@ -3,8 +3,7 @@ package com.azarenko.servlets.servletCommands.userOperations;
 import com.azarenko.dao.DaoException;
 import com.azarenko.model.Subscription;
 import com.azarenko.services.*;
-import com.azarenko.util.ComponentRegister;
-import com.azarenko.util.ConnectionPool;
+import com.azarenko.util.*;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
@@ -49,7 +48,7 @@ public class ArrayOperationUser {
             connection = connectionPool.getConnection();
             ThreadLocal<Connection> local = new ThreadLocal<>();
             local.set(connection);
-            Transaction transaction = new TransactionImpl(local);
+            Transaction transaction = new JdbcTransactionImpl(local);
             transaction.start();
             SubscriptionService service = (SubscriptionService) register.getImpl(SubscriptionService.class);
             UserService userService = (UserService) register.getImpl(UserService.class);

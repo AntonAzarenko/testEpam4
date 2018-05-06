@@ -29,7 +29,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         BigDecimal price = getPriceForSubcription(shoppingCart.getPeriodicalId());
         BigDecimal pr = price.multiply(new BigDecimal(shoppingCart.getCountPer()));
         shoppingCart.setPrice(pr);
-        BaseDao<ShoppingCart> baseDao = new ShoppingCartImplDao();
+        BaseDao<ShoppingCart> baseDao = new ShoppingCartDaoImpl();
         baseDao.add(shoppingCart);
     }
 
@@ -48,7 +48,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     @Override
     public List<ShoppingCart> getShoppingCartUser(int id) throws DaoException {
-        ShoppingCartDao cartDao = new ShoppingCartImplDao();
+        ShoppingCartDao cartDao = new ShoppingCartDaoImpl();
         return cartDao.getShoppingCartByUserId(id);
 
     }
@@ -72,7 +72,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     @Override
     public void removeShoppingCartUser(int id) throws DaoException {
-        ShoppingCartDao cartDao = new ShoppingCartImplDao();
+        ShoppingCartDao cartDao = new ShoppingCartDaoImpl();
         cartDao.removeShoppingCartUser(id);
     }
 

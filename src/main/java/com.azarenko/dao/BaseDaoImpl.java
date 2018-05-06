@@ -1,19 +1,18 @@
 package com.azarenko.dao;
 
 
-
-import org.apache.log4j.Logger;
+import com.azarenko.util.JdbcConnectionContext;
 
 import java.sql.Connection;
 
 public class BaseDaoImpl {
-    private static ThreadLocal<Connection> local;
+    private JdbcConnectionContext connectionContext = JdbcConnectionContext.getInstance();
+    private ThreadLocal<Connection> local;
+    private Connection connection;
 
-    public ThreadLocal<Connection> getLocal() {
-        return this.local;
-    }
-
-    public void setLocal(ThreadLocal<Connection> local) {
-        this.local = local;
+    public Connection getConnection() {
+        local = connectionContext.getLocal();
+        connection = local.get();
+        return connection;
     }
 }

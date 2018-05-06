@@ -2,13 +2,11 @@ package com.azarenko.services;
 
 import com.azarenko.dao.BaseDao;
 import com.azarenko.dao.DaoException;
-import com.azarenko.dao.PaymentImplDao;
+import com.azarenko.dao.PaymentDaoImpl;
 import com.azarenko.model.Payment;
 import com.azarenko.model.ShoppingCart;
 import org.apache.log4j.Logger;
 
-import java.math.BigDecimal;
-import java.util.Date;
 import java.util.List;
 
 public class PaymentServiceImpl implements PaymentService {
@@ -16,7 +14,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public void add(Payment payment) throws DaoException, ServiceException {
-        BaseDao<Payment> baseDao = new PaymentImplDao();
+        BaseDao<Payment> baseDao = new PaymentDaoImpl();
         SubscriptionService subscriptionService = new SubscriptionServiceImpl();
         ShoppingCartService shoppingCartService = new ShoppingCartServiceImpl();
         baseDao.add(payment);
@@ -28,7 +26,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public List<Payment> getPaymentList() throws DaoException {
-        BaseDao<Payment> baseDao = new PaymentImplDao();
+        BaseDao<Payment> baseDao = new PaymentDaoImpl();
         return baseDao.getListEntity();
     }
 

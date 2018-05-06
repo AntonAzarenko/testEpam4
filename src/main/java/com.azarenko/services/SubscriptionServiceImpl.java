@@ -3,7 +3,7 @@ package com.azarenko.services;
 import com.azarenko.dao.BaseDao;
 import com.azarenko.dao.DaoException;
 import com.azarenko.dao.SubscriptionDao;
-import com.azarenko.dao.SubscriptionImplDao;
+import com.azarenko.dao.SubscriptionDaoImpl;
 import com.azarenko.model.Periodicals;
 import com.azarenko.model.Subscription;
 
@@ -14,8 +14,8 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 
     @Override
     public void create(int idPeriodicals, int userId, Date start, Date end) throws ServiceException, DaoException {
-        SubscriptionDao subscriptionDao = new SubscriptionImplDao();
-        PeriodicalService periodicalService = new PeriodicalServiceImplImpl();
+        SubscriptionDao subscriptionDao = new SubscriptionDaoImpl();
+        PeriodicalService periodicalService = new PeriodicalServiceImpl();
         Subscription.SubscriptionBuild subscriptionBuild = new Subscription.SubscriptionBuild();
         subscriptionBuild.idPeriodical(idPeriodicals);
         Periodicals periodicals = periodicalService.getPeriodical(idPeriodicals);
@@ -34,13 +34,13 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 
     @Override
     public List<Subscription> getAllSubscription() throws DaoException {
-        BaseDao<Subscription> baseDao = new SubscriptionImplDao();
+        BaseDao<Subscription> baseDao = new SubscriptionDaoImpl();
         return baseDao.getListEntity();
     }
 
     @Override
     public List<Subscription> getAllSubscriptionsUserByUserId(int id) throws DaoException {
-        SubscriptionDao subscriptionDao = new SubscriptionImplDao();
+        SubscriptionDao subscriptionDao = new SubscriptionDaoImpl();
         return subscriptionDao.getAllSubscriptionsUserByUserId(id);
 
     }

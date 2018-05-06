@@ -1,8 +1,6 @@
 package com.azarenko.dao;
 
-import com.azarenko.model.AbstractBaseEntity;
 import com.azarenko.model.Payment;
-import com.azarenko.util.DBUtil;
 import org.apache.log4j.Logger;
 
 import java.math.BigDecimal;
@@ -10,12 +8,12 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PaymentImplDao extends BaseDaoImpl implements PaymentDao {
-    private final static Logger log = Logger.getLogger(PaymentImplDao.class);
+public class PaymentDaoImpl extends BaseDaoImpl implements PaymentDao {
+    private final static Logger log = Logger.getLogger(PaymentDaoImpl.class);
 
 
 
-    public PaymentImplDao() {
+    public PaymentDaoImpl() {
     }
 
     @Override

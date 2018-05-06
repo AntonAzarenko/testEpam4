@@ -3,7 +3,6 @@ package com.azarenko.servlets.servletCommands.userCommand;
 import com.azarenko.services.ServiceException;
 import com.azarenko.servlets.servletCommands.Command;
 import com.azarenko.servlets.servletCommands.CommandException;
-import com.azarenko.servlets.servletCommands.adminOperations.ArrayOperationPeriodical;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

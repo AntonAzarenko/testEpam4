@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.azarenko.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="application" type="azar:applicationType" xmlns:azar="http://www.azarenko.com">
-    <xs:annotation>
-      <xs:documentation><![CDATA[<userPage>
-        <page>my_periodical.jsp</page>
-        <page>news.jsp</page>
-        <page>my_profile.jsp</page>
-        <page>profile.jsp</page>
-        <page>registration.jsp</page>
-        <page>shopping_cart.jsp</page>
-        <page>subscribe.jsp</page>
-        <page>user_catalog.jsp</page>
-        <page>user_catalog_currrent.jsp</page>
-    </userPage>]]></xs:documentation>
-    </xs:annotation>
-  </xs:element>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="application" type="applicationType"/>
   <xs:complexType name="applicationType">
     <xs:sequence>
-      <xs:element type="azar:adminPagesType" name="adminPages" xmlns:azar="http://www.azarenko.com">
-        <xs:annotation>
-          <xs:documentation><![CDATA[<page>admin_catalog.jsp</page>
-        <page>payment.jsp</page>
-        <page>subscription.jsp</page>]]></xs:documentation>
-        </xs:annotation>
-      </xs:element>
+      <xs:element type="adminPagesType" name="adminPages"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="adminPagesType">
     <xs:sequence>
-      <xs:element type="xs:string" name="page"/>
+      <xs:element name="page" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

@@ -1,16 +1,14 @@
 package com.azarenko.dao;
 
-import com.azarenko.model.AbstractBaseEntity;
 import com.azarenko.model.Subscription;
-import com.azarenko.util.DBUtil;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SubscriptionImplDao extends BaseDaoImpl implements SubscriptionDao {
-    private final static Logger log = Logger.getLogger(SubscriptionImplDao.class);
+public class SubscriptionDaoImpl extends BaseDaoImpl implements SubscriptionDao {
+    private final static Logger log = Logger.getLogger(SubscriptionDaoImpl.class);
 
     @Override
     public List<Subscription> getAllSubscriptionsUserByUserId(int id) throws DaoException {

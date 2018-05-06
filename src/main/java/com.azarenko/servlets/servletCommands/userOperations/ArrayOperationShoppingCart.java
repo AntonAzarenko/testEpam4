@@ -3,8 +3,7 @@ package com.azarenko.servlets.servletCommands.userOperations;
 import com.azarenko.dao.DaoException;
 import com.azarenko.model.ShoppingCart;
 import com.azarenko.services.*;
-import com.azarenko.util.ComponentRegister;
-import com.azarenko.util.ConnectionPool;
+import com.azarenko.util.*;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
@@ -43,7 +42,7 @@ public class ArrayOperationShoppingCart {
         }
         ThreadLocal<Connection> local = new ThreadLocal<>();
         local.set(connection);
-        Transaction transaction = new TransactionImpl(local);
+        Transaction transaction = new JdbcTransactionImpl(local);
         try {
             transaction.start();
             ShoppingCartService serviceCart = (ShoppingCartService) register.getImpl(ShoppingCartService.class);
@@ -87,7 +86,7 @@ public class ArrayOperationShoppingCart {
         }
         ThreadLocal local = new ThreadLocal();
         local.set(connection);
-        Transaction transaction = new TransactionImpl(local);
+        Transaction transaction = new JdbcTransactionImpl(local);
         ComponentRegister register = new ComponentRegister();
         try {
             transaction.start();

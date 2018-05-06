@@ -1,11 +1,8 @@
 package com.azarenko.servlets.servletCommands;
 
 import com.azarenko.services.ServiceException;
-import com.azarenko.services.TransactionException;
+import com.azarenko.util.TransactionException;
 import com.azarenko.servlets.servletCommands.adminCommand.*;
-import com.azarenko.servlets.servletCommands.adminOperations.ArrayOperationPayment;
-import com.azarenko.servlets.servletCommands.adminOperations.ArrayOperationPeriodical;
-import com.azarenko.servlets.servletCommands.adminOperations.ArrayOperationSubscriptions;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,20 +12,19 @@ import java.util.concurrent.ConcurrentHashMap;
 
 
 public class CommandAdmin implements Command {
-    private final Logger log = Logger.getLogger(CommandAdmin.class);
     private static ConcurrentHashMap<String, Command> map = new ConcurrentHashMap<>();
 
     static {
-
-            map.put("catalog", new ShowCatalogPeriodicals(new ArrayOperationPeriodical()));
-            map.put("edit", new EditPeriodical(new ArrayOperationPeriodical()));
-            map.put("payment", new ShowPayment(new ArrayOperationPayment()));
-            map.put("delete", new DeletePeriodical(new ArrayOperationPeriodical()));
-            map.put("subscription", new ShowSubscription(new ArrayOperationSubscriptions()));
-            map.put("insert", new InsertPeriodical(new ArrayOperationPeriodical()));
-            map.put("add", new AddPeriodical(new ArrayOperationPeriodical()));
+        map.put("catalog", new ShowCatalogPeriodicals());
+        map.put("edit", new EditPeriodical());
+        map.put("payment", new ShowPayment());
+        map.put("delete", new DeletePeriodical(new ArrayOperationPeriodical()));
+        map.put("subscription", new ShowSubscription(new ArrayOperationSubscriptions()));
+        map.put("insert", new InsertPeriodical());
+        map.put("add", new AddPeriodical());
     }
 
+    private final Logger log = Logger.getLogger(CommandAdmin.class);
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException {

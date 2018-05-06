@@ -4,9 +4,7 @@ import com.azarenko.dao.DaoException;
 import com.azarenko.model.User;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletCommands.CommandException;
-import com.azarenko.servlets.servletCommands.adminOperations.ArrayOperationPeriodical;
-import com.azarenko.util.ComponentRegister;
-import com.azarenko.util.ConnectionPool;
+import com.azarenko.util.*;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
@@ -103,7 +101,7 @@ public class ArrayOperationRegistration {
         }
         ThreadLocal<Connection> local = new ThreadLocal<>();
         local.set(connection);
-        Transaction transaction = new TransactionImpl(local);
+        Transaction transaction = new JdbcTransactionImpl(local);
         try {
             transaction.start();
             ComponentRegister register = new ComponentRegister();
@@ -156,7 +154,7 @@ public class ArrayOperationRegistration {
          */
         ThreadLocal<Connection> local = new ThreadLocal();
         local.set(connection);
-        Transaction transaction = new TransactionImpl(local);
+        Transaction transaction = new JdbcTransactionImpl(local);
         try {
             transaction.start();
             String login = request.getParameter("login");

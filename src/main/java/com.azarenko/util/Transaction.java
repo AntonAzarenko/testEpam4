@@ -1,4 +1,6 @@
-package com.azarenko.services;
+package com.azarenko.util;
+
+import java.sql.SQLException;
 
 public interface Transaction {
 
@@ -7,5 +9,7 @@ public interface Transaction {
     void commit() throws TransactionException;
 
     void rollback() throws TransactionException;
+
+    void reliaseResources() throws TransactionException, SQLException;
 
 }

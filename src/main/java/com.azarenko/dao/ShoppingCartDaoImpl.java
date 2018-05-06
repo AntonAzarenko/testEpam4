@@ -1,6 +1,5 @@
 package com.azarenko.dao;
 
-import com.azarenko.model.AbstractBaseEntity;
 import com.azarenko.model.ShoppingCart;
 import com.azarenko.util.DBUtil;
 import org.apache.log4j.Logger;
@@ -10,12 +9,12 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShoppingCartImplDao implements ShoppingCartDao {
-    private static final Logger log = Logger.getLogger(ShoppingCartImplDao.class);
+public class ShoppingCartDaoImpl implements ShoppingCartDao {
+    private static final Logger log = Logger.getLogger(ShoppingCartDaoImpl.class);
 
     private Connection connection;
 
-    public ShoppingCartImplDao() {
+    public ShoppingCartDaoImpl() {
         connection = DBUtil.getConnection();
     }
 

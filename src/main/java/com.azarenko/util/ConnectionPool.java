@@ -112,10 +112,6 @@ public class ConnectionPool {
         return cw;
     }
 
-    public synchronized void returnConnection(Connection connection) {
-        PooledConnection pc = (PooledConnection) connection;
-        freeConnectionWrapper(pc);
-    }
 
     protected PooledConnection createConnectionWrapper() throws SQLException {
         Connection con = null;

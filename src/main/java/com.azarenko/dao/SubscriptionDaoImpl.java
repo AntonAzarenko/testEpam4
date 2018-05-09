@@ -12,7 +12,7 @@ public class SubscriptionDaoImpl extends BaseDaoImpl implements SubscriptionDao 
 
     @Override
     public List<Subscription> getAllSubscriptionsUserByUserId(int id) throws DaoException {
-        Connection connection = getLocal().get();
+        Connection connection = getConnection();
         List<Subscription> subscriptionList = new ArrayList<>();
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.subscriptions WHERE user_id = ?")) {
             preparedStatement.setInt(1,id);
@@ -43,7 +43,7 @@ public class SubscriptionDaoImpl extends BaseDaoImpl implements SubscriptionDao 
     @Override
     public void add(Subscription entity) throws DaoException {
         Subscription subscription =  entity;
-        Connection connection = getLocal().get();
+        Connection connection = getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement(
                 "INSERT INTO mydb.subscriptions ( id_periodicals, name_periodicals, date_start, date_end, user_id) VALUES (?,?,?,?,?)")) {
             preparedStatement.setInt(1, subscription.getPeriodicalId());
@@ -69,8 +69,8 @@ public class SubscriptionDaoImpl extends BaseDaoImpl implements SubscriptionDao 
 
     @Override
     public List getListEntity() throws DaoException {
-        Connection connection = getLocal().get();
-        List<Subscription> subscriptionList = new ArrayList<>();
+        Connection connection = getConnection();
+        List<Subscription> subscriptionsList = new ArrayList<>();
         try (Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery("SELECT * FROM mydb.subscriptions")) {
             while (rs.next()) {
@@ -82,11 +82,11 @@ public class SubscriptionDaoImpl extends BaseDaoImpl implements SubscriptionDao 
                 subscriptionBuild.namePeriodical(rs.getString("name_periodicals"));
                 subscriptionBuild.userId(rs.getInt("user_id"));
                 Subscription subscription = subscriptionBuild.build();
-                subscriptionList.add(subscription);
+                subscriptionsList.add(subscription);
             }
         } catch (SQLException e) {
            throw  new DaoException(e);
         }
-        return subscriptionList;
+        return subscriptionsList;
     }
 }

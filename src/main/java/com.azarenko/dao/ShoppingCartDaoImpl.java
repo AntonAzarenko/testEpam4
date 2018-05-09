@@ -9,18 +9,15 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShoppingCartDaoImpl implements ShoppingCartDao {
+public class ShoppingCartDaoImpl extends BaseDaoImpl implements ShoppingCartDao {
     private static final Logger log = Logger.getLogger(ShoppingCartDaoImpl.class);
 
-    private Connection connection;
 
-    public ShoppingCartDaoImpl() {
-        connection = DBUtil.getConnection();
-    }
 
     @Override
     public void add(ShoppingCart entity) throws DaoException {
-        ShoppingCart shoppingCart = (ShoppingCart) entity;
+        ShoppingCart shoppingCart =  entity;
+        Connection connection = getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement
                 ("INSERT INTO shopping_cart(userId, id_periodicals, date_start, date_end,countPer, price )VALUES (?,?,?,?,?,?)")) {
             log.info(shoppingCart.getUserID());
@@ -57,6 +54,7 @@ public class ShoppingCartDaoImpl implements ShoppingCartDao {
     @Override
     public List<ShoppingCart> getShoppingCartByUserId(int id) throws DaoException {
         List<ShoppingCart> cartList = new ArrayList<>();
+        Connection connection = getConnection();
         try (Statement statement = connection.createStatement();
         ResultSet rs = statement.executeQuery("SELECT * FROM mydb.shopping_cart")) {
             while (rs.next()) {
@@ -80,6 +78,7 @@ public class ShoppingCartDaoImpl implements ShoppingCartDao {
 
     @Override
     public void removeShoppingCartUser(int id) throws DaoException {
+        Connection connection = getConnection();
         try(PreparedStatement preparedStatement = connection.prepareStatement
                 ("DELETE  FROM mydb.shopping_cart WHERE userId=?")){
             preparedStatement.setInt(1,id);

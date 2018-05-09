@@ -16,7 +16,7 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     @Override
     public User getUserByEmail(String email) throws DaoException {
         try {
-            Connection connection = getLocal().get();
+            Connection connection = getConnection();
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");
             while (rs.next()) {
@@ -60,7 +60,7 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     @Override
     public User getEntityById(int id) {
         User user = null;
-        Connection connection = getLocal().get();
+        Connection connection = getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)");) {
             preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
@@ -87,8 +87,8 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
 
     @Override
     public void add(User entity) throws DaoException {
-        User user = (User) entity;
-        Connection connection = getLocal().get();
+        User user =  entity;
+        Connection connection = getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement(
                 "INSERT  INTO mydb.users(name,email,password,enabled,role) VALUES (?,?,?,?,?)")) {
             preparedStatement.setString(1, user.getName());
@@ -115,7 +115,7 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     @Override
     public List getListEntity() throws DaoException {
         List<User> userList = new ArrayList<>();
-        Connection connection = getLocal().get();
+        Connection connection = getConnection();
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("SELECT * FROM mydb.users");

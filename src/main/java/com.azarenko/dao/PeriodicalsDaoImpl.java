@@ -19,7 +19,7 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
     @Override
     public Periodicals getEntityById(int id) throws DaoException {
         Periodicals periodicals;
-        Connection connection = getLocal().get();
+        Connection connection = getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement(
                 "SELECT * FROM mydb.catalog_periodicals WHERE id = ?")) {
             {
@@ -40,10 +40,9 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
         }
     }
 
-
     @Override
     public void add(Periodicals entity) throws DaoException {
-        Connection connection = getLocal().get();
+        Connection connection = getConnection();
         Periodicals periodicals = (Periodicals) entity;
         try (PreparedStatement preparedStatement = connection.prepareStatement
                 ("INSERT INTO catalog_periodicals (title,output_frequency ,discription, price) VALUES (?,?,?,?)")) {
@@ -57,10 +56,9 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
         }
     }
 
-
     @Override
     public void remove(int id) throws DaoException {
-        Connection connection = getLocal().get();
+        Connection connection = getConnection();
         try (PreparedStatement preparedStatement = connection.prepareStatement
                 ("DELETE FROM mydb.catalog_periodicals WHERE id=?")) {
             preparedStatement.setInt(1, id);
@@ -71,10 +69,9 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
 
     }
 
-
     @Override
     public void update(Periodicals entity) throws DaoException {
-        Connection connection = getLocal().get();
+        Connection connection = getConnection();
         Periodicals periodicals = (Periodicals) entity;
         try (PreparedStatement preparedStatement = connection.prepareStatement
                 ("UPDATE mydb.catalog_periodicals SET title=?,discription=?,price=? WHERE id = ?")) {
@@ -90,7 +87,7 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
 
     @Override
     public List getListEntity() throws DaoException {
-        Connection connection = getLocal().get();
+        Connection connection = getConnection();
         List<Periodicals> list = new ArrayList<Periodicals>();
         try (Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalog_periodicals")) {

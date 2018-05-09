@@ -18,8 +18,8 @@ public class PaymentDaoImpl extends BaseDaoImpl implements PaymentDao {
 
     @Override
     public void add(Payment entity) throws DaoException {
-        Payment payment = (Payment) entity;
-        Connection connection = getLocal().get();
+        Payment payment =  entity;
+        Connection connection = getConnection();
         try(PreparedStatement preparedStatement = connection.prepareStatement(
                 "INSERT  INTO mydb.payment(date,user_id,price) VALUES (?,?,?)")){
             log.info(payment.getDate());
@@ -46,7 +46,7 @@ public class PaymentDaoImpl extends BaseDaoImpl implements PaymentDao {
     @Override
     public List getListEntity() {
         List<Payment> list = new ArrayList<>();
-        Connection connection = getLocal().get();
+        Connection connection = getConnection();
         try (Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery("SELECT * FROM mydb.payment")) {
             while (rs.next()) {

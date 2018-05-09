@@ -25,6 +25,6 @@
         </tr>
 </table>
 <p/>
-<a href="/userPage?action=catalog">К каталогу</a>
+<a href="/user?action=catalog">К каталогу</a>
 </body>
 </html>

@@ -12,7 +12,7 @@ public class JdbcTransactionImpl implements Transaction {
 
     private ConnectionPool connectionPool;
 
-    private Connection connection;
+    private JdbcConnectionContext connectionContext;
 
     public JdbcTransactionImpl() {
         try {
@@ -24,11 +24,11 @@ public class JdbcTransactionImpl implements Transaction {
 
     @Override
     public void start() throws TransactionException {
-        connection = null;
+        Connection connection = null;
         try {
             connection = connectionPool.getConnection();
             connection.setAutoCommit(false);
-            JdbcConnectionContext connectionContext = JdbcConnectionContext.getInstance();
+            connectionContext = JdbcConnectionContext.getInstance();
             ThreadLocal<Connection> local = new ThreadLocal<>();
             local.set(connection);
             connectionContext.setLocal(local);
@@ -41,6 +41,8 @@ public class JdbcTransactionImpl implements Transaction {
     @Override
     public void commit() throws TransactionException {
         try {
+            connectionContext = JdbcConnectionContext.getInstance();
+            Connection connection = connectionContext.getLocal().get();
             connection.commit();
             connection.setAutoCommit(true);
         } catch (SQLException e) {
@@ -51,6 +53,8 @@ public class JdbcTransactionImpl implements Transaction {
     @Override
     public void rollback() throws TransactionException {
         try {
+            connectionContext = JdbcConnectionContext.getInstance();
+            Connection connection = connectionContext.getLocal().get();
             connection.rollback();
             connection.setAutoCommit(true);
         } catch (SQLException e) {
@@ -61,6 +65,8 @@ public class JdbcTransactionImpl implements Transaction {
 
     @Override
     public void reliaseResources() throws TransactionException, SQLException {
+        connectionContext = JdbcConnectionContext.getInstance();
+        Connection connection = connectionContext.getLocal().get();
         connection.close();
     }
 }

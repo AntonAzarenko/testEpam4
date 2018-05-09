@@ -19,11 +19,12 @@ public class ComponentRegister {
         map.put(ShoppingCartDao.class, new ShoppingCartDaoImpl());
         map.put(SubscriptionDao.class, new SubscriptionDaoImpl());
         map.put(UserDao.class, new UserServiceImpl());
+        map.put(AuthorisationService.class, new AuthorisationService());
 
     }
 
     public Object getImpl(Class<?> impl) {
-        if(impl.equals(Transaction.class)){
+        if(impl.equals(JdbcTransactionImpl.class)){
             return new JdbcTransactionImpl();
         }else {
             if (map.containsKey(impl)) {

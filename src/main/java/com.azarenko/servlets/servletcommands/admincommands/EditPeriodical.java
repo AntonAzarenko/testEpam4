@@ -4,12 +4,12 @@ import com.azarenko.dao.DaoException;
 import com.azarenko.model.Periodicals;
 import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.ServiceException;
+import com.azarenko.servlets.servletcommands.CommandException;
 import com.azarenko.util.ComponentRegister;
 import com.azarenko.util.JdbcTransactionImpl;
 import com.azarenko.util.Transaction;
 import com.azarenko.util.TransactionException;
 import com.azarenko.servlets.servletcommands.Command;
-import com.azarenko.servlets.servletcommands.CommandException;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;

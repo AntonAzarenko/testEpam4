@@ -11,14 +11,10 @@ import java.io.UnsupportedEncodingException;
 
 public class ShowCurrentSubscription implements Command{
     private final Logger log = Logger.getLogger(ShowCurrentSubscription.class);
-    private ArrayOperationSubscription operationSubscription;
 
-    public ShowCurrentSubscription(ArrayOperationSubscription operationSubscription) {
-        this.operationSubscription = operationSubscription;
-    }
 
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException, UnsupportedEncodingException {
+    public String execute(HttpServletRequest request, HttpServletResponse resp) throws   CommandException, ServiceException, UnsupportedEncodingException {
         log.info(request.getParameter("periodicalId"));
         return "/user?action=profile";
     }

@@ -42,9 +42,9 @@ public class PeriodicalServiceImpl  implements PeriodicalService {
     }
 
     @Override
-    public Periodicals search(String param) {
+    public Periodicals search(String param,String value) {
         ComponentRegister register = new ComponentRegister();
         PeriodicalsDao dao = (PeriodicalsDao) register.getImpl(PeriodicalsDao.class);
-        return dao.search(param);
+        return dao.search(param,value);
     }
 }

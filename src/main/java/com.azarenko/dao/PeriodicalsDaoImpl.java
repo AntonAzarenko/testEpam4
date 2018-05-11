@@ -20,11 +20,12 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
     public Periodicals getEntityById(int id) throws DaoException {
         Periodicals periodicals;
         Connection connection = getConnection();
+        ResultSet rs = null;
         try (PreparedStatement preparedStatement = connection.prepareStatement(
                 "SELECT * FROM mydb.catalog_periodicals WHERE id = ?")) {
             {
                 preparedStatement.setInt(1, id);
-                ResultSet rs = preparedStatement.executeQuery();
+                rs = preparedStatement.executeQuery();
                 while (rs.next()) {
                     String title = rs.getString("title");
                     int oF = rs.getInt("output_frequency");
@@ -37,6 +38,12 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
             return null;
         } catch (SQLException e) {
             throw new DaoException(e);
+        } finally {
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                throw new DaoException(e);
+            }
         }
     }
 
@@ -107,7 +114,57 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
     }
 
     @Override
-    public Periodicals search(String param, String value) {
+    public Periodicals search(int value) throws DaoException {
+        return getEntityById(value);
+    }
+
+    @Override
+    public Periodicals search(BigDecimal value) throws DaoException {
+        Periodicals periodical = null;
+        Connection connection = getConnection();
+        ResultSet rs = null;
+        try (PreparedStatement preparedStatement = connection.prepareStatement
+                ("SELECT *FROM mydb.catalog_periodicals WHERE price = ?")) {
+            preparedStatement.setBigDecimal(1, value);
+            rs = preparedStatement.executeQuery();
+            while (rs.next()){
+                int id = rs.getInt("id");
+                String title = rs.getString("title");
+                int oF = rs.getInt("output_frequency");
+                String discription = rs.getString("discription");
+                BigDecimal price = rs.getBigDecimal("price");
+                periodical = new Periodicals(id, title, discription, oF, price);
+                log.info(periodical.getTitle());
+                return  periodical;
+            }
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        }
+        return null;
+    }
+
+    @Override
+    public Periodicals search(String value) throws DaoException {
+        Periodicals periodical = null;
+        Connection connection = getConnection();
+        ResultSet rs = null;
+        try (PreparedStatement preparedStatement = connection.prepareStatement
+                ("SELECT *FROM mydb.catalog_periodicals WHERE title = ?")) {
+            preparedStatement.setString(1, value);
+            rs = preparedStatement.executeQuery();
+            while (rs.next()){
+                String title = rs.getString("title");
+                int id = rs.getInt("id");
+                int oF = rs.getInt("output_frequency");
+                String discriptions = rs.getString("discription");
+                BigDecimal price = rs.getBigDecimal("price");
+                periodical = new Periodicals(id, title, discriptions, oF, price);
+                log.info(value);
+                return  periodical;
+            }
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        }
         return null;
     }
 

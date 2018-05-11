@@ -9,6 +9,7 @@
 <body>
 <div style="padding-left: 100px">
 
+
     <a  href="/admin?action=catalog">Каталог</a>
     <p>
         <a href="/admin?action=payment">Платежи</a>

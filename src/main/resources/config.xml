@@ -5,6 +5,7 @@
         <page>admin.jsp</page>
     </adminPages>
     <userPages>
-        <page>akfdgjlakds</page>
+        <page>user_catalog.jsp</page>
+        <page>currentsubscription.jsp</page>
     </userPages>
 </application>

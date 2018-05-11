@@ -1,12 +1,10 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <html>
 <head>
     <title>Каталог</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/user_catalog.css">
-    <meta charset="UTF-8">
+       <link rel="stylesheet" href="../css/user_catalog.css">
 
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/font-awesome.css" type="text/css">
@@ -18,7 +16,8 @@
         <h1>Бибилиотека периодических изданий</h1>
     </div>
     <div class="con">
-        <form action="/user?action=search" method="post">
+        <form method="get" action="/user" accept-charset="UTF-8">
+            <input hidden="hidden" name="action" value="search">
             <input type="text" name="value">
             <select class="text" name="entitySearch">
                 <option class="text" value="name">Поиск по имени</option>
@@ -89,6 +88,5 @@
 
     </div>
 </div>
-
 </body>
 </html>

@@ -33,7 +33,7 @@
         <ul class="dws-ui-two">
             <c:forEach items="${requestScope.cartList}" var="shoppingCart">
                 <li class="dws-li-two">
-                    <a href="/userPage?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${shoppingCart.price}</a></li>
+                    <a href="/user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${shoppingCart.price}</a></li>
             </c:forEach>
         </ul>
 
@@ -77,7 +77,7 @@
 </div>
 <div class="container_two">
 
-    <form class="center" method="post" name="payment" action="/userPage?action=pay">
+    <form class="center" method="post" name="payment" action="/user?action=pay">
         <h3 >К оплате   </h3>
         <div class="dws-input">
         <input  type="text" readonly name="price"
@@ -88,30 +88,6 @@
         </div>
     </form>
 </div>
-<%--<table border="1" cellpadding="8" cellspacing="0">
-    <tr>
-        <th>Id Издания</th>
-        <th>Дата начала подписки</th>
-        <th>Дата окончания</th>
-        <th>Цена</th>
-    </tr>
-    <c:forEach items="${requestScope.cartList}" var="shoppingCart">
-        <jsp:useBean id="shoppingCart" scope="page" type="com.azarenko.model.ShoppingCart"/>
-    <tr>
-        <th>${shoppingCart.periodicalId}</th>
-        <th>${shoppingCart.start}</th>
-        <th>${shoppingCart.end}</th>
-        <th>${shoppingCart.price}</th>
-    </tr>
-    </c:forEach>
-</table>
-    <div>
-        <form method="post" name="payment" action="/payment">
-            <h3 >К оплате   </h3>
-                <input type="text" readonly name="price"
-                value="<c:out value="${FP}"/>"/>
-            <input type="submit" value="Оплатить">
-        </form>
-    </div>--%>
+
 </body>
 </html>

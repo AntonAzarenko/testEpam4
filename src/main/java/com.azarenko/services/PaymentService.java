@@ -11,4 +11,5 @@ public interface PaymentService {
     List<Payment> getPaymentList() throws DaoException, ServiceException;
     Payment getPaymentByUserId(int id)throws DaoException, ServiceException;
 
+
 }

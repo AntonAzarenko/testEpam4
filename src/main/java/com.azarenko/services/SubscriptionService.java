@@ -9,10 +9,12 @@ import java.util.List;
 public interface SubscriptionService {
     void create(int idPeriodicals, int userId, Date start, Date end) throws ServiceException, DaoException;
 
-    Subscription getSubscriptionByUserId(int id);
+    Subscription getSubscriptionById(int id) throws DaoException;
 
     List<Subscription> getAllSubscription() throws DaoException;
 
     List<Subscription> getAllSubscriptionsUserByUserId(int id) throws DaoException;
+
+
 
 }

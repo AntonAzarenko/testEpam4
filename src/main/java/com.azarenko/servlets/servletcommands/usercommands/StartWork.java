@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
 
 public class StartWork implements Command {
-    private final String START = "/user?action=start";
+    private final String START = "/pages/start_user.jsp";
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException, UnsupportedEncodingException {
         return START;

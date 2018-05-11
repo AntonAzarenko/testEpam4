@@ -36,7 +36,25 @@ public class SubscriptionDaoImpl extends BaseDaoImpl implements SubscriptionDao 
     }
 
     @Override
-    public Subscription getEntityById(int id) {
+    public Subscription getEntityById(int id) throws DaoException {
+        Connection connection = getConnection();
+        try(PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.subscriptions WHERE id_periodicals=?" )) {
+            preparedStatement.setInt(1,id);
+            ResultSet rs = preparedStatement.executeQuery();
+            if(rs.next()){
+                Subscription.SubscriptionBuild subscriptionBuild = new Subscription.SubscriptionBuild();
+                subscriptionBuild.id(rs.getInt("id"));
+                subscriptionBuild.userId(rs.getInt("user_id"));
+                subscriptionBuild.idPeriodical(rs.getInt("id_periodicals"));
+                subscriptionBuild.namePeriodical(rs.getString("name_periodicals"));
+                subscriptionBuild.dateStartSubcription(rs.getDate("date_start"));
+                subscriptionBuild.dateEndSubscription(rs.getDate("date_end"));
+                Subscription subscription = subscriptionBuild.build();
+                return subscription;
+            }
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        }
         return null;
     }
 

@@ -106,4 +106,9 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
         return list;
     }
 
+    @Override
+    public Periodicals search(String param, String value) {
+        return null;
+    }
+
 }

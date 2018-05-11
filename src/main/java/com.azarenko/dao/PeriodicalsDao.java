@@ -10,4 +10,6 @@ public interface PeriodicalsDao extends BaseDao<Periodicals> {
 
     @Override
     List getListEntity() throws DaoException;
+
+    Periodicals search(String param, String value);
 }

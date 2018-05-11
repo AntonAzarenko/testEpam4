@@ -6,6 +6,7 @@ import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.ServiceException;
 import com.azarenko.servlets.servletcommands.Command;
 import com.azarenko.servlets.servletcommands.CommandException;
+import com.azarenko.servlets.servletcommands.admincommands.ShowCatalogPeriodicals;
 import com.azarenko.util.ComponentRegister;
 import com.azarenko.util.JdbcTransactionImpl;
 import com.azarenko.util.Transaction;
@@ -15,6 +16,7 @@ import org.apache.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
+import java.sql.SQLException;
 
 public class ShowCurrentPeriodical implements Command {
     private final String USER_CATALOG_CURRENT = "/pages/user/user_catalog_current.jsp";
@@ -22,6 +24,8 @@ public class ShowCurrentPeriodical implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException, UnsupportedEncodingException {
+        ShowCatalogPeriodicals periodicals = new ShowCatalogPeriodicals();
+        periodicals.execute(request, resp);
         ComponentRegister register = new ComponentRegister();
         Transaction transaction = (Transaction) register.getImpl(JdbcTransactionImpl.class);
         try {
@@ -37,6 +41,13 @@ public class ShowCurrentPeriodical implements Command {
             log.error(e);
         } catch (ServiceException e) {
             throw new ServiceException(e);
+        }
+        finally {
+            try {
+                transaction.reliaseResources();
+            } catch (SQLException e) {
+                log.error(e);
+            }
         }
         return USER_CATALOG_CURRENT;
     }

@@ -37,6 +37,7 @@ public class Profile implements Command {
             int userId = userService.getUserIdByEmail((String) session.getAttribute("login"));
             List<Subscription> subscriptionList = service.getAllSubscriptionsUserByUserId(userId);
             request.setAttribute("subList", subscriptionList);
+
             transaction.commit();
         } catch (TransactionException e) {
             throw new TransactionException(e);

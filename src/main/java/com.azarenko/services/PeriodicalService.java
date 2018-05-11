@@ -16,4 +16,6 @@ public interface PeriodicalService extends BaseService{
 
     Periodicals getPeriodical(int id) throws ServiceException, DaoException;
 
+    Periodicals search(String param);
+
 }

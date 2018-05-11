@@ -19,14 +19,6 @@ public final class Subscription extends AbstractBaseEntity {
 
     private final BigDecimal price;
 
-    public int getUserId() {
-        return userId;
-    }
-
-    public String getNamePeriodical() {
-        return namePeriodical;
-    }
-
     private Subscription(SubscriptionBuild subscriptionBuild) {
         this.title = subscriptionBuild.title;
         this.periodicalId = subscriptionBuild.idPeriodical;
@@ -35,6 +27,14 @@ public final class Subscription extends AbstractBaseEntity {
         this.dateEndSubscription = subscriptionBuild.dateEndSubscription;
         this.price = subscriptionBuild.price;
         this.userId = subscriptionBuild.userId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public String getNamePeriodical() {
+        return namePeriodical;
     }
 
     public String getTitle() {
@@ -76,23 +76,22 @@ public final class Subscription extends AbstractBaseEntity {
         public SubscriptionBuild() {
         }
 
-       public SubscriptionBuild id(int id){
+        public SubscriptionBuild id(int id) {
             this.id = id;
             return this;
-       }
-
+        }
 
         public SubscriptionBuild title(String title) {
             this.title = title;
             return this;
         }
 
-        public SubscriptionBuild userId(int userId){
+        public SubscriptionBuild userId(int userId) {
             this.userId = userId;
             return this;
         }
 
-        public SubscriptionBuild namePeriodical(String name){
+        public SubscriptionBuild namePeriodical(String name) {
             this.namePeriodical = name;
             return this;
         }
@@ -116,7 +115,8 @@ public final class Subscription extends AbstractBaseEntity {
             this.price = price;
             return this;
         }
-        public Subscription build(){
+
+        public Subscription build() {
             return new Subscription(this);
         }
     }

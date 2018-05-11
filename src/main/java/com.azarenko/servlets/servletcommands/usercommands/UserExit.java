@@ -6,12 +6,16 @@ import com.azarenko.servlets.servletcommands.CommandException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
 
 public class UserExit implements Command {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException, UnsupportedEncodingException {
-        return "";
+        HttpSession session = request.getSession();
+        session.setAttribute("login",null);
+        session.setAttribute("role", null);
+        return "/pages/authorize.jsp";
     }
 }

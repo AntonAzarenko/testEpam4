@@ -2,8 +2,10 @@ package com.azarenko.services;
 
 import com.azarenko.dao.BaseDao;
 import com.azarenko.dao.DaoException;
+import com.azarenko.dao.PeriodicalsDao;
 import com.azarenko.dao.PeriodicalsDaoImpl;
 import com.azarenko.model.Periodicals;
+import com.azarenko.util.ComponentRegister;
 
 import java.util.List;
 
@@ -37,5 +39,12 @@ public class PeriodicalServiceImpl  implements PeriodicalService {
     public Periodicals getPeriodical(int id) throws DaoException {
         BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
         return baseDao.getEntityById(id);
+    }
+
+    @Override
+    public Periodicals search(String param) {
+        ComponentRegister register = new ComponentRegister();
+        PeriodicalsDao dao = (PeriodicalsDao) register.getImpl(PeriodicalsDao.class);
+        return dao.search(param);
     }
 }

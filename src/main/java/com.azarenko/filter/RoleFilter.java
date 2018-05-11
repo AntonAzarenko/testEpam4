@@ -12,8 +12,6 @@ public class RoleFilter implements Filter {
     private final static Logger log = Logger.getLogger(RoleFilter.class);
     private FilterConfig filterConfig;
 
-
-
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         this.filterConfig = filterConfig;

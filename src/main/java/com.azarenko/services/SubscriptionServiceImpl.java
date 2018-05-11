@@ -6,6 +6,7 @@ import com.azarenko.dao.SubscriptionDao;
 import com.azarenko.dao.SubscriptionDaoImpl;
 import com.azarenko.model.Periodicals;
 import com.azarenko.model.Subscription;
+import com.azarenko.util.ComponentRegister;
 
 import java.util.Date;
 import java.util.List;
@@ -28,8 +29,10 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     }
 
     @Override
-    public Subscription getSubscriptionByUserId(int id) {
-        return null;
+    public Subscription getSubscriptionById(int id) throws DaoException {
+        ComponentRegister register = new ComponentRegister();
+        SubscriptionDao dao = (SubscriptionDao) register.getImpl(SubscriptionDao.class);
+        return dao.getEntityById(id);
     }
 
     @Override

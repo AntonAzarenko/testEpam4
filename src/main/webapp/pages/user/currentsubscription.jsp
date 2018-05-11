@@ -3,30 +3,17 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
-    <title>Каталог</title>
+    <title>hi</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/user_catalog.css">
-    <meta charset="UTF-8">
-
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
-    <link rel="stylesheet" href="../css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="/css/user_subscription_current.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/font-awesome.css" type="text/css">
 </head>
 <body>
 <header>
     <div class="logo">
         <img src="/image/3.png">
-        <h1>Бибилиотека периодических изданий</h1>
-    </div>
-    <div class="con">
-        <form action="/user?action=search" method="post">
-            <input type="text" name="value">
-            <select class="text" name="entitySearch">
-                <option class="text" value="name">Поиск по имени</option>
-                <option class="text" value="id">Поиск по ID</option>
-                <option class="text" value="price">Поиск по стоимости</option>
-            </select>
-            <input class="butt" type="submit" value="Поиск"/>
-        </form>
+        <h1>${id}</h1>
     </div>
     <div class="dws-menu">
         <ui class="dws-ul">
@@ -36,10 +23,12 @@
                                                                       aria-hidden="true"></i>Корзина</a></li>
             <li class="dws-li"><a href="/user?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a>
             </li>
-            <li class="dws-li"><a href="/user?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a>
+            <li class="dws-li"><a href="/user?action=myprofile"><i class="fa fa-server" aria-hidden="true"></i>Мой профиль</a>
             </li>
-            <li class="dws-li"><a href="/user?action=news"><i class="fa fa-newspaper-o"
-                                                              aria-hidden="true"></i>Новости</a></li>
+            <li class="dws-li"><a href="/user?action=profile"><i class="fa fa-newspaper-o"
+                                                                                 aria-hidden="true"></i>Подписки</a></li>
+            <li class="dws-li"><a href="/user?action=exit"><i class="fa fa-newspaper-o"
+                                                              aria-hidden="true"></i>Выход</a></li>
         </ui>
     </div>
 </header>
@@ -47,9 +36,9 @@
     <div class="dws-menu-two">
         <h3>Название</h3>
         <ul class="dws-ui-two">
-            <c:forEach items="${requestScope.catalogs}" var="periodicals">
+            <c:forEach items="${requestScope.subList}" var="list">
                 <li class="dws-li-two"><a
-                        href="/user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a>
+                        href="/user?action=showcurrentsubscription&subId=<c:out value="${list.periodicalId}"/>">${list.namePeriodical}</a>
                 </li>
             </c:forEach>
         </ul>
@@ -82,13 +71,21 @@
             <c:param name="page" value="${page + 1}"/>
         </c:url>
         <c:if test="${page + 1 <= maxPages}">
-            <a href='<c:out value="${next}" />' class="pn next">
+            <a  href='<c:out value="${next}" />' class="pn next">
                 <button class="btn btn-info">Вперед</button>
             </a>
         </c:if>
 
     </div>
 </div>
+<div class="container_two">
+    <p>Название :</p>
+    <h2>${subscriptionL.namePeriodical}</h2>
 
+    <p> Дата начала : </p>
+    <h2>${subscriptionL.dateStartSubcription}</h2>
+    <p>Дата окончания</p>
+    <h2>${subscriptionL.dateEndSubscription}</h2>
+</div>
 </body>
 </html>

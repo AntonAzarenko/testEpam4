@@ -61,7 +61,7 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao {
     public User getEntityById(int id) {
         User user = null;
         Connection connection = getConnection();
-        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)");) {
+        try (PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM mydb.users WHERE id(?)")) {
             preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             if (rs.next()) {

@@ -28,6 +28,7 @@ public class UserCommand implements Command {
         map.put("news", new ShowNews());
         map.put("profile", new Profile());
         map.put("showcurrentsubscription", new ShowCurrentSubscription());
+        map.put("search", new Search());
     }
 
     private final Logger log = Logger.getLogger(UserCommand.class);
@@ -35,6 +36,7 @@ public class UserCommand implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException, UnsupportedEncodingException {
         String forwardPage = request.getParameter("action");
+        log.info(forwardPage);
         if (map.containsKey(forwardPage)) {
             ManagerCommand managerCommand = new ManagerCommand(map.get(forwardPage));
             String f = null;

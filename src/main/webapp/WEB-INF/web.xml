@@ -24,7 +24,7 @@
     </filter>
     <filter-mapping>
         <filter-name>AuthFilter</filter-name>
-        <url-pattern>/registration.jsp</url-pattern>
+        <url-pattern>/regiosrt.jsp</url-pattern>
     </filter-mapping>
 
 </web-app>

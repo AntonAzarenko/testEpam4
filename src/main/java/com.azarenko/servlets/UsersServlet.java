@@ -1,5 +1,6 @@
 package com.azarenko.servlets;
 
+import com.azarenko.filter.RoleFilter;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletcommands.Command;
 import com.azarenko.servlets.servletcommands.CommandException;
@@ -38,6 +39,7 @@ public class UsersServlet extends HttpServlet {
             log.error(e);
             req.setAttribute("error", "Ошибка");
         }
+        log.info(forward);
         req.getRequestDispatcher(forward).forward(req, resp);
     }
 
@@ -58,5 +60,6 @@ public class UsersServlet extends HttpServlet {
             log.error(e);
             req.setAttribute("error", "Ошибка");
         }
+        log.info(forward);
         req.getRequestDispatcher(forward).forward(req, resp);    }
 }

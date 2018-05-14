@@ -4,8 +4,7 @@
 <html>
 <head>
     <title>Каталог</title>
-       <link rel="stylesheet" href="../css/user_catalog.css">
-
+    <link rel="stylesheet" href="../css/user_catalog.css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/font-awesome.css" type="text/css">
 </head>
@@ -16,13 +15,13 @@
         <h1>Бибилиотека периодических изданий</h1>
     </div>
     <div class="con">
-        <form method="get" action="/user" accept-charset="UTF-8">
+        <form method="post" action="/user" accept-charset="UTF-8">
             <input hidden="hidden" name="action" value="search">
             <input type="text" name="value">
-            <select class="text" name="entitySearch">
-                <option class="text" value="name">Поиск по имени</option>
-                <option class="text" value="id">Поиск по ID</option>
-                <option class="text" value="price">Поиск по стоимости</option>
+            <select class="text"  name="entitySearch">
+                <option  value="name">Поиск по имени</option>
+                <option  value="id">Поиск по ID</option>
+                <option  value="price">Поиск по стоимости</option>
             </select>
             <input class="butt" type="submit" value="Поиск"/>
         </form>

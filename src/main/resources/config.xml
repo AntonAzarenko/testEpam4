@@ -2,7 +2,10 @@
 <application >
     <adminPages>
         <page>admin_catalog.jsp</page>
-        <page>admin.jsp</page>
+        <page>admin_catalog_page.jsp</page>
+        <page>admin_start_page.jsp</page>
+        <page>payment.jsp</page>
+        <page>subscription.jsp</page>
     </adminPages>
     <userPages>
         <page>user_catalog.jsp</page>

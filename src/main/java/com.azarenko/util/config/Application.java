@@ -4,32 +4,35 @@ import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@XmlRootElement(name = "application")
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Application {
     @XmlElementWrapper(name = "adminPages")
-    @XmlElement(name = "page",required = true)
+    @XmlElement(name = "page")
     private List<String> adminPageList = new ArrayList<>();
+
     @XmlElementWrapper(name = "userPages")
-    @XmlElement(name = "page",required = true)
+    @XmlElement(name = "page")
     private List<String> userPageList = new ArrayList<>();
-
-   /* public List<AdminPage> getAdminList() {
-        return this.adminPageList;
-    }
-
-    public List<UserPage> getUserList() {
-        return this.userPageList;
-    }*/
 
     public Application() {
     }
-   /* public boolean add(UserPage userPage){
-        return userPageList.add(userPage);
+
+    public List<String> getAdminPageList() {
+        return adminPageList;
     }
 
-    public void setUserPageList(List<UserPage> userPageList) {
+    public void setAdminPageList(List<String> adminPageList) {
+        this.adminPageList = adminPageList;
+    }
+
+    public List<String> getUserPageList() {
+        return userPageList;
+    }
+
+    public void setUserPageList(List<String> userPageList) {
         this.userPageList = userPageList;
-    }*/
+    }
 
     @Override
     public String toString() {

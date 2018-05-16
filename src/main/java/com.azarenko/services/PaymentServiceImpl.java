@@ -5,12 +5,10 @@ import com.azarenko.dao.DaoException;
 import com.azarenko.dao.PaymentDaoImpl;
 import com.azarenko.model.Payment;
 import com.azarenko.model.ShoppingCart;
-import org.apache.log4j.Logger;
 
 import java.util.List;
 
 public class PaymentServiceImpl implements PaymentService {
-    private final static Logger log = Logger.getLogger(PaymentServiceImpl.class);
 
     @Override
     public void add(Payment payment) throws DaoException, ServiceException {

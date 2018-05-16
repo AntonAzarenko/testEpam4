@@ -1,6 +1,7 @@
 package com.azarenko.servlets.servletcommands;
 
 import com.azarenko.services.ServiceException;
+import com.azarenko.servlets.servletcommands.usercommands.StartWork;
 import com.azarenko.util.TransactionException;
 import com.azarenko.servlets.servletcommands.admincommands.*;
 import org.apache.log4j.Logger;
@@ -24,6 +25,9 @@ public class AdminCommand implements Command {
         map.put("insert", new InsertPeriodical());
         map.put("add", new AddPeriodical());
         map.put("page", new ShowCatalogPeriodicals());
+        map.put("exit", new Exit());
+        map.put("users", new ShowUsers());
+        map.put("start", new Start());
     }
 
     private final Logger log = Logger.getLogger(AdminCommand.class);

@@ -19,15 +19,15 @@
             <li class="dws-li"><a href="/admin?action=insert"><i class="fa fa-home" aria-hidden="true"></i>Добавить</a></li>
             <li class="dws-li"><a href="/admin?action=subscription"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Подписки</a></li>
             <li class="dws-li"><a href="/admin?action=payment"><i class="fa fa-folder-open" aria-hidden="true"></i>Платежи</a></li>
-            <li class="dws-li"><a href="/admin?action=exit"><i class="fa fa-server" aria-hidden="true"></i>Пользователи</a></li>
-            <li class="dws-li"><a href="/admin?action=users"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Выйти</a></li>
+            <li class="dws-li"><a href="/admin?action=users"><i class="fa fa-server" aria-hidden="true"></i>Пользователи</a></li>
+            <li class="dws-li"><a href="/admin?action=exit"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Выйти</a></li>
         </ui>
     </div>
 </header>
-<body class="container-two" style="padding-left: 50px">
-    <div>
-        <table border="1" cellpadding="10" cellspacing="2">
-            <tr>
+<body>
+    <div class="container" >
+        <table border="1" cellpadding="7" cellspacing="2">
+            <tr class="tr">
                 <th>Id Издания</th>
                 <th>Название</th>
                 <th>Описание</th>
@@ -44,9 +44,11 @@
                     <th>${periodicals.description}</th>
                     <th>${periodicals.outputFrequency}</th>
                     <th>${periodicals.price}</th>
-                    <th><a href="/admin?action=edit&catalogId=<c:out value="${periodicals.id}"/>" methods="post">Редактировать</a>
+                    <th><a href="/admin?action=edit&catalogId=<c:out value="${periodicals.id}"/>"><button class="butt">Редактировать</button></a>
                     </th>
-                    <th><a href="/admin?action=delete&catalogId=<c:out value="${periodicals.id}"/>" methods="post">Удалить</a></th>
+                    <th><a href='/admin?action=delete&catalogId=<c:out value="${periodicals.id}"/>'>
+                        <button class="butt">Удалить </button></a>
+                    </th>
                 </tr>
             </c:forEach>
         </table>

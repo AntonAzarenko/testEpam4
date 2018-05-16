@@ -41,10 +41,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         return start;
     }
 
-    @Override
-    public void goToPay() {
-
-    }
 
     @Override
     public List<ShoppingCart> getShoppingCartUser(int id) throws DaoException {

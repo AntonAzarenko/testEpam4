@@ -64,7 +64,7 @@ ShowCatalogPeriodicals implements Command {
      */
     public void setPadding(HttpServletRequest req, List<Periodicals> list) {
         PageListHolder<Periodicals> listHolder = new PageListHolder<>(list);
-        listHolder.setPageSize(10);
+        listHolder.setPageSize(8);
         Integer page = 0;
         try {
             page = Integer.parseInt(req.getParameter("page"));

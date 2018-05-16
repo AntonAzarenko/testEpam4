@@ -49,24 +49,28 @@ public class PeriodicalServiceImpl implements PeriodicalService {
         ComponentRegister register = new ComponentRegister();
         PeriodicalsDao dao = (PeriodicalsDao) register.getImpl(PeriodicalsDao.class);
         Periodicals periodical = null;
-        if (param.equals("name")) {
-           periodical = dao.search(value);
-           log.info(value);
-        } else if (param.equals("id")) {
-            int id = checkToValidInt(value);
-            periodical = dao.search(id);
-        } else if (param.equals("price")) {
-            BigDecimal price = checkToValidBD(value);
-            if(price == null){
-                return periodical;
-            }
-            periodical = dao.search(price);
+        switch (param) {
+            case "name":
+                periodical = dao.search(value);
+                log.info(value);
+                break;
+            case "id":
+                int id = checkToValidInt(value);
+                periodical = dao.search(id);
+                break;
+            case "price":
+                BigDecimal price = checkToValidBD(value);
+                if (price == null) {
+                    return null;
+                }
+                periodical = dao.search(price);
+                break;
         }
         return periodical;
     }
 
     private BigDecimal checkToValidBD(String value) throws ServiceException {
-        BigDecimal price = null;
+        BigDecimal price;
         try{
              price = BigDecimal.valueOf(Double.parseDouble(value));
         }catch (NumberFormatException e){
@@ -77,7 +81,7 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     }
 
     private int checkToValidInt(String value) throws ServiceException {
-        int id = 0;
+        int id;
         try {
             id = Integer.parseInt(value);
         } catch (NumberFormatException e) {

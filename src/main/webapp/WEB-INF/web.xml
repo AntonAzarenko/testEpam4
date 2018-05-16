@@ -24,7 +24,7 @@
     </filter>
     <filter-mapping>
         <filter-name>AuthFilter</filter-name>
-        <url-pattern>/*jsp</url-pattern>
+        <url-pattern>/fdsaf</url-pattern>
     </filter-mapping>
 
     <filter>

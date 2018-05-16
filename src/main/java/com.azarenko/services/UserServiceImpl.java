@@ -5,6 +5,7 @@ import com.azarenko.dao.DaoException;
 import com.azarenko.dao.UserDao;
 import com.azarenko.dao.UserDaoImpl;
 import com.azarenko.model.User;
+import com.azarenko.util.ComponentRegister;
 import org.apache.log4j.Logger;
 
 import java.util.List;
@@ -42,5 +43,11 @@ public class UserServiceImpl implements UserService {
             }
         }
         return false;
+    }
+
+    @Override
+    public List<User> getAllUsers() throws DaoException {
+        BaseDao<User> userBaseDao = new UserDaoImpl();
+        return userBaseDao.getListEntity();
     }
 }

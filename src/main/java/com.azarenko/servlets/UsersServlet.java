@@ -22,11 +22,8 @@ public class UsersServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        log.info(req.getParameter("value"));
         Command command = new UserCommand();
         String forward = "";
-        log.info(req.getRequestURI());
-        log.info(req.getParameter("action"));
         try {
             forward = command.execute(req, resp);
         } catch (CommandException e) {
@@ -39,16 +36,12 @@ public class UsersServlet extends HttpServlet {
             log.error(e);
             req.setAttribute("error", "Ошибка");
         }
-        log.info(forward);
         req.getRequestDispatcher(forward).forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        log.info(req.getParameter("value"));
         Command command = new UserCommand();
-        log.info(req.getRequestURI());
-        log.info(req.getParameter("action"));
         String forward = "";
         try {
             forward = command.execute(req, resp);
@@ -60,6 +53,5 @@ public class UsersServlet extends HttpServlet {
             log.error(e);
             req.setAttribute("error", "Ошибка");
         }
-        log.info(forward);
         req.getRequestDispatcher(forward).forward(req, resp);    }
 }

@@ -29,7 +29,6 @@ public class AuthFilter implements Filter {
         boolean loggedIn = session != null && session.getAttribute("login") != null;
         boolean loginRequest = request.getRequestURI().equals(loginURI);
         String uri = request.getRequestURI();
-        log.info(uri);
         if(uri.equals("/registration")){
             response.sendRedirect(loginURI);
         }

@@ -31,13 +31,10 @@ public class CharecterEncodingFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         String contentType = servletRequest.getContentType();
-        HttpServletRequest req = (HttpServletRequest)servletRequest;
-        log.info(req.getCharacterEncoding());
-/*
+        HttpServletRequest req = (HttpServletRequest) servletRequest;
         if (contentType != null && contentType.startsWith(FILTERABLE_CONTENT_TYPE))
-*/
             servletRequest.setCharacterEncoding(encoding);
-        servletResponse.setCharacterEncoding(encoding);
+
         filterChain.doFilter(servletRequest, servletResponse);
     }
 

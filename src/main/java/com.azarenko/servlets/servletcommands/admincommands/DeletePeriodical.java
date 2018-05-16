@@ -1,6 +1,7 @@
 package com.azarenko.servlets.servletcommands.admincommands;
 
 import com.azarenko.dao.DaoException;
+import com.azarenko.model.Periodicals;
 import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.ServiceException;
 import com.azarenko.servlets.servletcommands.Command;
@@ -14,6 +15,7 @@ import org.apache.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
+import java.util.List;
 
 public class DeletePeriodical implements Command {
     private final String CATALOG_LIST = "/pages/admin/admin_catalog_page.jsp";
@@ -38,7 +40,8 @@ public class DeletePeriodical implements Command {
             transaction.start();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             service.remove(catalodId);
-            request.setAttribute("catalogs", service.getCatalog());
+            List<Periodicals> per = service.getCatalog();
+            new ShowCatalogPeriodicals().setPadding(request, per);
             transaction.commit();
         } catch (TransactionException e) {
             throw new TransactionException(e);

@@ -1,0 +1,99 @@
+body {
+    background: url("/image/bg.png") no-repeat center top / cover;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana;
+}
+
+.logo {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 50px;
+
+}
+.container {
+    width: 500px;
+    height: 650px;
+    background-color: #182134;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    box-shadow: 0 -5px 0 #3adbfd;
+    background-color: rgba(24, 33, 52, 0.5);
+    border-radius: 4px;
+}
+.logo img {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #1a394f;
+    border-radius: 40%;
+    box-shadow: 0 -5px 0 #3adbfd;
+}
+
+.logo h1 {
+    margin-top: 50px;
+    padding-left: 150px;
+}
+
+h1 {
+    text-align: center;
+    color: #2ca8c6;
+}
+
+h2 {
+    padding-left: 50px;
+    color: #2ca8c6;
+
+}
+
+.dws-menu {
+    background-color: white;
+    margin-top: 50px;
+    width: 100%;
+}
+
+ui.dws-ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+li.dws-li {
+    list-style: none;
+    padding: 10px;
+}
+
+li.dws-li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+li.dws-li a i {
+    margin-right: 10px;
+}
+.butt {
+    margin: 5px 0 20px 0;
+    padding: 13px 10px;
+    font-size: 15px;
+    color: #3fff;
+    background-color: #2ca8c6;
+    border: none;
+    border-bottom: 4px solid #6ee9fd ;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.butt:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    color: #2c536c;
+}
+input[type="text"], input[type="password"] {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding-left: 10px;
+}

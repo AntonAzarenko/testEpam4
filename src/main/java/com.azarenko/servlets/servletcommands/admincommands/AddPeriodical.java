@@ -118,7 +118,15 @@ public class AddPeriodical implements Command {
             periodical.setTitle(title);
             periodical.setDescription(discription);
             periodical.setPrice(price);
-            request.setAttribute("periodicals", periodical);
+           /* ComponentRegister register = new ComponentRegister();
+            PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
+            List<Periodicals> per = null;
+            try {
+                per = service.getCatalog();
+            } catch (DaoException e) {
+                e.printStackTrace();
+            }
+            new ShowCatalogPeriodicals().setPadding(request, per);*/
             update(request, resp);
             return CATALOG_LIST;
         }
@@ -137,7 +145,8 @@ public class AddPeriodical implements Command {
             transaction.start();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             service.add(periodical);
-            request.setAttribute("catalogs", service.getCatalog());
+            List<Periodicals> per = service.getCatalog();
+            new ShowCatalogPeriodicals().setPadding(request, per);
             transaction.commit();
         } catch (TransactionException e) {
             throw new TransactionException(e);

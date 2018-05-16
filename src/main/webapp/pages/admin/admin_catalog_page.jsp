@@ -5,17 +5,26 @@
 <head>
     <title>Каталог</title>
 </head>
-<body style="padding-left: 150px">
-
-<a href="/admin?action=payment">Платежи</a>
-    <p/>
-    <a href="/admin?action=subscription">Подписки</a>
-    <p/>
-    <a href="pages/authorize.jsp">Воити под другим логином</a>
-    <p/>
-    <a href="/admin?action=insert">Добавить издание</a>
-    <p/>
-<h1 style="padding-left: 200px">Каталог периодических изданий</h1>
+<header>
+    <div class="logo">
+        <img src="/image/3.png">
+        <h1>Каталог периодических изданий</h1>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/admin_catalog.css">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="stylesheet" href="../css/font-awesome.css" type="text/css">
+    </div>
+    <div class="dws-menu">
+        <ui class="dws-ul">
+            <li class="dws-li"><a href="/admin?action=insert"><i class="fa fa-home" aria-hidden="true"></i>Добавить</a></li>
+            <li class="dws-li"><a href="/admin?action=subscription"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Подписки</a></li>
+            <li class="dws-li"><a href="/admin?action=payment"><i class="fa fa-folder-open" aria-hidden="true"></i>Платежи</a></li>
+            <li class="dws-li"><a href="/admin?action=exit"><i class="fa fa-server" aria-hidden="true"></i>Пользователи</a></li>
+            <li class="dws-li"><a href="/admin?action=users"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Выйти</a></li>
+        </ui>
+    </div>
+</header>
+<body class="container-two" style="padding-left: 50px">
     <div>
         <table border="1" cellpadding="10" cellspacing="2">
             <tr>
@@ -37,7 +46,7 @@
                     <th>${periodicals.price}</th>
                     <th><a href="/admin?action=edit&catalogId=<c:out value="${periodicals.id}"/>" methods="post">Редактировать</a>
                     </th>
-                    <th><a href="/admin?action=delete&catalogId=<c:out value="${periodicals.id}"/>">Удалить</a></th>
+                    <th><a href="/admin?action=delete&catalogId=<c:out value="${periodicals.id}"/>" methods="post">Удалить</a></th>
                 </tr>
             </c:forEach>
         </table>

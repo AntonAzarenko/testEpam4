@@ -127,7 +127,7 @@ public class AddPeriodical implements Command {
                 e.printStackTrace();
             }
             new ShowCatalogPeriodicals().setPadding(request, per);*/
-            update(request, resp);
+            update(request, resp,periodical);
             return CATALOG_LIST;
         }
 
@@ -174,13 +174,13 @@ public class AddPeriodical implements Command {
      * @throws CommandException
      * @throws ServiceException
      */
-    public String update(HttpServletRequest request, HttpServletResponse response) throws CommandException, ServiceException {
+    public String update(HttpServletRequest request, HttpServletResponse response, Periodicals periodical) throws CommandException, ServiceException {
         ComponentRegister register = new ComponentRegister();
         Transaction transaction = (Transaction) register.getImpl(JdbcTransactionImpl.class);
         try {
             transaction.start();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
-            service.update((Periodicals) request.getAttribute("periodicals"));
+            service.update(periodical);
             List<Periodicals> per = service.getCatalog();
             new ShowCatalogPeriodicals().setPadding(request, per);
           //  request.setAttribute("catalogs", service.getCatalog());

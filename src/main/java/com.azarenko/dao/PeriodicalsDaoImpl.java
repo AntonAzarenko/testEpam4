@@ -79,13 +79,14 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
     @Override
     public void update(Periodicals entity) throws DaoException {
         Connection connection = getConnection();
-        Periodicals periodicals = (Periodicals) entity;
+        Periodicals periodicals =  entity;
         try (PreparedStatement preparedStatement = connection.prepareStatement
-                ("UPDATE mydb.catalog_periodicals SET title=?,discription=?,price=? WHERE id = ?")) {
+                ("UPDATE mydb.catalog_periodicals SET title=?,discription=?,output_frequency=?,price=? WHERE id = ?")) {
             preparedStatement.setString(1, periodicals.getTitle());
             preparedStatement.setString(2, periodicals.getDescription());
             preparedStatement.setBigDecimal(3, periodicals.getPrice());
-            preparedStatement.setInt(4, periodicals.getId());
+            preparedStatement.setInt(4,periodicals.getOutputFrequency());
+            preparedStatement.setInt(5, periodicals.getId());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             throw new DaoException(e);

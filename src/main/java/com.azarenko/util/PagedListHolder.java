@@ -1,16 +1,23 @@
 package com.azarenko.util;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-public class PageListHolder<T> {
+public class PagedListHolder<T> {
     boolean newPageSet;
     private List<T> list;
     private Integer pageSize;
     private int page;
+    private String nameList;
 
-    public PageListHolder(List<T> list) {
+    public void setNameList(String nameList) {
+        this.nameList = nameList;
+    }
+
+    public PagedListHolder(List<T> list) {
         this.list = list;
         this.pageSize = 10;
+        this.nameList = "list";
     }
 
     public int getPage() {
@@ -72,6 +79,28 @@ public class PageListHolder<T> {
         int endIndex = this.getPageSize() * (this.getPage() + 1);
         int size = this.getNumberOfElements();
         return (endIndex > size ? size : endIndex) - 1;
+    }
+
+    public String getNameList() {
+        return nameList;
+    }
+
+    public void setPadding(HttpServletRequest req) {
+        Integer page = 0;
+        try {
+            page = Integer.parseInt(req.getParameter("page"));
+        } catch (NumberFormatException e) {
+
+        }
+        req.setAttribute("maxPages", this.getPageCount());
+        String URI = req.getRequestURI();
+        req.setAttribute("currentsort", URI + "?action=page");
+        if (page == null || page < 1 || page > this.getPageCount())
+            page = 1;
+
+        req.setAttribute("page", page);
+        setPage(page - 1);
+        req.setAttribute(getNameList(), getPageList());
     }
 
 }

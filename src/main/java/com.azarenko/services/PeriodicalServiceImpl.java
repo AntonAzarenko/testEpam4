@@ -15,7 +15,7 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     private final static Logger log = Logger.getLogger(PeriodicalServiceImpl.class);
 
     @Override
-    public List<Periodicals> getCatalog() throws ServiceException, DaoException {
+    public List<Periodicals> getCatalog()throws DaoException {
         BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
         return baseDao.getListEntity();
     }

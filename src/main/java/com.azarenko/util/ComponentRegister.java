@@ -20,13 +20,12 @@ public class ComponentRegister {
         map.put(SubscriptionDao.class, new SubscriptionDaoImpl());
         map.put(UserDao.class, new UserServiceImpl());
         map.put(AuthorisationService.class, new AuthorisationService());
-
     }
 
     public Object getImpl(Class<?> impl) {
-        if(impl.equals(JdbcTransactionImpl.class)){
+        if (impl.equals(JdbcTransactionImpl.class)) {
             return new JdbcTransactionImpl();
-        }else {
+        } else {
             if (map.containsKey(impl)) {
                 return map.get(impl);
             }

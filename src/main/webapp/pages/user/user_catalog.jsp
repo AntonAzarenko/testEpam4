@@ -84,7 +84,6 @@
                 <button class="btn btn-info">Вперед</button>
             </a>
         </c:if>
-
     </div>
 </div>
 </body>

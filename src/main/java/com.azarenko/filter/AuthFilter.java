@@ -11,7 +11,6 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 @WebFilter("/auth")
 public class AuthFilter implements Filter {
-
     private static final Logger log = Logger.getLogger(AuthFilter.class);
     private FilterConfig filterConfig;
 
@@ -25,7 +24,7 @@ public class AuthFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
         HttpSession session = request.getSession(false);
-        String loginURI = request.getContextPath() + "/authorize";
+        String loginURI = request.getContextPath() + "/authorize?action=authorize";
         boolean loggedIn = session != null && session.getAttribute("login") != null;
         boolean loginRequest = request.getRequestURI().equals(loginURI);
         String uri = request.getRequestURI();

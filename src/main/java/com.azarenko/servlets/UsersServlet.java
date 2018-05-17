@@ -1,6 +1,5 @@
 package com.azarenko.servlets;
 
-import com.azarenko.filter.RoleFilter;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletcommands.Command;
 import com.azarenko.servlets.servletcommands.CommandException;
@@ -26,10 +25,7 @@ public class UsersServlet extends HttpServlet {
         String forward = "";
         try {
             forward = command.execute(req, resp);
-        } catch (CommandException e) {
-            log.error(e);
-            req.setAttribute("error", "Ошибка");
-        } catch (ServiceException e) {
+        } catch (CommandException | ServiceException e) {
             log.error(e);
             req.setAttribute("error", "Ошибка");
         } catch (SQLException e) {

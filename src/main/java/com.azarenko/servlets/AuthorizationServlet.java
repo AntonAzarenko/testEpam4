@@ -22,8 +22,8 @@ public class AuthorizationServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        req.getRequestDispatcher(START).forward(req, resp);
+        doPost(req, resp);
+       /* req.getRequestDispatcher(START).forward(req, resp);*/
     }
 
     @Override

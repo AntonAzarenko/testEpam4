@@ -2,6 +2,6 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-<jsp:forward page="/authorize"/>
+<jsp:forward page="/authorize?action=sessionon"/>
 </body>
 </html>

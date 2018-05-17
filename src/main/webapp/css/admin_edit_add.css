@@ -101,19 +101,6 @@ input[type="text"], input[type="password"] {
     padding-left: 10px;
 }
 
-.container tr {
+.dws-input{
     color: white;
-}
-
-table {
-    border: 1px;
-    cellspasing: 2px;
-    collapse: 8px;
-}
-
-.pagin {
-    padding: 0;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    color: red;
 }

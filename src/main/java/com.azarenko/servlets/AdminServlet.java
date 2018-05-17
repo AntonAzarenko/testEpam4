@@ -23,6 +23,8 @@ public class AdminServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Command command = new AdminCommand();
         String forward = "";
+        log.info(req.getRequestURI());
+        log.info(req.getParameter("action"));
         try {
             try {
                 forward = command.execute(req, resp);
@@ -30,10 +32,7 @@ public class AdminServlet extends HttpServlet {
                 log.error(e);
                 req.setAttribute("error", "Ошибка");
             }
-        } catch (CommandException e) {
-            req.setAttribute("error", "Ошибка");
-            log.error(e);
-        } catch (ServiceException e) {
+        } catch (CommandException | ServiceException e) {
             req.setAttribute("error", "Ошибка");
             log.error(e);
         }
@@ -50,10 +49,7 @@ public class AdminServlet extends HttpServlet {
         String forward = "";
         try {
             forward = command.execute(req, resp);
-        } catch (CommandException e) {
-            log.error(e);
-            req.setAttribute("error", "Ошибка");
-        } catch (ServiceException e) {
+        } catch (CommandException | ServiceException e) {
             log.error(e);
             req.setAttribute("error", "Ошибка");
         } catch (SQLException e) {

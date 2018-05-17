@@ -13,8 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.sql.SQLException;
 import java.util.List;
 
-public class
-ShowCatalogPeriodicals implements Command {
+public class ShowCatalogPeriodicals implements Command {
     private final String CATALOG_LIST = "/pages/admin/admin_catalog_page.jsp";
 
     private final Logger log = Logger.getLogger(ShowCatalogPeriodicals.class);
@@ -34,7 +33,11 @@ ShowCatalogPeriodicals implements Command {
             transaction.start();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             List<Periodicals> per = service.getCatalog();
-            setPadding(request, per);
+            PagedListHolder<Periodicals> listHolder = new PagedListHolder<>(per);
+            listHolder.setPageSize(8);
+            listHolder.setNameList("catalogs");
+            listHolder.setPadding(request);
+            /*setPadding(request, per);*/
             transaction.commit();
         } catch (TransactionException e) {
             throw new TransactionException(e);
@@ -44,8 +47,7 @@ ShowCatalogPeriodicals implements Command {
             request.setAttribute("error", "транзакция закончилась неудачей");
         } catch (ServiceException e) {
             throw new ServiceException(e);
-        }
-        finally {
+        } finally {
             try {
                 transaction.reliaseResources();
             } catch (SQLException e) {
@@ -58,12 +60,13 @@ ShowCatalogPeriodicals implements Command {
     /**
      * this method is responsible for nubmer of paginated rows on the user page.
      * in consctructor this method sends arrayList , and sends number of paginated rows.
-     * Class PageListHolder returns namber of  pages based on the size of the ArrayList
+     * Class PagedListHolder returns namber of  pages based on the size of the ArrayList
+     *
      * @param req
      * @param list
      */
     public void setPadding(HttpServletRequest req, List<Periodicals> list) {
-        PageListHolder<Periodicals> listHolder = new PageListHolder<>(list);
+        PagedListHolder<Periodicals> listHolder = new PagedListHolder<>(list);
         listHolder.setPageSize(8);
         Integer page = 0;
         try {

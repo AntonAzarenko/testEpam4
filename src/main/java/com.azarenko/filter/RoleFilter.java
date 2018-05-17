@@ -35,11 +35,12 @@ public class RoleFilter implements Filter {
                 session.setAttribute("login", null);
             }
             if (session.getAttribute("login") == null) {
-                request.setAttribute("eroor","У вас нет доступа");
+                request.setAttribute("error", "У вас нет доступа");
             } else {
+                log.info(session.getAttribute("role"));
+                log.info(URI);
                 filterChain.doFilter(request, response);
             }
-
         } else {
             log.info("forward");
             log.info(URI);

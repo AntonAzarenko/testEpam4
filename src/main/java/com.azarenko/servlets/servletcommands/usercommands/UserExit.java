@@ -14,8 +14,7 @@ public class UserExit implements Command {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException, UnsupportedEncodingException {
         HttpSession session = request.getSession();
-        session.setAttribute("login",null);
-        session.setAttribute("role", null);
+        session.invalidate();
         return "/pages/authorize.jsp";
     }
 }

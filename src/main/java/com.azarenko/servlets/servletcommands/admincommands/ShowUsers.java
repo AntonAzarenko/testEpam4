@@ -21,7 +21,7 @@ import java.util.List;
 public class ShowUsers implements Command {
 
     private final static Logger log = Logger.getLogger(ShowUsers.class);
-    private final String SHOW_USER = "/pages/admin/show_user.jsp";
+    private final String SHOW_USER = "/pages/admin/show_users.jsp";
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse resp) throws CommandException, ServiceException, UnsupportedEncodingException, SQLException {

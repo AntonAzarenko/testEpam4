@@ -17,7 +17,7 @@
     </div>
     <div class="dws-menu">
         <ui class="dws-ul">
-            <li class="dws-li"><a href="/admin?action=insert"><i class="fa fa-home" aria-hidden="true"></i>Добавить</a>
+            <li class="dws-li"><a href="/admin?action=catalog"><i class="fa fa-home" aria-hidden="true"></i>Каталог</a>
             </li>
             <li class="dws-li"><a href="/admin?action=subscription"><i class="fa fa-shopping-cart"
                                                                        aria-hidden="true"></i>Подписки</a></li>

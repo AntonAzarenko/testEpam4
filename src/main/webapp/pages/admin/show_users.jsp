@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -15,7 +16,7 @@
     </div>
     <div class="dws-menu">
         <ui class="dws-ul">
-            <li class="dws-li"><a href="/admin?action=insert"><i class="fa fa-home" aria-hidden="true"></i>Добавить</a>
+            <li class="dws-li"><a href="/admin?action=catalog"><i class="fa fa-home" aria-hidden="true"></i>Каталог</a>
             </li>
             <li class="dws-li"><a href="/admin?action=subscription"><i class="fa fa-shopping-cart"
                                                                        aria-hidden="true"></i>Подписки</a></li>
@@ -29,7 +30,21 @@
     </div>
 </header>
 <div class="container">
+    <table border="1" cellpadding="10" cellspacing="2">
+        <tr>
+            <th>Id пользователя</th>
+            <th>Имя</th>
+            <th>Подписки пользователя</th>
+        </tr>
+        <c:forEach items="${requestScope.userList}" var="list">
+            <tr>
+                <th>${list.id}</th>
+                <th>${list.name}</th>
+                <th><a href="/admin?action=showSubscriptionforid&iduser=<c:out value="${list.id}"/>">Показать подписки</a></th>
 
+            </tr>
+        </c:forEach>
+    </table>
 </div>
 </body>
 </html>

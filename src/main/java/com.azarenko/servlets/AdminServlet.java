@@ -36,6 +36,7 @@ public class AdminServlet extends HttpServlet {
             req.setAttribute("error", "Ошибка");
             log.error(e);
         }
+        log.info(forward);
         req.getRequestDispatcher(forward).forward(req, resp);
     }
 

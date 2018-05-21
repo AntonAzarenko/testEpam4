@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+
 @WebFilter("/auth")
 public class AuthFilter implements Filter {
     private static final Logger log = Logger.getLogger(AuthFilter.class);
@@ -28,11 +29,11 @@ public class AuthFilter implements Filter {
         boolean loggedIn = session != null && session.getAttribute("login") != null;
         boolean loginRequest = request.getRequestURI().equals(loginURI);
         String uri = request.getRequestURI();
-        if(uri.equals("/registration")){
+        if (uri.equals("/registration")) {
             response.sendRedirect(loginURI);
         }
-        if(uri.equals("/css/start.css")){
-            filterChain.doFilter(request,response);
+        if (uri.equals("/css/start.css")) {
+            filterChain.doFilter(request, response);
         }
         if (loggedIn || loginRequest) {
             filterChain.doFilter(request, response);

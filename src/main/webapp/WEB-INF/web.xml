@@ -37,5 +37,4 @@
         <url-pattern>/admin</url-pattern>
         <url-pattern>/user</url-pattern>
     </filter-mapping>
-
 </web-app>

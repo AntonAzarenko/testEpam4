@@ -17,7 +17,7 @@ import java.sql.SQLException;
 @WebServlet(name = "authorize", urlPatterns = "/authorize")
 public class AuthorizationServlet extends HttpServlet {
     private final Logger log = Logger.getLogger(AuthorizationServlet.class);
-    private final String START = "/pages/authorize.jsp";
+    private final String START = "pages/authorize.jsp";
 
 
     @Override

@@ -39,7 +39,6 @@ public class RoleFilter implements Filter {
             } else {
                 log.info(session.getAttribute("role"));
                 log.info(URI);
-                filterChain.doFilter(request, response);
             }
         } else {
             log.info("forward");

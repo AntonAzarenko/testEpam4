@@ -11,11 +11,11 @@
 <body>
 <header>
     <div class="logo">
-        <img src="/image/3.png">
+        <img src="image/3.png">
         <h1>Бибилиотека периодических изданий</h1>
     </div>
     <div class="con">
-        <form method="post" action="/user" accept-charset="UTF-8">
+        <form method="post" action="user" accept-charset="UTF-8">
             <input hidden="hidden" name="action" value="search">
             <input type="text" name="value">
             <select class="text"  name="entitySearch">
@@ -28,15 +28,15 @@
     </div>
     <div class="dws-menu">
         <ui class="dws-ul">
-            <li class="dws-li"><a href="/user?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a>
+            <li class="dws-li"><a href="user?action=start"><i class="fa fa-home" aria-hidden="true"></i>Главная</a>
             </li>
-            <li class="dws-li"><a href="/user?action=shoppingcart"><i class="fa fa-shopping-cart"
+            <li class="dws-li"><a href="user?action=shoppingcart"><i class="fa fa-shopping-cart"
                                                                       aria-hidden="true"></i>Корзина</a></li>
-            <li class="dws-li"><a href="/user?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a>
+            <li class="dws-li"><a href="user?action=catalog"><i class="fa fa-folder-open" aria-hidden="true"></i>Каталог</a>
             </li>
-            <li class="dws-li"><a href="/user?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a>
+            <li class="dws-li"><a href="user?action=profile"><i class="fa fa-server" aria-hidden="true"></i>Профиль</a>
             </li>
-            <li class="dws-li"><a href="/user?action=news"><i class="fa fa-newspaper-o"
+            <li class="dws-li"><a href="user?action=news"><i class="fa fa-newspaper-o"
                                                               aria-hidden="true"></i>Новости</a></li>
         </ui>
     </div>
@@ -47,7 +47,7 @@
         <ul class="dws-ui-two">
             <c:forEach items="${requestScope.catalogs}" var="periodicals">
                 <li class="dws-li-two"><a
-                        href="/user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a>
+                        href="user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a>
                 </li>
             </c:forEach>
         </ul>

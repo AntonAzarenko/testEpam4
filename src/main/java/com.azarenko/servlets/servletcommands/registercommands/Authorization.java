@@ -17,8 +17,8 @@ import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
 
 public class Authorization implements Command {
-    private final String ADMIN = "pages/admin/admin_start_page.jsp";
-    private final String USER = "user?action=start";
+    private final String ADMIN = "/admin/?action=start";
+    private final String USER = "/user?action=start";
     private final String START = "/pages/authorize.jsp";
     private final Logger log = Logger.getLogger(Authorization.class);
 

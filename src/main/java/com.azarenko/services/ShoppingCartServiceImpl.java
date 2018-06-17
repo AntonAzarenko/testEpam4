@@ -1,7 +1,7 @@
 package com.azarenko.services;
 
 import com.azarenko.dao.*;
-import com.azarenko.model.Periodicals;
+import com.azarenko.model.Periodical;
 import com.azarenko.model.ShoppingCart;
 import org.apache.log4j.Logger;
 
@@ -51,9 +51,9 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     @Override
     public BigDecimal getPriceForSubcription(int periodicalId) throws DaoException {
-        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
-        Periodicals periodicals = baseDao.getEntityById(periodicalId);
-        return periodicals.getPrice();
+        BaseDao<Periodical> baseDao = new PeriodicalsDaoImpl();
+        Periodical periodical = baseDao.getEntityById(periodicalId);
+        return periodical.getPrice();
     }
 
     @Override
@@ -74,9 +74,9 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
 
     private int getOutputFrequency(int id) throws DaoException {
-        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
-        List<Periodicals> periodicalsList = baseDao.getListEntity();
-        for (Periodicals pair : periodicalsList) {
+        BaseDao<Periodical> baseDao = new PeriodicalsDaoImpl();
+        List<Periodical> periodicalList = baseDao.getListEntity();
+        for (Periodical pair : periodicalList) {
             if (id == pair.getId()) {
                 return pair.getOutputFrequency();
             }
@@ -86,9 +86,9 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     // ToDo ???
     private BigDecimal getPrice(int id) throws DaoException {
-        BaseDao<Periodicals> baseDao = new PeriodicalsDaoImpl();
-        List<Periodicals> periodicalsList = baseDao.getListEntity();
-        for (Periodicals pair : periodicalsList) {
+        BaseDao<Periodical> baseDao = new PeriodicalsDaoImpl();
+        List<Periodical> periodicalList = baseDao.getListEntity();
+        for (Periodical pair : periodicalList) {
             if (id == pair.getId()) {
                 return pair.getPrice();
             }

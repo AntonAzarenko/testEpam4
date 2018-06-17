@@ -38,29 +38,29 @@
 
         <div class="dws-input">
             ID : <input type="text" readonly="readonly" name="catalogId"
-                        value="<c:out value="${periodicals.id}"/>"/>
+                        value="<c:out value="${periodical.id}"/>"/>
         </div>
         <div class="dws-input">
 
             Название : <input type="text" name="title"
-                              value="<c:out value="${periodicals.title}"/>"/>
+                              value="<c:out value="${periodical.title}"/>"/>
         </div>
         <p style="color: red">${error1}</p>
         <div class="dws-input">
             Периодичность выхода : <input type="text" name="outfrequency"
-                                          value="<c:out value="${periodicals.outputFrequency}"/>"/>
+                                          value="<c:out value="${periodical.outputFrequency}"/>"/>
         </div>
         <p style="color: red">${error2}</p>
         <p style="color: red">${error3}</p>
 
         <div class="dws-input">
             Описание : <input type="text" name="discription"
-                              value="<c:out value="${periodicals.description}"/>"/>
+                              value="<c:out value="${periodical.description}"/>"/>
         </div>
         <p style="color: red">${error4}</p>
         <div class="dws-input">
             Цена : <input type="text" name="price"
-                          value="<c:out value="${periodicals.price}"/>"/>
+                          value="<c:out value="${periodical.price}"/>"/>
         </div>
             <p style="color: red">${error5}</p>
             <p style="color: red">${error6}</p>

@@ -1,7 +1,7 @@
 package com.azarenko.servlets.servletcommands.usercommands;
 
 import com.azarenko.dao.DaoException;
-import com.azarenko.model.Periodicals;
+import com.azarenko.model.Periodical;
 import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.ServiceException;
 import com.azarenko.servlets.servletcommands.Command;
@@ -35,7 +35,7 @@ public class Search implements Command {
         try {
             transaction.start();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
-            Periodicals periodical = service.search(entitySearch, value);
+            Periodical periodical = service.search(entitySearch, value);
             request.setAttribute("periodical",periodical);
             transaction.commit();
         } catch (TransactionException e) {

@@ -1,7 +1,7 @@
 package com.azarenko.servlets.servletcommands.admincommands;
 
 import com.azarenko.dao.DaoException;
-import com.azarenko.model.Periodicals;
+import com.azarenko.model.Periodical;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletcommands.Command;
 import com.azarenko.servlets.servletcommands.CommandException;
@@ -32,8 +32,8 @@ public class ShowCatalogPeriodicals implements Command {
         try {
             transaction.start();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
-            List<Periodicals> per = service.getCatalog();
-            PagedListHolder<Periodicals> listHolder = new PagedListHolder<>(per);
+            List<Periodical> per = service.getCatalog();
+            PagedListHolder<Periodical> listHolder = new PagedListHolder<>(per);
             listHolder.setPageSize(8);
             listHolder.setNameList("catalogs");
             listHolder.setPadding(request);
@@ -65,8 +65,8 @@ public class ShowCatalogPeriodicals implements Command {
      * @param req
      * @param list
      */
-    public void setPadding(HttpServletRequest req, List<Periodicals> list) {
-        PagedListHolder<Periodicals> listHolder = new PagedListHolder<>(list);
+    public void setPadding(HttpServletRequest req, List<Periodical> list) {
+        PagedListHolder<Periodical> listHolder = new PagedListHolder<>(list);
         listHolder.setPageSize(8);
         Integer page = 0;
         try {

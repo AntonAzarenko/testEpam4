@@ -1,7 +1,7 @@
 package com.azarenko.servlets.servletcommands.admincommands;
 
 import com.azarenko.dao.DaoException;
-import com.azarenko.model.Periodicals;
+import com.azarenko.model.Periodical;
 import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.ServiceException;
 import com.azarenko.servlets.servletcommands.Command;
@@ -44,7 +44,7 @@ public class AddPeriodical implements Command {
          * Create reference to object
          */
         log.info("Start adding");
-        Periodicals periodical = new Periodicals();
+        Periodical periodical = new Periodical();
 
         /**
          * get data from request and check to valid
@@ -120,7 +120,7 @@ public class AddPeriodical implements Command {
             periodical.setPrice(price);
            /* ComponentRegister register = new ComponentRegister();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
-            List<Periodicals> per = null;
+            List<Periodical> per = null;
             try {
                 per = service.getCatalog();
             } catch (DaoException e) {
@@ -145,7 +145,7 @@ public class AddPeriodical implements Command {
             transaction.start();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             service.add(periodical);
-            List<Periodicals> per = service.getCatalog();
+            List<Periodical> per = service.getCatalog();
             new ShowCatalogPeriodicals().setPadding(request, per);
             transaction.commit();
         } catch (TransactionException e) {
@@ -174,14 +174,14 @@ public class AddPeriodical implements Command {
      * @throws CommandException
      * @throws ServiceException
      */
-    public String update(HttpServletRequest request, HttpServletResponse response, Periodicals periodical) throws CommandException, ServiceException {
+    public String update(HttpServletRequest request, HttpServletResponse response, Periodical periodical) throws CommandException, ServiceException {
         ComponentRegister register = new ComponentRegister();
         Transaction transaction = (Transaction) register.getImpl(JdbcTransactionImpl.class);
         try {
             transaction.start();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             service.update(periodical);
-            List<Periodicals> per = service.getCatalog();
+            List<Periodical> per = service.getCatalog();
             new ShowCatalogPeriodicals().setPadding(request, per);
           //  request.setAttribute("catalogs", service.getCatalog());
             transaction.commit();

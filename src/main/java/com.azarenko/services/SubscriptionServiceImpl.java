@@ -4,7 +4,7 @@ import com.azarenko.dao.BaseDao;
 import com.azarenko.dao.DaoException;
 import com.azarenko.dao.SubscriptionDao;
 import com.azarenko.dao.SubscriptionDaoImpl;
-import com.azarenko.model.Periodicals;
+import com.azarenko.model.Periodical;
 import com.azarenko.model.Subscription;
 import com.azarenko.util.ComponentRegister;
 
@@ -19,8 +19,8 @@ public class SubscriptionServiceImpl implements SubscriptionService {
         PeriodicalService periodicalService = new PeriodicalServiceImpl();
         Subscription.SubscriptionBuild subscriptionBuild = new Subscription.SubscriptionBuild();
         subscriptionBuild.idPeriodical(idPeriodicals);
-        Periodicals periodicals = periodicalService.getPeriodical(idPeriodicals);
-        subscriptionBuild.namePeriodical(periodicals.getTitle());
+        Periodical periodical = periodicalService.getPeriodical(idPeriodicals);
+        subscriptionBuild.namePeriodical(periodical.getTitle());
         subscriptionBuild.dateStartSubcription(start);
         subscriptionBuild.dateEndSubscription(end);
         subscriptionBuild.userId(userId);

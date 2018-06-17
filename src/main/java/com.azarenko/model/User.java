@@ -9,6 +9,7 @@ import java.util.Date;
  */
 public final class User extends AbstractBaseEntity {
 
+
     private final String name;
 
     private final String email;
@@ -18,6 +19,16 @@ public final class User extends AbstractBaseEntity {
     private boolean enabled = true;
 
     private final String role;
+
+    private boolean isNew = true;
+
+    public boolean isNew() {
+        return isNew;
+    }
+
+    public void setNew(boolean aNew) {
+        isNew = aNew;
+    }
 
     private  Date registered = new Date();
 

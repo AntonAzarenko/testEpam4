@@ -41,19 +41,19 @@
             <th>Редактировать</th>
             <th>Удалить</th>
         </tr>
-        <c:forEach items="${catalogs}" var="periodicals">
-            <jsp:useBean id="periodicals" scope="page" type="com.azarenko.model.Periodicals"/>
+        <c:forEach items="${catalogs}" var="periodical">
+            <jsp:useBean id="periodical" scope="page" type="com.azarenko.model.Periodical"/>
             <tr>
-                <th>${periodicals.id}</th>
-                <th>${periodicals.title}</th>
-                <th>${periodicals.description}</th>
-                <th>${periodicals.outputFrequency}</th>
-                <th>${periodicals.price}</th>
-                <th><a href="/admin?action=edit&catalogId=<c:out value="${periodicals.id}"/>">
+                <th>${periodical.id}</th>
+                <th>${periodical.title}</th>
+                <th>${periodical.description}</th>
+                <th>${periodical.outputFrequency}</th>
+                <th>${periodical.price}</th>
+                <th><a href="/admin?action=edit&catalogId=<c:out value="${periodical.id}"/>">
                     <button class="butt">Редактировать</button>
                 </a>
                 </th>
-                <th><a href='/admin?action=delete&catalogId=<c:out value="${periodicals.id}"/>'>
+                <th><a href='/admin?action=delete&catalogId=<c:out value="${periodical.id}"/>'>
                     <button class="butt">Удалить</button>
                 </a>
                 </th>

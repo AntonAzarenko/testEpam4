@@ -2,7 +2,6 @@ package com.azarenko.util;
 
 import com.azarenko.services.ServiceException;
 import org.apache.log4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -40,7 +39,7 @@ public class ConnectionPool {
     public static synchronized ConnectionPool getInstance() throws ServiceException {
         if (pool == null) {
             Properties prop = new Properties();
-            InputStream inputStream = ConnectionPool.class.getClassLoader().getResourceAsStream("database.properties");
+            InputStream inputStream = ConnectionPool.class.getClassLoader().getResourceAsStream("db/database.properties");
             try {
                 prop.load(inputStream);
             } catch (IOException e) {

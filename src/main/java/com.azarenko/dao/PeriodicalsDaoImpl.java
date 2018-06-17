@@ -1,7 +1,6 @@
 package com.azarenko.dao;
 
-import com.azarenko.model.AbstractBaseEntity;
-import com.azarenko.model.Periodicals;
+import com.azarenko.model.Periodical;
 import org.apache.log4j.Logger;
 
 import java.math.BigDecimal;
@@ -17,8 +16,8 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
     }
 
     @Override
-    public Periodicals getEntityById(int id) throws DaoException {
-        Periodicals periodicals;
+    public Periodical getEntityById(int id) throws DaoException {
+        Periodical periodical;
         Connection connection = getConnection();
         ResultSet rs = null;
         try (PreparedStatement preparedStatement = connection.prepareStatement(
@@ -31,8 +30,8 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
                     int oF = rs.getInt("output_frequency");
                     String discription = rs.getString("discription");
                     BigDecimal price = rs.getBigDecimal("price");
-                    periodicals = new Periodicals(id, title, discription, oF, price);
-                    return (Periodicals) periodicals;
+                    periodical = new Periodical(id, title, discription, oF, price);
+                    return (Periodical) periodical;
                 }
             }
             return null;
@@ -48,15 +47,15 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
     }
 
     @Override
-    public void add(Periodicals entity) throws DaoException {
+    public void add(Periodical entity) throws DaoException {
         Connection connection = getConnection();
-        Periodicals periodicals = (Periodicals) entity;
+        Periodical periodical = (Periodical) entity;
         try (PreparedStatement preparedStatement = connection.prepareStatement
                 ("INSERT INTO catalog_periodicals (title,output_frequency ,discription, price) VALUES (?,?,?,?)")) {
-            preparedStatement.setString(1, periodicals.getTitle());
-            preparedStatement.setInt(2, periodicals.getOutputFrequency());
-            preparedStatement.setString(3, periodicals.getDescription());
-            preparedStatement.setBigDecimal(4, periodicals.getPrice());
+            preparedStatement.setString(1, periodical.getTitle());
+            preparedStatement.setInt(2, periodical.getOutputFrequency());
+            preparedStatement.setString(3, periodical.getDescription());
+            preparedStatement.setBigDecimal(4, periodical.getPrice());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             throw new DaoException(e);
@@ -77,16 +76,16 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
     }
 
     @Override
-    public void update(Periodicals entity) throws DaoException {
+    public void update(Periodical entity) throws DaoException {
         Connection connection = getConnection();
-        Periodicals periodicals =  entity;
+        Periodical periodical =  entity;
         try (PreparedStatement preparedStatement = connection.prepareStatement
                 ("UPDATE mydb.catalog_periodicals SET title=?,discription=?,output_frequency=?,price=? WHERE id = ?")) {
-            preparedStatement.setString(1, periodicals.getTitle());
-            preparedStatement.setString(2, periodicals.getDescription());
-            preparedStatement.setBigDecimal(3, periodicals.getPrice());
-            preparedStatement.setInt(4,periodicals.getOutputFrequency());
-            preparedStatement.setInt(5, periodicals.getId());
+            preparedStatement.setString(1, periodical.getTitle());
+            preparedStatement.setString(2, periodical.getDescription());
+            preparedStatement.setBigDecimal(3, periodical.getPrice());
+            preparedStatement.setInt(4, periodical.getOutputFrequency());
+            preparedStatement.setInt(5, periodical.getId());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             throw new DaoException(e);
@@ -96,7 +95,7 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
     @Override
     public List getListEntity() throws DaoException {
         Connection connection = getConnection();
-        List<Periodicals> list = new ArrayList<Periodicals>();
+        List<Periodical> list = new ArrayList<Periodical>();
         try (Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery("SELECT * FROM mydb.catalog_periodicals")) {
             while (rs.next()) {
@@ -105,8 +104,8 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
                 int outputFrequency = rs.getInt("output_frequency");
                 String discription = rs.getString("discription");
                 BigDecimal price = rs.getBigDecimal("price");
-                Periodicals periodicals = new Periodicals(id, title, discription, outputFrequency, price);
-                list.add(periodicals);
+                Periodical periodical = new Periodical(id, title, discription, outputFrequency, price);
+                list.add(periodical);
             }
         } catch (SQLException e) {
             throw new DaoException(e);
@@ -115,13 +114,13 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
     }
 
     @Override
-    public Periodicals search(int value) throws DaoException {
+    public Periodical search(int value) throws DaoException {
         return getEntityById(value);
     }
 
     @Override
-    public Periodicals search(BigDecimal value) throws DaoException {
-        Periodicals periodical = null;
+    public Periodical search(BigDecimal value) throws DaoException {
+        Periodical periodical = null;
         Connection connection = getConnection();
         ResultSet rs = null;
         try (PreparedStatement preparedStatement = connection.prepareStatement
@@ -134,7 +133,7 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
                 int oF = rs.getInt("output_frequency");
                 String discription = rs.getString("discription");
                 BigDecimal price = rs.getBigDecimal("price");
-                periodical = new Periodicals(id, title, discription, oF, price);
+                periodical = new Periodical(id, title, discription, oF, price);
                 log.info(periodical.getTitle());
                 return  periodical;
             }
@@ -145,8 +144,8 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
     }
 
     @Override
-    public Periodicals search(String value) throws DaoException {
-        Periodicals periodical = null;
+    public Periodical search(String value) throws DaoException {
+        Periodical periodical = null;
         Connection connection = getConnection();
         ResultSet rs = null;
         try (PreparedStatement preparedStatement = connection.prepareStatement
@@ -159,7 +158,7 @@ public class PeriodicalsDaoImpl extends BaseDaoImpl implements PeriodicalsDao {
                 int oF = rs.getInt("output_frequency");
                 String discriptions = rs.getString("discription");
                 BigDecimal price = rs.getBigDecimal("price");
-                periodical = new Periodicals(id, title, discriptions, oF, price);
+                periodical = new Periodical(id, title, discriptions, oF, price);
                 log.info(value);
                 return  periodical;
             }

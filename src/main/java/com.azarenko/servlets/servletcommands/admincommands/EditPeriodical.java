@@ -1,7 +1,7 @@
 package com.azarenko.servlets.servletcommands.admincommands;
 
 import com.azarenko.dao.DaoException;
-import com.azarenko.model.Periodicals;
+import com.azarenko.model.Periodical;
 import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.ServiceException;
 import com.azarenko.servlets.servletcommands.CommandException;
@@ -36,7 +36,7 @@ public class EditPeriodical implements Command {
         try {
             transaction.start();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
-            Periodicals periodical = service.getPeriodical(id);
+            Periodical periodical = service.getPeriodical(id);
             transaction.commit();
             request.setAttribute("periodicals", periodical);
         } catch (TransactionException e) {

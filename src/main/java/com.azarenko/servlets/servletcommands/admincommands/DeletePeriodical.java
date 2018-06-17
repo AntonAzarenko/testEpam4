@@ -1,7 +1,7 @@
 package com.azarenko.servlets.servletcommands.admincommands;
 
 import com.azarenko.dao.DaoException;
-import com.azarenko.model.Periodicals;
+import com.azarenko.model.Periodical;
 import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.ServiceException;
 import com.azarenko.servlets.servletcommands.Command;
@@ -40,7 +40,7 @@ public class DeletePeriodical implements Command {
             transaction.start();
             PeriodicalService service = (PeriodicalService) register.getImpl(PeriodicalService.class);
             service.remove(catalodId);
-            List<Periodicals> per = service.getCatalog();
+            List<Periodical> per = service.getCatalog();
             new ShowCatalogPeriodicals().setPadding(request, per);
             transaction.commit();
         } catch (TransactionException e) {

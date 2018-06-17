@@ -1,10 +1,7 @@
 package com.azarenko.util;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -19,7 +16,7 @@ public class DBUtil {
         }
         try {
             Properties prop = new Properties();
-            InputStream inputStream = DBUtil.class.getClassLoader().getResourceAsStream("database.properties");
+            InputStream inputStream = DBUtil.class.getClassLoader().getResourceAsStream("db/database.properties");
             prop.load(inputStream);
             String driver = prop.getProperty("driver");
             String url = prop.getProperty("url");

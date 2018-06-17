@@ -5,7 +5,8 @@ import java.math.BigDecimal;
 /**
  * Класс хранит информацию о перодических изданиях
  */
-public class Periodicals extends AbstractBaseEntity {
+
+public class Periodical extends AbstractBaseEntity {
 
     private String title;
     private int outputFrequency;
@@ -22,7 +23,19 @@ public class Periodicals extends AbstractBaseEntity {
 
     private  BigDecimal price;
 
-    public Periodicals(int id, String title, String description, int outputFrequency, BigDecimal price) {
+    private boolean New;
+
+    public boolean isNew() {
+        if(id==null)
+        return true;
+        else return false;
+    }
+
+    public void setNew(boolean aNew) {
+        New = aNew;
+    }
+
+    public Periodical(Integer id, String title, String description, int outputFrequency, BigDecimal price) {
         super(id);
         this.title = title;
         this.outputFrequency = outputFrequency;
@@ -30,7 +43,7 @@ public class Periodicals extends AbstractBaseEntity {
         this.price = price;
     }
 
-    public Periodicals() {
+    public Periodical() {
     }
 
     public String getTitle() {
@@ -59,7 +72,7 @@ public class Periodicals extends AbstractBaseEntity {
 
     @Override
     public String toString() {
-        return "Periodicals{" +
+        return "Periodical{" +
                 "title='" + title + '\'' +
                 ", outputFrequency=" + outputFrequency +
                 ", description='" + description + '\'' +

@@ -9,12 +9,9 @@ public abstract class AbstractBaseEntity {
     public AbstractBaseEntity() {
     }
 
-    public AbstractBaseEntity(int id) {
-
+    public AbstractBaseEntity(Integer id) {
         this.id = id;
     }
-
-
 
     public Integer getId() {
         return id;

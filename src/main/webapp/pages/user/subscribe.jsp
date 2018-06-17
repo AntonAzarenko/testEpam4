@@ -28,9 +28,9 @@
     <div class="dws-menu-two">
         <h3>Название</h3>
         <ul class="dws-ui-two">
-            <c:forEach items="${catalogs}" var="periodicals">
+            <c:forEach items="${catalogs}" var="periodical">
                 <li class="dws-li-two"><a
-                        href="/user?action=show&periodicalId=<c:out value="${periodicals.id}"/>">${periodicals.title}</a>
+                        href="/user?action=show&periodicalId=<c:out value="${periodical.id}"/>">${periodical.title}</a>
                 </li>
             </c:forEach>
         </ul>

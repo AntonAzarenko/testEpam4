@@ -3,6 +3,7 @@ package com.azarenko.services;
 import com.azarenko.dao.BaseDao;
 import com.azarenko.dao.DaoException;
 import com.azarenko.dao.PaymentDaoImpl;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.model.Payment;
 import com.azarenko.model.ShoppingCart;
 

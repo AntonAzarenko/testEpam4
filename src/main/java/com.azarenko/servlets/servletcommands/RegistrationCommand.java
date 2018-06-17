@@ -1,6 +1,6 @@
 package com.azarenko.servlets.servletcommands;
 
-import com.azarenko.services.ServiceException;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.servlets.servletcommands.registercommands.Authorization;
 import com.azarenko.servlets.servletcommands.registercommands.Identification;
 import com.azarenko.servlets.servletcommands.registercommands.RegistrationRedirect;

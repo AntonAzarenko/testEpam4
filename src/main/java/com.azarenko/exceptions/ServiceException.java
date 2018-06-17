@@ -1,4 +1,4 @@
-package com.azarenko.services;
+package com.azarenko.exceptions;
 
 public class ServiceException extends Exception {
     public ServiceException(Throwable cause) {

@@ -1,6 +1,6 @@
 package com.azarenko.servlets;
 
-import com.azarenko.services.*;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.servlets.servletcommands.Command;
 import com.azarenko.servlets.servletcommands.AdminCommand;
 import com.azarenko.servlets.servletcommands.CommandException;

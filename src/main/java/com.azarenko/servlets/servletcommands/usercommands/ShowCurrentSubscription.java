@@ -2,7 +2,7 @@ package com.azarenko.servlets.servletcommands.usercommands;
 
 import com.azarenko.dao.DaoException;
 import com.azarenko.model.Subscription;
-import com.azarenko.services.ServiceException;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.services.SubscriptionService;
 import com.azarenko.services.UserService;
 import com.azarenko.servlets.servletcommands.Command;
@@ -18,7 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
-import java.util.Enumeration;
 import java.util.List;
 
 public class ShowCurrentSubscription implements Command {

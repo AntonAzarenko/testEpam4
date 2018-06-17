@@ -1,6 +1,6 @@
 package com.azarenko.servlets.servletcommands;
 
-import com.azarenko.services.ServiceException;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.servlets.servletcommands.usercommands.*;
 import org.apache.log4j.Logger;
 

@@ -1,6 +1,6 @@
 package com.azarenko.servlets.servletcommands;
 
-import com.azarenko.services.ServiceException;
+import com.azarenko.exceptions.ServiceException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

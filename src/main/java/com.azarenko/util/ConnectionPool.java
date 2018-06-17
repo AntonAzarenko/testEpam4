@@ -1,6 +1,6 @@
 package com.azarenko.util;
 
-import com.azarenko.services.ServiceException;
+import com.azarenko.exceptions.ServiceException;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;

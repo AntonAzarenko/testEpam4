@@ -4,6 +4,7 @@ import com.azarenko.dao.BaseDao;
 import com.azarenko.dao.DaoException;
 import com.azarenko.dao.SubscriptionDao;
 import com.azarenko.dao.SubscriptionDaoImpl;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.model.Periodical;
 import com.azarenko.model.Subscription;
 import com.azarenko.util.ComponentRegister;

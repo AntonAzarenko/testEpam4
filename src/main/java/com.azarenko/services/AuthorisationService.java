@@ -4,6 +4,7 @@ import com.azarenko.dao.BaseDaoImpl;
 import com.azarenko.dao.DaoException;
 import com.azarenko.dao.UserDao;
 import com.azarenko.dao.UserDaoImpl;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.model.User;
 
 

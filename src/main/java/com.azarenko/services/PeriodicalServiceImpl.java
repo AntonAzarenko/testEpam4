@@ -4,6 +4,7 @@ import com.azarenko.dao.BaseDao;
 import com.azarenko.dao.DaoException;
 import com.azarenko.dao.PeriodicalsDao;
 import com.azarenko.dao.PeriodicalsDaoImpl;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.model.Periodical;
 import com.azarenko.repository.PeriodicalReposiroty;
 

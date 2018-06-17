@@ -1,6 +1,7 @@
 package com.azarenko.services;
 
 import com.azarenko.dao.DaoException;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.model.Subscription;
 
 import java.util.Date;

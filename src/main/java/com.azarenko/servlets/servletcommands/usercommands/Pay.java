@@ -3,7 +3,7 @@ package com.azarenko.servlets.servletcommands.usercommands;
 import com.azarenko.dao.DaoException;
 import com.azarenko.model.Payment;
 import com.azarenko.services.PaymentService;
-import com.azarenko.services.ServiceException;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.services.ShoppingCartService;
 import com.azarenko.services.UserService;
 import com.azarenko.servlets.servletcommands.Command;

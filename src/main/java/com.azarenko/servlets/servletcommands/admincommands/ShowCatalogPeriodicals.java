@@ -1,6 +1,7 @@
 package com.azarenko.servlets.servletcommands.admincommands;
 
 import com.azarenko.dao.DaoException;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.model.Periodical;
 import com.azarenko.services.*;
 import com.azarenko.servlets.servletcommands.Command;

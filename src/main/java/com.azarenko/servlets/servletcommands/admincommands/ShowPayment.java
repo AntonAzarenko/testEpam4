@@ -2,7 +2,7 @@ package com.azarenko.servlets.servletcommands.admincommands;
 
 import com.azarenko.dao.DaoException;
 import com.azarenko.services.PaymentService;
-import com.azarenko.services.ServiceException;
+import com.azarenko.exceptions.ServiceException;
 import com.azarenko.servlets.servletcommands.Command;
 import com.azarenko.servlets.servletcommands.CommandException;
 import com.azarenko.util.ComponentRegister;

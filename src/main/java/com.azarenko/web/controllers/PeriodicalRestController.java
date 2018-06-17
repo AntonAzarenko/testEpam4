@@ -3,7 +3,7 @@ package com.azarenko.web.controllers;
 import com.azarenko.dao.DaoException;
 import com.azarenko.model.Periodical;
 import com.azarenko.services.PeriodicalService;
-import com.azarenko.services.ServiceException;
+import com.azarenko.exceptions.ServiceException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

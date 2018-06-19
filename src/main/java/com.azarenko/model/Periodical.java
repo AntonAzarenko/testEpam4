@@ -1,12 +1,13 @@
 package com.azarenko.model;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 
 /**
  * Класс хранит информацию о перодических изданиях
  */
 
-public class Periodical extends AbstractBaseEntity {
+public class Periodical extends AbstractBaseEntity implements Comparator<Periodical> {
     // заголовок
     private String title;
 
@@ -33,6 +34,16 @@ public class Periodical extends AbstractBaseEntity {
 
     public String getPublisher() {
         return publisher;
+    }
+
+    public Periodical(String title, String discription, String publisher, int outputFrequency, int index, int ageLimit, BigDecimal price) {
+        this.title = title;
+        this.discription = discription;
+        this.publisher = publisher;
+        this.outputFrequency = outputFrequency;
+        this.index = index;
+        this.ageLimit = ageLimit;
+        this.price = price;
     }
 
     public void setPublisher(String publisher) {
@@ -115,4 +126,12 @@ public class Periodical extends AbstractBaseEntity {
                 ", price=" + price +
                 '}';
     }
+
+
+    @Override
+    public  int compare(Periodical o1, Periodical o2) {
+        return o1.title.compareTo(o2.title);
+    }
+
+
 }

@@ -17,7 +17,8 @@ public class PeriodicalRestController {
 
     public List<Periodical> getListEntity() {
         LOG.info("go to service");
-        return periodicalService.getAll();
+        List<Periodical> list = periodicalService.getAll();
+        return periodicalService.sortByName(list);
     }
 
     public void add(Periodical periodical) {

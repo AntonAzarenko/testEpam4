@@ -83,4 +83,22 @@ public class PeriodicalServiceImplTest {
         LOG.info(per.toString());
     }
 
+    @Test
+    public void sort(){
+        List<Periodical> list = periodicalService.getAll();
+        periodicalService.sortByName(list);
+        for(Periodical per : list){
+            LOG.info(per.getTitle());
+        }
+    }
+
+    @Test
+    public void sortByIndex(){
+        List<Periodical> list = periodicalService.getAll();
+        periodicalService.sortByIndex(list);
+        for(Periodical per : list){
+            LOG.info(String.valueOf(per.getIndex()));
+        }
+    }
+
 }

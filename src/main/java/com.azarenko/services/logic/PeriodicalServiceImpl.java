@@ -6,15 +6,13 @@ import com.azarenko.repository.PeriodicalReposiroty;
 
 
 import com.azarenko.services.PeriodicalService;
-import com.sun.xml.internal.ws.util.UtilException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 @Service
 public class PeriodicalServiceImpl implements PeriodicalService {
@@ -51,6 +49,7 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     @Override
     public Periodical save(Periodical periodical) {
         Objects.requireNonNull(periodical);
+
         return periodicalReposiroty.save(periodical);
     }
 
@@ -80,6 +79,21 @@ public class PeriodicalServiceImpl implements PeriodicalService {
         }
         return null;
     }
+
+    @Override
+    public List<Periodical> sortByName(List<Periodical> list) {
+        Comparator<Periodical> comparator = (o1, o2) -> new Periodical().compare(o1, o2);
+        Collections.sort(list, comparator);
+        return list;
+    }
+
+    @Override
+    public List<Periodical> sortByIndex(List<Periodical> list) {
+        Comparator<Periodical> perIndex = Comparator.comparing(Periodical::getIndex);
+        Collections.sort(list, perIndex);
+        return list;
+    }
+
 }
 
 

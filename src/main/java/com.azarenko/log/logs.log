@@ -1416,3 +1416,311 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jd
 2018-06-19 11:30:06,823 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:67] Save status is ERROR
 2018-06-19 11:30:07,071 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:80] Update status is - OK
 2018-06-19 11:30:07,077 INFO  GenericApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 11:30:05 MSK 2018]; root of context hierarchy
+2018-06-19 11:54:24,884 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-06-19 11:54:24,913 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e2c9341, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32464a14, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4e4aea35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1442d7b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1efee8e7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ee807c6]
+2018-06-19 11:54:24,989 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 11:54:25,245 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 11:54:25,339 INFO  GenericApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 11:54:25 MSK 2018]; root of context hierarchy
+2018-06-19 11:54:25,830 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 11:54:26,338 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вяселка
+2018-06-19 11:54:26,338 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 11:54:26,339 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Секретные исследования
+2018-06-19 11:54:26,339 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Камсомолка
+2018-06-19 11:54:26,339 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Аргументы и Факты
+2018-06-19 11:54:26,339 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 11:54:26,339 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Работа
+2018-06-19 11:54:26,340 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Spring
+2018-06-19 11:54:26,342 INFO  GenericApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 11:54:25 MSK 2018]; root of context hierarchy
+2018-06-19 12:05:56,894 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-06-19 12:05:56,923 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e2c9341, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32464a14, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4e4aea35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1442d7b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1efee8e7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ee807c6]
+2018-06-19 12:05:56,997 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 12:05:57,298 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 12:05:57,406 INFO  GenericApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:05:57 MSK 2018]; root of context hierarchy
+2018-06-19 12:05:57,800 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 12:05:58,296 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вяселка
+2018-06-19 12:05:58,297 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 12:05:58,297 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Секретные исследования
+2018-06-19 12:05:58,297 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Камсомолка
+2018-06-19 12:05:58,297 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Аргументы и Факты
+2018-06-19 12:05:58,298 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 12:05:58,298 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Работа
+2018-06-19 12:05:58,298 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Spring
+2018-06-19 12:05:58,315 INFO  GenericApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:05:57 MSK 2018]; root of context hierarchy
+2018-06-19 12:12:13,942 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-06-19 12:12:13,970 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e2c9341, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32464a14, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4e4aea35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1442d7b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1efee8e7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ee807c6]
+2018-06-19 12:12:14,040 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 12:12:14,313 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 12:12:14,386 INFO  GenericApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:12:14 MSK 2018]; root of context hierarchy
+2018-06-19 12:12:14,763 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 12:12:15,281 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вяселка
+2018-06-19 12:12:15,281 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 12:12:15,281 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Секретные исследования
+2018-06-19 12:12:15,282 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Камсомолка
+2018-06-19 12:12:15,282 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Аргументы и Факты
+2018-06-19 12:12:15,282 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 12:12:15,282 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Работа
+2018-06-19 12:12:15,282 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Spring
+2018-06-19 12:12:15,286 INFO  GenericApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:12:14 MSK 2018]; root of context hierarchy
+2018-06-19 12:12:38,373 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-06-19 12:12:38,397 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e2c9341, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32464a14, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4e4aea35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1442d7b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1efee8e7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ee807c6]
+2018-06-19 12:12:38,476 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 12:12:38,769 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 12:12:38,891 INFO  GenericApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:12:38 MSK 2018]; root of context hierarchy
+2018-06-19 12:12:39,286 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 12:12:39,706 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вяселка
+2018-06-19 12:12:39,707 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 12:12:39,707 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Секретные исследования
+2018-06-19 12:12:39,708 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Камсомолка
+2018-06-19 12:12:39,708 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Аргументы и Факты
+2018-06-19 12:12:39,708 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 12:12:39,709 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Работа
+2018-06-19 12:12:39,709 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Spring
+2018-06-19 12:12:39,712 INFO  GenericApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:12:38 MSK 2018]; root of context hierarchy
+2018-06-19 12:19:56,029 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-06-19 12:19:56,054 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e2c9341, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32464a14, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4e4aea35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1442d7b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1efee8e7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ee807c6]
+2018-06-19 12:19:56,123 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 12:19:56,383 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 12:19:56,532 INFO  GenericApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:19:56 MSK 2018]; root of context hierarchy
+2018-06-19 12:19:56,946 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 12:19:57,462 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Spring
+2018-06-19 12:19:57,462 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Аргументы и Факты
+2018-06-19 12:19:57,462 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 12:19:57,462 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 12:19:57,463 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вяселка
+2018-06-19 12:19:57,463 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Камсомолка
+2018-06-19 12:19:57,463 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Работа
+2018-06-19 12:19:57,464 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Секретные исследования
+2018-06-19 12:19:57,469 INFO  GenericApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:19:56 MSK 2018]; root of context hierarchy
+2018-06-19 12:44:16,827 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-06-19 12:44:16,854 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e2c9341, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32464a14, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4e4aea35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1442d7b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1efee8e7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ee807c6]
+2018-06-19 12:44:16,928 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 12:44:17,217 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 12:44:17,342 INFO  GenericApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:44:17 MSK 2018]; root of context hierarchy
+2018-06-19 12:44:17,736 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 12:44:18,186 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Spring
+2018-06-19 12:44:18,187 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Аргументы и Факты
+2018-06-19 12:44:18,187 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 12:44:18,187 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вечерний Витебск
+2018-06-19 12:44:18,187 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Вяселка
+2018-06-19 12:44:18,187 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Камсомолка
+2018-06-19 12:44:18,187 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Работа
+2018-06-19 12:44:18,188 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:91] Секретные исследования
+2018-06-19 12:44:18,190 INFO  GenericApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:44:17 MSK 2018]; root of context hierarchy
+2018-06-19 12:44:33,378 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-06-19 12:44:33,403 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e2c9341, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32464a14, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4e4aea35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1442d7b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1efee8e7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ee807c6]
+2018-06-19 12:44:33,474 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 12:44:33,746 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 12:44:33,851 INFO  GenericApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:44:33 MSK 2018]; root of context hierarchy
+2018-06-19 12:44:34,265 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 12:44:34,710 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 32568
+2018-06-19 12:44:34,711 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 58745
+2018-06-19 12:44:34,711 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 32658
+2018-06-19 12:44:34,711 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 12548
+2018-06-19 12:44:34,711 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 65234
+2018-06-19 12:44:34,711 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 45896
+2018-06-19 12:44:34,711 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 26589
+2018-06-19 12:44:34,711 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 58986
+2018-06-19 12:44:34,715 INFO  GenericApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:44:33 MSK 2018]; root of context hierarchy
+2018-06-19 12:45:07,518 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-06-19 12:45:07,544 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e2c9341, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32464a14, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4e4aea35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1442d7b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1efee8e7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ee807c6]
+2018-06-19 12:45:07,620 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 12:45:07,919 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 12:45:08,004 INFO  GenericApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:45:08 MSK 2018]; root of context hierarchy
+2018-06-19 12:45:08,369 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 12:45:08,939 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 32568
+2018-06-19 12:45:08,940 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 58745
+2018-06-19 12:45:08,940 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 32658
+2018-06-19 12:45:08,940 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 12548
+2018-06-19 12:45:08,940 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 65234
+2018-06-19 12:45:08,940 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 45896
+2018-06-19 12:45:08,940 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 26589
+2018-06-19 12:45:08,940 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 58986
+2018-06-19 12:45:08,943 INFO  GenericApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 12:45:08 MSK 2018]; root of context hierarchy
+2018-06-19 13:35:26,306 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5241d6a: startup date [Tue Jun 19 13:35:26 MSK 2018]; root of context hierarchy
+2018-06-19 13:35:26,398 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 13:35:26,728 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 13:35:27,040 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 13:35:27,222 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:36:10,221 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:36:36,075 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:37:39,924 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:38:12,452 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@5241d6a: startup date [Tue Jun 19 13:35:26 MSK 2018]; root of context hierarchy
+2018-06-19 13:39:23,167 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7a7b0ce1: startup date [Tue Jun 19 13:39:23 MSK 2018]; root of context hierarchy
+2018-06-19 13:39:23,243 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 13:39:23,546 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 13:39:23,984 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 13:39:24,185 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:40:35,022 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@7a7b0ce1: startup date [Tue Jun 19 13:39:23 MSK 2018]; root of context hierarchy
+2018-06-19 13:40:47,986 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4c94c56c: startup date [Tue Jun 19 13:40:47 MSK 2018]; root of context hierarchy
+2018-06-19 13:40:48,035 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 13:40:48,213 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 13:40:48,474 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 13:40:48,607 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:40:49,614 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:42:03,913 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@4c94c56c: startup date [Tue Jun 19 13:40:47 MSK 2018]; root of context hierarchy
+2018-06-19 13:42:15,632 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33627f2e: startup date [Tue Jun 19 13:42:15 MSK 2018]; root of context hierarchy
+2018-06-19 13:42:15,685 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 13:42:15,862 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 13:42:16,124 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 13:42:16,251 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:42:16,902 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:43:11,459 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@33627f2e: startup date [Tue Jun 19 13:42:15 MSK 2018]; root of context hierarchy
+2018-06-19 13:43:25,398 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@146efdee: startup date [Tue Jun 19 13:43:25 MSK 2018]; root of context hierarchy
+2018-06-19 13:43:25,452 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 13:43:25,638 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 13:43:25,908 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 13:43:26,050 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:43:26,695 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:43:42,130 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@146efdee: startup date [Tue Jun 19 13:43:25 MSK 2018]; root of context hierarchy
+2018-06-19 13:43:54,904 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5ffc3c1f: startup date [Tue Jun 19 13:43:54 MSK 2018]; root of context hierarchy
+2018-06-19 13:43:54,956 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 13:43:55,138 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 13:43:55,412 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 13:43:55,538 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:43:56,205 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:44:37,431 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@5ffc3c1f: startup date [Tue Jun 19 13:43:54 MSK 2018]; root of context hierarchy
+2018-06-19 13:44:50,995 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3f0ee322: startup date [Tue Jun 19 13:44:50 MSK 2018]; root of context hierarchy
+2018-06-19 13:44:51,068 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 13:44:51,337 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 13:44:51,687 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 13:44:51,836 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:44:52,481 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:45:09,158 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@3f0ee322: startup date [Tue Jun 19 13:44:50 MSK 2018]; root of context hierarchy
+2018-06-19 13:45:22,946 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@d616ade: startup date [Tue Jun 19 13:45:22 MSK 2018]; root of context hierarchy
+2018-06-19 13:45:22,994 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 13:45:23,177 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 13:45:23,429 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 13:45:23,553 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:45:24,593 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:46:17,583 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:48:09,079 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:48:28,775 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:48:47,856 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:48:58,709 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 13:50:53,443 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:23:13,743 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-06-19 14:23:13,771 INFO  DefaultTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e2c9341, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@32464a14, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4e4aea35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1442d7b5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1efee8e7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ee807c6]
+2018-06-19 14:23:13,843 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 14:23:14,126 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 14:23:14,234 INFO  GenericApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 14:23:14 MSK 2018]; root of context hierarchy
+2018-06-19 14:23:14,661 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 14:23:15,056 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 12548
+2018-06-19 14:23:15,057 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 26589
+2018-06-19 14:23:15,057 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 32568
+2018-06-19 14:23:15,057 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 32658
+2018-06-19 14:23:15,057 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 45896
+2018-06-19 14:23:15,057 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 58745
+2018-06-19 14:23:15,058 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 58986
+2018-06-19 14:23:15,058 INFO  PeriodicalServiceImplTest [PeriodicalServiceImplTest.java:100] 65234
+2018-06-19 14:23:15,061 INFO  GenericApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.GenericApplicationContext@731f8236: startup date [Tue Jun 19 14:23:14 MSK 2018]; root of context hierarchy
+2018-06-19 14:23:21,907 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@d616ade: startup date [Tue Jun 19 13:45:22 MSK 2018]; root of context hierarchy
+2018-06-19 14:46:38,161 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@753ae8e6: startup date [Tue Jun 19 14:46:38 MSK 2018]; root of context hierarchy
+2018-06-19 14:46:38,213 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 14:46:38,394 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 14:46:38,655 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 14:46:38,771 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:46:39,828 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:46:41,735 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:46:56,054 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:47:59,151 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@753ae8e6: startup date [Tue Jun 19 14:46:38 MSK 2018]; root of context hierarchy
+2018-06-19 14:48:12,370 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@444e28f8: startup date [Tue Jun 19 14:48:12 MSK 2018]; root of context hierarchy
+2018-06-19 14:48:12,434 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 14:48:12,708 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 14:48:13,074 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 14:49:06,670 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:49:19,969 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:49:34,544 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:50:03,811 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:51:15,488 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:51:18,964 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:51:54,515 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@444e28f8: startup date [Tue Jun 19 14:48:12 MSK 2018]; root of context hierarchy
+2018-06-19 14:52:18,746 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14382dec: startup date [Tue Jun 19 14:52:18 MSK 2018]; root of context hierarchy
+2018-06-19 14:52:18,815 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 14:52:19,065 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 14:52:19,447 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 14:52:19,650 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:52:45,350 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:52:45,447 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@14382dec: startup date [Tue Jun 19 14:52:18 MSK 2018]; root of context hierarchy
+2018-06-19 14:53:37,603 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5395a65d: startup date [Tue Jun 19 14:53:37 MSK 2018]; root of context hierarchy
+2018-06-19 14:53:37,670 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 14:53:37,930 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 14:53:38,341 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 14:53:38,641 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:54:31,422 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:54:31,550 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@5395a65d: startup date [Tue Jun 19 14:53:37 MSK 2018]; root of context hierarchy
+2018-06-19 14:54:44,591 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3cdf8b81: startup date [Tue Jun 19 14:54:44 MSK 2018]; root of context hierarchy
+2018-06-19 14:54:44,664 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 14:54:44,936 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 14:54:45,332 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 14:55:35,502 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:55:47,715 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 14:56:48,629 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:01:59,502 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@3cdf8b81: startup date [Tue Jun 19 14:54:44 MSK 2018]; root of context hierarchy
+2018-06-19 15:02:13,472 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13d81d49: startup date [Tue Jun 19 15:02:13 MSK 2018]; root of context hierarchy
+2018-06-19 15:02:13,522 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 15:02:13,705 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 15:02:13,960 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 15:02:14,107 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:02:15,229 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:02:55,782 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@13d81d49: startup date [Tue Jun 19 15:02:13 MSK 2018]; root of context hierarchy
+2018-06-19 15:03:08,714 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@a5e2fa: startup date [Tue Jun 19 15:03:08 MSK 2018]; root of context hierarchy
+2018-06-19 15:03:08,761 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 15:03:08,936 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 15:03:09,179 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 15:03:09,302 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:03:10,315 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:06:13,811 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@a5e2fa: startup date [Tue Jun 19 15:03:08 MSK 2018]; root of context hierarchy
+2018-06-19 15:06:26,690 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60fa327f: startup date [Tue Jun 19 15:06:26 MSK 2018]; root of context hierarchy
+2018-06-19 15:06:26,738 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 15:06:26,913 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 15:06:27,167 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 15:06:27,297 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:06:28,324 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:07:36,397 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@60fa327f: startup date [Tue Jun 19 15:06:26 MSK 2018]; root of context hierarchy
+2018-06-19 15:07:49,637 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4804e762: startup date [Tue Jun 19 15:07:49 MSK 2018]; root of context hierarchy
+2018-06-19 15:07:49,701 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 15:07:49,906 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 15:07:50,183 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 15:07:50,309 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:07:51,302 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:08:05,254 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:72] Save status is - OK
+2018-06-19 15:08:05,254 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:08:48,075 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:67] Save status is ERROR
+2018-06-19 15:08:48,075 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:08:59,776 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:67] Save status is ERROR
+2018-06-19 15:08:59,777 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:09:09,539 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:67] Save status is ERROR
+2018-06-19 15:09:09,539 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:11:40,880 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:67] Save status is ERROR
+2018-06-19 15:11:40,881 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:12:27,195 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@4804e762: startup date [Tue Jun 19 15:07:49 MSK 2018]; root of context hierarchy
+2018-06-19 15:12:40,034 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b7b2a0: startup date [Tue Jun 19 15:12:40 MSK 2018]; root of context hierarchy
+2018-06-19 15:12:40,084 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 15:12:40,266 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 15:12:40,518 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 15:12:40,638 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:12:41,703 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:12:46,956 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:67] Save status is ERROR
+2018-06-19 15:12:46,956 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:14:34,653 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:67] Save status is ERROR
+2018-06-19 15:14:34,653 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:16:01,422 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:67] Save status is ERROR
+2018-06-19 15:16:01,423 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:16:05,757 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:67] Save status is ERROR
+2018-06-19 15:16:05,757 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:17:42,461 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@7b7b2a0: startup date [Tue Jun 19 15:12:40 MSK 2018]; root of context hierarchy
+2018-06-19 15:17:56,232 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@314913f8: startup date [Tue Jun 19 15:17:56 MSK 2018]; root of context hierarchy
+2018-06-19 15:17:56,306 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 15:17:56,543 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 15:17:56,858 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 15:17:56,992 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:18:01,438 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:18:07,160 INFO  PeriodicalServlet [PeriodicalServlet.java:72] Periodical{title='Java ', discription='методы программирования', outputFrequency=1, index=45968, ageLimit=18, price=50}
+2018-06-19 15:18:07,216 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:80] Update status is - OK
+2018-06-19 15:18:07,217 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:21:09,722 INFO  PeriodicalServlet [PeriodicalServlet.java:72] Periodical{title='Java ', discription='методы программирования', outputFrequency=1, index=45968, ageLimit=18, price=50}
+2018-06-19 15:21:09,763 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:80] Update status is - OK
+2018-06-19 15:21:09,764 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:21:11,022 INFO  PeriodicalRestController [PeriodicalRestController.java:30] Remove status is OK
+2018-06-19 15:21:11,022 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 15:21:56,464 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@314913f8: startup date [Tue Jun 19 15:17:56 MSK 2018]; root of context hierarchy

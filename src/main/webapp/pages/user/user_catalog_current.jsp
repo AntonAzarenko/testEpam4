@@ -91,7 +91,7 @@
     <a href="/user?action=redirectsubscribe&periodicalId=<c:out value="${periodical.id}"/>">
         <button class="butt">Подписаться</button>
     </a>
-    <%--<form method="get" class="dws-input" action="/userPage?action=redirectsubscribe&periodicalId=<c:out value="${periodical.id}"/>">
+    <%--<form method="get" class="dws-input" action="/userPage?action=redirectsubscribe&periodicalId=<c:out value="${logic.id}"/>">
         <input class="butt" type="submit" value="Подписаться" />
     </form>--%>
 

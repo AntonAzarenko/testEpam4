@@ -7,43 +7,53 @@ import java.math.BigDecimal;
  */
 
 public class Periodical extends AbstractBaseEntity {
-
+    // заголовок
     private String title;
+
+    //описание
+    private String discription;
+
+    //издатель
+    private String publisher;
+
+    // частота выхода в полугодие
     private int outputFrequency;
 
-    public int getOutputFrequency() {
-        return outputFrequency;
+    // индекс издания
+    private int index;
+
+    // ограничение по возрасту
+    private int ageLimit;
+
+    //цена за экземпляр
+    private BigDecimal price;
+
+    public Periodical() {
     }
 
-    public void setOutputFrequency(int outputFrequency) {
-        this.outputFrequency = outputFrequency;
+    public String getPublisher() {
+        return publisher;
     }
 
-    private String description;
-
-    private  BigDecimal price;
-
-    private boolean New;
-
-    public boolean isNew() {
-        if(id==null)
-        return true;
-        else return false;
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
     }
 
-    public void setNew(boolean aNew) {
-        New = aNew;
-    }
-
-    public Periodical(Integer id, String title, String description, int outputFrequency, BigDecimal price) {
+    public Periodical(Integer id, String title, String discription,
+                      String publisher, int outputFrequency, int index, int ageLimit, BigDecimal price) {
         super(id);
         this.title = title;
+        this.discription = discription;
+        this.publisher = publisher;
         this.outputFrequency = outputFrequency;
-        this.description = description;
+        this.index = index;
+        this.ageLimit = ageLimit;
         this.price = price;
     }
 
-    public Periodical() {
+    //проверка на новый объект в базе
+    public boolean isNew() {
+        return id == null;
     }
 
     public String getTitle() {
@@ -54,12 +64,36 @@ public class Periodical extends AbstractBaseEntity {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDiscription() {
+        return discription;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDiscription(String discription) {
+        this.discription = discription;
+    }
+
+    public int getOutputFrequency() {
+        return outputFrequency;
+    }
+
+    public void setOutputFrequency(int outputFrequency) {
+        this.outputFrequency = outputFrequency;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public int getAgeLimit() {
+        return ageLimit;
+    }
+
+    public void setAgeLimit(int ageLimit) {
+        this.ageLimit = ageLimit;
     }
 
     public BigDecimal getPrice() {
@@ -74,10 +108,11 @@ public class Periodical extends AbstractBaseEntity {
     public String toString() {
         return "Periodical{" +
                 "title='" + title + '\'' +
+                ", discription='" + discription + '\'' +
                 ", outputFrequency=" + outputFrequency +
-                ", description='" + description + '\'' +
+                ", index=" + index +
+                ", ageLimit=" + ageLimit +
                 ", price=" + price +
-                ", id=" + id +
                 '}';
     }
 }

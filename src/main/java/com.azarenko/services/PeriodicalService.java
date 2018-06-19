@@ -1,22 +1,20 @@
 package com.azarenko.services;
 
-import com.azarenko.dao.DaoException;
-import com.azarenko.exceptions.ServiceException;
+import com.azarenko.exceptions.NotFoundException;
 import com.azarenko.model.Periodical;
 
 import java.util.List;
 
 public interface PeriodicalService {
-    List<Periodical> getCatalog() throws ServiceException, DaoException;
 
-    void add(Periodical periodical) throws ServiceException, DaoException;
+    List<Periodical> getAll();
 
-    void remove(int id) throws ServiceException, DaoException;
+    Periodical save(Periodical periodical);
 
-    void update(Periodical periodical) throws ServiceException, DaoException;
+    boolean remove(int id)throws NotFoundException;
 
-    Periodical getPeriodical(int id) throws ServiceException, DaoException;
+    Periodical get(int id)throws NotFoundException;
 
-    Periodical search(String param, String value) throws ServiceException, DaoException;
+    Periodical search(String param, String value);
 
 }

@@ -1,9 +1,7 @@
 package com.azarenko.web.controllers;
 
-import com.azarenko.dao.DaoException;
 import com.azarenko.model.Periodical;
 import com.azarenko.services.PeriodicalService;
-import com.azarenko.exceptions.ServiceException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,27 +16,26 @@ public class PeriodicalRestController {
     private PeriodicalService periodicalService;
 
     public List<Periodical> getListEntity() {
-        try {
-            LOG.info("go to service");
-            return periodicalService.getCatalog();
-        } catch (ServiceException e) {
-            e.printStackTrace();
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
-        return null;
+        LOG.info("go to service");
+        return periodicalService.getAll();
     }
 
     public void add(Periodical periodical) {
-        try {
-             periodicalService.add(periodical);
+        periodicalService.save(periodical);
+    }
 
-        } catch (ServiceException e) {
-            e.printStackTrace();
-        } catch (DaoException e) {
-            e.printStackTrace();
-        }
+    public void remove(int id){
+       if(periodicalService.remove(id)){
+           LOG.info("Remove status is OK");
+       }else LOG.info("Entity was not delete");
+    }
 
+    public Periodical search(String param, String value){
+        return periodicalService.search(param,value);
+    }
+
+    public Periodical get(int id){
+        return periodicalService.get(id);
     }
 
 }

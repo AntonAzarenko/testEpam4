@@ -1,53 +1,34 @@
 package com.azarenko.services;
 
-import com.azarenko.dao.BaseDao;
-import com.azarenko.dao.DaoException;
-import com.azarenko.dao.UserDao;
-import com.azarenko.dao.UserDaoImpl;
 import com.azarenko.model.User;
-import com.azarenko.util.ComponentRegister;
 import org.apache.log4j.Logger;
 
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-        private final Logger log = Logger.getLogger(UserServiceImpl.class);
 
     @Override
-    public User getUserByEmail(String email) throws DaoException {
-        UserDao userDao = new UserDaoImpl();
-        return userDao.getUserByEmail(email);
+    public User getUserByEmail(String email) {
+        return null;
     }
 
     @Override
-    public int getUserIdByEmail(String login) throws DaoException {
-        UserDao userDao = new UserDaoImpl();
-        return userDao.getUserIdByEmail(login);
+    public int getUserIdByEmail(String login) {
+        return 0;
     }
 
     @Override
-    public void addUser(User user) throws DaoException {
-        BaseDao baseDao = new UserDaoImpl();
-        baseDao.add(user);
+    public void addUser(User user) {
+
     }
 
     @Override
-    public boolean isUser(String login) throws DaoException {
-        BaseDao baseDao = new UserDaoImpl();
-        List<User> userList = baseDao.getListEntity();
-        for(User current : userList){
-            log.info(current.getEmail());
-            log.info(login);
-            if(current.getEmail().equals(login)){
-                return true;
-            }
-        }
+    public boolean isUser(String login) {
         return false;
     }
 
     @Override
-    public List<User> getAllUsers() throws DaoException {
-        BaseDao<User> userBaseDao = new UserDaoImpl();
-        return userBaseDao.getListEntity();
+    public List<User> getAllUsers() {
+        return null;
     }
 }

@@ -1,19 +1,19 @@
 package com.azarenko.services;
 
-import com.azarenko.dao.DaoException;
 import com.azarenko.model.ShoppingCart;
 
 import java.math.BigDecimal;
 import java.util.List;
 
 public interface ShoppingCartService {
-    void add(ShoppingCart shoppingCart) throws DaoException;
+    void add(ShoppingCart shoppingCart);
 
-    List<ShoppingCart> getShoppingCartUser(int id) throws DaoException;
+    List<ShoppingCart> getShoppingCartUser(int id);
 
-    BigDecimal getPriceForSubcription(int periodicalId) throws DaoException;
+    BigDecimal getPriceForSubcription(int periodicalId);
 
-    BigDecimal getFullPriceForPayment(int userId) throws DaoException;
+    BigDecimal getFullPriceForPayment(int userId);
 
-    void removeShoppingCartUser(int id) throws DaoException;
+    void removeShoppingCartUser(int id);
 }
+

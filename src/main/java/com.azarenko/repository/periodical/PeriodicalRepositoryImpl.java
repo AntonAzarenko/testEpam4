@@ -1,13 +1,14 @@
-package com.azarenko.repository;
+package com.azarenko.repository.periodical;
 
 
 import com.azarenko.model.Periodical;
+import com.azarenko.repository.PeriodicalReposiroty;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.support.DataAccessUtils;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
@@ -15,6 +16,7 @@ import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
+import java.math.BigDecimal;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -28,7 +30,8 @@ public class PeriodicalRepositoryImpl implements PeriodicalReposiroty {
         @Override
         public Periodical mapRow(ResultSet resultSet, int i) throws SQLException {
             return new Periodical(resultSet.getInt("id"), resultSet.getString("title"),
-                    resultSet.getString("dicription"), resultSet.getInt("output_frequency"),
+                    resultSet.getString("discription"), resultSet.getString("publisher"), resultSet.getInt("output_frequency"),
+                    resultSet.getInt("per_index"), resultSet.getInt("age_limit"),
                     resultSet.getBigDecimal("price"));
         }
     };
@@ -49,50 +52,73 @@ public class PeriodicalRepositoryImpl implements PeriodicalReposiroty {
     }
 
     @Override
-    public Periodical add(Periodical periodical, int userId) {
+    public Periodical save(Periodical periodical) {
         MapSqlParameterSource map = new MapSqlParameterSource()
                 .addValue("id", periodical.getId())
                 .addValue("title", periodical.getTitle())
                 .addValue("output_frequency", periodical.getOutputFrequency())
-                .addValue("discription", periodical.getDescription())
+                .addValue("discription", periodical.getDiscription())
+                .addValue("publisher", periodical.getPublisher())
+                .addValue("per_index", periodical.getIndex())
+                .addValue("age_limit", periodical.getAgeLimit())
                 .addValue("price", periodical.getPrice());
         if (periodical.isNew()) {
+            if (search(periodical.getTitle()) != null) {
+                LOG.info("Save status is ERROR");
+                return periodical;
+            }
             Number newId = simpleJdbcInsert.executeAndReturnKey(map);
             periodical.setId(newId.intValue());
-            LOG.info("add is OK");
+            LOG.info("Save status is - OK");
         } else {
             if (namedParameterJdbcTemplate.update(
                     "UPDATE mydb.catalog_periodicals SET title=:title," +
-                            "discription=:discription, output_frequency=:output_frequency ,price=:price WHERE id=:id", map) == 0) {
+                            "discription=:discription, publisher=:publisher, output_frequency=:output_frequency ,price=:price," +
+                            "per_index=:per_index, age_limit=:age_limit WHERE id=:id", map) == 0) {
                 return null;
+            } else {
+                LOG.info("Update status is - OK");
             }
         }
         return periodical;
     }
 
-
     @Override
-    public void remove(int id) {
-
+    public boolean remove(int id) {
+        return jdbcTemplate.update(
+                "DELETE FROM catalog_periodicals WHERE id=?", id) != 0;
     }
 
     @Override
-    public void update(Periodical entity) {
-
-    }
-
-    @Override
-    public List<Periodical> getListEntity() {
-        return null;
-    }
-
-    @Override
-    public Periodical get(int id, int userId) {
-        return null;
+    public List<Periodical> getAll() {
+        return jdbcTemplate.query("SELECT * FROM catalog_periodicals", mapper);
     }
 
     @Override
     public Periodical get(int id) {
-        return null;
+        List<Periodical> periodical = jdbcTemplate.query(
+                "SELECT * FROM catalog_periodicals WHERE id=?", mapper, id);
+        return DataAccessUtils.singleResult(periodical);
+    }
+
+    @Override
+    public Periodical search(BigDecimal price) {
+        List<Periodical> periodical = jdbcTemplate.query(
+                "SELECT * FROM catalog_periodicals WHERE price=?", mapper, price);
+        return DataAccessUtils.singleResult(periodical);
+    }
+
+    @Override
+    public Periodical search(String title) {
+        List<Periodical> periodical = jdbcTemplate.query(
+                "SELECT * FROM catalog_periodicals WHERE title=?", mapper, title);
+        return DataAccessUtils.singleResult(periodical);
+    }
+
+    @Override
+    public Periodical search(int index) {
+        List<Periodical> periodical = jdbcTemplate.query(
+                "SELECT * FROM catalog_periodicals WHERE per_index=?", mapper, index);
+        return DataAccessUtils.singleResult(periodical);
     }
 }

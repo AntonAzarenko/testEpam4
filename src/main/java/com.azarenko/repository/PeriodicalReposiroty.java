@@ -1,21 +1,22 @@
 package com.azarenko.repository;
 
-import com.azarenko.exceptions.RepositoryExceptions;
 import com.azarenko.model.Periodical;
 
-import java.util.Collection;
+import java.math.BigDecimal;
 import java.util.List;
 
 public interface PeriodicalReposiroty {
-    Periodical add(Periodical entity, int userId) ;
+    Periodical save(Periodical entity);
 
-    void remove(int id) ;
+    boolean remove(int id);
 
-    void update(Periodical entity);
-
-    Collection<Periodical> getListEntity() ;
-
-    Periodical get(int id, int userId);
+    List<Periodical> getAll();
 
     Periodical get(int id);
+
+    Periodical search(BigDecimal price);
+
+    Periodical search(String title);
+
+    Periodical search(int index);
 }

@@ -5,29 +5,20 @@ import java.util.Date;
 
 public final class Subscription extends AbstractBaseEntity {
 
-    private final String title;
+    public String title;
 
-    private final int periodicalId;
+    public int periodicalId;
 
-    private final int userId;
+    public int userId;
 
-    private final String namePeriodical;
+    public String namePeriodical;
 
-    private final Date dateStartSubcription;
+    public Date dateStartSubcription;
 
-    private final Date dateEndSubscription;
+    public Date dateEndSubscription;
 
-    private final BigDecimal price;
+    public BigDecimal price;
 
-    private Subscription(SubscriptionBuild subscriptionBuild) {
-        this.title = subscriptionBuild.title;
-        this.periodicalId = subscriptionBuild.idPeriodical;
-        this.namePeriodical = subscriptionBuild.namePeriodical;
-        this.dateStartSubcription = subscriptionBuild.dateStartSubcription;
-        this.dateEndSubscription = subscriptionBuild.dateEndSubscription;
-        this.price = subscriptionBuild.price;
-        this.userId = subscriptionBuild.userId;
-    }
 
     public int getUserId() {
         return userId;
@@ -57,67 +48,31 @@ public final class Subscription extends AbstractBaseEntity {
         return dateEndSubscription;
     }
 
-    public static class SubscriptionBuild {
-        private int id;
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-        private String title;
+    public void setPeriodicalId(int periodicalId) {
+        this.periodicalId = periodicalId;
+    }
 
-        private int userId;
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
 
-        private int idPeriodical;
-        private String namePeriodical;
+    public void setNamePeriodical(String namePeriodical) {
+        this.namePeriodical = namePeriodical;
+    }
 
-        private Date dateStartSubcription;
+    public void setDateStartSubcription(Date dateStartSubcription) {
+        this.dateStartSubcription = dateStartSubcription;
+    }
 
-        private Date dateEndSubscription;
+    public void setDateEndSubscription(Date dateEndSubscription) {
+        this.dateEndSubscription = dateEndSubscription;
+    }
 
-        private BigDecimal price;
-
-        public SubscriptionBuild() {
-        }
-
-        public SubscriptionBuild id(int id) {
-            this.id = id;
-            return this;
-        }
-
-        public SubscriptionBuild title(String title) {
-            this.title = title;
-            return this;
-        }
-
-        public SubscriptionBuild userId(int userId) {
-            this.userId = userId;
-            return this;
-        }
-
-        public SubscriptionBuild namePeriodical(String name) {
-            this.namePeriodical = name;
-            return this;
-        }
-
-        public SubscriptionBuild idPeriodical(int id) {
-            this.idPeriodical = id;
-            return this;
-        }
-
-        public SubscriptionBuild dateStartSubcription(Date date) {
-            this.dateStartSubcription = date;
-            return this;
-        }
-
-        public SubscriptionBuild dateEndSubscription(Date date) {
-            this.dateEndSubscription = date;
-            return this;
-        }
-
-        public SubscriptionBuild price(BigDecimal price) {
-            this.price = price;
-            return this;
-        }
-
-        public Subscription build() {
-            return new Subscription(this);
-        }
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 }

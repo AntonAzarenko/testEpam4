@@ -1724,3 +1724,103 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jd
 2018-06-19 15:21:11,022 INFO  PeriodicalRestController [PeriodicalRestController.java:30] Remove status is OK
 2018-06-19 15:21:11,022 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
 2018-06-19 15:21:56,464 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@314913f8: startup date [Tue Jun 19 15:17:56 MSK 2018]; root of context hierarchy
+2018-06-19 16:31:14,630 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@53fa1368: startup date [Tue Jun 19 16:31:14 MSK 2018]; root of context hierarchy
+2018-06-19 16:31:14,687 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 16:31:14,872 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 16:31:15,131 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 16:31:15,253 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:31:16,377 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:34:25,145 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:35:11,570 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:35:27,290 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:35:28,897 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:35:29,593 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:35:29,809 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:35:30,001 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:35:30,200 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:36:26,930 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:36:33,258 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:36:54,113 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:36:55,465 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:36:56,129 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:36:56,665 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:37:21,191 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:37:23,544 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:37:38,569 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@53fa1368: startup date [Tue Jun 19 16:31:14 MSK 2018]; root of context hierarchy
+2018-06-19 16:37:52,295 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7f887640: startup date [Tue Jun 19 16:37:52 MSK 2018]; root of context hierarchy
+2018-06-19 16:37:52,345 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 16:37:52,528 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 16:37:52,787 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 16:37:52,907 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:37:53,923 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:39:00,045 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@7f887640: startup date [Tue Jun 19 16:37:52 MSK 2018]; root of context hierarchy
+2018-06-19 16:39:13,405 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2068b0b9: startup date [Tue Jun 19 16:39:13 MSK 2018]; root of context hierarchy
+2018-06-19 16:39:13,488 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 16:39:13,832 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 16:39:14,279 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 16:39:14,472 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:39:16,132 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:40:04,631 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:40:24,665 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:40:26,391 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:40:27,214 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:49:45,109 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:51:12,698 INFO  PeriodicalServlet [PeriodicalServlet.java:72] Periodical{title='Работа', discription='Вакансии и спрос', outputFrequency=48, index=26589, ageLimit=18, price=1.29}
+2018-06-19 16:51:12,775 INFO  PeriodicalRepositoryImpl [PeriodicalRepositoryImpl.java:80] Update status is - OK
+2018-06-19 16:51:12,776 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 16:52:31,087 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@2068b0b9: startup date [Tue Jun 19 16:39:13 MSK 2018]; root of context hierarchy
+2018-06-19 17:01:22,719 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@33dc7b7a: startup date [Tue Jun 19 17:01:22 MSK 2018]; root of context hierarchy
+2018-06-19 17:01:22,767 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 17:01:22,940 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 17:01:23,192 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 17:01:23,299 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:02:00,757 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@33dc7b7a: startup date [Tue Jun 19 17:01:22 MSK 2018]; root of context hierarchy
+2018-06-19 17:05:02,327 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@10dc59c8: startup date [Tue Jun 19 17:05:02 MSK 2018]; root of context hierarchy
+2018-06-19 17:05:02,377 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 17:05:02,548 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 17:05:02,799 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 17:05:02,911 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:05:05,152 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:11:54,551 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@10dc59c8: startup date [Tue Jun 19 17:05:02 MSK 2018]; root of context hierarchy
+2018-06-19 17:12:55,525 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7ca9eb20: startup date [Tue Jun 19 17:12:55 MSK 2018]; root of context hierarchy
+2018-06-19 17:12:55,577 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 17:12:55,756 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 17:12:55,999 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 17:12:56,118 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:12:58,361 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:14:27,418 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:15:07,212 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@7ca9eb20: startup date [Tue Jun 19 17:12:55 MSK 2018]; root of context hierarchy
+2018-06-19 17:15:22,632 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3f22a8db: startup date [Tue Jun 19 17:15:22 MSK 2018]; root of context hierarchy
+2018-06-19 17:15:22,692 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 17:15:22,891 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 17:15:23,148 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 17:15:23,280 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:15:24,306 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:15:55,556 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:16:51,817 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:16:53,586 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:16:56,725 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@3f22a8db: startup date [Tue Jun 19 17:15:22 MSK 2018]; root of context hierarchy
+2018-06-19 17:23:04,993 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:590] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@44e8feb9: startup date [Tue Jun 19 17:23:04 MSK 2018]; root of context hierarchy
+2018-06-19 17:23:05,046 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-app.xml]
+2018-06-19 17:23:05,217 INFO  XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:316] Loading XML bean definitions from class path resource [spring/spring-db.xml]
+2018-06-19 17:23:05,458 INFO  DriverManagerDataSource [DriverManagerDataSource.java:133] Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-06-19 17:23:05,568 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:23:07,834 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:24:28,964 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:24:30,496 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:28:29,237 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:29:10,249 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:30:40,596 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:30:43,107 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:31:18,801 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:31:20,154 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:31:37,195 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:31:59,284 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:32:19,020 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:32:47,506 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:32:48,953 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:32:56,566 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:33:23,113 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:33:24,169 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:34:15,443 INFO  PeriodicalRestController [PeriodicalRestController.java:19] go to service
+2018-06-19 17:34:42,432 INFO  ClassPathXmlApplicationContext [AbstractApplicationContext.java:993] Closing org.springframework.context.support.ClassPathXmlApplicationContext@44e8feb9: startup date [Tue Jun 19 17:23:04 MSK 2018]; root of context hierarchy

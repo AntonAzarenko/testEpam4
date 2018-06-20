@@ -1,9 +1,15 @@
 package com.azarenko.model;
 
-import java.util.concurrent.atomic.AtomicInteger;
+import org.hibernate.annotations.Generated;
 
+import javax.persistence.*;
+
+
+@MappedSuperclass
+@Access(AccessType.FIELD)
 public abstract class AbstractBaseEntity {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     protected Integer id;
 
     public AbstractBaseEntity() {

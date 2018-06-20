@@ -47,7 +47,7 @@ public class PeriodicalServlet extends HttpServlet {
         if ("add".equals(action)) {
             req.getRequestDispatcher("WEB-INF/jsp/add_edit_publications.jsp").forward(req, resp);
         } else if ("edit".equals(action)) {
-            req.setAttribute("periodical", controller.get(Integer.parseInt(req.getParameter("id"))));
+            req.setAttribute("jdbc", controller.get(Integer.parseInt(req.getParameter("id"))));
             req.getRequestDispatcher("WEB-INF/jsp/add_edit_publications.jsp").forward(req, resp);
         } else if ("delete".equals(action)) {
             controller.remove(Integer.parseInt(req.getParameter("id")));

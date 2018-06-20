@@ -46,7 +46,7 @@ public class PeriodicalServiceImplTest {
         Periodical periodical2 =
                 new Periodical(17,"Spring",
                         "How to learn the SPRING","Azarenko)",24,32568,18,new BigDecimal(2));
-        periodicalService.save(periodical2);
+       periodicalService.save(periodical2);
     }
 
     @Test()

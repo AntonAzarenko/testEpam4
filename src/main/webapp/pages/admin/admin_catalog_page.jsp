@@ -41,12 +41,13 @@
             <th>Редактировать</th>
             <th>Удалить</th>
         </tr>
+        <jsp:useBean id="catalogs" scope="page" type="com.azarenko.model.Periodical"/>
         <c:forEach items="${catalogs}" var="periodical">
             <jsp:useBean id="periodical" scope="page" type="com.azarenko.model.Periodical"/>
             <tr>
                 <th>${periodical.id}</th>
                 <th>${periodical.title}</th>
-                <th>${periodical.description}</th>
+                <th>${periodical.discription}</th>
                 <th>${periodical.outputFrequency}</th>
                 <th>${periodical.price}</th>
                 <th><a href="/admin?action=edit&catalogId=<c:out value="${periodical.id}"/>">

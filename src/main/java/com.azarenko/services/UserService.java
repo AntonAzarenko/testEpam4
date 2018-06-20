@@ -1,17 +1,20 @@
 package com.azarenko.services;
 
+import com.azarenko.model.Role;
 import com.azarenko.model.User;
 
 import java.util.List;
 
 public interface UserService {
-    User getUserByEmail(String email);
+    User getByEmail(String email);
 
-    int getUserIdByEmail(String login);
+    int getIdByEmail(String login);
 
-    void addUser(User user);
+    boolean addUser(User user);
 
     boolean isUser(String login);
 
-    List<User> getAllUsers();
+    List<User> getAll();
+
+    boolean setRole(int id, Role role);
 }

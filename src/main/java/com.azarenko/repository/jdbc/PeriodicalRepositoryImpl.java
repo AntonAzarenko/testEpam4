@@ -1,4 +1,4 @@
-package com.azarenko.repository.periodical;
+package com.azarenko.repository.jdbc;
 
 
 import com.azarenko.model.Periodical;

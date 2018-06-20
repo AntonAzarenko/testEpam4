@@ -1,24 +1,24 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: Anton
-  Date: 12.06.2018
-  Time: 13:28
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>List</title>
+
+    <link rel="stylesheet" href="../../resources/css/style.css" type="text/css">
+    <link rel="stylesheet" href="webjars/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../../css/font-awesome.css" type="text/css">
 </head>
 <body>
+
+<div class="view-box">
 <br>
-<br>
-<a href="start?action=add"><button class="butt">Добавить</button></a>
-<hr>
-<br>
-<table border="1" cellpadding="8" cellspacing="0">
-    <tr class="tr">
+    <hr>
+</div>
+<div class="container">
+<table class="table table-striped">
+    <tr>
+        <thead>
         <th>Id Издания</th>
         <th>Название</th>
         <th>Описание</th>
@@ -26,6 +26,7 @@
         <th>Цена</th>
         <th>Редактировать</th>
         <th>Удалить</th>
+        </thead>
     </tr>
     <c:forEach items="${list}" var="periodicals">
         <jsp:useBean id="periodicals" scope="page" type="com.azarenko.model.Periodical"/>
@@ -36,15 +37,21 @@
             <th>${periodicals.outputFrequency}</th>
             <th>${periodicals.price}</th>
             <th><a href="start?action=edit&id=<c:out value="${periodicals.id}"/>">
-                <button class="butt">Редактировать</button>
+                <button class="btn btn-primary">Редактировать</button>
             </a>
             </th>
             <th><a href='start?action=delete&id=<c:out value="${periodicals.id}"/>'>
-                <button class="butt">Удалить</button>
+                <button class="btn btn-danger">Удалить</button>
             </a>
             </th>
         </tr>
     </c:forEach>
 </table>
+
+<br>
+<div class="align-content-center">
+<a href="start?action=add"><button class="btn btn-sm btn-info ">Добавить</button></a>
+</div>
+</div>
 </body>
 </html>

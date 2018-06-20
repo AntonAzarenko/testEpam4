@@ -4,6 +4,8 @@
 <html>
 <head>
     <title>Редактор</title>
+    <link rel="stylesheet" href="../../resources/css/style.css" type="text/css">
+    <link rel="stylesheet" href="webjars/bootstrap/4.1.0/css/bootstrap.min.css">
 </head>
 <body>
 <header>
@@ -15,10 +17,11 @@
 
         <form method="post" >
 
-                        <input type="hidden" name="id"
-                        value="<c:out value="${periodical.id}"/>" >
+                        <input type="hidden" name="id" value="
+                        <c:out value="${periodical.id}"/>" >
             Название : <input type="text" name="title"
-                              value="<c:out value="${periodical.title}"/>"/>
+                              value="
+                              <c:out value="${periodical.title}"/>"/>
             <br>
             <p/>
             Описание : <input type="text" name="discription"

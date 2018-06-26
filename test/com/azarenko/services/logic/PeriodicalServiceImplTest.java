@@ -3,6 +3,8 @@ package com.azarenko.services.logic;
 import com.azarenko.exceptions.NotFoundException;
 import com.azarenko.model.Periodical;
 import com.azarenko.services.PeriodicalService;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -40,18 +42,32 @@ public class PeriodicalServiceImplTest {
     @Test
     public void save() throws Exception {
         Periodical periodical =
-                new Periodical(null,"Spring",
-                        "How to learn the SPRING","Azarenko)",24,32568,18,new BigDecimal(2));
+                new Periodical(null,"Springs",
+                        "How to learn the SPRING","Azarenko)",24,32568,18,new BigDecimal(2.00));
         periodicalService.save(periodical);
-        Periodical periodical2 =
-                new Periodical(17,"Spring",
-                        "How to learn the SPRING","Azarenko)",24,32568,18,new BigDecimal(2));
-       periodicalService.save(periodical2);
+       /* Periodical periodical2 =
+                new Periodical(27,"Spring",
+                        "How to learn the SPRING","Azarenko)",24,32568,18,new BigDecimal(2.20));
+       periodicalService.save(periodical2);*/
+        Periodical periodical3 =
+                new Periodical(27,"Spring",
+                        "How to learn the SPRING","Azarenko)",24,32568,18,new BigDecimal(2.25));
+        periodicalService.save(periodical3);
     }
+    @Before
+    public void before(){
+        LOG.info("spring  before test");
+    }
+
+    @After
+    public void after(){
+        LOG.info("spring after test");
+    }
+
 
     @Test()
     public void remove() throws Exception {
-        if (periodicalService.remove(10)) {
+        if (periodicalService.remove(17)) {
             LOG.info("remove element");
         } else {
             LOG.info("didn't remove");

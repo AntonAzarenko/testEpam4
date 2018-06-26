@@ -44,6 +44,7 @@ public class PeriodicalRepositoryImpl implements PeriodicalReposiroty {
 
     private SimpleJdbcInsert simpleJdbcInsert;
 
+
     @Autowired
     public PeriodicalRepositoryImpl(DataSource dataSource) {
         this.simpleJdbcInsert = new SimpleJdbcInsert(dataSource)
@@ -63,13 +64,9 @@ public class PeriodicalRepositoryImpl implements PeriodicalReposiroty {
                 .addValue("age_limit", periodical.getAgeLimit())
                 .addValue("price", periodical.getPrice());
         if (periodical.isNew()) {
-            if (search(periodical.getTitle()) != null) {
-                LOG.info("Save status is ERROR");
-                return periodical;
-            }
             Number newId = simpleJdbcInsert.executeAndReturnKey(map);
             periodical.setId(newId.intValue());
-            LOG.info("Save status is - OK");
+            LOG.info("Save status is - OK " + periodical.getId());
         } else {
             if (namedParameterJdbcTemplate.update(
                     "UPDATE mydb.catalog_periodicals SET title=:title," +
@@ -98,6 +95,7 @@ public class PeriodicalRepositoryImpl implements PeriodicalReposiroty {
     public Periodical get(int id) {
         List<Periodical> periodical = jdbcTemplate.query(
                 "SELECT * FROM catalog_periodicals WHERE id=?", mapper, id);
+        LOG.info("get status ok");
         return DataAccessUtils.singleResult(periodical);
     }
 

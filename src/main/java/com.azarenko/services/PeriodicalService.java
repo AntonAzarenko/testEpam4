@@ -11,9 +11,9 @@ public interface PeriodicalService {
 
     Periodical save(Periodical periodical);
 
-    boolean remove(int id)throws NotFoundException;
+    boolean remove(int id) throws NotFoundException;
 
-    Periodical get(int id)throws NotFoundException;
+    Periodical get(int id) throws NotFoundException;
 
     Periodical search(String param, String value);
 

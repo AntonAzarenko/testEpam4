@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public interface PeriodicalReposiroty {
+
     Periodical save(Periodical entity);
 
     boolean remove(int id);

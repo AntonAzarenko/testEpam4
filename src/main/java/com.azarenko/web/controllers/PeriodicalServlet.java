@@ -47,19 +47,24 @@ public class PeriodicalServlet extends HttpServlet {
         if ("add".equals(action)) {
             req.getRequestDispatcher("WEB-INF/jsp/add_edit_publications.jsp").forward(req, resp);
         } else if ("edit".equals(action)) {
-            req.setAttribute("jdbc", controller.get(Integer.parseInt(req.getParameter("id"))));
+            req.setAttribute("periodical", controller.get(Integer.parseInt(req.getParameter("id"))));
             req.getRequestDispatcher("WEB-INF/jsp/add_edit_publications.jsp").forward(req, resp);
         } else if ("delete".equals(action)) {
             controller.remove(Integer.parseInt(req.getParameter("id")));
             req.setAttribute("list", controller.getListEntity());
             req.getRequestDispatcher("WEB-INF/jsp/list.jsp").forward(req, resp);
         }
-
     }
 
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        controller.add(intitPeriodical(req, resp));
+        req.setAttribute("list", controller.getListEntity());
+        req.getRequestDispatcher("WEB-INF/jsp/list.jsp").forward(req, resp);
+    }
+
+    private Periodical intitPeriodical(HttpServletRequest req, HttpServletResponse resp){
         int id = Integer.parseInt(req.getParameter("id"));
         String title = req.getParameter("title");
         String discription = req.getParameter("discription");
@@ -68,10 +73,7 @@ public class PeriodicalServlet extends HttpServlet {
         int ageLimit = Integer.parseInt(req.getParameter("al"));
         String publisher = req.getParameter("pub");
         BigDecimal price = new BigDecimal(req.getParameter("price"));
-        Periodical periodical = new Periodical(id,title, discription, publisher, opFr, index ,ageLimit, price);
-        LOG.info(periodical.toString());
-        controller.add(periodical);
-        req.setAttribute("list", controller.getListEntity());
-        req.getRequestDispatcher("WEB-INF/jsp/list.jsp").forward(req, resp);
+        return new Periodical(id,title, discription, publisher, opFr, index ,ageLimit, price);
+
     }
 }

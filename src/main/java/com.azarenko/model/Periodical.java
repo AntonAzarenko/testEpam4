@@ -141,7 +141,6 @@ public class Periodical extends AbstractBaseEntity implements Comparator<Periodi
                 '}';
     }
 
-
     @Override
     public  int compare(Periodical o1, Periodical o2) {
         return o1.title.compareTo(o2.title);

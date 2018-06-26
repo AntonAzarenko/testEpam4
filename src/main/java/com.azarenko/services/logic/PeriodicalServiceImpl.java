@@ -6,6 +6,7 @@ import com.azarenko.repository.PeriodicalReposiroty;
 
 
 import com.azarenko.services.PeriodicalService;
+import com.sun.xml.internal.ws.util.UtilException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +22,15 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     @Autowired
     PeriodicalReposiroty periodicalReposiroty;
 
+    @Autowired
+    private HistoryServiceImpl historyService;
+
     private BigDecimal checkToValidBD(String value) {
         BigDecimal price = null;
         try {
             price = BigDecimal.valueOf(Double.parseDouble(value));
         } catch (NumberFormatException e) {
-            LOG.info("NumberFormatException PRICE");
+            LOG.info("Number format exception PRICE");
         }
         return price;
     }
@@ -49,8 +53,16 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     @Override
     public Periodical save(Periodical periodical) {
         Objects.requireNonNull(periodical);
+        if (chekIs(periodical)) {
+            LOG.info("Add status is error - This periodical already exist");
+            //return null;
+        }
+        if (periodicalReposiroty.save(periodical) == null) {
+            return null;
+        }
+        historyService.save(periodical);
 
-        return periodicalReposiroty.save(periodical);
+        return periodical;
     }
 
     @Override
@@ -65,6 +77,7 @@ public class PeriodicalServiceImpl implements PeriodicalService {
 
     @Override
     public Periodical search(String param, String value) {
+
         switch (param) {
             case "title":
                 return periodicalReposiroty.search(value);
@@ -92,6 +105,16 @@ public class PeriodicalServiceImpl implements PeriodicalService {
         Comparator<Periodical> perIndex = Comparator.comparing(Periodical::getIndex);
         Collections.sort(list, perIndex);
         return list;
+    }
+
+    private boolean chekIs(Periodical periodical) {
+        String title = periodical.getTitle();
+        Periodical periodical1 = search("title", title);
+        if (periodical1 == null) {
+            return false;
+        }
+        periodical.setId(periodical1.getId());
+        return true;
     }
 
 }

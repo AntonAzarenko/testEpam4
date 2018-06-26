@@ -26,4 +26,8 @@ public class ExceptionUtil {
         if (object == null) throw new NotFoundException("Not found entity with " + msg);
         return object;
     }
+
+    public static boolean check(Integer id) {
+        return id == null ? false : true;
+    }
 }

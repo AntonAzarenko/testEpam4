@@ -11,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.util.*;
 
 @Service
@@ -64,12 +62,14 @@ public class HistoryServiceImpl implements HistoryService {
 
     private HistoryPrice create(Periodical periodical) {
         List<HistoryPrice> list = new ArrayList<>();
-        list = getAllByPeriodicalId(periodical.getId());
+       // list = getAllByPeriodicalId(periodical.getId());
         HistoryPrice price = null;
-        for (HistoryPrice hp : list) {
-            if (ExceptionUtil.check(hp.getIdPeriodical()) && hp.getDateEnd() == null) {
-                price = hp;
-                break;
+        if((list=getAllByPeriodicalId(periodical.getId())) != null) {
+            for (HistoryPrice hp : list) {
+                if (ExceptionUtil.check(hp.getIdPeriodical()) && hp.getDateEnd() == null) {
+                    price = hp;
+                    break;
+                }
             }
         }
         if (price == null) {

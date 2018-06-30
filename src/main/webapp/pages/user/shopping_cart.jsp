@@ -31,9 +31,9 @@
     <div class="dws-menu-two">
         <h3>Название</h3>
         <ul class="dws-ui-two">
-            <c:forEach items="${requestScope.cartList}" var="shoppingCart">
+            <c:forEach items="${requestScope.cartList}" var="shoppingCartRepository">
                 <li class="dws-li-two">
-                    <a href="/user?action=show&periodicalId=<c:out value="${periodical.id}"/>">${shoppingCart.price}</a></li>
+                    <a href="/user?action=show&periodicalId=<c:out value="${periodical.id}"/>">${shoppingCartRepository.price}</a></li>
             </c:forEach>
         </ul>
 

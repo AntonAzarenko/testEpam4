@@ -2,9 +2,7 @@ package com.azarenko.model;
 
 import org.springframework.lang.Nullable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Comparator;
 
@@ -13,9 +11,23 @@ import java.util.Comparator;
  */
 @Entity
 @Table(name = "catalog_periodicals")
+@NamedQueries({
+        @NamedQuery(name = Periodical.DELETE, query = "DELETE FROM Periodical p WHERE p.id=:id"),
+        @NamedQuery(name = Periodical.TITLE, query = "SELECT p FROM Periodical p WHERE p.title=:title"),
+        @NamedQuery(name = Periodical.All_SORTED, query = "SELECT p FROM Periodical p"),
+        @NamedQuery(name = Periodical.INDEX, query = "SELECT p FROM Periodical p WHERE p.index=:index"),
+        @NamedQuery(name = Periodical.PRICE, query = "select p from Periodical p WHERE p.price=:price")
+})
 public class Periodical extends AbstractBaseEntity implements Comparator<Periodical> {
+
+    public static final String DELETE = "Periodical.delete";
+    public static final String All_SORTED = "Periodical.allSorted";
+    public static final String TITLE = "Periodical.title";
+    public static final String PRICE = "Periodical.price";
+    public static final String INDEX = "Periodical.index";
+
     // заголовок
-    @Column(name="title", nullable = false)
+    @Column(name = "title", nullable = false, unique = true)
     @Nullable()
     private String title;
 
@@ -28,11 +40,11 @@ public class Periodical extends AbstractBaseEntity implements Comparator<Periodi
     private String publisher;
 
     // частота выхода в полугодие
-    @Column(name="output_frequncy")
+    @Column(name = "output_frequency")
     private int outputFrequency;
 
     // индекс издания
-    @Column(name = "index")
+    @Column(name = "per_index")
     private int index;
 
     // ограничение по возрасту
@@ -42,12 +54,9 @@ public class Periodical extends AbstractBaseEntity implements Comparator<Periodi
     //цена за экземпляр
     @Column(name = "price")
     private BigDecimal price;
+    private boolean archive;
 
     public Periodical() {
-    }
-
-    public String getPublisher() {
-        return publisher;
     }
 
     public Periodical(String title, String discription, String publisher, int outputFrequency, int index, int ageLimit, BigDecimal price) {
@@ -60,10 +69,6 @@ public class Periodical extends AbstractBaseEntity implements Comparator<Periodi
         this.price = price;
     }
 
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
-    }
-
     public Periodical(Integer id, String title, String discription,
                       String publisher, int outputFrequency, int index, int ageLimit, BigDecimal price) {
         super(id);
@@ -74,6 +79,23 @@ public class Periodical extends AbstractBaseEntity implements Comparator<Periodi
         this.index = index;
         this.ageLimit = ageLimit;
         this.price = price;
+    }
+
+    @Column(name = "archive")
+    public boolean isArchive() {
+        return archive;
+    }
+
+    public void setArchive(boolean archive) {
+        this.archive = archive;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
     }
 
     //проверка на новый объект в базе
@@ -142,7 +164,7 @@ public class Periodical extends AbstractBaseEntity implements Comparator<Periodi
     }
 
     @Override
-    public  int compare(Periodical o1, Periodical o2) {
+    public int compare(Periodical o1, Periodical o2) {
         return o1.title.compareTo(o2.title);
     }
 

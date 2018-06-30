@@ -41,6 +41,7 @@ public class PeriodicalServiceImpl implements PeriodicalService {
             id = Integer.parseInt(value);
         } catch (NumberFormatException e) {
             LOG.error("Number format exception");
+
         }
         return id;
     }
@@ -77,18 +78,22 @@ public class PeriodicalServiceImpl implements PeriodicalService {
 
     @Override
     public Periodical search(String param, String value) {
+        try {
+            switch (param) {
+                case "title":
+                    return periodicalReposiroty.search(value);
 
-        switch (param) {
-            case "title":
-                return periodicalReposiroty.search(value);
+                case "index":
+                    int index = checkToValidInt(value);
+                    return periodicalReposiroty.search(index);
 
-            case "index":
-                int index = checkToValidInt(value);
-                return periodicalReposiroty.search(index);
-
-            case "price":
-                BigDecimal price = checkToValidBD(value);
-                return periodicalReposiroty.search(price);
+                case "price":
+                    BigDecimal price = checkToValidBD(value);
+                    return periodicalReposiroty.search(price);
+            }
+            return null;
+        } catch (Exception e){
+            LOG.error("e");
         }
         return null;
     }

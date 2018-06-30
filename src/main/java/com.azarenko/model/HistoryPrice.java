@@ -1,7 +1,8 @@
 package com.azarenko.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+
+
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
@@ -9,7 +10,18 @@ import java.util.Comparator;
 import java.util.Date;
 
 @Entity
+@Table(name = "history_price")
+@NamedQueries({
+        @NamedQuery(name = HistoryPrice.AlL_SORTED, query = "SELECT hp from HistoryPrice hp"),
+        @NamedQuery(name = HistoryPrice.NAME, query = "SELECT hp FROM HistoryPrice hp WHERE hp.namePeriodical=:namePeriodical"),
+        @NamedQuery(name=HistoryPrice.PERIODICAL_ID, query = "SELECT hp FROM HistoryPrice hp WHERE hp.idPeriodical=:idPeriodical")
+})
 public class HistoryPrice extends AbstractBaseEntity implements Comparator<HistoryPrice> {
+
+    public static final String NAME = "HistoryPrice.name";
+    public static final String AlL_SORTED = "HistoryPrice.allSorted";
+    public static final String PERIODICAL_ID = "HistoryPrice.periodicalId";
+
     @Column(name = "price")
     private BigDecimal price;
 
@@ -50,7 +62,7 @@ public class HistoryPrice extends AbstractBaseEntity implements Comparator<Histo
     }
 
     public void setPrice(BigDecimal price) {
-        DecimalFormat df = new DecimalFormat("#.####");
+        DecimalFormat df = new DecimalFormat("#.##");
         df.setRoundingMode(RoundingMode.CEILING);
         this.price = new BigDecimal(df.format(Double.parseDouble(String.valueOf(price))));
     }

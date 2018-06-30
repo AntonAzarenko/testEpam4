@@ -13,21 +13,21 @@ public class ExceptionUtil {
         return check(found, "id=" + id);
     }
 
-    public static boolean check(boolean found, String msg) {
+    private static boolean check(boolean found, String msg) {
         if (!found) throw new NotFoundException("Not found entity with " + msg);
-        return found;
+        return true;
     }
 
     public static <T> T check(T obj, int id) {
         return check(obj, "id=" + id);
     }
 
-    public static <T> T check(T object, String msg) {
+    private static <T> T check(T object, String msg) {
         if (object == null) throw new NotFoundException("Not found entity with " + msg);
         return object;
     }
 
     public static boolean check(Integer id) {
-        return id == null ? false : true;
+        return id != null;
     }
 }

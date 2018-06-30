@@ -8,9 +8,9 @@ import java.util.List;
 public interface SubscriptionService {
     void create(int idPeriodicals, int userId, Date start, Date end);
 
-    Subscription getSubscriptionById(int id);
+    Subscription getById(int id);
 
-    List<Subscription> getAllSubscription();
+    List<Subscription> getAll();
 
-    List<Subscription> getAllSubscriptionsUserByUserId(int id);
+    List<Subscription> getAllUserByUserId(int id);
 }

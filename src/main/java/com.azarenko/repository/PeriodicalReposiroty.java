@@ -11,7 +11,7 @@ public interface PeriodicalReposiroty {
 
     boolean remove(int id);
 
-    List<Periodical> getAll();
+    List getAll();
 
     Periodical get(int id);
 

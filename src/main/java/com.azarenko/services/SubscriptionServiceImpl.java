@@ -13,17 +13,17 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     }
 
     @Override
-    public Subscription getSubscriptionById(int id) {
+    public Subscription getById(int id) {
         return null;
     }
 
     @Override
-    public List<Subscription> getAllSubscription() {
+    public List<Subscription> getAll() {
         return null;
     }
 
     @Override
-    public List<Subscription> getAllSubscriptionsUserByUserId(int id) {
+    public List<Subscription> getAllUserByUserId(int id) {
         return null;
     }
 }

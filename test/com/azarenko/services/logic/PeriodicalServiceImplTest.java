@@ -42,16 +42,18 @@ public class PeriodicalServiceImplTest {
     @Test
     public void save() throws Exception {
         Periodical periodical =
-                new Periodical(null,"Springs",
-                        "How to learn the SPRING","Azarenko)",24,32568,18,new BigDecimal(2.00));
+                new Periodical("Springs",
+                        "How to learn the SPRING","Azarenko)",
+                        24,32568,18,new BigDecimal(2.02));
         periodicalService.save(periodical);
        /* Periodical periodical2 =
                 new Periodical(27,"Spring",
                         "How to learn the SPRING","Azarenko)",24,32568,18,new BigDecimal(2.20));
        periodicalService.save(periodical2);*/
         Periodical periodical3 =
-                new Periodical(27,"Spring",
-                        "How to learn the SPRING","Azarenko)",24,32568,18,new BigDecimal(2.25));
+                new Periodical(12,"Spring",
+                        "How to learn the SPRING","Azarenko)",
+                        24,32568,18,new BigDecimal(2.25));
         periodicalService.save(periodical3);
     }
     @Before
@@ -67,7 +69,7 @@ public class PeriodicalServiceImplTest {
 
     @Test()
     public void remove() throws Exception {
-        if (periodicalService.remove(17)) {
+        if (periodicalService.remove(12)) {
             LOG.info("remove element");
         } else {
             LOG.info("didn't remove");

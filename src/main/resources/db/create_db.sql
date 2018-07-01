@@ -31,8 +31,7 @@ CREATE TABLE users (
   name         VARCHAR(30)             NOT NULL,
   email        VARCHAR(45)             NOT NULL,
   password     VARCHAR(20)             NOT NULL,
-  enabled      TINYINT(0)              NOT NULL,
-  application  VARCHAR(5)              NOT NULL,
+  enabled      TINYINT DEFAULT TRUE             NOT NULL,
   registration TIMESTAMP DEFAULT now() NOT NULL,
   PRIMARY KEY (id)
 )
@@ -93,12 +92,24 @@ CREATE TABLE shopping_cart (
   date_start     DATE           NOT NULL,
   date_end       DATE           NOT NULL,
   countPer       INTEGER        NOT NULL,
+  time            INTEGER       not null,
   price          DECIMAL(10, 2) NOT NULL,
   PRIMARY KEY (id),
   FOREIGN KEY (id_periodicals) REFERENCES catalog_periodicals (id),
   FOREIGN KEY (userId) REFERENCES users (id)
 )
   ENGINE = InnoDB
+  DEFAULT CHARSET utf8;
+
+USE  mydb;
+CREATE TABLE roles (
+  user_id INTEGER NOT NULL,
+  role VARCHAR(50) NOT NULL,
+  CONSTRAINT user_roles_idx UNIQUE (user_id, role),
+  FOREIGN KEY (user_id) REFERENCES users (id)
+)
+
+  ENGINE  = InnoDB
   DEFAULT CHARSET utf8;
 
 USE mydb;
@@ -112,5 +123,14 @@ INSERT INTO catalog_periodicals (title, discription, publisher, output_frequency
   ('Вечерний Витебск', 'ежедневный обозреватель', 'unknow', '12', '12548', '16','0', '7.47'),
   ('Работа', 'вакансии и спрос', 'unknow', '48', '26589', '18', '0','1.29');
 
+USE mydb;
+INSERT INTO users (name, email, password)  VALUES
+  ('User','User@ya.ru', 'user'),
+  ('Admin','Admin@gmail.com','admin');
 
+
+USE mydb;
+INSERT INTO roles(role, user_id) VALUES
+  ('ROLE_USER','1'),
+  ('ROLE_ADMIN', '2')
 

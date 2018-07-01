@@ -1,6 +1,7 @@
 package com.azarenko.services.logic;
 
 
+import com.azarenko.exceptions.ExceptionUtil;
 import com.azarenko.model.Periodical;
 import com.azarenko.model.ShoppingCart;
 import com.azarenko.repository.ShoppingCartRepository;
@@ -13,10 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class ShoppingCartServiceImpl implements ShoppingCartService {
@@ -31,6 +29,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     private PeriodicalService service;
 
     @Override
+    @Transactional
     public void add(ShoppingCart shoppingCart) {
         shoppingCartRepository.add(shoppingCart);
     }
@@ -44,18 +43,22 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     @Override
     public BigDecimal getPriceForSubcription(Periodical periodical) {
         int days = subscriptionTimeUtil.getNumberOfExist(periodical);
+        BigDecimal temp = periodical.getPrice().multiply(new BigDecimal(days));
         return periodical.getPrice().multiply(new BigDecimal(days));
     }
 
     @Override
     @Transactional
     public BigDecimal getFullPriceForPayment(int userId) {
-        BigDecimal fullPrice = new BigDecimal(0);
+        BigDecimal fullPrice = new BigDecimal(1);
         List<ShoppingCart> list = getAllByUserID(userId);
         Map<Integer, Periodical> map = getMapPeriodicals();
-        for (ShoppingCart cart : list) {
-            if (map.containsKey(cart.getId())) {
-                fullPrice.add(getPriceForSubcription(map.get(cart.getId())));
+        if (list != null) {
+            for (ShoppingCart cart : list) {
+                if (map.containsKey(cart.getPeriodicalId())) {
+                    BigDecimal temp = getPriceForSubcription(map.get(cart.getPeriodicalId()));
+                    fullPrice = fullPrice.add(temp);
+                }
             }
         }
         return fullPrice;

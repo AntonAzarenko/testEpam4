@@ -3,6 +3,8 @@ package com.azarenko.services;
 import com.azarenko.model.Periodical;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
+
 
 public interface SubscriptionTimeUtil {
 
@@ -26,4 +28,6 @@ public interface SubscriptionTimeUtil {
     int getMonth();
 
     int getYear();
+
+    Date getEndDate(int timeSubscription);
 }

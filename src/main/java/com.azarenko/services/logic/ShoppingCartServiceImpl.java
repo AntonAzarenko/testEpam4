@@ -1,7 +1,7 @@
 package com.azarenko.services.logic;
 
 
-import com.azarenko.exceptions.ExceptionUtil;
+
 import com.azarenko.model.Periodical;
 import com.azarenko.model.ShoppingCart;
 import com.azarenko.repository.ShoppingCartRepository;
@@ -29,7 +29,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     private PeriodicalService service;
 
     @Override
-    @Transactional
+
     public void add(ShoppingCart shoppingCart) {
         shoppingCartRepository.add(shoppingCart);
     }
@@ -48,7 +48,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     @Override
-    @Transactional
     public BigDecimal getFullPriceForPayment(int userId) {
         BigDecimal fullPrice = new BigDecimal(1);
         List<ShoppingCart> list = getAllByUserID(userId);
@@ -65,12 +64,11 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     @Override
-    @Transactional
     public void removeShoppingCartUser(int id) {
         shoppingCartRepository.removeByUserId(id);
     }
 
-    @Transactional
+
     public Map<Integer, Periodical> getMapPeriodicals() {
         List<Periodical> allPeriodicals = service.getAll();
         Map<Integer, Periodical> map = new HashMap<>();

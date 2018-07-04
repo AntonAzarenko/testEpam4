@@ -21,4 +21,8 @@ public interface PeriodicalService {
 
     List<Periodical> sortByIndex(List<Periodical> list);
 
+    boolean isArchive(Periodical periodical);
+
+    boolean setArchive(int id);
+
 }

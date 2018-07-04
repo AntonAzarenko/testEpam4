@@ -2,44 +2,41 @@ package com.azarenko.services.logic;
 
 import com.azarenko.model.Role;
 import com.azarenko.model.User;
+import com.azarenko.repository.UserRepository;
 import com.azarenko.services.UserService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
     private static final Logger LOG = LoggerFactory.getLogger(UserServiceImpl.class);
 
+    @Autowired
+    private UserRepository userRepository;
+
     @Override
     public User getByEmail(String email) {
-        return null;
+        return userRepository.getByEmail(email);
     }
 
     @Override
     public int getIdByEmail(String login) {
-        return 0;
+        return userRepository.getIdByEmail(login);
     }
 
     @Override
-    public boolean addUser(User user) {
-        return false;
-    }
-
-    @Override
-    public boolean isUser(String login) {
-        return false;
+    @Transactional
+    public boolean add(User user) {
+         return userRepository.add(user) != null;
     }
 
     @Override
     public List<User> getAll() {
-        return null;
-    }
-
-    @Override
-    public boolean setRole(int id, Role role) {
-        return false;
+        return userRepository.getAll();
     }
 }

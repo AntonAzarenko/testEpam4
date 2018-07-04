@@ -10,7 +10,7 @@ import javax.persistence.PersistenceContext;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Repository
+
 @Transactional(readOnly = true)
 public class PeriodicalRepositoryImpl implements PeriodicalReposiroty {
 
@@ -38,6 +38,7 @@ public class PeriodicalRepositoryImpl implements PeriodicalReposiroty {
     public List<Periodical> getAll() {
         return em.createNamedQuery(Periodical.All_SORTED, Periodical.class).getResultList();
     }
+
 
     @Override
     public Periodical get(int id) {

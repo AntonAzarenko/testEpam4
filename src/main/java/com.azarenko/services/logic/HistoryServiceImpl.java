@@ -39,7 +39,6 @@ public class HistoryServiceImpl implements HistoryService {
             historyRepository.save(historyPrice);
             return;
         }
-
         if (round(periodical.getPrice()).compareTo(historyPrice.getPrice()) == 0) {
             return;
         }
@@ -62,9 +61,9 @@ public class HistoryServiceImpl implements HistoryService {
 
     private HistoryPrice create(Periodical periodical) {
         List<HistoryPrice> list = new ArrayList<>();
-       // list = getAllByPeriodicalId(periodical.getId());
+        // list = getAllByPeriodicalId(periodical.getId());
         HistoryPrice price = null;
-        if((list=getAllByPeriodicalId(periodical.getId())) != null) {
+        if ((list = getAllByPeriodicalId(periodical.getId())) != null) {
             for (HistoryPrice hp : list) {
                 if (ExceptionUtil.check(hp.getIdPeriodical()) && hp.getDateEnd() == null) {
                     price = hp;
@@ -83,7 +82,7 @@ public class HistoryServiceImpl implements HistoryService {
         return list;//todo
     }
 
-    private BigDecimal round(BigDecimal price){
-        return price.setScale(2,BigDecimal.ROUND_HALF_UP);
+    private BigDecimal round(BigDecimal price) {
+        return price.setScale(2, BigDecimal.ROUND_HALF_UP);
     }
 }

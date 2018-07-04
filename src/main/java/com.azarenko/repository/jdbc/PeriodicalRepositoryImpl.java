@@ -15,13 +15,19 @@ import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceContextType;
 import javax.sql.DataSource;
 import java.math.BigDecimal;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+/**
+ *
+ */
 @Repository
+@PersistenceContext(type = PersistenceContextType.EXTENDED)
 public class PeriodicalRepositoryImpl implements PeriodicalReposiroty {
     private static final Logger LOG = LoggerFactory.getLogger(PeriodicalRepositoryImpl.class);
 
@@ -90,6 +96,7 @@ public class PeriodicalRepositoryImpl implements PeriodicalReposiroty {
     public List<Periodical> getAll() {
         return jdbcTemplate.query("SELECT * FROM catalog_periodicals", mapper);
     }
+
 
     @Override
     public Periodical get(int id) {

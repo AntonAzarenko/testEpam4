@@ -48,6 +48,7 @@ public class ShoppingCartServiceImplTest {
         }
 
         cart.setCountPer(timeUtil.getNumberOfExist(list.get(2)));
+        LOG.info(cart.toString());
         shoppingCartService.add(cart);
 
         cart = new ShoppingCart();

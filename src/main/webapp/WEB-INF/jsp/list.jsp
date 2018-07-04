@@ -41,7 +41,7 @@
             </a>
             </th>
             <th><a href='start?action=delete&id=<c:out value="${periodicals.id}"/>'>
-                <button class="btn btn-danger">Удалить</button>
+                <button class="btn btn-danger">В архив</button>
             </a>
             </th>
         </tr>

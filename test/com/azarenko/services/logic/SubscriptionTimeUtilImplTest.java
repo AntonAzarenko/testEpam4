@@ -41,16 +41,6 @@ public class SubscriptionTimeUtilImplTest {
         LOG.info(String.valueOf(subscriptionTimeUtil.getCountDaysInHalfYEar(subscriptionTimeUtil.getHalfYear())));
     }
 
-    @Test
-    public void getDay() throws Exception {
-    }
 
-    @Test
-    public void getMonth() throws Exception {
-    }
-
-    @Test
-    public void getYear() throws Exception {
-    }
 
 }

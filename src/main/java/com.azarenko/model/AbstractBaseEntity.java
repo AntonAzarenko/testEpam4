@@ -6,7 +6,6 @@ import javax.persistence.*;
 
 
 @MappedSuperclass
-@Access(AccessType.FIELD)
 public abstract class AbstractBaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

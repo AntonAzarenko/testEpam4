@@ -1,18 +1,17 @@
-package com.azarenko.services;
+package com.azarenko.repository;
 
-import com.azarenko.model.Role;
 import com.azarenko.model.User;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-public interface UserService {
+public interface UserRepository {
+    User add(User user);
+
     User getByEmail(String email);
 
     int getIdByEmail(String login);
 
-    boolean add(User user);
-
     List<User> getAll();
-
 
 }

@@ -18,6 +18,7 @@ import java.util.Comparator;
         @NamedQuery(name = Periodical.INDEX, query = "SELECT p FROM Periodical p WHERE p.index=:index"),
         @NamedQuery(name = Periodical.PRICE, query = "select p from Periodical p WHERE p.price=:price")
 })
+@Access(AccessType.FIELD)
 public class Periodical extends AbstractBaseEntity implements Comparator<Periodical> {
 
     public static final String DELETE = "Periodical.delete";
@@ -27,7 +28,7 @@ public class Periodical extends AbstractBaseEntity implements Comparator<Periodi
     public static final String INDEX = "Periodical.index";
 
     // заголовок
-    @Column(name = "title", nullable = false, unique = true)
+    @Column(name = "title", nullable = false)
     @Nullable()
     private String title;
 
@@ -51,9 +52,12 @@ public class Periodical extends AbstractBaseEntity implements Comparator<Periodi
     @Column(name = "age_limit")
     private int ageLimit;
 
+
     //цена за экземпляр
     @Column(name = "price")
     private BigDecimal price;
+
+    @Column(name = "archive")
     private boolean archive;
 
     public Periodical() {
@@ -81,7 +85,7 @@ public class Periodical extends AbstractBaseEntity implements Comparator<Periodi
         this.price = price;
     }
 
-    @Column(name = "archive")
+
     public boolean isArchive() {
         return archive;
     }
@@ -165,8 +169,41 @@ public class Periodical extends AbstractBaseEntity implements Comparator<Periodi
 
     @Override
     public int compare(Periodical o1, Periodical o2) {
-        return o1.title.compareTo(o2.title);
+        assert o2.title != null;
+        return o1.title != null ? o1.title.compareTo(o2.title) : 0;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Periodical)) return false;
+        if (!super.equals(o)) return false;
 
+        Periodical that = (Periodical) o;
+
+        if (getOutputFrequency() != that.getOutputFrequency()) return false;
+        if (getIndex() != that.getIndex()) return false;
+        if (getAgeLimit() != that.getAgeLimit()) return false;
+        if (isArchive() != that.isArchive()) return false;
+        if (getTitle() != null ? !getTitle().equals(that.getTitle()) : that.getTitle() != null) return false;
+        if (getDiscription() != null ? !getDiscription().equals(that.getDiscription()) : that.getDiscription() != null)
+            return false;
+        if (getPublisher() != null ? !getPublisher().equals(that.getPublisher()) : that.getPublisher() != null)
+            return false;
+        return getPrice() != null ? getPrice().equals(that.getPrice()) : that.getPrice() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + (getTitle() != null ? getTitle().hashCode() : 0);
+        result = 31 * result + (getDiscription() != null ? getDiscription().hashCode() : 0);
+        result = 31 * result + (getPublisher() != null ? getPublisher().hashCode() : 0);
+        result = 31 * result + getOutputFrequency();
+        result = 31 * result + getIndex();
+        result = 31 * result + getAgeLimit();
+        result = 31 * result + (getPrice() != null ? getPrice().hashCode() : 0);
+        result = 31 * result + (isArchive() ? 1 : 0);
+        return result;
+    }
 }

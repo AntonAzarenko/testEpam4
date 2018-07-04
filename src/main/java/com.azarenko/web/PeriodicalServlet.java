@@ -1,6 +1,7 @@
-package com.azarenko.web.controllers;
+package com.azarenko.web;
 
 import com.azarenko.model.Periodical;
+import com.azarenko.web.controllers.PeriodicalRestController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -20,13 +21,15 @@ import java.math.BigDecimal;
 public class PeriodicalServlet extends HttpServlet {
 
     private static final Logger LOG = LoggerFactory.getLogger(PeriodicalServlet.class);
+
     private PeriodicalRestController controller;
     private ConfigurableApplicationContext applicationContext;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        applicationContext = new ClassPathXmlApplicationContext("classpath:spring/spring-app.xml",
+        applicationContext = new ClassPathXmlApplicationContext(
+                "classpath:spring/spring-app.xml",
                 "classpath:spring/spring-db.xml");
         controller = applicationContext.getBean(PeriodicalRestController.class);
     }
@@ -64,8 +67,13 @@ public class PeriodicalServlet extends HttpServlet {
         req.getRequestDispatcher("WEB-INF/jsp/list.jsp").forward(req, resp);
     }
 
-    private Periodical intitPeriodical(HttpServletRequest req, HttpServletResponse resp){
-        int id = Integer.parseInt(req.getParameter("id"));
+    private Periodical intitPeriodical(HttpServletRequest req, HttpServletResponse resp) {
+        Integer id = null;
+        try{
+             id = Integer.parseInt(req.getParameter("id"));
+        } catch (NumberFormatException e){
+            LOG.info("number format exception");
+        }
         String title = req.getParameter("title");
         String discription = req.getParameter("discription");
         int index = Integer.parseInt(req.getParameter("index"));
@@ -73,7 +81,7 @@ public class PeriodicalServlet extends HttpServlet {
         int ageLimit = Integer.parseInt(req.getParameter("al"));
         String publisher = req.getParameter("pub");
         BigDecimal price = new BigDecimal(req.getParameter("price"));
-        return new Periodical(id,title, discription, publisher, opFr, index ,ageLimit, price);
+        return new Periodical(id, title, discription, publisher, opFr, index, ageLimit, price);
 
     }
 }

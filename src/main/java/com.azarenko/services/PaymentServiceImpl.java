@@ -1,6 +1,7 @@
 package com.azarenko.services;
 
 import com.azarenko.model.Payment;
+import com.azarenko.services.PaymentService;
 
 import java.util.List;
 
@@ -9,7 +10,6 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public void add(Payment payment) {
-
     }
 
     @Override
@@ -21,4 +21,5 @@ public class PaymentServiceImpl implements PaymentService {
     public Payment getPaymentByUserId(int id) {
         return null;
     }
+
 }

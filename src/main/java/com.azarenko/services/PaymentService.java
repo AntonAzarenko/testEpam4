@@ -9,8 +9,9 @@ public interface PaymentService {
 
     List<Payment> getPaymentList() ;
 
-    //TODO
-    Payment getPaymentByUserId(int id) ;
+    Payment getPaymentByUserId(int id);
+
+
 
 
 }

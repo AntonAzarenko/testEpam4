@@ -15,5 +15,5 @@
 
     <context:component-scan base-package="com.azarenko.web"/>
 
-    <context:component-scan base-package="com.azarenko.repository.jpa"/>
+    <context:component-scan base-package="com.azarenko.repository.datajpa"/>
 </beans>

@@ -14,4 +14,6 @@ public interface ShoppingCartRepository {
 
     boolean removeByUserId(int id);
 
+    ShoppingCart getByPeriodicalID(int id);
+
 }

@@ -9,6 +9,8 @@ import com.azarenko.services.PeriodicalService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -47,12 +49,14 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     }
 
     @Override
+    @Cacheable("periodicals")
     public List<Periodical> getAll() {
         return periodicalReposiroty.getAll();
     }
 
     @Override
-
+    @Transactional
+    @CacheEvict(value = "periodicals", allEntries = true)
     public Periodical save(Periodical periodical) {
         Objects.requireNonNull(periodical);
         if (chekIs(periodical)) {
@@ -78,6 +82,7 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     }
 
     @Override
+    @Transactional
     public Periodical search(String param, String value) {
         try {
             switch (param) {
@@ -121,20 +126,22 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     @Override
     public boolean setArchive(int id) {
         Periodical periodical = get(id);
-        if(periodical.isArchive()) return false;
+        if (periodical.isArchive()) return false;
         periodical.setArchive(true);
         return save(periodical) != null;
     }
 
-    private boolean chekIs(Periodical periodical) {
+    @Transactional
+    public boolean chekIs(Periodical periodical) {
         String title = periodical.getTitle();
         Periodical periodical1 = search("title", title);
         if (periodical1 == null) {
             return false;
-        }else{
-           if (!periodical.equals(periodical1)){
-               return false;
-           }
+        } else {
+            if (periodical.equals(periodical1)) {
+                periodical.setId(periodical1.getId());
+                return true;
+            }
         }
         periodical.setId(periodical1.getId());
         return true;

@@ -32,7 +32,7 @@ public class PeriodicalServiceImplTest {
         if (periodicals.size() > 0) {
             LOG.info("get all status OK");
         }
-        periodicals.forEach(p -> System.out.println(p));
+        periodicals.forEach(System.out::println);
     }
 
     @Test
@@ -47,9 +47,9 @@ public class PeriodicalServiceImplTest {
                         "How to learn the SPRING","Azarenko)",24,32568,18,new BigDecimal(2.20));
        periodicalService.save(periodical2);*/
         Periodical periodical3 =
-                new Periodical(12, "Spring",
+                new Periodical(30, "Spring",
                         "How to learn the SPRING", "Azarenko)",
-                        24, 32568, 18, new BigDecimal(2.25));
+                        20, 32568, 18, new BigDecimal(2.25));
         periodicalService.save(periodical3);
     }
 

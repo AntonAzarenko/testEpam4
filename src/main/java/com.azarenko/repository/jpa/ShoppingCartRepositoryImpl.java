@@ -37,4 +37,9 @@ public class ShoppingCartRepositoryImpl implements ShoppingCartRepository{
         return em.createNamedQuery(ShoppingCart.DELETE)
                 .setParameter("id", id).executeUpdate() != 0;
     }
+
+    @Override //todo
+    public ShoppingCart getByPeriodicalID(int id) {
+        return null;
+    }
 }

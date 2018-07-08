@@ -16,5 +16,7 @@ public interface ShoppingCartService {
     BigDecimal getFullPriceForPayment(int userId);
 
     void removeShoppingCartUser(int id);
+
+    boolean getByPeriodicalID(int id);
 }
 

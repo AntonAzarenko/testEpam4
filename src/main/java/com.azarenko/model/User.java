@@ -93,4 +93,16 @@ public class User extends AbstractBaseEntity {
     public void setRegistered(Date registered) {
         this.registered = registered;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", enabled=" + enabled +
+                ", authorities=" + authorities +
+                ", registered=" + registered +
+                '}';
+    }
 }

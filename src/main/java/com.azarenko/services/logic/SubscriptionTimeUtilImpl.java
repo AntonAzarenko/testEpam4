@@ -66,13 +66,15 @@ public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
 
     @Override
     public Date getEndDate(int timeSubscription) {
-        Calendar calendar = Calendar.getInstance();
+
         if (timeSubscription == 0 ){
-            calendar.set(getYear(),6,30);
+            Calendar calendar = Calendar.getInstance();
+            calendar.set(getYear()-1,5,30);
             Date date = calendar.getTime();
             return date;
         }else {
-            calendar.set(getYear(),12,31);
+            Calendar calendar = Calendar.getInstance();
+            calendar.set(getYear(),11,30);
             Date date = calendar.getTime();
             return date;
         }

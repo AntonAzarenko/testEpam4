@@ -95,6 +95,15 @@ public class ShoppingCartServiceImplTest {
     @Test
     public void getMapPeriodicals() throws Exception {
     }
+    @Test
+    public void get(){
+
+        if(shoppingCartService.getByPeriodicalID(2)){
+            LOG.info("true");
+        }else {
+            LOG.info("false");
+        }
+    }
 
 
 }

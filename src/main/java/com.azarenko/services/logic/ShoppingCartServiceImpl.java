@@ -1,7 +1,6 @@
 package com.azarenko.services.logic;
 
 
-
 import com.azarenko.model.Periodical;
 import com.azarenko.model.ShoppingCart;
 import com.azarenko.repository.ShoppingCartRepository;
@@ -29,13 +28,15 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     private PeriodicalService service;
 
     @Override
-
+    @Transactional
     public void add(ShoppingCart shoppingCart) {
+        if(getByPeriodicalID(shoppingCart.getPeriodicalId())){
+            return;
+        }
         shoppingCartRepository.add(shoppingCart);
     }
 
     @Override
-    @Transactional
     public List<ShoppingCart> getAllByUserID(int id) {
         return shoppingCartRepository.getAllByUserID(id);
     }
@@ -64,8 +65,14 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     @Override
+    @Transactional
     public void removeShoppingCartUser(int id) {
         shoppingCartRepository.removeByUserId(id);
+    }
+
+    @Override
+    public boolean getByPeriodicalID(int id) {
+        return shoppingCartRepository.getByPeriodicalID(id) != null;
     }
 
 
@@ -77,4 +84,6 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         }
         return map;
     }
+
+
 }

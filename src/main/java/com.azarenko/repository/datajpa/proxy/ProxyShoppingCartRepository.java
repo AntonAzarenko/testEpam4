@@ -13,5 +13,7 @@ public interface ProxyShoppingCartRepository extends JpaRepository<ShoppingCart,
     ShoppingCart save(ShoppingCart cart);
 
 
-    int deleteByUserID(Integer integer);
+    int deleteByUserID(int userId);
+
+    ShoppingCart getByPeriodicalId(int id);
 }

@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Repository
-@Transactional
+@Transactional(readOnly = true)
 public class DataJpaPeriodicalRepositoryImpl implements PeriodicalReposiroty {
     @Autowired
     private ProxyPeriodicalRepository proxy;
@@ -26,6 +26,7 @@ public class DataJpaPeriodicalRepositoryImpl implements PeriodicalReposiroty {
     }
 
     @Override
+    @Transactional
     public boolean remove(int id) {
         return false;
     }
@@ -41,16 +42,19 @@ public class DataJpaPeriodicalRepositoryImpl implements PeriodicalReposiroty {
     }
 
     @Override
+    @Transactional
     public Periodical search(BigDecimal price) {
         return proxy.getByPrice(price);
     }
 
     @Override
+    @Transactional
     public Periodical search(String title) {
         return proxy.getByTitle(title);
     }
 
     @Override
+    @Transactional
     public Periodical search(int index) {
         return proxy.getByIndex(index);
     }

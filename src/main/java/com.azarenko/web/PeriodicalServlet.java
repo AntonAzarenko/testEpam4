@@ -5,6 +5,7 @@ import com.azarenko.web.controllers.PeriodicalRestController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Profile;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.ServletConfig;
@@ -29,8 +30,10 @@ public class PeriodicalServlet extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
         applicationContext = new ClassPathXmlApplicationContext(
-                "classpath:spring/spring-app.xml",
-                "classpath:spring/spring-db.xml");
+                new String[]{ "classpath:spring/spring-app.xml",
+                "classpath:spring/spring-db.xml"}, false);
+        applicationContext.getEnvironment().setActiveProfiles("datajpa");
+        applicationContext.refresh();
         controller = applicationContext.getBean(PeriodicalRestController.class);
     }
 

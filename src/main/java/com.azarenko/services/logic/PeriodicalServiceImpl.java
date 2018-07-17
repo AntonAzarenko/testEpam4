@@ -105,6 +105,29 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     }
 
     @Override
+    @Transactional
+    public Periodical search(String value){
+        List<Periodical> periodicals = getAll();
+        for (Periodical per : periodicals){
+            if(per.getTitle().equalsIgnoreCase(value)){
+                return per;
+            }
+        }
+        for (Periodical per : periodicals){
+            if(String.valueOf(per.getIndex()).equalsIgnoreCase(value)){
+                return per;
+            }
+        }
+        for (Periodical per : periodicals){
+            if(String.valueOf(per.getPrice()).equals(value)){
+                return per;
+            }
+        }
+        return null;
+
+    }
+
+    @Override
     public List<Periodical> sortByName(List<Periodical> list) {
         Comparator<Periodical> comparator = (o1, o2) -> new Periodical().compare(o1, o2);
         Collections.sort(list, comparator);
@@ -124,6 +147,7 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     }
 
     @Override
+    @CacheEvict(value = "periodicals", allEntries = true)
     public boolean setArchive(int id) {
         Periodical periodical = get(id);
         if (periodical.isArchive()) return false;
@@ -138,9 +162,9 @@ public class PeriodicalServiceImpl implements PeriodicalService {
         if (periodical1 == null) {
             return false;
         } else {
-            if (periodical.equals(periodical1)) {
+            if (!(periodical.equals(periodical1))) {
                 periodical.setId(periodical1.getId());
-                return true;
+                return false;
             }
         }
         periodical.setId(periodical1.getId());

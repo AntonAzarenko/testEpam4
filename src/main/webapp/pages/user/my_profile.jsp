@@ -12,7 +12,7 @@
 <body>
 <header>
     <div class="logo">
-        <img src="/image/3.png">
+        <img src="/resources/image/3.png">
 
     </div>
     <div class="dws-menu">

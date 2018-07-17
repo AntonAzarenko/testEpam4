@@ -7,7 +7,7 @@
 <body>
 <header>
     <div class="logo">
-        <img src="/image/3.png">
+        <img src="/resources/image/3.png">
         <h1>Пользователи</h1>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../css/admin_catalog.css">

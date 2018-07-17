@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 @Transactional(readOnly = true)
 public class DataJpaHistoryRepositoryImpl implements HistoryRepository {
-
+    @Autowired
     private ProxyHistoryRepository proxys;
 
     @Override

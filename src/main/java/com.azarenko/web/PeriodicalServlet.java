@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.math.BigDecimal;
 
-@WebServlet(urlPatterns = "/start")
+
 public class PeriodicalServlet extends HttpServlet {
 
     private static final Logger LOG = LoggerFactory.getLogger(PeriodicalServlet.class);
@@ -45,7 +45,7 @@ public class PeriodicalServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String action = req.getParameter("action");
+      /*  String action = req.getParameter("action");
         if (action == null) {
             req.setAttribute("list", controller.getListEntity());
             req.getRequestDispatcher("WEB-INF/jsp/list.jsp").forward(req, resp);
@@ -59,15 +59,15 @@ public class PeriodicalServlet extends HttpServlet {
             controller.remove(Integer.parseInt(req.getParameter("id")));
             req.setAttribute("list", controller.getListEntity());
             req.getRequestDispatcher("WEB-INF/jsp/list.jsp").forward(req, resp);
-        }
+        }*/
     }
 
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        controller.add(intitPeriodical(req, resp));
+        /*c*//*ontroller.add(intitPeriodical(req, resp));
         req.setAttribute("list", controller.getListEntity());
-        req.getRequestDispatcher("WEB-INF/jsp/list.jsp").forward(req, resp);
+        req.getRequestDispatcher("WEB-INF/jsp/list.jsp").forward(req, resp);*/
     }
 
     private Periodical intitPeriodical(HttpServletRequest req, HttpServletResponse resp) {

@@ -1,3 +1,15 @@
+header, footer{
+    background: none repeat scroll 0 0 #a6c9e2;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 6px;
+}
+
+background {
+    background: none repeat scroll 0 0 #d4d4d4;
+   color: #d4d4d4;
+}
 
 
 

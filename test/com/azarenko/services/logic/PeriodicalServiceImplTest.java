@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -21,6 +22,7 @@ import static org.slf4j.LoggerFactory.getLogger;
         "classpath:spring/spring-db.xml"
 })
 @RunWith(SpringJUnit4ClassRunner.class)
+@ActiveProfiles("datajpa")
 public class PeriodicalServiceImplTest {
     private static final Logger LOG = getLogger(PeriodicalServiceImplTest.class);
     @Autowired
@@ -130,7 +132,7 @@ public class PeriodicalServiceImplTest {
     @Test
     public void edit() {
         Periodical periodical = periodicalService.get(5);
-        periodical.setPrice(new BigDecimal(4));
+        periodical.setPrice(new BigDecimal(3));
         periodicalService.save(periodical);
     }
 

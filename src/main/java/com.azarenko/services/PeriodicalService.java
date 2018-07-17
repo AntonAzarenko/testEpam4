@@ -17,6 +17,8 @@ public interface PeriodicalService {
 
     Periodical search(String param, String value);
 
+    Periodical search(String value);
+
     List<Periodical> sortByName(List<Periodical> list);
 
     List<Periodical> sortByIndex(List<Periodical> list);

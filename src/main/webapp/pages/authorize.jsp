@@ -13,7 +13,7 @@
 <header>
     <h1>Вход</h1>
     <div class="container">
-        <img src="/image/3.png">
+        <img src="/resources/image/3.png">
         <form class="center" method=post action="authorize?action=authorize">
             <div class="dws-input">
                 <input type="text" placeholder="Введите логин" name="login">

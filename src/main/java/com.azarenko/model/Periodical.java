@@ -1,8 +1,12 @@
 package com.azarenko.model;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.springframework.lang.Nullable;
 
+
 import javax.persistence.*;
+
 import java.math.BigDecimal;
 import java.util.Comparator;
 
@@ -19,6 +23,7 @@ import java.util.Comparator;
         @NamedQuery(name = Periodical.PRICE, query = "select p from Periodical p WHERE p.price=:price")
 })
 @Access(AccessType.FIELD)
+//@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Periodical extends AbstractBaseEntity implements Comparator<Periodical> {
 
     public static final String DELETE = "Periodical.delete";

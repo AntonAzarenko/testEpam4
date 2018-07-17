@@ -1,6 +1,6 @@
 package com.azarenko.model;
 
-import org.apache.commons.beanutils.converters.StringArrayConverter;
+
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;

@@ -6,13 +6,13 @@
     <title>hi</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/user_subscription_current.css">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/resources/css/style.css" type="text/css">
     <link rel="stylesheet" href="/css/font-awesome.css" type="text/css">
 </head>
 <body>
 <header>
     <div class="logo">
-        <img src="/image/3.png">
+        <img src="/resources/image/3.png">
         <h1>${id}</h1>
     </div>
     <div class="dws-menu">

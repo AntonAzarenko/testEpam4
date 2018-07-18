@@ -43,6 +43,25 @@ public class User extends AbstractBaseEntity {
     @Column(name = "registration", columnDefinition = "timestamp default now()")
     private Date registered = new Date();
 
+    public User(String name, String email, String password, boolean enabled, Set<Role> authorities, Date registered) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.enabled = enabled;
+        this.authorities = authorities;
+        this.registered = registered;
+    }
+
+    public User(Integer id, String name, String email, String password, boolean enabled, Set<Role> authorities, Date registered) {
+        super(id);
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.enabled = enabled;
+        this.authorities = authorities;
+        this.registered = registered;
+    }
+
     public User() {
     }
 
@@ -92,6 +111,29 @@ public class User extends AbstractBaseEntity {
 
     public void setRegistered(Date registered) {
         this.registered = registered;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+
+        User user = (User) o;
+
+        if (getName() != null ? !getName().equals(user.getName()) : user.getName() != null) return false;
+        if (getEmail() != null ? !getEmail().equals(user.getEmail()) : user.getEmail() != null) return false;
+        if (getPassword() != null ? !getPassword().equals(user.getPassword()) : user.getPassword() != null)
+            return false;
+        return getAuthorities() != null ? getAuthorities().equals(user.getAuthorities()) : user.getAuthorities() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getName() != null ? getName().hashCode() : 0;
+        result = 31 * result + (getEmail() != null ? getEmail().hashCode() : 0);
+        result = 31 * result + (getPassword() != null ? getPassword().hashCode() : 0);
+        result = 31 * result + (getAuthorities() != null ? getAuthorities().hashCode() : 0);
+        return result;
     }
 
     @Override

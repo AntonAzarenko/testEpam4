@@ -4,7 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 public class PagedListHolder<T> {
-    boolean newPageSet;
+    private boolean newPageSet;
     private List<T> list;
     private Integer pageSize;
     private int page;

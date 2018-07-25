@@ -20,6 +20,6 @@
         <p><h5><fmt:message key = "app.discription"/></h5></p>
 
     </div>
-    <jsp:include page="../../fragments/footer.jsp"/>
+
 </head>
 

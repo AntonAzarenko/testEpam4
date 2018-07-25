@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,12 +23,12 @@ public class PeriodicalRestController {
         return service.getAll();
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/add", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.POST, value = ("/add"), consumes = MediaType.APPLICATION_JSON_VALUE)
     public void add(Periodical periodical) {
         service.save(periodical);
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = ("/archive/{id}"))
+    @RequestMapping(method = RequestMethod.POST, value = ("/archive/{id}"))
     public void setArchive(@PathVariable("id") int id) {
         service.setArchive(id);
     }
@@ -39,7 +38,7 @@ public class PeriodicalRestController {
         return service.search(search);
     }
 
-    @RequestMapping(method = RequestMethod.GET, value = ("/{id}"), produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.POST, value = ("/{id}"), produces = MediaType.APPLICATION_JSON_VALUE)
     public Periodical get(@PathVariable("id") int id) {
         return service.get(id);
     }

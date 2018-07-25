@@ -3,12 +3,15 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
-<%--<header><fmt:message key="app.title"/></header>--%>
 <head>
     <nav class="navbar navbar-dark bg-dark">
-        <a href="#">
-            <div class="navbar-brand"><fmt:message key="app.register"/></div>
-        </a>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registration" data-whatever="@mdo">Open modal for @mdo
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registration" data-whatever="@mdo">
+            <fmt:message key="app.register"></fmt:message>
+        </button>
+
+
         <form class="form-inline my-2 my-lg-0">
             <a class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" role="button" href="list"><fmt:message key="user.title"/></a>
             <a class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" role="button" href="start">Войти</a>

@@ -15,10 +15,10 @@
 </head>
 <body>
 
-<div class="container h-75 ml-2 mr-2 shadow-lg col">
-    <div class="row">
-        <div class="container  w-50 ml-2 bg-light col">
-            <table class="table table-striped small">
+<div class="container-fluid " style="background: #ebebeb" >
+
+        <div class="container bg-light flex-lg-row ">
+            <table class="table table-striped ">
                 <tr>
                     <thead>
                     <th>ISBN</th>
@@ -29,7 +29,7 @@
                     <jsp:useBean id="periodicals" scope="page" type="com.azarenko.model.Periodical"/>
                     <tr>
                         <th>${periodicals.index}</th>
-                        <th><a class="bg-light text-dark " style="text-decoration: none"
+                        <th class="p-3"><a class="bg-light text-dark  p-1 " style="text-decoration: none"
                                href="get?id=<c:out value='${periodicals.id}'/>">${periodicals.title}<a/></th>
                         <th><a href="t&id=<c:out value="${periodicals.id}"/>">
                             <button class="btn btn-light">Подписаться</button>
@@ -40,7 +40,7 @@
             </table>
             <br>
         </div>
-        <div class="container ml-2 w-50 shadow-lg col " style="background-color: rgba(227,225,222,0.62)">
+       <%-- <div class="container ml-2 w-50 shadow-lg col " style="background-color: rgba(227,225,222,0.62)">
             <c:if test="${periodical.id != null}">
             <div class="text-center">
                 <hr>
@@ -68,7 +68,7 @@
                 </div>
             </c:if>
         </div>
-    </div>
+    </div>--%>
 </div>
 <jsp:include page="../../fragments/footer.jsp"/>
 </body>

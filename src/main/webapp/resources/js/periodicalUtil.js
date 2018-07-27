@@ -1,8 +1,13 @@
-function makeEditable(){
+function makeEditable() {
     $('.delete').click(function () {
         deleteRow($(this).attr("id"));
     });
+    $('#datailsForm').submit(function () {
+        save();
+        return false;
+    })
 }
+
 function add() {
     $('#editRow').modal()
 
@@ -10,12 +15,13 @@ function add() {
 
 function deleteRow(id) {
     $.ajax({
-        url: ajaxUrl + id,
+        url: ajaxUrl + 'archive/' + id,
         type: 'POST',
-        sucсess: function () {
+        success: function () {
             updateTable();
         }
     });
+
 }
 
 function updateTable() {
@@ -24,24 +30,23 @@ function updateTable() {
         $.each(data, function (key, item) {
             datatableApi.row.add(item);
         });
-        datatableApi.draw()
+        datatableApi.draw();
     });
 }
 
 function save() {
-    var from = $('#detailsForm')
-        $.ajax({
-            type: 'POST',
-            url: ajaxUrl,
-            data: from.serialize(),
-            success:function (data) {
-                $('#editRow').modal('hide');
-                updateTable();
-                
-            }
-        });
+    var form = $('#detailsForm');
+    $.ajax({
+        type: 'POST',
+        url: ajaxUrl,
+        data: form.serialize(),
+        success: function (data) {
+            $('#editRow').modal('hide');
+            updateTable();
+        }
+    });
 
-    
+
 }
 
 

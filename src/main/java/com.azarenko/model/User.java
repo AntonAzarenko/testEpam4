@@ -5,6 +5,7 @@ import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
 
+import java.util.Collections;
 import java.util.Date;
 import java.util.Set;
 
@@ -43,22 +44,22 @@ public class User extends AbstractBaseEntity {
     @Column(name = "registration", columnDefinition = "timestamp default now()")
     private Date registered = new Date();
 
-    public User(String name, String email, String password, boolean enabled, Set<Role> authorities, Date registered) {
+    public User(String name, String email, String password, boolean enabled, Role authorities, Date registered) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.enabled = enabled;
-        this.authorities = authorities;
+        this.authorities = Collections.singleton(authorities);
         this.registered = registered;
     }
 
-    public User(Integer id, String name, String email, String password, boolean enabled, Set<Role> authorities, Date registered) {
+    public User(Integer id, String name, String email, String password, boolean enabled, Role authorities, Date registered) {
         super(id);
         this.name = name;
         this.email = email;
         this.password = password;
         this.enabled = enabled;
-        this.authorities = authorities;
+        this.authorities = Collections.singleton(authorities);
         this.registered = registered;
     }
 

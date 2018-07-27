@@ -1,4 +1,4 @@
-header, footer{
+header, footer {
     background: none repeat scroll 0 0 #a6c9e2;
     color: white;
     font-size: 20px;
@@ -6,9 +6,21 @@ header, footer{
     margin: 6px;
 }
 
-background {
-    background: none repeat scroll 0 0 #d4d4d4;
-   color: #d4d4d4;
+
+
+dl {
+    background:  none repeat scroll 0 #fafafa;
+    margin: 8px;
+    padding: 0;
+}
+dt {
+    display: inline-block;
+    width: 170px;
+}
+dd {
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: top;
 }
 
 

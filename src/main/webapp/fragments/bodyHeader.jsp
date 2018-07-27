@@ -5,16 +5,13 @@
 
 <head>
     <nav class="navbar navbar-dark bg-dark">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registration" data-whatever="@mdo">Open modal for @mdo
+        <button type="button" class="btn btn-primary" onclick="register()" >
+            <fmt:message key="app.register"/>
         </button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registration" data-whatever="@mdo">
-            <fmt:message key="app.register"></fmt:message>
-        </button>
-
 
         <form class="form-inline my-2 my-lg-0">
-            <a class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" role="button" href="list"><fmt:message key="user.title"/></a>
-            <a class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" role="button" href="start">Войти</a>
+            <a class="btn  my-2 my-sm-0 mr-sm-2 btn-primary" role="button" href="list"><fmt:message key="user.title"/></a>
+            <button class="btn  my-2 my-sm-0 mr-sm-2 btn-primary" onclick="enter()"><fmt:message key="app.enter"/></button>
         </form>
     </nav>
 </head>

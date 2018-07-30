@@ -26,7 +26,7 @@
 
     <target name="copy" depends="compile">
         <copy todir="${build.dir}/WEB-INF">
-            <fileset dir="${conf.dir}"/>
+            <fileset dir="${conf.dir}" excludes="web.xml"/>
         </copy>
         <copy todir="${build.dir}">
             <fileset dir="${web.content}" excludes="WEB-INF"/>
@@ -38,7 +38,7 @@
             <fileset dir="${lib.dir}"/>
         </copy>
         <copy todir="${build.dir}/WEB-INF/classes">
-            <fileset dir="${prop}" excludes="web.xml"/>
+            <fileset dir="${prop}" />
         </copy>
     </target>
 

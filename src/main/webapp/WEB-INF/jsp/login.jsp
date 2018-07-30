@@ -88,7 +88,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button  onclick="saveUser()" class="btn btn-primary "><fmt:message key="app.enter"/></button>
+                <button  onclick="inSystem()" class="btn btn-primary "><fmt:message key="app.enter"/></button>
             </div>
         </div>
     </div>

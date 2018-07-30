@@ -11,7 +11,7 @@
 
         <form class="form-inline my-2 my-lg-0">
             <a class="btn  my-2 my-sm-0 mr-sm-2 btn-primary" role="button" href="list"><fmt:message key="user.title"/></a>
-            <button class="btn  my-2 my-sm-0 mr-sm-2 btn-primary" onclick="enter()"><fmt:message key="app.enter"/></button>
+            <button class="btn  my-2 my-sm-0 mr-sm-2 btn-primary" type="button" onclick="enter()"><fmt:message key="app.enter"/></button>
         </form>
     </nav>
 </head>

@@ -7,7 +7,7 @@
 <jsp:include page="../../fragments/headTag.jsp"/>
 <head>
     <link rel="stylesheet" href="webjars/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="resources/css/font-awesome.css" type="text/css">
+    <link rel="shortcut icon" href="../../resources/css/font-awesome.css" type="text/css">
     <jsp:include page="../../fragments/bodyHeader.jsp"/>
     <div class="container h-75  bg-light shadow-lg">
         <br>

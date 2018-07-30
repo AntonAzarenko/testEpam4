@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Apr 01 20:22:57 MSK 2018
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1522603377216
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact junit\:junit\:jar\:sources\:3.8.1 from/to central (https\://repo.maven.apache.org/maven2)\: repo.maven.apache.org

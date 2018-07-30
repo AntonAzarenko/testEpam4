@@ -32,6 +32,7 @@ public class UserTo {
        return new User(null,name,email,password,true, Role.ROLE_USER, new Date());
     }
 
+
     public String getName() {
         return name;
     }

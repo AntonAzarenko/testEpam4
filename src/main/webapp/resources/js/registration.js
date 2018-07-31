@@ -4,11 +4,12 @@ function register() {
 
 function enter() {
     $('#enter').modal();
+    return false;
 }
 
+var userAjaxUrl = 'ajax/admin/users/';
 
 function addUser() {
-    var userAjaxUrl = 'ajax/admin/users/';
     var form = $('#registration');
     $.ajax({
         type: 'POST',
@@ -17,19 +18,21 @@ function addUser() {
         success: function (data) {
             $('#register').modal('hide')
 
+
         }
     })
 }
 
 function inSystem() {
-    var userAjaxUrl = 'ajax/admin/users/';
     var form = $('#enterForm');
-    $.ajaxError({
+    $.ajax({
         type: 'POST',
-        url: ajaxUrl,
+        url: userAjaxUrl + 'login/',
         data: form.serialize(),
         success: function (data) {
             $('#enter').modal('hide');
+            window.location.href='start'
         }
     });
 }
+

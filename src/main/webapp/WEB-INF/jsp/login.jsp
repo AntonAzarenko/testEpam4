@@ -77,13 +77,13 @@
                         <label for="emailE" class="col-form-label">
                             <fmt:message key="app.login.email"/>
                         </label>
-                        <input type="text" class="form-control" id="emailE" name="email">
+                        <input type="text" class="form-control" id="emailE" name="emailE">
                     </div>
                     <div class="form-group">
                         <label for="passwordE" class="col-form-label">
                             <fmt:message key="app.login.password"/>
                         </label>
-                        <input type="password" class="form-control" id="passwordE" name="password">
+                        <input type="password" class="form-control" id="passwordE" name="passwordE">
                     </div>
                 </form>
             </div>

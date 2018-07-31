@@ -18,8 +18,6 @@ import java.io.IOException;
 
 
 public class UserServlet extends HttpServlet {
-
-
     private static final Logger LOG = LoggerFactory.getLogger(UserServlet.class);
     private ConfigurableApplicationContext context;
     private UserRestController controller;

@@ -5,8 +5,13 @@ var datatableApi;
 
 $(function () {
     datatableApi = $('#datatable').DataTable({
-        paging: true,
+        sAjaxSource: ajaxUrl,
+        sAjaxDataProp: "",
         info: false,
+        "searching": false,
+        "scrollY":        "50vh",
+        "scrollCollapse": true,
+        "paging":         false,
         columns: [
             {
                 data : "index"
@@ -30,21 +35,29 @@ $(function () {
                 data: "price"
             },
             {
-                sDefaultContent: "edit",
-                orderable: false
+                sDefaultContent: "",
+                orderable: false,
+                'mRender': renderEditBtn
             },
             {
-                sDefaultContent: "archive",
-                orderable: false
+                sDefaultContent: "",
+                orderable: false,
+                'mRender': renderDeleteBtn
             }
         ],
         aaSorting: [
             [0,
                 "asc"
             ]
-        ]
+        ],
+        "fnCreatedRow": function (row, data, dataIndex) {
+            if(data.archive){
+               $(row).css("text-decoration", "line-through");
+            }
+        },
+        "fnInitComplete": makeEditable
     });
 
-    makeEditable();
+
 
 });

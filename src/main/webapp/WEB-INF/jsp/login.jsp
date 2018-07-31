@@ -8,7 +8,7 @@
 <head>
     <link rel="stylesheet" href="webjars/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../../resources/css/font-awesome.css" type="text/css">
-    <jsp:include page="../../fragments/bodyHeader.jsp"/>
+    <jsp:include page="../../fragments/bodyHeaderLogin.jsp"/>
     <div class="container h-75  bg-light shadow-lg">
         <br>
         <jsp:include page="../../fragments/discription.jsp"/>
@@ -94,5 +94,8 @@
     </div>
 </div>
 <jsp:include page="../../fragments/footer.jsp"/>
+
 </body>
+<script type="text/javascript" src="webjars/noty/2.2.4/jquery.noty.packaged.min.js" defer></script>
+
 

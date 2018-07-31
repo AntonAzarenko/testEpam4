@@ -17,8 +17,7 @@
 <body>
 <div class="jumbotron">
     <div class="view-box">
-        <table class="table tsble-sm  table-light table-striped display table-bordered" id="datatable">
-
+        <table class="table tsble-sm  table-light  display row-border" id="datatable">
             <thead>
             <button type="button" class="btn btn-info" onclick="add()"><i class="fa fa-plus"></i>
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
@@ -35,7 +34,7 @@
                 <th></th>
             </tr>
             </thead>
-            <tbody>
+            <%--<tbody>
             <c:forEach items="${list}" var="periodicals">
                 <jsp:useBean id="periodicals" scope="page" type="com.azarenko.model.Periodical"/>
                 <c:if test="${periodicals.archive == false}">
@@ -51,20 +50,16 @@
                             <button class="btn btn-xs btn-light edit"><i class="fa fa-edit"></i></button>
                         </a>
                         </th>
-                        <th><a class="btn btn-light" type="button" aria-hidden="true"
-                               onclick='deleteRow(<c:out value="${periodicals.id}"/>)'>
-                            <i class="fa fa-file-archive-o"></i><span class="glyphicon glyphicon-plus"
-                                                                      aria-hidden="true"></span></a>
+                        <th><a class="btn  type="button" onclick='deleteRow(<c:out value="${periodicals.id}"/>)'>
+                            <i class="fa fa-file-archive-o"></i></a>
                         </th>
                     </tr>
                 </c:if>
             </c:forEach>
-            </tbody>
+            </tbody>--%>
         </table>
     </div>
 </div>
-
-
 <div class="modal fade" id="editRow">
     <div class="modal-dialog">
         <div class="modal-content">

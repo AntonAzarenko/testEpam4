@@ -5,14 +5,22 @@
 
 <head>
     <nav class="navbar navbar-dark bg-dark">
-        <button type="button" class="btn btn-primary" onclick="register()" >
-            <fmt:message key="app.register"/>
+        <button type="button" class="btn btn-primary"  >
+            <fmt:message key="app.title"/>
         </button>
 
         <form class="form-inline my-2 my-lg-0">
-            <a class="btn  my-2 my-sm-0 mr-sm-2 btn-primary" role="button" href="list"><fmt:message key="user.title"/></a>
-            <button class="btn  my-2 my-sm-0 mr-sm-2 btn-primary" type="button" onclick="enter()"><fmt:message key="app.enter"/></button>
+            <div class="dropdown dropleft">
+            <button class="btn  my-2 my-sm-0 mr-sm-2 btn-primary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Пользователи</a>
+                    <a class="dropdown-item" href="#">Подписки</a>
+                    <a class="dropdown-item" href="#">Платежи</a>
+                </div>
+            </div>
+            <button class="btn  my-2 my-sm-0 mr-sm-2 btn-primary" type="button" onclick="enter()"><fmt:message key="app.exit"/></button>
         </form>
+
     </nav>
 </head>
 

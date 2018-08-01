@@ -13,7 +13,7 @@ public class ShoppingCartTo {
     private int periodicalId;
 
     public ShoppingCart create(ShoppingCartTo shoppingCartTo){
-        ShoppingCart shoppingCart = shoppingCartUtil.create(shoppingCartTo.getPeriodicalId());
+        ShoppingCart shoppingCart = shoppingCartUtil.create(shoppingCartTo.getPeriodicalId(),1);
         return shoppingCart;
     }
     @Nullable

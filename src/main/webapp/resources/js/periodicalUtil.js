@@ -5,7 +5,7 @@ function makeEditable() {
     $('#datailsForm').submit(function () {
         save();
         return false;
-    })
+    });
     $(document).ajaxError(function(evant, jqXHR, options, jsExc){
         fail(evant, jqXHR, options, jsExc)
     });

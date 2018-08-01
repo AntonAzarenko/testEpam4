@@ -31,5 +31,9 @@ public interface SubscriptionTimeUtil {
 
     int getYear();
 
+    Date getStartDate(int timeSubscription);
+
     Date getEndDate(int timeSubscription);
+
+
 }

@@ -1,6 +1,7 @@
 package com.azarenko.services.logic;
 
 import com.azarenko.exceptions.ExceptionUtil;
+import com.azarenko.exceptions.NotFoundException;
 import com.azarenko.model.Periodical;
 import com.azarenko.repository.PeriodicalReposiroty;
 
@@ -60,10 +61,11 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     public Periodical save(Periodical periodical) {
         Objects.requireNonNull(periodical);
         if (chekIs(periodical)) {
-            LOG.info("Add status is error - This periodical already exist");
-            return null;
+            throw new NotFoundException("Add status is error - This periodical already exist");
+            /*return null;*/
         }
         if (periodicalReposiroty.save(periodical) == null) {
+            LOG.info("Add status is error - This periodical already exist");
             return null;
         }
         historyService.save(periodical);

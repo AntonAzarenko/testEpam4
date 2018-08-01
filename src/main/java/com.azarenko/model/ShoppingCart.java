@@ -41,7 +41,7 @@ public class ShoppingCart extends AbstractBaseEntity {
     @Column(name = "countPer")
     private int countPer;
 
-    public ShoppingCart(int userID, int periodicalId, Date start, Date end, BigDecimal price, int countPer) {
+    public ShoppingCart(int userID, int periodicalId, Date start, Date end, BigDecimal price, int countPer, int time) {
         this.userID = userID;
         this.periodicalId = periodicalId;
         this.start = start;

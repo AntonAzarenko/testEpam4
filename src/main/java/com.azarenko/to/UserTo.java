@@ -3,10 +3,8 @@ package com.azarenko.to;
 import com.azarenko.model.Role;
 import com.azarenko.model.User;
 import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.Length;
 import org.springframework.lang.Nullable;
 
-import javax.persistence.Column;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
@@ -28,8 +26,9 @@ public class UserTo {
     private String email;
     @Size(min = 5, max = 15, message = "must between 5 and 15 character")
     private String password;
-    public User asUser(){
-       return new User(null,name,email,password,true, Role.ROLE_USER, new Date());
+
+    public User asUser() {
+        return new User(null, name, email, password, true, Role.ROLE_USER, new Date());
     }
 
 

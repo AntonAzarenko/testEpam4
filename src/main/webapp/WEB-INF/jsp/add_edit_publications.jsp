@@ -6,7 +6,7 @@
 <head>
     <%-- <link rel="stylesheet" href="../../resources/css/style.css" type="text/css">--%>
     <link rel="stylesheet" href="webjars/bootstrap/4.1.0/css/bootstrap.min.css">
-    <jsp:include page="../../fragments/bodyHeader.jsp"/>
+    <jsp:include page="../../fragments/bodyHeaderAdmin.jsp"/>
 </head>
 
 <body>

@@ -65,18 +65,28 @@ public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
     }
 
     @Override
+    public Date getStartDate(int timeSubscription) {
+        if (getHalfYear() == timeSubscription) {
+            return new Date();
+        } else {
+            Calendar calendar = Calendar.getInstance();
+            calendar.set(getYear() - 1, 6, 1);
+            return calendar.getTime();
+        }
+    }
+
+    @Override
     public Date getEndDate(int timeSubscription) {
 
-        if (timeSubscription == 0 ){
+        if (timeSubscription == 0) {
             Calendar calendar = Calendar.getInstance();
-            calendar.set(getYear()-1,5,30);
-            Date date = calendar.getTime();
-            return date;
-        }else {
+            calendar.set(getYear() - 1, 5, 30);
+            return calendar.getTime();
+        } else if (timeSubscription == 1) {
             Calendar calendar = Calendar.getInstance();
-            calendar.set(getYear(),11,30);
-            Date date = calendar.getTime();
-            return date;
+            calendar.set(getYear(), 11, 30);
+            return calendar.getTime();
         }
+        return new Date();
     }
 }

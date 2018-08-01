@@ -9,18 +9,18 @@
 
     <link rel="stylesheet" href="resources/css/font-awesome.css" type="text/css">
 
-    <jsp:include page="../../fragments/bodyHeader.jsp"/>
+    <jsp:include page="../../fragments/bodyHeaderAdmin.jsp"/>
     <%-- <jsp:include page="../../fragments/search.jsp"/>--%>
     <script type="text/javascript" src="resources/js/periodicalUtil.js" defer></script>
-    <script type="text/javascript" src="resources/js/tablePeriodical.js" defer></script>
+    <script type="text/javascript" src="resources/js/periodicalAdminTable.js" defer></script>
 </head>
 <body>
 <div class="jumbotron">
     <div class="view-box">
-        <table class="table tsble-sm  table-light  display row-border" id="datatable">
+        <table class="table table-striped table-bordered" id="datatable">
             <thead>
             <button type="button" class="btn btn-info" onclick="add()"><i class="fa fa-plus"></i>
-                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                <%--<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>--%>
             </button>
             <tr>
                 <th>Index Издания</th>

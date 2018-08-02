@@ -31,7 +31,7 @@ function deleteRow(id) {
 }
 
 function edit(id) {
-    $.get(ajaxUrl + 'get/' + id, function (data) {
+    $.get(ajaxUrl + 'get/' + id , function (data) {
         $.each(data, function (key, value) {
             form.find("input[name='" + key + "']").val(value);
         });

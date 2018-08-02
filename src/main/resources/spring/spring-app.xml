@@ -16,5 +16,6 @@
 
     <context:component-scan base-package="com.azarenko.services"/>
     <context:component-scan base-package="com.azarenko.util"/>
+    <context:component-scan base-package="com.azarenko.to"/>
     <context:component-scan base-package="com.azarenko.repository.datajpa"/>
 </beans>

@@ -6,7 +6,7 @@ function makeEditable() {
         save();
         return false;
     });
-    $(document).ajaxError(function(evant, jqXHR, options, jsExc){
+    $(document).ajaxError(function (evant, jqXHR, options, jsExc) {
         fail(evant, jqXHR, options, jsExc)
     });
 }
@@ -38,27 +38,22 @@ function updateTable() {
     });
 }
 
-function addToShop() {
-    var ajaxSubscriptionUrl;
-    var form = $('#detailsForm');
-    $.ajax({
-        type: 'POST',
-        url: ajaxUrl,
-        data: form.serialize(),
-        success: function (data) {
-            $('#editRow').modal('hide');
-            updateTable();
-            success('added')
-        }
+function addToShop(id) {
+    var form = $('#subscriptionForm')
+    $.post('user/shoppingCart/periodical/get/' + id, function (data) {
+        $.each(data, function (key, value) {
+            form.find("input[name='" + key + "']").val(value).attr('checked', value);
+            });
+        $('#addSub').modal();
     });
 }
 
 var failedNote;
 
 function closeNote() {
-    if(failedNote){
+    if (failedNote) {
         failedNote.close();
-        failedNote=undefined;
+        failedNote = undefined;
     }
 }
 
@@ -74,7 +69,7 @@ function success(text) {
 
 function fail(evant, jqXHR, options, jsExc) {
     closeNote();
-    failedNote=noty({
+    failedNote = noty({
         text: 'Failed: ' + jqXHR.statusText + "<br>",
         type: 'error',
         layout: 'bottomRight'
@@ -91,7 +86,7 @@ function renderEditBtn(data, type, row) {
 
 function renderDeleteBtn(data, type, row) {
     if (type === 'display') {
-        return '<a class="btn btn-light"  onclick="addToShop(' + row.id +')"><i class="fa fa-shopping-cart"></i></a>';
+        return '<a class="btn btn-light"  onclick="addToShop(' + row.id + ')"><i class="fa fa-shopping-cart"></i></a>';
     }
     return data;
 }

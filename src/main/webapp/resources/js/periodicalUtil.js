@@ -6,13 +6,16 @@ function makeEditable() {
         save();
         return false;
     });
-    $(document).ajaxError(function(evant, jqXHR, options, jsExc){
+    $(document).ajaxError(function (evant, jqXHR, options, jsExc) {
         fail(evant, jqXHR, options, jsExc)
     });
 }
 
+var form = $('#detailsForm');
+
 function add() {
-    $('#editRow').modal()
+    $('#id').val(0);
+    $('#editRow').modal();
 
 }
 
@@ -25,7 +28,15 @@ function deleteRow(id) {
             success('archived')
         }
     });
+}
 
+function edit(id) {
+    $.get(ajaxUrl + 'get/' + id, function (data) {
+        $.each(data, function (key, value) {
+            form.find("input[name='" + key + "']").val(value);
+        });
+        $('#editRow').modal();
+    });
 }
 
 function updateTable() {
@@ -39,7 +50,7 @@ function updateTable() {
 }
 
 function save() {
-    var form = $('#detailsForm');
+
     $.ajax({
         type: 'POST',
         url: ajaxUrl,
@@ -55,9 +66,9 @@ function save() {
 var failedNote;
 
 function closeNote() {
-    if(failedNote){
+    if (failedNote) {
         failedNote.close();
-        failedNote=undefined;
+        failedNote = undefined;
     }
 }
 
@@ -73,26 +84,26 @@ function success(text) {
 
 function fail(evant, jqXHR, options, jsExc) {
     closeNote();
-    failedNote=noty({
+    failedNote = noty({
         text: 'Failed: ' + jqXHR.statusText + "<br>",
         type: 'error',
         layout: 'bottomRight'
     });
-    
+
 }
 
 function renderEditBtn(data, type, row) {
     if (type === 'display') {
-        return '<a class="btn"  onclick="edit(' + row.id + ')"><i class="fa fa-edit"></i></a>';
+        return '<a class="btn btn-light"  onclick="edit(' + row.id + ')"><i class="fa fa-edit"></i></a>';
     }
     return data;
 }
 
 function renderDeleteBtn(data, type, row) {
-        if (type === 'display') {
-            return '<a class="btn btn-light"  onclick="deleteRow(' + row.id +')"><i class="fa fa-file-archive-o"></i></a>';
-        }
-        return data;
+    if (type === 'display') {
+        return '<a class="btn btn-light"  onclick="deleteRow(' + row.id + ')"><i class="fa fa-file-archive-o"></i></a>';
+    }
+    return data;
 }
 
 

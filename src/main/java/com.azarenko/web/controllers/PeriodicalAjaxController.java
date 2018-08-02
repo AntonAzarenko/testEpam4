@@ -39,4 +39,10 @@ public class PeriodicalAjaxController {
         service.setArchive(id);
         LOG.info("add in archive");
     }
+
+    @RequestMapping(method = RequestMethod.GET, value = ("/get/{id}"), produces = MediaType.APPLICATION_JSON_VALUE)
+    public Periodical get(@PathVariable("id") int id){
+        LOG.info("getOne");
+       return service.get(id);
+    }
 }

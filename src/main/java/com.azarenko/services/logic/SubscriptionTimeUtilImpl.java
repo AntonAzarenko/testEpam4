@@ -80,11 +80,11 @@ public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
 
         if (timeSubscription == 0) {
             Calendar calendar = Calendar.getInstance();
-            calendar.set(getYear() - 1, 5, 30);
+            calendar.set(getYear() - 1, Calendar.JUNE, 30);
             return calendar.getTime();
         } else if (timeSubscription == 1) {
             Calendar calendar = Calendar.getInstance();
-            calendar.set(getYear(), 11, 30);
+            calendar.set(getYear(), Calendar.DECEMBER, 30);
             return calendar.getTime();
         }
         return new Date();

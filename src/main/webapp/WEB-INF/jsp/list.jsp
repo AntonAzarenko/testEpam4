@@ -71,7 +71,7 @@
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" id="detailsForm" method="post">
-                    <input type="text" hidden="hidden" class="form-control" id="id" name="id">
+                    <input type="text" hidden="hidden"  id="id" name="id">
                     <div class="form-group">
                         <label for="title" class="col-form-label">Название:</label>
                         <input type="text" class="form-control" id="title" name="title">

@@ -2,7 +2,6 @@ package com.azarenko.web.controllers;
 
 import com.azarenko.model.ShoppingCart;
 import com.azarenko.services.ShoppingCartService;
-import com.azarenko.services.SubscriptionService;
 import com.azarenko.util.ShoppingCartUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,4 +24,6 @@ public class SubscriptionAjaxController {
         ShoppingCart cart = util.create(id, time);
         cartService.add(cart);
     }
+
+
 }

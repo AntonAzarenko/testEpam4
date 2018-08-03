@@ -13,4 +13,6 @@ public interface SubscriptionService {
     List<Subscription> getAll();
 
     List<Subscription> getAllUserByUserId(int id);
+
+
 }

@@ -2,6 +2,7 @@ package com.azarenko.services;
 
 import com.azarenko.model.Periodical;
 import com.azarenko.model.ShoppingCart;
+import com.azarenko.to.ShoppingCartTo;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -18,5 +19,7 @@ public interface ShoppingCartService {
     void removeShoppingCartUser(int id);
 
     boolean getByPeriodicalID(int id);
+
+    ShoppingCartTo get(int id);
 }
 

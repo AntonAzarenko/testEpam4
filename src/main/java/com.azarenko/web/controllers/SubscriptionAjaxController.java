@@ -19,22 +19,25 @@ public class SubscriptionAjaxController {
     private ShoppingCartService cartService;
 
     @Autowired
-    private ShoppingCartTo cartTo;
+    private ShoppingCartTo shoppingCartTo;
 
     @Autowired
     private ShoppingCartUtil util;
 
     @RequestMapping(value = "/add/{id}", method = RequestMethod.POST)
-    public void addIncart(@PathVariable("id")int id,
-                          @PathVariable("time")int time){
+    public void addIncart(@PathVariable("id") int id,
+                          @PathVariable("time") int time) {
         ShoppingCart cart = util.create(id, time);
         cartService.add(cart);
     }
 
-    @RequestMapping(value = ("/periodical/get/{id}"),method = RequestMethod.POST)
-    public ShoppingCartTo getInfoForSubscription(@PathVariable("id") int id){
-        return cartTo.create(id);
+    @RequestMapping(value = "/save/", method = RequestMethod.POST)
+    public void save(ShoppingCartTo cartTo){
+
     }
 
-
+    @RequestMapping(value = ("/periodical/get/{id}"), method = RequestMethod.POST)
+    public ShoppingCartTo getInfoForSubscription(@PathVariable("id") int id) {
+        return shoppingCartTo.create(id);
+    }
 }

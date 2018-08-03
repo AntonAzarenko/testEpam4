@@ -1,20 +1,19 @@
 package com.azarenko.to;
 
-import com.azarenko.model.ShoppingCart;
+
 import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.SubscriptionTimeUtil;
-import com.azarenko.util.ShoppingCartUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class ShoppingCartTo {
     @Autowired
     private SubscriptionTimeUtil timeUtil;
 
     @Autowired
-    PeriodicalService service;
+    private PeriodicalService service;
 
     @Nullable
     private int periodicalId;
@@ -32,6 +31,11 @@ public class ShoppingCartTo {
     private boolean year;
 
     public ShoppingCartTo create(int id) {
+       /* Periodical periodical = service.get(id);
+        name = periodical.getTitle();
+        periodicalId = id;
+        return new ShoppingCartTo(id, name, true, true, true);
+*/
         name = service.get(id).getTitle();
         periodicalId = id;
         if (timeUtil.getHalfYear() == 0) {
@@ -57,11 +61,11 @@ public class ShoppingCartTo {
     }
 
     @Nullable
-    public String getPeriodicalName() {
+    public String getName() {
         return name;
     }
 
-    public void setPeriodicalName(@Nullable String name) {
+    public void setName(@Nullable String name) {
         this.name = name;
     }
 

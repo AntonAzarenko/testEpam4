@@ -39,16 +39,16 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" id="subscriptionForm" method="post">
+                <form class="form-horizontal" name="sub" id="subscriptionForm" method="post">
                     <input type="text" hidden="hidden" id="id" name="id"/>
                     <div class="form-group">
-                        <label for="periodicalName" class="col-form-label">Имя:</label>
-                        <input type="text" class="form-control" id="periodicalName" name="periodicalName">
+                        <label for="name" class="col-form-label">Имя:</label>
+                        <input placeholder="hold" type="text" class="form-control" id="name" name="name"/>
                     </div>
 
                     <div class="form-group">
                         <label for="firstHalfYear" class="col-form-label">Первое полугодие:</label>
-                        <input type="checkbox" id="firstHalfYear" name="firstHalfYear">
+                        <input type="checkbox" id="firstHalfYear" name="firstHalfYear"/>
                     </div>
                     <div class="form-group">
                         <label for="secondHalfYear" class="col-form-label">Второе полугодие:</label>

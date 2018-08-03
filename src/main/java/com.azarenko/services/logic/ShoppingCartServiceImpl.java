@@ -7,7 +7,9 @@ import com.azarenko.repository.ShoppingCartRepository;
 import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.ShoppingCartService;
 import com.azarenko.services.SubscriptionTimeUtil;
+import com.azarenko.to.ShoppingCartTo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -73,6 +75,12 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     @Override
     public boolean getByPeriodicalID(int id) {
         return shoppingCartRepository.getByPeriodicalID(id) != null;
+    }
+
+    @Override
+    public ShoppingCartTo get(int id) {
+       //todo
+        return null;
     }
 
 

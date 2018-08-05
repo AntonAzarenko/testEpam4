@@ -33,7 +33,7 @@
        <url-pattern>/</url-pattern>
    </servlet-mapping>
 
-       <filter>
+ <!--      <filter>
        <filter-name>CharecterEncodingFilter</filter-name>
        <filter-class>com.azarenko.filter.CharecterEncodingFilter</filter-class>
        <init-param>
@@ -45,7 +45,7 @@
    <filter-mapping>
        <filter-name>CharecterEncodingFilter</filter-name>
        <url-pattern>/*</url-pattern>
-   </filter-mapping>
+   </filter-mapping>-->
     
     <filter>
         <filter-name>springSecurityFilterChain</filter-name>

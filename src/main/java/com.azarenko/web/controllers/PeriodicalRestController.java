@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/rest/periodical")
+@RequestMapping(value = "/rest/admin/periodical")
 public class PeriodicalRestController {
     private static final Logger LOG = LoggerFactory.getLogger(PeriodicalRestController.class);
     @Autowired

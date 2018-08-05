@@ -5,6 +5,7 @@ import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.SubscriptionTimeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -31,11 +32,6 @@ public class ShoppingCartTo {
     private boolean year;
 
     public ShoppingCartTo create(int id) {
-       /* Periodical periodical = service.get(id);
-        name = periodical.getTitle();
-        periodicalId = id;
-        return new ShoppingCartTo(id, name, true, true, true);
-*/
         name = service.get(id).getTitle();
         periodicalId = id;
         if (timeUtil.getHalfYear() == 0) {
@@ -49,7 +45,6 @@ public class ShoppingCartTo {
         }
         return this;
     }
-
 
     @Nullable
     public int getPeriodicalId() {

@@ -18,11 +18,11 @@ function add() {
 
 function infoRow(id) {
     $.ajax({
-        url: ajaxUrl + 'archive/' + id,
+        url: ajaxUrl + 'info/' + id,
         type: 'POST',
         success: function () {
             updateTable();
-            success('archived')
+            success('info success')
         }
     });
 
@@ -39,28 +39,42 @@ function updateTable() {
 }
 
 function addToShop(id) {
-    var form = $('#subscriptionForm')
+    var form = $('#subscriptionForm');
     $.post('user/shoppingCart/periodical/get/' + id, function (data) {
         $.each(data, function (key, value) {
             form.find("input[name='" + key + "']").val(value).attr('checked', value);
-            var s = document.forms.subscriptionForm,
-                d = s.querySelectorAll('[type="checkbox"]:checked');
-            for (var i = 0; i < d.length; i++) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
-                if(d[i] == 'checked')
-                d[i].disabled = true;
-            });
-        $('#addSub').modal();
+            $('#addSub').modal();
+        });
     });
 }
 
+function checkCart() {
+    $.ajax({
+        type: 'GET',
+        url:'user/shoppingCart/check/get/',
+        success: function(data) {
+            window.location.href= 'cartAll';
+        },
+        error: function (data) {
+            $('#error').modal();
+        }
+
+    });
+
+}
+
+function showCart() {
+
+}
+
 function save() {
+    var form = $('#subscriptionForm');
     $.ajax({
         type: 'POST',
         url: 'user/shoppingCart/periodical/save/',
         data: form.serialize(),
         success: function (data) {
-            $('#editRow').modal('hide');
-
+            $('#addSub').modal('hide');
             success('added')
         }
     });

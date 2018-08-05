@@ -7,12 +7,15 @@ import com.azarenko.repository.ShoppingCartRepository;
 import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.ShoppingCartService;
 import com.azarenko.services.SubscriptionTimeUtil;
+import com.azarenko.to.ShoppingCartShowTo;
 import com.azarenko.to.ShoppingCartTo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 import java.util.*;
@@ -24,6 +27,9 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     private SubscriptionTimeUtil subscriptionTimeUtil;
 
     @Autowired
+    ShoppingCartShowTo cartShowTo;
+
+    @Autowired
     private ShoppingCartRepository shoppingCartRepository;
 
     @Autowired
@@ -32,7 +38,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     @Override
     @Transactional
     public void add(ShoppingCart shoppingCart) {
-        if(getByPeriodicalID(shoppingCart.getPeriodicalId())){
+        if (getByPeriodicalID(shoppingCart.getPeriodicalId())) {
             return;
         }
         shoppingCartRepository.add(shoppingCart);
@@ -78,9 +84,40 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     @Override
-    public ShoppingCartTo get(int id) {
-       //todo
-        return null;
+    public ShoppingCart checkAndCreate(ShoppingCartTo cartTo) {
+        //todo
+        ShoppingCart cart = new ShoppingCart();
+        int timeSubscription = getTimeSubscription(cartTo);
+        if (timeSubscription < 3) {
+            if (cartTo.isFirstHalfYear() && (subscriptionTimeUtil.getHalfYear() != 0)) {
+                cart.setUserID(1);
+                cart.setPeriodicalId(cartTo.getPeriodicalId());
+                cart.setStart(subscriptionTimeUtil.getStartDate(timeSubscription));
+                cart.setTime(timeSubscription);
+                cart.setCountPer(subscriptionTimeUtil.getNumberOfExist(service.get(cartTo.getPeriodicalId())));
+                cart.setPrice(getPriceForSubcription(service.get(cartTo.getPeriodicalId())));
+            } else {
+                cart.setUserID(1);
+                cart.setPeriodicalId(cartTo.getPeriodicalId());
+                cart.setStart(subscriptionTimeUtil.getStartDate(timeSubscription));
+                cart.setEnd(subscriptionTimeUtil.getEndDate(timeSubscription));
+                cart.setTime(timeSubscription);
+                cart.setCountPer(subscriptionTimeUtil.getNumberOfExist(service.get(cartTo.getPeriodicalId())));
+                cart.setPrice(getPriceForSubcription(service.get(cartTo.getPeriodicalId())));
+            }
+        }
+
+        return cart;
+    }
+
+    @Override
+    public List<ShoppingCartShowTo> getAllTO(int id) {
+        List<ShoppingCart> list = getAllByUserID(id);
+        List<ShoppingCartShowTo> cartShowToList = new ArrayList<>();
+        for (ShoppingCart current : list) {
+            cartShowToList.add(convert(current));
+        }
+        return cartShowToList;
     }
 
 
@@ -92,6 +129,37 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         }
         return map;
     }
+
+
+    private int getTimeSubscription(@NonNull  ShoppingCartTo cartTo) {
+        if (cartTo.isFirstHalfYear() && !(cartTo.isSecondHalfYear()) && !(cartTo.isYear())) {
+            return 0;
+        } else if (cartTo.isSecondHalfYear() && !(cartTo.isYear()) && !(cartTo.isFirstHalfYear())) {
+            return 1;
+        } else if (cartTo.isYear() && !(cartTo.isFirstHalfYear()) && !(cartTo.isSecondHalfYear())) {
+            return 2;
+        }
+        return 3;
+    }
+
+    private ShoppingCartShowTo convert(@NonNull ShoppingCart cart) {
+        return  asShopingcart(cart);
+    }
+
+    private ShoppingCartShowTo asShopingcart(ShoppingCart cart) {
+        ShoppingCartShowTo cartShowTo = new ShoppingCartShowTo();
+        Periodical periodical = service.get(cart.getPeriodicalId());
+        cartShowTo.setIndex(periodical.getIndex());
+        cartShowTo.setTitle(periodical.getTitle());
+        cartShowTo.setStart(cart.getStart().toString());
+        cartShowTo.setEnd(cart.getEnd().toString());
+        cartShowTo.setCountPer(cart.getCountPer());
+        cartShowTo.setFullPrice(cart.getPrice());
+        return cartShowTo;
+
+    }
+
+
 
 
 }

@@ -5,6 +5,7 @@ import com.azarenko.model.ShoppingCart;
 import com.azarenko.services.PeriodicalService;
 import com.azarenko.services.ShoppingCartService;
 import com.azarenko.services.SubscriptionTimeUtil;
+import com.azarenko.to.ShoppingCartShowTo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -104,6 +105,8 @@ public class ShoppingCartServiceImplTest {
             LOG.info("false");
         }
     }
+
+
 
 
 }

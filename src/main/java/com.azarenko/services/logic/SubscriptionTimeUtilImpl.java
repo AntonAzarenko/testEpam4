@@ -9,6 +9,9 @@ import java.util.Date;
 
 @Service
 public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
+    private final int FIRST_HALF_YEAR = 0;
+    private final int SECOND_HALF_YEAR = 1;
+    private final int YEAR = 2;
 
     /**
      * This method returns 0 if  first half of the  year now, or 1 if the secon half of the year now
@@ -17,10 +20,11 @@ public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
      */
     @Override
     public int getHalfYear() {
+        int SECOND_HALF_YEAR = 1;
         if ((getMonth() < 5) || (getMonth() == 5 && getDay() < 21)) {
-            return 0;
+            return FIRST_HALF_YEAR;
         } else
-            return 1;
+            return SECOND_HALF_YEAR;
     }
 
     /**
@@ -38,7 +42,7 @@ public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
     @Override
     public int getCountDaysInHalfYEar(int halfYear) {
         int days = 0;
-        if (halfYear == 0) {
+        if (halfYear == FIRST_HALF_YEAR) {
             days = (6 - getMonth() - 1) * 30 + (30 - getDay());
         } else {
             days = (12 - getMonth() - 1) * 30 + (30 - getDay());
@@ -66,26 +70,29 @@ public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
 
     @Override
     public Date getStartDate(int timeSubscription) {
-        if (getHalfYear() == timeSubscription) {
+        Calendar calendar = Calendar.getInstance();
+        if (timeSubscription == FIRST_HALF_YEAR || timeSubscription == YEAR) {
             return new Date();
-        } else {
-            Calendar calendar = Calendar.getInstance();
-            calendar.set(getYear() - 1, 6, 1);
+        } else if (timeSubscription == SECOND_HALF_YEAR) {
+            calendar.set(getYear() - 1, Calendar.JULY, 1);
             return calendar.getTime();
         }
+        return null;
     }
 
     @Override
+
     public Date getEndDate(int timeSubscription) {
 
-        if (timeSubscription == 0) {
-            Calendar calendar = Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance();
+        if (timeSubscription == FIRST_HALF_YEAR) {
             calendar.set(getYear() - 1, Calendar.JUNE, 30);
             return calendar.getTime();
-        } else if (timeSubscription == 1) {
-            Calendar calendar = Calendar.getInstance();
+        } else if (timeSubscription == SECOND_HALF_YEAR) {
             calendar.set(getYear(), Calendar.DECEMBER, 30);
             return calendar.getTime();
+        } else if (timeSubscription == YEAR) {
+            calendar.set(getYear() + 1, getMonth(), getDay());
         }
         return new Date();
     }

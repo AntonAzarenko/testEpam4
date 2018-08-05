@@ -16,6 +16,8 @@
 </head>
 <body>
 <div class="jumbotron">
+    <button type="button" class="btn btn-primary   fa fa-shopping-cart" style="margin-left: 96%; margin-bottom: 10px" onclick="checkCart()"></button>
+
     <div class="">
         <table class="table table-striped table-bordered" id="datatable" width="100%">
             <thead>
@@ -40,7 +42,7 @@
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" name="sub" id="subscriptionForm" method="post">
-                    <input type="text" hidden="hidden" id="id" name="id"/>
+                    <input type="text" hidden="hidden" id="periodicalId" name="periodicalId"/>
                     <div class="form-group">
                         <label for="name" class="col-form-label">Имя:</label>
                         <input placeholder="hold" type="text" class="form-control" id="name" name="name"/>

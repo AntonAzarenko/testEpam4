@@ -34,29 +34,6 @@
                 <th></th>
             </tr>
             </thead>
-            <%--<tbody>
-            <c:forEach items="${list}" var="periodicals">
-                <jsp:useBean id="periodicals" scope="page" type="com.azarenko.model.Periodical"/>
-                <c:if test="${periodicals.archive == false}">
-                    <tr>
-                        <th>${periodicals.index}</th>
-                        <th>${periodicals.title}</th>
-                        <th>${periodicals.discription}</th>
-                        <th>${periodicals.publisher}</th>
-                        <th>${periodicals.outputFrequency}</th>
-                        <th>${periodicals.ageLimit}</th>
-                        <th>${periodicals.price}</th>
-                        <th><a href="edit?id=<c:out value="${periodicals.id}"/>">
-                            <button class="btn btn-xs btn-light edit"><i class="fa fa-edit"></i></button>
-                        </a>
-                        </th>
-                        <th><a class="btn  type="button" onclick='deleteRow(<c:out value="${periodicals.id}"/>)'>
-                            <i class="fa fa-file-archive-o"></i></a>
-                        </th>
-                    </tr>
-                </c:if>
-            </c:forEach>
-            </tbody>--%>
         </table>
     </div>
 </div>

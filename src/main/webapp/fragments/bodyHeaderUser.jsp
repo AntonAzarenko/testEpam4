@@ -18,8 +18,7 @@
                     <a class="dropdown-item" href="#">Платежи</a>
                 </div>
             </div>
-            <button class="btn  my-2 my-sm-0 mr-sm-2 btn-primary" type="button"><fmt:message key="app.exit"/></button>
+            <button class="btn  my-2 my-sm-0 mr-sm-2 btn-primary" type="button" ><fmt:message key="app.exit"/></button>
         </form>
-
     </nav>
 </head>

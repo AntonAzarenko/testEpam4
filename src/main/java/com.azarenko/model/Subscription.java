@@ -1,55 +1,49 @@
 package com.azarenko.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.Date;
-
+@Entity
+@Table(name = "subscriptions")
 public final class Subscription extends AbstractBaseEntity {
-
-    public String title;
-
+    @Column(name = "id_periodicals")
     public int periodicalId;
 
+    @Column(name = "user_id")
     public int userId;
 
-    public String namePeriodical;
+    @Column(name = "date_start")
+    public LocalDateTime dateStart;
 
-    public Date dateStartSubcription;
+    @Column(name = "date_end")
+    public LocalDateTime dateEnd;
 
-    public Date dateEndSubscription;
+    public Subscription(int periodicalId, int userId, LocalDateTime dateStartSubcription, LocalDateTime dateEndSubscription) {
+        this.periodicalId = periodicalId;
+        this.userId = userId;
+        this.dateStart = dateStartSubcription;
+        this.dateEnd = dateEndSubscription;
 
-    public BigDecimal price;
-
+    }
 
     public int getUserId() {
         return userId;
     }
 
-    public String getNamePeriodical() {
-        return namePeriodical;
-    }
-
-    public String getTitle() {
-        return title;
-    }
 
     public int getPeriodicalId() {
         return periodicalId;
     }
 
-    public BigDecimal getPrice() {
-        return price;
+    public LocalDateTime getDateStartSubcription() {
+        return dateStart;
     }
 
-    public Date getDateStartSubcription() {
-        return dateStartSubcription;
-    }
-
-    public Date getDateEndSubscription() {
-        return dateEndSubscription;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
+    public LocalDateTime getDateEndSubscription() {
+        return dateEnd;
     }
 
     public void setPeriodicalId(int periodicalId) {
@@ -60,19 +54,13 @@ public final class Subscription extends AbstractBaseEntity {
         this.userId = userId;
     }
 
-    public void setNamePeriodical(String namePeriodical) {
-        this.namePeriodical = namePeriodical;
+    public void setDateStartSubcription(LocalDateTime dateStartSubcription) {
+        this.dateStart = dateStartSubcription;
     }
 
-    public void setDateStartSubcription(Date dateStartSubcription) {
-        this.dateStartSubcription = dateStartSubcription;
+    public void setDateEndSubscription(LocalDateTime dateEndSubscription) {
+        this.dateEnd = dateEndSubscription;
     }
 
-    public void setDateEndSubscription(Date dateEndSubscription) {
-        this.dateEndSubscription = dateEndSubscription;
-    }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
 }

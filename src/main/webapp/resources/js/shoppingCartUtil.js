@@ -1,4 +1,4 @@
-function makeEditable() {
+ function makeEditable() {
     $('.info').click(function () {
         infoRow($(this).attr("id"));
     });
@@ -20,6 +20,26 @@ function updateTable() {
         userDatatableApi.draw();
     });
 }
+function pay() {
+    $.ajax({
+        url: ajaxUrl + 'pay/',
+        type: 'POST',
+        success: function () {
+            success('subscibe aproove');
+            window.location.href = 'list';
+        }
+
+    })
+}
+
+ var failedNote;
+
+ function closeNote() {
+     if (failedNote) {
+         failedNote.close();
+         failedNote = undefined;
+     }
+ }
 
 function success(text) {
     closeNote();
@@ -36,7 +56,8 @@ function fail(evant, jqXHR, options, jsExc) {
     failedNote = noty({
         text: 'Failed: ' + jqXHR.statusText + "<br>",
         type: 'error',
-        layout: 'bottomRight'
+        layout: 'bottomRight',
+        timeout: 1000
     });
 
 }

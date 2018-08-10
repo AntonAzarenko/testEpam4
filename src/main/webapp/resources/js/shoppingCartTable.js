@@ -6,11 +6,11 @@ $(function () {
     datatableApi = $('#datatable').DataTable({
         sAjaxSource: ajaxUrl,
         sAjaxDataProp: "",
-        info: true,
-        "search": true,
+        info: false,
+        searching: false,
         "scrollY": "50vh",
         "scrollCollapse": true,
-        "paging": true,
+        "paging": false,
 
         columns: [
             {

@@ -9,6 +9,7 @@ import com.azarenko.services.ShoppingCartService;
 import com.azarenko.services.SubscriptionTimeUtil;
 import com.azarenko.to.ShoppingCartShowTo;
 import com.azarenko.to.ShoppingCartTo;
+import com.azarenko.util.TimeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
@@ -120,8 +121,19 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         return cartShowToList;
     }
 
+    @Override
+    public BigDecimal getCost(List<ShoppingCartShowTo> list) {
+        BigDecimal price = new BigDecimal(0);
+        for (ShoppingCartShowTo current : list) {
+            if (current.getFullPrice() != null) {
+                price = price.add(current.getFullPrice());
+            }
+        }
+        return price;
+    }
 
-    public Map<Integer, Periodical> getMapPeriodicals() {
+
+    private Map<Integer, Periodical> getMapPeriodicals() {
         List<Periodical> allPeriodicals = service.getAll();
         Map<Integer, Periodical> map = new HashMap<>();
         for (Periodical per : allPeriodicals) {
@@ -131,7 +143,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
 
-    private int getTimeSubscription(@NonNull  ShoppingCartTo cartTo) {
+    private int getTimeSubscription(@NonNull ShoppingCartTo cartTo) {
         if (cartTo.isFirstHalfYear() && !(cartTo.isSecondHalfYear()) && !(cartTo.isYear())) {
             return 0;
         } else if (cartTo.isSecondHalfYear() && !(cartTo.isYear()) && !(cartTo.isFirstHalfYear())) {
@@ -143,7 +155,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     }
 
     private ShoppingCartShowTo convert(@NonNull ShoppingCart cart) {
-        return  asShopingcart(cart);
+        return asShopingcart(cart);
     }
 
     private ShoppingCartShowTo asShopingcart(ShoppingCart cart) {
@@ -151,15 +163,12 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
         Periodical periodical = service.get(cart.getPeriodicalId());
         cartShowTo.setIndex(periodical.getIndex());
         cartShowTo.setTitle(periodical.getTitle());
-        cartShowTo.setStart(cart.getStart().toString());
-        cartShowTo.setEnd(cart.getEnd().toString());
+        cartShowTo.setStart(TimeUtil.toString(cart.getStart()));
+        cartShowTo.setEnd(TimeUtil.toString(cart.getEnd()));
         cartShowTo.setCountPer(cart.getCountPer());
         cartShowTo.setFullPrice(cart.getPrice());
         return cartShowTo;
-
     }
-
-
 
 
 }

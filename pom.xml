@@ -18,7 +18,7 @@
 
         <spring.version>5.0.7.RELEASE</spring.version>
 
-        <tomcat.version>9.0.10</tomcat.version>
+        <tomcat.version>7.0.78</tomcat.version>
     </properties>
 
     <dependencies>
@@ -90,7 +90,7 @@
             <artifactId>tomcat-servlet-api</artifactId>
             <version>${tomcat.version}</version>
         </dependency>
-        <!--JSTL -->
+       <!-- JSTL-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>

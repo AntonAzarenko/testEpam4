@@ -11,6 +11,8 @@ public interface PaymentService {
 
     Payment getPaymentByUserId(int id);
 
+    Payment create(int id);
+
 
 
 

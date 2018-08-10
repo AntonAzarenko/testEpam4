@@ -1,9 +1,8 @@
 package com.azarenko.services;
 
 import com.azarenko.model.Periodical;
-import org.springframework.stereotype.Service;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 
 public interface SubscriptionTimeUtil {
@@ -31,9 +30,9 @@ public interface SubscriptionTimeUtil {
 
     int getYear();
 
-    Date getStartDate(int timeSubscription);
+    LocalDateTime getStartDate(int timeSubscription);
 
-    Date getEndDate(int timeSubscription);
+    LocalDateTime getEndDate(int timeSubscription);
 
 
 }

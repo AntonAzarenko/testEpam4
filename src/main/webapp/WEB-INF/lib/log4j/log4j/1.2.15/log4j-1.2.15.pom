@@ -177,7 +177,7 @@
               <goal>run</goal>
             </goals>
           </execution>
-		  <!--   create tests/output prior to test run    -->
+		  <!--   save tests/output prior to test run    -->
           <execution>
             <phase>test-compile</phase>
 			<id>mkdir_tests_output</id>

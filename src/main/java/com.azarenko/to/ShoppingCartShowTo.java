@@ -48,9 +48,6 @@ public class ShoppingCartShowTo {
     @Nullable
     private BigDecimal fullPrice;
 
-
-
-
     @Nullable
     public int getIndex() {
         return index;
@@ -68,10 +65,6 @@ public class ShoppingCartShowTo {
     public void setTitle(@Nullable String title) {
         this.title = title;
     }
-
-
-
-
 
     @Nullable
     public int getCountPer() {

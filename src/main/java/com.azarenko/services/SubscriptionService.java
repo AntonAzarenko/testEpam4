@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 public interface SubscriptionService {
-    void create(int idPeriodicals, int userId, Date start, Date end);
+    void add(int id);
 
     Subscription getById(int id);
 

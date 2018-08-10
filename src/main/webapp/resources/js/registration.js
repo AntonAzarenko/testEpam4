@@ -30,8 +30,7 @@ function inSystem() {
     var form = $('#enterForm');
     $.ajax({
         type: 'POST',
-        url: userAjaxUrl + 'login/',
-        data: form.serialize(),
+        url: 'spring_security_check',
         success: function (data) {
             $('#enter').modal('hide');
             window.location.href = 'start';

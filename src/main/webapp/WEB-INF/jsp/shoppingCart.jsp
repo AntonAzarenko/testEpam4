@@ -14,8 +14,7 @@
 </head>
 <body>
 <div class="jumbotron">
-
-    <div class="">
+    <div class="container">
         <table class="table table-striped table-bordered" id="datatable" width="100%">
 
             <thead>
@@ -29,7 +28,23 @@
             </tr>
             </thead>
         </table>
+        <div class="row">
+            <div class="col-auto mr-auto">
+                <button type="button" class="btn btn-primary" onclick="pay()">Оплатить</button>
+
+            </div>
+            <div class="col-auto">
+                <h4>${price}</h4>
+
+            </div>
+
+        </div>
     </div>
+
+
+
 </div>
+<jsp:include page="../../fragments/footer.jsp"/>
 </body>
+<script type="text/javascript" src="webjars/noty/2.2.4/jquery.noty.packaged.min.js" defer></script>
 </html>

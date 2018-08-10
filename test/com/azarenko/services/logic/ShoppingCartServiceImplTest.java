@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -43,7 +44,7 @@ public class ShoppingCartServiceImplTest {
         cart.setPeriodicalId(list.get(2).getId());
         cart.setPrice(list.get(2).getPrice());
         if (timeUtil.getHalfYear() == 1) {
-            cart.setStart(new Date());
+            cart.setStart(LocalDateTime.now());
             cart.setTime(1);
             cart.setEnd(timeUtil.getEndDate(cart.getTime()));
         }
@@ -57,7 +58,7 @@ public class ShoppingCartServiceImplTest {
         cart.setPeriodicalId(list.get(6).getId());
         cart.setPrice(list.get(6).getPrice());
         if (timeUtil.getHalfYear() == 1) {
-            cart.setStart(new Date());
+            cart.setStart(LocalDateTime.now());
             cart.setTime(1);
             cart.setEnd(timeUtil.getEndDate(cart.getTime()));
         }

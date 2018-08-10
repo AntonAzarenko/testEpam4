@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Component
@@ -27,36 +28,30 @@ public class ShoppingCartUtil {
 
     public ShoppingCart create(int periodicalId, int time) {
         Periodical periodical = periodicalService.get(periodicalId);
-        return new ShoppingCart(getUserId(), periodicalId, getSart(time),getEnd(),getPrice(periodical),getCountPer(periodical),time);
+        return new ShoppingCart(getUserId(), periodicalId, getSart(time), getEnd(), getPrice(periodical), getCountPer(periodical), time);
     }
 
     private boolean isFirstHalfYear() {
-        if (util.getHalfYear() == 0) {
-            return true;
-        }
-        return false;
+        return util.getHalfYear() == 0;
     }
 
-    private int getUserId(){
+    private int getUserId() {
         return userService.getIdByEmail("User@ya.ru");//todo
     }
 
-    private BigDecimal getPrice(Periodical periodical){
-       return periodical.getPrice();
+    private BigDecimal getPrice(Periodical periodical) {
+        return periodical.getPrice();
     }
 
-    private Date getSart(int time){
-       return util.getStartDate(time);
+    private LocalDateTime getSart(int time) {
+        return util.getStartDate(time);
     }
 
-    private Date getEnd(){
-        if (isFirstHalfYear()) {
-            return  util.getEndDate(0);
-        }
-        return  util.getEndDate(1);
+    private LocalDateTime getEnd() {
+        return isFirstHalfYear() ? util.getEndDate(0) : util.getEndDate(1);
     }
 
-    private int getCountPer(Periodical periodical){
+    private int getCountPer(Periodical periodical) {
         return util.getNumberOfExist(periodical);
     }
 }

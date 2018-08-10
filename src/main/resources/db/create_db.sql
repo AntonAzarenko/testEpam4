@@ -41,7 +41,7 @@ CREATE TABLE users (
 USE mydb;
 CREATE TABLE payment (
   id      INTEGER        NOT NULL AUTO_INCREMENT,
-  date    DATE           NOT NULL,
+  date    TIMESTAMP           NOT NULL,
   user_id INTEGER        NOT NULL,
   price   DECIMAL(10, 2) NOT NULL,
   PRIMARY KEY (id),
@@ -54,7 +54,6 @@ USE mydb;
 CREATE TABLE subscriptions (
   id               INTEGER      NOT NULL AUTO_INCREMENT,
   id_periodicals   INTEGER(11)  NOT NULL,
-  name_periodicals VARCHAR(100) NOT NULL,
   date_start       DATE         NOT NULL,
   date_end         DATE         NOT NULL,
   user_id          INTEGER(11)  NOT NULL,

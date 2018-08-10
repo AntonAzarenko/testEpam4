@@ -24,5 +24,7 @@ public interface ShoppingCartService {
     ShoppingCart checkAndCreate(ShoppingCartTo cartTo);
 
     List<ShoppingCartShowTo> getAllTO(int id);
+
+    BigDecimal getCost(List<ShoppingCartShowTo> list);
 }
 

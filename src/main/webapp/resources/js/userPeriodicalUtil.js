@@ -95,7 +95,7 @@ function success(text) {
         type: 'success',
         text: text,
         layout: 'bottomRight',
-        timeout: 1000
+        timeout: 2000
     });
 }
 
@@ -104,7 +104,8 @@ function fail(evant, jqXHR, options, jsExc) {
     failedNote = noty({
         text: 'Failed: ' + jqXHR.statusText + "<br>",
         type: 'error',
-        layout: 'bottomRight'
+        layout: 'bottomRight',
+        timeout:2000
     });
 
 }

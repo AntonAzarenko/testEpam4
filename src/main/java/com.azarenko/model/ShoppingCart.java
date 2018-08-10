@@ -2,6 +2,7 @@ package com.azarenko.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -23,10 +24,10 @@ public class ShoppingCart extends AbstractBaseEntity {
     private int periodicalId;
 
     @Column(name = "date_Start")
-    private Date start;
+    private LocalDateTime start;
 
     @Column(name = "Date_end")
-    private Date end;
+    private LocalDateTime end;
 
     @Column(name = "price")
     private BigDecimal price;
@@ -41,7 +42,7 @@ public class ShoppingCart extends AbstractBaseEntity {
     @Column(name = "countPer")
     private int countPer;
 
-    public ShoppingCart(int userID, int periodicalId, Date start, Date end, BigDecimal price, int countPer, int time) {
+    public ShoppingCart(int userID, int periodicalId, LocalDateTime start, LocalDateTime end, BigDecimal price, int countPer, int time) {
         this.userID = userID;
         this.periodicalId = periodicalId;
         this.start = start;
@@ -50,7 +51,7 @@ public class ShoppingCart extends AbstractBaseEntity {
         this.countPer = countPer;
     }
 
-    public ShoppingCart(Integer id, int userID, int periodicalId, Date start, Date end, BigDecimal price, int countPer) {
+    public ShoppingCart(Integer id, int userID, int periodicalId, LocalDateTime start, LocalDateTime end, BigDecimal price, int countPer) {
         super(id);
         this.userID = userID;
         this.periodicalId = periodicalId;
@@ -64,7 +65,7 @@ public class ShoppingCart extends AbstractBaseEntity {
     }
 
 
-    public ShoppingCart(int id, int userID, int countPer, int periodicalId, Date start, Date end, BigDecimal price) {
+    public ShoppingCart(int id, int userID, int countPer, int periodicalId, LocalDateTime start, LocalDateTime end, BigDecimal price) {
 
         super(id);
         this.countPer = countPer;
@@ -111,19 +112,19 @@ public class ShoppingCart extends AbstractBaseEntity {
         this.periodicalId = periodicalId;
     }
 
-    public Date getStart() {
+    public LocalDateTime getStart() {
         return start;
     }
 
-    public void setStart(Date start) {
+    public void setStart(LocalDateTime start) {
         this.start = start;
     }
 
-    public Date getEnd() {
+    public LocalDateTime getEnd() {
         return end;
     }
 
-    public void setEnd(Date end) {
+    public void setEnd(LocalDateTime end) {
         this.end = end;
     }
 

@@ -4,8 +4,8 @@ import com.azarenko.model.Periodical;
 import com.azarenko.services.SubscriptionTimeUtil;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Calendar;
-import java.util.Date;
 
 @Service
 public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
@@ -69,31 +69,30 @@ public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
     }
 
     @Override
-    public Date getStartDate(int timeSubscription) {
+    public LocalDateTime getStartDate(int timeSubscription) {
         Calendar calendar = Calendar.getInstance();
         if (timeSubscription == FIRST_HALF_YEAR || timeSubscription == YEAR) {
-            return new Date();
+            return LocalDateTime.now();
         } else if (timeSubscription == SECOND_HALF_YEAR) {
-            calendar.set(getYear() - 1, Calendar.JULY, 1);
-            return calendar.getTime();
+            return LocalDateTime.of(getYear() - 1, Calendar.JULY, 1, 00, 00);
         }
         return null;
     }
 
     @Override
 
-    public Date getEndDate(int timeSubscription) {
+    public LocalDateTime getEndDate(int timeSubscription) {
 
         Calendar calendar = Calendar.getInstance();
         if (timeSubscription == FIRST_HALF_YEAR) {
             calendar.set(getYear() - 1, Calendar.JUNE, 30);
-            return calendar.getTime();
+            return LocalDateTime.of(getYear() - 1, Calendar.JUNE, 30,00,00);
         } else if (timeSubscription == SECOND_HALF_YEAR) {
             calendar.set(getYear(), Calendar.DECEMBER, 30);
-            return calendar.getTime();
+            return LocalDateTime.of(getYear(), Calendar.DECEMBER, 30, 00, 00);
         } else if (timeSubscription == YEAR) {
             calendar.set(getYear() + 1, getMonth(), getDay());
         }
-        return new Date();
+        return LocalDateTime.now();
     }
 }

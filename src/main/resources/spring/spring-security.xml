@@ -6,20 +6,30 @@
              http://www.springframework.org/schema/security
               http://www.springframework.org/schema/security/spring-security.xsd">
 
-    <http pattern="resources/**" security="none"/>
-    <http pattern="webjars/**" security="none"/>
+    <http pattern="/resources/**" security="none"/>
+    <http pattern="/webjars/**" security="none"/>
 
     <http pattern="/rest/**" use-expressions="true" name="restSecurityFilterChain" create-session="stateless">
         <http-basic/>
-        <intercept-url pattern="/rest/admin" access="hasRole('ROLE_ADMIN')"/>
+        <intercept-url pattern="/rest/admin/**" access="hasRole('ROLE_ADMIN')"/>
         <intercept-url pattern="/**" access="isAuthenticated()"/>
+    </http>
+    <http>
+        <intercept-url pattern="/" access="permitAll()"/>
+        <intercept-url pattern="/**/admin/**" access="hasRole('ROLE_ADMIN')"/>
+        <intercept-url pattern="/**" access="isAuthenticated()"/>
+        <form-login login-page="/" default-target-url="/start"
+                    authentication-failure-url="/?error=true"
+                    login-processing-url="spring_security_check"/>
+        <logout logout-success-url="/"/>
+        <csrf disabled="true"/>
     </http>
 
     <authentication-manager>
         <authentication-provider>
             <user-service>
-                <user name="User@ya.ru" password="{id}user" authorities="ROLE_USER"/>
-                <user name="Admin@gmail.com" password="{id}admin" authorities="ROLE_ADMIN"/>
+                <user name="User@ya.ru" password="user" authorities="ROLE_USER"/>
+                <user name="Admin@gmail.com" password="admin" authorities="ROLE_ADMIN"/>
             </user-service>
         </authentication-provider>
     </authentication-manager>

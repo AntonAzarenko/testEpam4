@@ -23,6 +23,9 @@
     <script type="text/javascript" src="resources/js/registration.js" defer></script>
 </head>
 <body>
+
+
+
 <div class="modal fade" id="register">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -71,25 +74,26 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" id="enterForm" method="post">
+                <form class="form-horizontal" role="form" id="enterForm" action="spring_security_check" method="post">
 
                     <div class="form-group">
-                        <label for="emailE" class="col-form-label">
+                        <label  class="col-form-label">
                             <fmt:message key="app.login.email"/>
                         </label>
-                        <input type="text" class="form-control" id="emailE" name="emailE">
+                        <input type="text" class="form-control"  name='username'>
                     </div>
                     <div class="form-group">
-                        <label for="passwordE" class="col-form-label">
+                        <label class="col-form-label">
                             <fmt:message key="app.login.password"/>
                         </label>
-                        <input type="password" class="form-control" id="passwordE" name="passwordE">
+                        <input type="password"  class="form-control"  name='password'>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit"  class="btn btn-success"><fmt:message key="app.enter"/></button>
                     </div>
                 </form>
             </div>
-            <div class="modal-footer">
-                <button  onclick="inSystem()" class="btn btn-primary "><fmt:message key="app.enter"/></button>
-            </div>
+
         </div>
     </div>
 </div>

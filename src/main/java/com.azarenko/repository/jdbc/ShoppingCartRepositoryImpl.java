@@ -25,8 +25,8 @@ public class ShoppingCartRepositoryImpl implements ShoppingCartRepository {
     private BeanPropertyRowMapper<ShoppingCart> mapper = new BeanPropertyRowMapper<ShoppingCart>() {
         public ShoppingCart rowMapper(ResultSet rs, int i) throws SQLException {
             return new ShoppingCart(rs.getInt("id"), rs.getInt("userId"),
-                    rs.getInt("id_periodicals"), rs.getDate("date_start"),
-                    rs.getDate("date_end"), rs.getBigDecimal("price"),
+                    rs.getInt("id_periodicals"), rs.getTimestamp("date_start").toLocalDateTime(),
+                    rs.getTimestamp("date_end").toLocalDateTime(), rs.getBigDecimal("price"),
                     rs.getInt("countPer"));
         }
     };

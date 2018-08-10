@@ -3,6 +3,7 @@ package com.azarenko.web.controllers;
 
 import com.azarenko.model.ShoppingCart;
 import com.azarenko.services.ShoppingCartService;
+import com.azarenko.services.SubscriptionService;
 import com.azarenko.to.ShoppingCartShowTo;
 import com.azarenko.to.ShoppingCartTo;
 import com.azarenko.util.ShoppingCartUtil;
@@ -11,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -32,6 +34,9 @@ public class SubscriptionAjaxController {
 
     @Autowired
     private ShoppingCartUtil util;
+
+    @Autowired
+    private SubscriptionService subscriptionService;
 
 
     @RequestMapping(value = "/add/{id}", method = RequestMethod.POST)
@@ -60,9 +65,12 @@ public class SubscriptionAjaxController {
 
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public List<ShoppingCartShowTo> getAll() {
-        List<ShoppingCartShowTo> list = cartService.getAllTO(1);
-
         return cartService.getAllTO(1);
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/pay/")
+    public void pay(){
+       subscriptionService.add(1);
     }
 }
 

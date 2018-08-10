@@ -60,7 +60,7 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     @CacheEvict(value = "periodicals", allEntries = true)
     public Periodical save(Periodical periodical) {
         Objects.requireNonNull(periodical);
-        if (chekIs(periodical)) {
+        if (checkIs(periodical)) {
             throw new NotFoundException("Add status is error - This periodical already exist");
             /*return null;*/
         }
@@ -108,20 +108,21 @@ public class PeriodicalServiceImpl implements PeriodicalService {
 
     @Override
     @Transactional
-    public Periodical search(String value){
+    public Periodical search(String value) {
         List<Periodical> periodicals = getAll();
-        for (Periodical per : periodicals){
-            if(per.getTitle().equalsIgnoreCase(value)){
+        for (Periodical per : periodicals) {
+            assert per.getTitle() != null;
+            if (per.getTitle().equalsIgnoreCase(value)) {
                 return per;
             }
         }
-        for (Periodical per : periodicals){
-            if(String.valueOf(per.getIndex()).equalsIgnoreCase(value)){
+        for (Periodical per : periodicals) {
+            if (String.valueOf(per.getIndex()).equalsIgnoreCase(value)) {
                 return per;
             }
         }
-        for (Periodical per : periodicals){
-            if(String.valueOf(per.getPrice()).equals(value)){
+        for (Periodical per : periodicals) {
+            if (String.valueOf(per.getPrice()).equals(value)) {
                 return per;
             }
         }
@@ -132,14 +133,14 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     @Override
     public List<Periodical> sortByName(List<Periodical> list) {
         Comparator<Periodical> comparator = (o1, o2) -> new Periodical().compare(o1, o2);
-        Collections.sort(list, comparator);
+        list.sort(comparator);
         return list;
     }
 
     @Override
     public List<Periodical> sortByIndex(List<Periodical> list) {
         Comparator<Periodical> perIndex = Comparator.comparing(Periodical::getIndex);
-        Collections.sort(list, perIndex);
+        list.sort(perIndex);
         return list;
     }
 
@@ -158,7 +159,7 @@ public class PeriodicalServiceImpl implements PeriodicalService {
     }
 
     @Transactional
-    public boolean chekIs(Periodical periodical) {
+    public boolean checkIs(Periodical periodical) {
         String title = periodical.getTitle();
         Periodical periodical1 = search("title", title);
         if (periodical1 == null) {

@@ -9,6 +9,7 @@ import java.util.List;
 
 public interface ProxyUserRepository extends JpaRepository<User, Integer> {
     @Override
+    @Transactional
     User save (User user);
 
     @Transactional

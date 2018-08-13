@@ -7,7 +7,7 @@
 <head>
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
     <link rel="stylesheet" href="resources/css/font-awesome.css" type="text/css">
-    <jsp:include page="../../fragments/bodyHeaderAdmin.jsp"/>
+    <jsp:include page="../../fragments/bodyHeaderUser.jsp"/>
     <%-- <jsp:include page="../../fragments/search.jsp"/>--%>
     <script type="text/javascript" src="resources/js/shoppingCartUtil.js" defer></script>
     <script type="text/javascript" src="resources/js/shoppingCartTable.js" defer></script>
@@ -31,13 +31,10 @@
         <div class="row">
             <div class="col-auto mr-auto">
                 <button type="button" class="btn btn-primary" onclick="pay()">Оплатить</button>
-
             </div>
             <div class="col-auto">
                 <h4>${price}</h4>
-
             </div>
-
         </div>
     </div>
 </div>

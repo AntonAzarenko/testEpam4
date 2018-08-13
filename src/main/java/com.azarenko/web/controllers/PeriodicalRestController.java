@@ -2,6 +2,7 @@ package com.azarenko.web.controllers;
 
 import com.azarenko.model.Periodical;
 import com.azarenko.services.PeriodicalService;
+import com.azarenko.to.PeriodicalTo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,6 @@ public class PeriodicalRestController {
 
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Periodical> getAll() {
-        LOG.info("get All");
         return service.getAll();
     }
 
@@ -43,9 +43,9 @@ public class PeriodicalRestController {
         return service.get(id);
     }
 
-    @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void update(@RequestBody Periodical periodical) {
-        service.save(periodical);
+    @RequestMapping(method = RequestMethod.POST)
+    public void update(PeriodicalTo periodicalTo) {
+        service.save(periodicalTo.asPeriodical());
     }
 
 }

@@ -1,4 +1,4 @@
-var ajaxUrl = 'ajax/periodical/';
+var ajaxUrl = 'user/periodical/';
 var userDatatableApi;
 
 

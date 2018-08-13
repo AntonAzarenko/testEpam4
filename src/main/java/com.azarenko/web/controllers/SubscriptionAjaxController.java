@@ -8,6 +8,7 @@ import com.azarenko.to.ShoppingCartShowTo;
 import com.azarenko.to.ShoppingCartTo;
 import com.azarenko.util.ShoppingCartUtil;
 
+import com.azarenko.web.LoggedUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,19 +59,18 @@ public class SubscriptionAjaxController {
 
     @RequestMapping(value = ("/check/get/"), method = RequestMethod.GET)
     public void checkGet() {
-        int userID = 1;
-        List<ShoppingCart> list = cartService.getAllByUserID(userID);
+        List<ShoppingCart> list = cartService.getAllByUserID(LoggedUser.getId());
         if (list.size() == 0) throw new com.azarenko.exceptions.NotFoundException("Shopping cart is Empty");
     }
 
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public List<ShoppingCartShowTo> getAll() {
-        return cartService.getAllTO(1);
+        return cartService.getAllTO(LoggedUser.getId());
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/pay/")
     public void pay(){
-       subscriptionService.add(1);
+       subscriptionService.add(LoggedUser.getId());
     }
 }
 

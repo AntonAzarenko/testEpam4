@@ -15,15 +15,13 @@ function add() {
     $('#editRow').modal()
 
 }
-
+var form = $('#detailsForm');
 function infoRow(id) {
-    $.ajax({
-        url: ajaxUrl + 'info/' + id,
-        type: 'POST',
-        success: function () {
-            updateTable();
-            success('info success')
-        }
+    $.get(ajaxUrl + 'get/' + id , function (data) {
+        $.each(data, function (key, value) {
+            form.find("input[name='" + key + "']").val(value);
+        });
+        $('#info').modal();
     });
 
 }

@@ -11,7 +11,7 @@
 
     <jsp:include page="../../fragments/bodyHeaderAdmin.jsp"/>
     <%-- <jsp:include page="../../fragments/search.jsp"/>--%>
-    <script type="text/javascript" src="resources/js/periodicalUtil.js" defer></script>
+    <script type="text/javascript" src="resources/js/adminPeriodicalUtil.js" defer></script>
     <script type="text/javascript" src="resources/js/periodicalAdminTable.js" defer></script>
 </head>
 <body>
@@ -87,6 +87,8 @@
         </div>
     </div>
 </div>
+
+
 <jsp:include page="../../fragments/footer.jsp"/>
 </body>
 

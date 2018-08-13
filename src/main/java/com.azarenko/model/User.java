@@ -5,6 +5,7 @@ import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Set;
@@ -18,7 +19,7 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "users")
-public class User extends AbstractBaseEntity {
+public class User extends AbstractBaseEntity implements Serializable {
 
     private static final String ALL_SORTED = "User.allSorted";
     private static final String DELETE = "User.delete";

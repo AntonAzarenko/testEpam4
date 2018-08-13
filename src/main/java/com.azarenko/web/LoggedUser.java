@@ -1,42 +1,76 @@
 package com.azarenko.web;
 
 import com.azarenko.model.Role;
+import com.azarenko.model.User;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.Collections;
+import java.util.Objects;
 import java.util.Set;
 
-public class LoggedUser {
-    protected int id = 0;
+public class LoggedUser implements UserDetails {
 
-    protected Set<Role> roles = Collections.singleton(Role.ROLE_USER);
+    protected User user;
 
-    protected boolean enabled = false;
+    public LoggedUser(User user) {
+        this.user = user;
+    }
 
-    private static LoggedUser LOGGED_USER = new LoggedUser();
-
-    public static LoggedUser safeGet(){
+    public static LoggedUser safeGet() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        if(auth == null){
+        if (auth == null) {
             return null;
         }
         Object user = auth.getPrincipal();
         return (user instanceof LoggedUser) ? (LoggedUser) user : null;
     }
-    public int getId() {
-        return id;
+
+    public static LoggedUser get() {
+        LoggedUser user = safeGet();
+        Objects.requireNonNull(user, "No autorized user found");
+        return user;
     }
 
-    public Set<Role> getRoles() {
-        return roles;
+    public static int getId() {
+        Object o = safeGet();
+        return get().user.getId();
+    }
+
+
+    @Override
+    public Set<Role> getAuthorities() {
+        return user.getAuthorities();
+    }
+
+    @Override
+    public String getPassword() {
+        return user.getPassword();
+    }
+
+    @Override
+    public String getUsername() {
+        return user.getName();
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return user.isEnabled();
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return user.isEnabled();
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return user.isEnabled();
     }
 
     public boolean isEnabled() {
-        return enabled;
+        return user.isEnabled();
     }
 
-    public static LoggedUser getLoggedUser() {
-        return LOGGED_USER;
-    }
+
 }

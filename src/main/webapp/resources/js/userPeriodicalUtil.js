@@ -58,7 +58,20 @@ function checkCart() {
         }
 
     });
+}
 
+function showSubscription() {
+    $.ajax({
+        type: 'POST',
+        url: ajaxUrlsub,
+        success: function(data) {
+            window.location.href= 'subscriptions';
+        },
+        error: function (data) {
+            success("123");
+        }
+
+    });
 }
 
 function showCart() {

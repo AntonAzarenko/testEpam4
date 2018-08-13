@@ -14,7 +14,7 @@
                 <button class="btn  my-2 my-sm-0 mr-sm-2 btn-primary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Каталог</a>
-                    <a class="dropdown-item" href="#">Подписки</a>
+                    <button class="dropdown-item" onclick="showSubscription()">Подписки</button>
                     <a class="dropdown-item" href="#">Платежи</a>
                 </div>
             </div>

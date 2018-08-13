@@ -34,6 +34,6 @@ public class DataJpaSubscriptionImpl implements SubscriptionRepository {
 
     @Override
     public List<Subscription> getAllByUserID(int userId) {
-        return null;
+        return proxy.getAllByUserId(userId);
     }
 }

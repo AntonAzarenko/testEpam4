@@ -56,6 +56,6 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 
     @Override
     public List<Subscription> getAllUserByUserId(int id) {
-        return null;
+        return repository.getAllByUserID(id);
     }
 }

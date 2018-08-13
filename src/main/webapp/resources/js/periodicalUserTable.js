@@ -1,4 +1,5 @@
 var ajaxUrl = 'user/periodical/';
+var ajaxUrlsub = 'subscription/';
 var userDatatableApi;
 
 

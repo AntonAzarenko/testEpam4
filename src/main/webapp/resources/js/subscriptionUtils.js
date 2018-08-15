@@ -1,29 +1,8 @@
 function makeEditable() {
-    $('.info').click(function () {
-        infoRow($(this).attr("id"));
-    });
-    $('#datailsForm').submit(function () {
-        save();
-        return false;
-    });
-    $(document).ajaxError(function (evant, jqXHR, options, jsExc) {
-        fail(evant, jqXHR, options, jsExc)
-    });
+
 }
 
-function showSubscription() {
-    $.ajax({
-        type: 'POST',
-        url: ajaxUrlsub,
-        success: function(data) {
-            window.location.href= 'subscriptions';
-        },
-        error: function (data) {
-            $('#error').modal();
-        }
 
-    });
-}
 
 
 var failedNote;

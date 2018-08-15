@@ -19,7 +19,6 @@
         <jdbc:script encoding="utf-8" location="classpath:db/create_db.sql"/>
     </jdbc:initialize-database>-->
 
-    <context:property-placeholder location="classpath:db/postgres.properties" system-properties-mode="OVERRIDE"/>
     <!--no pool-->
     <beans profile="postgres">
         <context:property-placeholder location="classpath:db/postgres.properties" system-properties-mode="OVERRIDE"/>

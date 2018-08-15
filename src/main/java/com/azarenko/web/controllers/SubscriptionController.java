@@ -10,6 +10,6 @@ public class SubscriptionController {
 
     @GetMapping(value = "subscriptions")
     public String get(Model model){
-        return "subscription";
+        return "subscriptionUser";
     }
 }

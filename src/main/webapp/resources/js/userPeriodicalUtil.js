@@ -15,9 +15,11 @@ function add() {
     $('#editRow').modal()
 
 }
+
 var form = $('#detailsForm');
+
 function infoRow(id) {
-    $.get(ajaxUrl + 'get/' + id , function (data) {
+    $.get(ajaxUrl + 'get/' + id, function (data) {
         $.each(data, function (key, value) {
             form.find("input[name='" + key + "']").val(value);
         });
@@ -49,9 +51,9 @@ function addToShop(id) {
 function checkCart() {
     $.ajax({
         type: 'GET',
-        url:'user/shoppingCart/check/get/',
-        success: function(data) {
-            window.location.href= 'cartAll';
+        url: 'user/shoppingCart/check/get/',
+        success: function (data) {
+            window.location.href = 'cartAll';
         },
         error: function (data) {
             $('#error').modal();
@@ -62,15 +64,11 @@ function checkCart() {
 
 function showSubscription() {
     $.ajax({
-        type: 'POST',
-        url: ajaxUrlsub,
-        success: function(data) {
-            window.location.href= 'subscriptions';
-        },
-        error: function (data) {
-            success("123");
+        type: 'GET',
+        url: 'subscription/',
+        success: function (data) {
+            window.location.href = 'subscriptions';
         }
-
     });
 }
 
@@ -116,7 +114,7 @@ function fail(evant, jqXHR, options, jsExc) {
         text: 'Failed: ' + jqXHR.statusText + "<br>",
         type: 'error',
         layout: 'bottomRight',
-        timeout:2000
+        timeout: 2000
     });
 
 }

@@ -1,10 +1,10 @@
-var ajaxUrlsub = 'subscription/';
+var ajaxUrl = 'subscription/';
 var datatableApi;
 
 
 $(function () {
     datatableApi = $('#datatable').DataTable({
-        sAjaxSource: ajaxUrlsub,
+        sAjaxSource: ajaxUrl,
         sAjaxDataProp: "",
         info: false,
         searching: false,
@@ -13,9 +13,6 @@ $(function () {
         "paging": false,
 
         columns: [
-            {
-                data: "index"
-            },
             {
                 data: "title"
             },
@@ -27,7 +24,11 @@ $(function () {
             },
             {
                 data: "countPer"
+            },
+            {
+                data: "countInterToEnd"
             }
+
         ],
         aaSorting: [
             [0,

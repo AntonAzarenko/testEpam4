@@ -1,6 +1,7 @@
 package com.azarenko.services;
 
 import com.azarenko.model.Subscription;
+import com.azarenko.to.SubscriptionTo;
 
 import java.util.Date;
 import java.util.List;
@@ -12,7 +13,9 @@ public interface SubscriptionService {
 
     List<Subscription> getAll();
 
-    List<Subscription> getAllUserByUserId(int id);
+    List<Subscription> getAllByUserId(int id);
+
+    List<SubscriptionTo> getAllUByUserId(List<Subscription> list);
 
 
 }

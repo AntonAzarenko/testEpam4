@@ -2,13 +2,11 @@ package com.azarenko.repository.jdbc;
 
 
 import com.azarenko.model.Periodical;
-import com.azarenko.model.User;
 import com.azarenko.repository.PeriodicalReposiroty;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.support.DataAccessUtils;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;

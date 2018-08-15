@@ -6,6 +6,7 @@ import com.azarenko.repository.SubscriptionRepository;
 import com.azarenko.services.PaymentService;
 import com.azarenko.services.ShoppingCartService;
 import com.azarenko.services.SubscriptionService;
+import com.azarenko.to.SubscriptionTo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,6 +20,8 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 
     @Autowired
     private SubscriptionRepository repository;
+
+    @Autowired SubscriptionTo subscriptionTo;
 
     @Autowired
     PaymentService paymentService;
@@ -41,7 +44,7 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     }
 
     private Subscription create(ShoppingCart cart) {
-        return new Subscription(cart.getPeriodicalId(),cart.getUserID(),cart.getStart(), cart.getEnd());
+        return new Subscription(cart.getPeriodicalId(), cart.getUserID(), cart.getStart(), cart.getEnd());
     }
 
     @Override
@@ -55,7 +58,16 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     }
 
     @Override
-    public List<Subscription> getAllUserByUserId(int id) {
+    public List<Subscription> getAllByUserId(int id) {
         return repository.getAllByUserID(id);
+    }
+
+    @Override
+    public List<SubscriptionTo> getAllUByUserId(List<Subscription> list) {
+        List<SubscriptionTo> subscriptionToList = new ArrayList<>();
+        for(Subscription current : list){
+            subscriptionToList.add(subscriptionTo.asSubscription(current));
+        }
+        return subscriptionToList;
     }
 }

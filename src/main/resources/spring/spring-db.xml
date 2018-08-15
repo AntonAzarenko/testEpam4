@@ -21,13 +21,28 @@
 
     <context:property-placeholder location="classpath:db/postgres.properties" system-properties-mode="OVERRIDE"/>
     <!--no pool-->
-    <bean id="dataSource"
-          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="${driver}"/>
-        <property name="url" value="${url}"/>
-        <property name="username" value="${user}"/>
-        <property name="password" value="${password}"/>
-    </bean>
+    <beans profile="postgres">
+        <context:property-placeholder location="classpath:db/postgres.properties" system-properties-mode="OVERRIDE"/>
+        <bean id="dataSource"
+              class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="${driver}"/>
+            <property name="url" value="${url}"/>
+            <property name="username" value="${user}"/>
+            <property name="password" value="${password}"/>
+        </bean>
+    </beans>
+
+    <beans profile="mysql">
+        <context:property-placeholder location="classpath:db/database.properties"
+                                      system-properties-mode="OVERRIDE"/>
+        <bean id="dataSource"
+              class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName" value="${driver}"/>
+            <property name="url" value="${url}"/>
+            <property name="username" value="${user}"/>
+            <property name="password" value="${password}"/>
+        </bean>
+        </beans>
 
 
     <beans profile="jdbc">

@@ -1,5 +1,4 @@
 var ajaxUrl = 'user/periodical/';
-var ajaxUrlsub = 'subscription/';
 var userDatatableApi;
 
 
@@ -10,10 +9,6 @@ $(function () {
         sAjaxDataProp: "",
         info: false,
         searching: true,
-
-
-        /*scrollY:        "50vh",
-        scrollCollapse: true,*/
         paging: true,
         columns: [
             {

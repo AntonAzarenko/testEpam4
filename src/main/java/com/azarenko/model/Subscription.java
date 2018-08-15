@@ -29,6 +29,9 @@ public final class Subscription extends AbstractBaseEntity {
 
     }
 
+    public Subscription() {
+    }
+
     public int getUserId() {
         return userId;
     }

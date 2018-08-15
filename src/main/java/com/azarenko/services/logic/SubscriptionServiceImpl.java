@@ -66,8 +66,8 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     public List<SubscriptionTo> getAllUByUserId(List<Subscription> list) {
         List<SubscriptionTo> subscriptionToList = new ArrayList<>();
         for(Subscription current : list){
-            subscriptionToList.add(subscriptionTo.);
+            subscriptionToList.add(subscriptionTo.asSubscription(current));
         }
-        return null;
+        return subscriptionToList;
     }
 }

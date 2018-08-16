@@ -26,6 +26,10 @@ public  class Payment extends AbstractBaseEntity {
         this.price = price;
     }
 
+    public Payment() {
+
+    }
+
     public LocalDateTime getDate() {
         return date;
     }

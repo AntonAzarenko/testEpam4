@@ -73,8 +73,10 @@ public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
         Calendar calendar = Calendar.getInstance();
         if (timeSubscription == FIRST_HALF_YEAR || timeSubscription == YEAR) {
             return LocalDateTime.now();
-        } else if (timeSubscription == SECOND_HALF_YEAR) {
+        } else if (timeSubscription == SECOND_HALF_YEAR && getHalfYear() == FIRST_HALF_YEAR) {
             return LocalDateTime.of(getYear() - 1, Calendar.JULY, 1, 00, 00);
+        } else if (timeSubscription == SECOND_HALF_YEAR) {
+            return LocalDateTime.now();
         }
         return null;
     }
@@ -86,7 +88,7 @@ public class SubscriptionTimeUtilImpl implements SubscriptionTimeUtil {
         Calendar calendar = Calendar.getInstance();
         if (timeSubscription == FIRST_HALF_YEAR) {
             calendar.set(getYear() - 1, Calendar.JUNE, 30);
-            return LocalDateTime.of(getYear() - 1, Calendar.JUNE, 30,00,00);
+            return LocalDateTime.of(getYear() - 1, Calendar.JUNE, 30, 00, 00);
         } else if (timeSubscription == SECOND_HALF_YEAR) {
             calendar.set(getYear(), Calendar.DECEMBER, 30);
             return LocalDateTime.of(getYear(), Calendar.DECEMBER, 30, 00, 00);

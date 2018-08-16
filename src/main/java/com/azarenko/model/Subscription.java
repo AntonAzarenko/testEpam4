@@ -3,67 +3,75 @@ package com.azarenko.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.Date;
+
 @Entity
 @Table(name = "subscriptions")
 public final class Subscription extends AbstractBaseEntity {
     @Column(name = "id_periodicals")
-    public int periodicalId;
+    private int periodicalId;
 
     @Column(name = "user_id")
-    public int userId;
+    private int userId;
 
     @Column(name = "date_start")
-    public LocalDateTime dateStart;
+    private LocalDateTime dateStart;
 
     @Column(name = "date_end")
-    public LocalDateTime dateEnd;
+    private LocalDateTime dateEnd;
 
-    public Subscription(int periodicalId, int userId, LocalDateTime dateStartSubcription, LocalDateTime dateEndSubscription) {
+    @Column(name = "payment_id")
+    private int paymentId;
+
+    public Subscription(int periodicalId, int userId, LocalDateTime dateStartSubcription, LocalDateTime dateEndSubscription, int paymentId) {
         this.periodicalId = periodicalId;
         this.userId = userId;
         this.dateStart = dateStartSubcription;
         this.dateEnd = dateEndSubscription;
+        this.paymentId = paymentId;
 
     }
 
     public Subscription() {
     }
 
-    public int getUserId() {
-        return userId;
-    }
-
-
     public int getPeriodicalId() {
         return periodicalId;
-    }
-
-    public LocalDateTime getDateStartSubcription() {
-        return dateStart;
-    }
-
-    public LocalDateTime getDateEndSubscription() {
-        return dateEnd;
     }
 
     public void setPeriodicalId(int periodicalId) {
         this.periodicalId = periodicalId;
     }
 
+    public int getUserId() {
+        return userId;
+    }
+
     public void setUserId(int userId) {
         this.userId = userId;
     }
 
-    public void setDateStartSubcription(LocalDateTime dateStartSubcription) {
-        this.dateStart = dateStartSubcription;
+    public LocalDateTime getDateStart() {
+        return dateStart;
     }
 
-    public void setDateEndSubscription(LocalDateTime dateEndSubscription) {
-        this.dateEnd = dateEndSubscription;
+    public void setDateStart(LocalDateTime dateStart) {
+        this.dateStart = dateStart;
     }
 
+    public LocalDateTime getDateEnd() {
+        return dateEnd;
+    }
 
+    public void setDateEnd(LocalDateTime dateEnd) {
+        this.dateEnd = dateEnd;
+    }
+
+    public int getPaymentId() {
+        return paymentId;
+    }
+
+    public void setPaymentId(int paymentId) {
+        this.paymentId = paymentId;
+    }
 }

@@ -1,4 +1,4 @@
-var ajaxUrl = 'user/shoppingCart/';
+var ajaxUrl = 'user/payments/';
 var datatableApi;
 
 
@@ -11,25 +11,22 @@ $(function () {
         "scrollY": "50vh",
         "scrollCollapse": true,
         "paging": false,
-
         columns: [
             {
-                data: "index"
+                data: "date",
+               /* mRender: function (date, type, row) {
+                    if(type == 'display'){
+                        var dateObject = new Data(date);
+                        return '<span>' + dateObject.toISOString().substring(0,10) + '<span>'
+                    }
+                    return date;
+                }*/
             },
             {
-                data: "title"
+                data: "count"
             },
             {
-                data: "start"
-            },
-            {
-                data: "end"
-            },
-            {
-                data: "countPer"
-            },
-            {
-                data: "fullPrice"
+                data: "cost"
             }
         ],
         aaSorting: [

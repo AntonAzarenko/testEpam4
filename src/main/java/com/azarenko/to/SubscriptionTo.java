@@ -33,8 +33,8 @@ public class SubscriptionTo {
     public SubscriptionTo asSubscription(Subscription subscription){
         Periodical periodical = service.get(subscription.getPeriodicalId());
         this.title = periodical.getTitle();
-        this.start = TimeUtil.toString(subscription.getDateStartSubcription());
-        this.end = TimeUtil.toString(subscription.getDateEndSubscription());
+        this.start = TimeUtil.toString(subscription.getDateStart());
+        this.end = TimeUtil.toString(subscription.getDateEnd());
         this.countPer = periodical.getOutputFrequency();
         this.countInterToEnd =  subscriptionTimeUtil.getNumberOfExist(periodical);
         return new SubscriptionTo(this.title,  this.start, this.end, this.countPer, this.countInterToEnd);

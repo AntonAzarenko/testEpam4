@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ProxySubscriptionRepository extends JpaRepository<Subscription, Integer> {
     List<Subscription> getAllByUserId(int id);
+
+    List<Subscription> getAllByPaymentId(int id);
 }

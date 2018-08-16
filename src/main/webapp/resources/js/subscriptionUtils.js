@@ -3,8 +3,6 @@ function makeEditable() {
 }
 
 
-
-
 var failedNote;
 
 function updateTable() {

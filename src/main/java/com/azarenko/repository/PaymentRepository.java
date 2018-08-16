@@ -11,4 +11,6 @@ public interface PaymentRepository {
     List<Payment> getAllByUserId(int userID);
 
     List<Payment> getAll();
+
+    Payment getById(int paymetid);
 }

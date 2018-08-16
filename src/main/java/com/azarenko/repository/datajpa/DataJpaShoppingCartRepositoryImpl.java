@@ -36,4 +36,5 @@ public class DataJpaShoppingCartRepositoryImpl implements ShoppingCartRepository
     public ShoppingCart getByPeriodicalID(int id) {
         return proxy.getByPeriodicalId(id);
     }
+
 }

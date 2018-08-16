@@ -7,4 +7,8 @@ import java.util.List;
 
 public interface ProxyPaymentRepository extends JpaRepository<Payment, Integer> {
     List<Payment> findAllById(Integer userID);
+
+    Payment getById(int paymentID);
+
+
 }

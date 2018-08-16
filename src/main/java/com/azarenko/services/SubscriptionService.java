@@ -17,5 +17,7 @@ public interface SubscriptionService {
 
     List<SubscriptionTo> getAllUByUserId(List<Subscription> list);
 
+    List<Subscription> getAllByPaymentId(int id);
+
 
 }

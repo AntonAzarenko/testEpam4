@@ -36,10 +36,12 @@ CREATE TABLE payment (
 CREATE TABLE subscriptions (
   id             bigserial NOT NULL primary key,
   id_periodicals INTEGER   NOT NULL,
-  date_start     DATE      NOT NULL,
-  date_end       DATE      NOT NULL,
+  date_start     TIMESTAMP      NOT NULL,
+  date_end       TIMESTAMP      NOT NULL,
   user_id        INTEGER   NOT NULL,
+  payment_id     INTEGER     NOT NULL,
 
+  FOREIGN KEY (payment_id) references payment (id),
   FOREIGN KEY (id_periodicals) REFERENCES catalog_periodicals (id),
   FOREIGN KEY (user_id) REFERENCES users (id)
 );
@@ -48,8 +50,8 @@ CREATE TABLE history_price (
   id               bigserial      NOT NULL primary key,
   id_periodicals   INTEGER        NOT NULL,
   name_periodicals VARCHAR(100)   NOT NULL,
-  date_start       DATE           NOT NULL,
-  date_end         DATE,
+  date_start       TIMESTAMP           NOT NULL,
+  date_end         TIMESTAMP,
   price            DECIMAL(10, 2) NOT NULL,
 
   FOREIGN KEY (id_periodicals) REFERENCES catalog_periodicals (id)
@@ -62,8 +64,8 @@ CREATE TABLE shopping_cart (
   id             BIGSERIAL      NOT NULL,
   userId         INTEGER        NOT NULL,
   id_periodicals INTEGER,
-  date_start     DATE           NOT NULL,
-  date_end       DATE           NOT NULL,
+  date_start     TIMESTAMP           NOT NULL,
+  date_end       TIMESTAMP           NOT NULL,
   countPer       INTEGER        NOT NULL,
   time           INTEGER        not null,
   price          DECIMAL(10, 2) NOT NULL,

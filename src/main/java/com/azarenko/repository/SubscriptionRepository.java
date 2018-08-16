@@ -13,5 +13,7 @@ public interface SubscriptionRepository {
 
     List<Subscription> getAllByUserID(int userId);
 
+    List<Subscription> getAllByPaymentId(int id);
+
 
 }

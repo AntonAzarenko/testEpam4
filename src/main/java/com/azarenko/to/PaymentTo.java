@@ -1,6 +1,9 @@
 package com.azarenko.to;
 
 import com.azarenko.model.Payment;
+import com.azarenko.services.PaymentService;
+import com.azarenko.util.TimeUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -8,41 +11,69 @@ import java.time.LocalDateTime;
 
 @Component
 public class PaymentTo {
-    private LocalDateTime time;
 
-    private int UserID;
+    @Autowired
+    private PaymentService service;
 
-    private BigDecimal price;
+    /*private LocalDateTime date;*/
 
-    public PaymentTo create(Payment payment){
-        setPrice(payment.getPrice());
-        setTime(payment.getDate());
-        setUserID(payment.getUserId());
-        return this;
+    private String date;
+
+    private int userID;
+
+    private int count;
+
+    private BigDecimal cost;
+
+    public PaymentTo asPaymentTo(Payment payment) {
+        this.date = TimeUtil.toString(payment.getDate());
+        this.cost = payment.getPrice();
+        this.count = service.getInPayDay(payment.getId()).size();
+        this.userID = payment.getUserId();
+        return new PaymentTo(this.date, this.userID, this.count, this.cost);
     }
 
-    public LocalDateTime getTime() {
-        return time;
+    public PaymentTo(String date, int userID, int count, BigDecimal cost) {
+        this.date = date;
+        this.userID = userID;
+        this.count = count;
+        this.cost = cost;
     }
 
-    public void setTime(LocalDateTime time) {
-        this.time = time;
+    public PaymentTo() {
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public int getUserID() {
-        return UserID;
+        return userID;
     }
 
     public void setUserID(int userID) {
-        UserID = userID;
+        this.userID = userID;
     }
 
-    public BigDecimal getPrice() {
-
-        return price;
+    public int getCount() {
+        return count;
     }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public BigDecimal getCost() {
+        return cost;
+    }
+
+    public void setCost(BigDecimal cost) {
+        this.cost = cost;
     }
 }
+
+

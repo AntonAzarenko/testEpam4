@@ -63,13 +63,8 @@ function checkCart() {
 }
 
 function showSubscription() {
-    $.ajax({
-        type: 'GET',
-        url: 'subscription/',
-        success: function (data) {
-            window.location.href = 'subscriptions';
-        }
-    });
+
+    window.location.href = 'subscriptions'
 }
 
 function showCart() {

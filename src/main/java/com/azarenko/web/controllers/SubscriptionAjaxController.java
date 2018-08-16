@@ -21,8 +21,8 @@ public class SubscriptionAjaxController {
     private SubscriptionService subscriptionService;
 
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<SubscriptionTo> getSubscriptionByUserID(){
+    public List<SubscriptionTo> getSubscriptionByUserID() {
         List<Subscription> list = subscriptionService.getAllByUserId(LoggedUser.getId());
-       return subscriptionService.getAllUByUserId(list);
+        return subscriptionService.getAllUByUserId(list);
     }
 }

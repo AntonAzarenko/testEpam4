@@ -15,11 +15,13 @@
 <div class="jumbotron">
     <div class="container">
         <table class="table table-striped table-bordered" id="datatable" width="100%">
-
             <thead>
             <tr>
+                <th>Название</th>
                 <th>Начало подписки</th>
                 <th>Окончиние подписки</th>
+                <th>Купленные кземпляры</th>
+                <th>К получению</th>
             </tr>
             </thead>
         </table>

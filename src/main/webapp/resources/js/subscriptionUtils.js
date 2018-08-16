@@ -7,6 +7,16 @@ function makeEditable() {
 
 var failedNote;
 
+function updateTable() {
+    $.get(ajaxUrl, function (data) {
+        userDatatableApi.clear();
+        $.each(data, function (key, item) {
+            userDatatableApi.row.add(item);
+        });
+        userDatatableApi.draw();
+    });
+}
+
 function closeNote() {
     if (failedNote) {
         failedNote.close();

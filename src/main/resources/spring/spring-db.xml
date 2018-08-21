@@ -41,7 +41,31 @@
             <property name="username" value="${user}"/>
             <property name="password" value="${password}"/>
         </bean>
-        </beans>
+    </beans>
+
+    <beans profile="mybatis">
+        <context:component-scan base-package="com.azarenko.repository.mybatis"/>
+
+        <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+            <property name="dataSource" ref="dataSource" />
+            <property name="configLocation" value="classpath:mybatis/mybatis.xml" />
+            <property name="mapperLocations" value="classpath*:mybatis/mapper/**/*.xml" />
+        </bean>
+
+
+        <bean id="mapper" class="org.mybatis.spring.support.SqlSessionDaoSupport" abstract="true" >
+            <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+        </bean>
+
+
+        <bean id="userRepositoryMapper" class="com.azarenko.repository.mybatis.UserRepositoryMapperImpl" parent="mapper"
+       />
+
+        <bean id="userService" class="com.azarenko.services.logic.UserServiceImpl">
+            <property name="userRepository" ref="userRepositoryMapper" />
+        </bean>
+
+    </beans>
 
 
     <beans profile="jdbc">
@@ -53,8 +77,6 @@
         <bean id="namedJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
             <constructor-arg ref="dataSource"/>
         </bean>
-
-
     </beans>
 
     <beans profile="datajpa, jpa">

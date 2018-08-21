@@ -3,6 +3,7 @@ package com.azarenko.services.logic;
 import com.azarenko.model.Role;
 import com.azarenko.model.User;
 import com.azarenko.repository.UserRepository;
+import com.azarenko.repository.mybatis.UserRepositoryMapperImpl;
 import com.azarenko.services.UserService;
 
 import com.azarenko.web.LoggedUser;
@@ -19,8 +20,9 @@ import java.util.List;
 public class UserServiceImpl implements UserService, UserDetailsService {
     private static final Logger LOG = LoggerFactory.getLogger(UserServiceImpl.class);
 
-    @Autowired
+
     private UserRepository userRepository;
+
 
     @Override
     public User getByEmail(String email) {
@@ -51,4 +53,10 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         }
         return new LoggedUser(u);
     }
+
+
+    public void setUserRepository(final UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
 }

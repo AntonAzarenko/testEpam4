@@ -64,7 +64,6 @@ public class UserRepositoryImpl implements UserRepository {
     @Override
     public User getByEmail(String email) {
         List<User> users = jdbcTemplate.query("SELECT * FROM users WHERE email=?", map, email);//todo
-
         return setRoles(DataAccessUtils.singleResult(users));
     }
 

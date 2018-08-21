@@ -22,7 +22,9 @@ import static org.junit.Assert.*;
 
 @ContextConfiguration({
         "classpath:spring/spring-app.xml",
-        "classpath:spring/spring-db.xml"
+        "classpath:spring/spring-db.xml",
+        "classpath:spring/spring-mvc.xml",
+
 })
 @RunWith(SpringJUnit4ClassRunner.class)
 public class ShoppingCartServiceImplTest {

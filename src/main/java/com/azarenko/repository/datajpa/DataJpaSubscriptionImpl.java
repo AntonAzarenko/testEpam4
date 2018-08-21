@@ -21,10 +21,9 @@ public class DataJpaSubscriptionImpl implements SubscriptionRepository {
 
     @Override
     public void save(List<Subscription> subscription) {
-        for (Subscription current: subscription){
+        for (Subscription current : subscription) {
             proxy.save(current);
         }
-
     }
 
     @Override

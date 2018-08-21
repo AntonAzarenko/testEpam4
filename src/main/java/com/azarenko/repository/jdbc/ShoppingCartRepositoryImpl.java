@@ -77,7 +77,7 @@ public class ShoppingCartRepositoryImpl implements ShoppingCartRepository {
 
     @Override
     public boolean removeByUserId(int id) {
-        return jdbcTemplate.update("DELETE * FROM mydb.shopping_cart WHERE id=?", mapper, id) != 0;
+        return jdbcTemplate.update("DELETE  FROM mydb.shopping_cart WHERE id=?", mapper, id) != 0;
     }
 
     @Override//TODO

@@ -9,7 +9,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
-//@Repository
+@Repository
 @Transactional(readOnly = true)
 public class HistoryRepositoryImpl implements HistoryRepository {
 

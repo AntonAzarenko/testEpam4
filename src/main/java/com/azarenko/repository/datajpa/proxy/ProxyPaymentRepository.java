@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface ProxyPaymentRepository extends JpaRepository<Payment, Integer> {
-    List<Payment> findAllById(Integer userID);
+    List<Payment> getAllById(Integer userID);
 
     Payment getById(int paymentID);
 

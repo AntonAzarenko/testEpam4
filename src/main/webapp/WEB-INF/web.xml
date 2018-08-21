@@ -6,7 +6,7 @@
 
     <context-param>
         <param-name>spring.profiles.default</param-name>
-        <param-value>datajpa, mysql</param-value>
+        <param-value>jdbc, postgres</param-value>
     </context-param>
     <context-param>
         <param-name>contextConfigLocation</param-name>

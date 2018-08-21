@@ -1,5 +1,6 @@
 package com.azarenko.repository.jdbc;
 
+import com.azarenko.model.Role;
 import com.azarenko.model.User;
 import com.azarenko.repository.UserRepository;
 import org.slf4j.Logger;
@@ -14,12 +15,15 @@ import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
+
 import java.util.List;
+import java.util.Set;
 
 @Repository
 public class UserRepositoryImpl implements UserRepository {
 
     public static final BeanPropertyRowMapper<User> map = BeanPropertyRowMapper.newInstance(User.class);
+
     private static final Logger LOG = LoggerFactory.getLogger(UserRepositoryImpl.class);
     @Autowired
     private JdbcTemplate jdbcTemplate;
@@ -49,26 +53,37 @@ public class UserRepositoryImpl implements UserRepository {
             Number id = simpleJdbcInsert.executeAndReturnKey(maper);
             user.setId(id.intValue());
         }else{
-            if(namedParameterJdbcTemplate.update("",maper) == 0);//todo
+            if(namedParameterJdbcTemplate.update("UPDATE users SET name=:name, email=:email, password=: password," +
+                    "enabled=: enabled, registration=:registration" ,maper) == 0);//todo
+            return null;
+
         }
-        return null;
+        return user;
     }
 
     @Override
     public User getByEmail(String email) {
-        List<User> list = jdbcTemplate.query("", map);//todo
-        return DataAccessUtils.singleResult(list);
+        List<User> users = jdbcTemplate.query("SELECT * FROM users WHERE email=?", map, email);//todo
+
+        return setRoles(DataAccessUtils.singleResult(users));
     }
 
     @Override
-    public int getIdByEmail(String login) {
-        List<User> list = jdbcTemplate.query("", map);//todo
-        return DataAccessUtils.singleResult(list).getId();
+    public int getIdByEmail(String email) {
+       return 0;
     }
 
     @Override
     public List<User> getAll() {
-        List<User> list = jdbcTemplate.query("", map);//todo
+        List<User> list = jdbcTemplate.query("SELECT * FROM users", map);//todo
         return list;
+    }
+    private User setRoles(User u) {
+        if (u != null) {
+            List<Role> roles = jdbcTemplate.query("SELECT role FROM roles  WHERE user_id=?",
+                    (rs, rowNum) -> Role.valueOf(rs.getString("role")), u.getId());
+            u.setAuthorities(roles);
+        }
+        return u;
     }
 }

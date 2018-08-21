@@ -21,7 +21,7 @@ public class DataJpaPaymentRepository implements PaymentRepository {
 
     @Override
     public List<Payment> getAllByUserId(int userID) {
-        return proxy.findAllById(userID);
+        return proxy.getAllById(userID);
     }
 
     @Override

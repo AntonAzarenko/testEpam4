@@ -2,13 +2,12 @@ package com.azarenko.model;
 
 
 import org.hibernate.validator.constraints.Length;
+import org.springframework.util.CollectionUtils;
 
 import javax.persistence.*;
 
 import java.io.Serializable;
-import java.util.Collections;
-import java.util.Date;
-import java.util.Set;
+import java.util.*;
 
 
 /**
@@ -103,8 +102,8 @@ public class User extends AbstractBaseEntity implements Serializable {
         return authorities;
     }
 
-    public void setAuthorities(Set<Role> authorities) {
-        this.authorities = authorities;
+    public void setAuthorities(List<Role> roles) {
+        this.authorities = CollectionUtils.isEmpty(roles) ? Collections.emptySet() : EnumSet.copyOf(roles);;
     }
 
     public Date getRegistered() {

@@ -51,14 +51,9 @@ public class SubscriptionServiceImpl implements SubscriptionService {
 
     private int getPaymentID(int userId) {
         List<Payment> list = paymentService.getPaymentByUserId(userId);
-        LocalDate date = LocalDateTime.now().toLocalDate();
-        for (Payment current : list) {
-            LocalDate currentDay = current.getDate().toLocalDate();
-            if (currentDay.equals(date)) {
-                return current.getId();
-            }
-        }
-        return 0;
+        if(list.size()!= 0) {
+            return list.get(list.size() - 1).getId();
+        }return 0;
     }
 
     private Subscription create(ShoppingCart cart, int paymentId) {
@@ -94,3 +89,4 @@ public class SubscriptionServiceImpl implements SubscriptionService {
         return repository.getAllByPaymentId(id);
     }
 }
+

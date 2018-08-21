@@ -17,7 +17,6 @@ import org.springframework.stereotype.Repository;
 import javax.sql.DataSource;
 
 import java.util.List;
-import java.util.Set;
 
 @Repository
 public class UserRepositoryImpl implements UserRepository {
@@ -61,11 +60,12 @@ public class UserRepositoryImpl implements UserRepository {
         return user;
     }
 
-    @Override
-    public User getByEmail(String email) {
+   @Override
+   public User getByEmail(String email) {
         List<User> users = jdbcTemplate.query("SELECT * FROM users WHERE email=?", map, email);//todo
-        return setRoles(DataAccessUtils.singleResult(users));
-    }
+       // return setRoles(DataAccessUtils.singleResult(users));
+       return null;
+   }
 
     @Override
     public int getIdByEmail(String email) {
@@ -77,12 +77,12 @@ public class UserRepositoryImpl implements UserRepository {
         List<User> list = jdbcTemplate.query("SELECT * FROM users", map);//todo
         return list;
     }
-    private User setRoles(User u) {
+  /*  private User setRoles(User u) {
         if (u != null) {
             List<Role> roles = jdbcTemplate.query("SELECT role FROM roles  WHERE user_id=?",
                     (rs, rowNum) -> Role.valueOf(rs.getString("role")), u.getId());
-            u.setAuthorities(roles);
+            u.setRoles(roles);
         }
         return u;
-    }
+    }*/
 }

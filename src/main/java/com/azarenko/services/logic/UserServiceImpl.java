@@ -16,11 +16,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+
 @Service("userService")
 public class UserServiceImpl implements UserService, UserDetailsService {
     private static final Logger LOG = LoggerFactory.getLogger(UserServiceImpl.class);
 
-
+    @Autowired
     private UserRepository userRepository;
 
 
@@ -37,7 +38,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     @Transactional
     public boolean add(User user) {
-         return userRepository.add(user) != null;
+        return userRepository.add(user) != null;
     }
 
     @Override
@@ -48,8 +49,8 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     public LoggedUser loadUserByUsername(String email) throws UsernameNotFoundException {
         User u = userRepository.getByEmail(email);
-        if(u == null){
-            throw  new UsernameNotFoundException("User " + email + " not found!");
+        if (u == null) {
+            throw new UsernameNotFoundException("User " + email + " not found!");
         }
         return new LoggedUser(u);
     }

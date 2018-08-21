@@ -22,8 +22,7 @@
     <!--no pool-->
     <beans profile="postgres">
         <context:property-placeholder location="classpath:db/postgres.properties" system-properties-mode="OVERRIDE"/>
-        <bean id="dataSource"
-              class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
             <property name="driverClassName" value="${driver}"/>
             <property name="url" value="${url}"/>
             <property name="username" value="${user}"/>
@@ -51,20 +50,6 @@
             <property name="configLocation" value="classpath:mybatis/mybatis.xml" />
             <property name="mapperLocations" value="classpath*:mybatis/mapper/**/*.xml" />
         </bean>
-
-
-        <bean id="mapper" class="org.mybatis.spring.support.SqlSessionDaoSupport" abstract="true" >
-            <property name="sqlSessionFactory" ref="sqlSessionFactory" />
-        </bean>
-
-
-        <bean id="userRepositoryMapper" class="com.azarenko.repository.mybatis.UserRepositoryMapperImpl" parent="mapper"
-       />
-
-        <bean id="userService" class="com.azarenko.services.logic.UserServiceImpl">
-            <property name="userRepository" ref="userRepositoryMapper" />
-        </bean>
-
     </beans>
 
 

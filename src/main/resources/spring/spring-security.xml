@@ -33,13 +33,13 @@
             <password-encoder ref="passwordEncoder"/>
             <!-- <jdbc-user-service data-source-ref="dataSource"
                                 users-by-username-query="SELECT email, password, enabled FROM users WHERE email = ?"
-                                authorities-by-username-query="SELECT email,role FROM users, roles
+                                roles-by-username-query="SELECT email,role FROM users, roles
                                 WHERE id = user_id AND email = ?"/>&ndash;&gt;-->
 
 
             <!--<user-service>
-                <user name="User@ya.ru" password="{noop}user" authorities="ROLE_USER"/>
-                <user name="Admin@gmail.com" password="{noop}admin" authorities="ROLE_ADMIN, ROLE_USER"/>
+                <user name="User@ya.ru" password="{noop}user" roles="ROLE_USER"/>
+                <user name="Admin@gmail.com" password="{noop}admin" roles="ROLE_ADMIN, ROLE_USER"/>
             </user-service>-->
         </authentication-provider>
     </authentication-manager>

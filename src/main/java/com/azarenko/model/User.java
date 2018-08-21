@@ -40,26 +40,31 @@ public class User extends AbstractBaseEntity implements Serializable {
     @CollectionTable(name = "roles", joinColumns = @JoinColumn(name = "user_id"))
     @Column(name = "role")
     @ElementCollection(fetch = FetchType.EAGER)
-    private Set<Role> authorities;
+    private Set<Role> roles;
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
     @Column(name = "registration", columnDefinition = "timestamp default now()")
     private Date registered = new Date();
 
-    public User(String name, String email, String password, boolean enabled, Role authorities, Date registered) {
+    public User(String name, String email, String password, boolean enabled, Role roles, Date registered) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.enabled = enabled;
-        this.authorities = Collections.singleton(authorities);
+        this.roles = Collections.singleton(roles);
         this.registered = registered;
     }
 
-    public User(Integer id, String name, String email, String password, boolean enabled, Role authorities, Date registered) {
+    public User(Integer id, String name, String email, String password, boolean enabled, Role roles, Date registered) {
         super(id);
         this.name = name;
         this.email = email;
         this.password = password;
         this.enabled = enabled;
-        this.authorities = Collections.singleton(authorities);
+        this.roles = Collections.singleton(roles);
         this.registered = registered;
     }
 
@@ -98,13 +103,13 @@ public class User extends AbstractBaseEntity implements Serializable {
         this.enabled = enabled;
     }
 
-    public Set<Role> getAuthorities() {
-        return authorities;
+    public Set<Role> getRoles() {
+        return roles;
     }
 
-    public void setAuthorities(List<Role> roles) {
-        this.authorities = CollectionUtils.isEmpty(roles) ? Collections.emptySet() : EnumSet.copyOf(roles);;
-    }
+   /* public void setRoles(List<Role> roles) {
+        this.roles = CollectionUtils.isEmpty(roles) ? Collections.emptySet() : EnumSet.copyOf(roles);;
+    }*/
 
     public Date getRegistered() {
         return registered;
@@ -125,7 +130,7 @@ public class User extends AbstractBaseEntity implements Serializable {
         if (getEmail() != null ? !getEmail().equals(user.getEmail()) : user.getEmail() != null) return false;
         if (getPassword() != null ? !getPassword().equals(user.getPassword()) : user.getPassword() != null)
             return false;
-        return getAuthorities() != null ? getAuthorities().equals(user.getAuthorities()) : user.getAuthorities() == null;
+        return getRoles() != null ? getRoles().equals(user.getRoles()) : user.getRoles() == null;
     }
 
     @Override
@@ -133,7 +138,7 @@ public class User extends AbstractBaseEntity implements Serializable {
         int result = getName() != null ? getName().hashCode() : 0;
         result = 31 * result + (getEmail() != null ? getEmail().hashCode() : 0);
         result = 31 * result + (getPassword() != null ? getPassword().hashCode() : 0);
-        result = 31 * result + (getAuthorities() != null ? getAuthorities().hashCode() : 0);
+        result = 31 * result + (getRoles() != null ? getRoles().hashCode() : 0);
         return result;
     }
 
@@ -144,7 +149,7 @@ public class User extends AbstractBaseEntity implements Serializable {
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", enabled=" + enabled +
-                ", authorities=" + authorities +
+                ", roles=" + roles +
                 ", registered=" + registered +
                 '}';
     }

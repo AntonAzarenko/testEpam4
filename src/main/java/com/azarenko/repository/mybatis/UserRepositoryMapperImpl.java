@@ -10,8 +10,14 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 @Repository
-public class UserRepositoryMapperImpl extends SqlSessionDaoSupport implements UserRepository {
+public class UserRepositoryMapperImpl  implements UserRepository {
 
+
+    @Autowired
+    private SqlSessionFactory sqlSessionFactory;
+
+    public UserRepositoryMapperImpl() {
+    }
 
     @Override
     public User add(User user) {
@@ -20,7 +26,7 @@ public class UserRepositoryMapperImpl extends SqlSessionDaoSupport implements Us
 
     @Override
     public User getByEmail(String email) {
-       return getSqlSession().selectOne("com.azarenko.repository.UserRepository.getByEmail", email);
+       return sqlSessionFactory.openSession().selectOne("com.azarenko.repository.UserRepository.getByEmail", email);
     }
 
     @Override
@@ -32,5 +38,6 @@ public class UserRepositoryMapperImpl extends SqlSessionDaoSupport implements Us
     public List<User> getAll() {
         return null;
     }
+
 
 }

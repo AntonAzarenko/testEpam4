@@ -40,7 +40,7 @@ public class LoggedUser implements UserDetails {
 
     @Override
     public Set<Role> getAuthorities() {
-        return user.getAuthorities();
+        return user.getRoles();
     }
 
     @Override

@@ -42,8 +42,9 @@ public class User extends AbstractBaseEntity implements Serializable {
     @ElementCollection(fetch = FetchType.EAGER)
     private Set<Role> roles;
 
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
+    public void setRoles(Role roles) {
+        this.roles = new HashSet<>();
+        this.roles.add(roles);
     }
 
     @Column(name = "registration", columnDefinition = "timestamp default now()")
@@ -107,7 +108,7 @@ public class User extends AbstractBaseEntity implements Serializable {
         return roles;
     }
 
-   /* public void setRoles(List<Role> roles) {
+    /*public void setRoles(List<Role> roles) {
         this.roles = CollectionUtils.isEmpty(roles) ? Collections.emptySet() : EnumSet.copyOf(roles);;
     }*/
 

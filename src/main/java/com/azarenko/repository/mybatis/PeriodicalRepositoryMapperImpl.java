@@ -2,12 +2,23 @@ package com.azarenko.repository.mybatis;
 
 import com.azarenko.model.Periodical;
 import com.azarenko.repository.PeriodicalReposiroty;
+import com.azarenko.repository.jdbc.PeriodicalRepositoryImpl;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
 import java.util.List;
 @Repository
 public class PeriodicalRepositoryMapperImpl implements PeriodicalReposiroty {
+    private static final Logger log = LoggerFactory.getLogger(PeriodicalRepositoryImpl.class);
+
+
+    @Autowired
+    private SqlSessionFactory sqlSessionFactory;
+
     @Override
     public Periodical save(Periodical entity) {
         return null;
@@ -20,7 +31,9 @@ public class PeriodicalRepositoryMapperImpl implements PeriodicalReposiroty {
 
     @Override
     public List<Periodical> getAll() {
-        return null;
+        List<Periodical> list = sqlSessionFactory.openSession().selectList("com.azarenko.repository.PeriodicalRepository.getAll");
+        list.forEach(p -> log.debug(p.toString()));
+        return sqlSessionFactory.openSession().selectList("com.azarenko.repository.PeriodicalRepository.getAll");
     }
 
     @Override

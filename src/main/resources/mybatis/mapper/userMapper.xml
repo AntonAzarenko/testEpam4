@@ -10,9 +10,9 @@
         <result column="password" property="password" />
         <result column="enabled" property="enabled"/>
         <result column="registered" property="registered" />
-        <association property="roles" javaType="Role">
+        <collection property="roles" javaType="Role" >
             <result column="role" property="role" />
-        </association>
+        </collection>
     </resultMap>
 
 
